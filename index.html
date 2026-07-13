@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>스윙 데일리 브리핑</title>
+<style>
+  :root{
+    --bg:#0f1216; --card:#171c22; --card2:#1e242c; --line:#2a323c;
+    --tx:#e8edf2; --sub:#9aa7b4; --accent:#4c8dff;
+    --up:#ff5a5a; --down:#4d9bff; --flat:#9aa7b4;
+  }
+  @media (prefers-color-scheme:light){
+    :root{ --bg:#f4f6f9; --card:#ffffff; --card2:#f0f3f7; --line:#e2e8f0;
+      --tx:#1a2330; --sub:#5b6875; --accent:#2f6fe4; --up:#e23b3b; --down:#2f6fe4; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);
+    font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:18px 16px 60px}
+  header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:6px}
+  h1{font-size:19px;margin:0;letter-spacing:-.02em}
+  h1 .dot{color:var(--accent)}
+  select{background:var(--card2);color:var(--tx);border:1px solid var(--line);
+    border-radius:10px;padding:8px 12px;font-size:15px;font-family:inherit}
+  .headline{background:linear-gradient(135deg,var(--card),var(--card2));
+    border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0 20px;font-size:16px;font-weight:600}
+  section{margin:22px 0}
+  h2{font-size:13px;text-transform:none;color:var(--sub);font-weight:700;
+    margin:0 0 10px;letter-spacing:.02em;display:flex;align-items:center;gap:7px}
+  .ind{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:9px}
+  .ind .c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 13px}
+  .ind .n{font-size:12px;color:var(--sub)}
+  .ind .v{font-size:18px;font-weight:700;margin-top:2px}
+  .ind .d{font-size:12px;margin-top:1px}
+  .news .c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:9px}
+  .news .lab{font-size:12px;font-weight:700;color:var(--accent);margin-bottom:3px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{background:var(--card2);border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:13px;font-weight:600}
+  .chip b{color:var(--accent)}
+  .mkt{margin-top:14px}
+  .mkt .flag{font-size:14px;font-weight:700;margin:14px 0 8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:8px;display:flex;gap:12px;align-items:flex-start}
+  .tier{flex:0 0 auto;font-size:11px;font-weight:700;padding:3px 8px;border-radius:8px;background:var(--card2);border:1px solid var(--line);white-space:nowrap;margin-top:2px}
+  .tier.대장{color:#ffb454} .tier.중형{color:#59d0a0} .tier.소형,.tier.신흥{color:#c08bff}
+  .co .top{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+  .co .nm{font-weight:700;font-size:15px}
+  .co .sec{font-size:12px;color:var(--sub)}
+  .co .th{font-size:11px;color:var(--accent);border:1px solid var(--line);border-radius:6px;padding:0 6px}
+  .co .chg{font-size:13px;font-weight:700}
+  .co .cap{font-size:12px;color:var(--sub)}
+  .co .desc{font-size:13px;color:var(--sub);margin-top:3px}
+  .up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--flat)}
+  .myview{background:var(--card);border:1px dashed var(--accent);border-radius:12px;padding:14px 16px;color:var(--sub);font-size:14px}
+  .myview b{color:var(--tx)}
+  footer{margin-top:34px;color:var(--sub);font-size:12px;text-align:center;border-top:1px solid var(--line);padding-top:16px}
+  .err{padding:40px 10px;text-align:center;color:var(--sub)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span class="dot">●</span> 스윙 데일리 브리핑</h1>
+    <select id="dateSel" aria-label="날짜 선택"></select>
+  </header>
+  <div id="app"><div class="err">불러오는 중…</div></div>
+  <footer>learn-in-public 공부 기록 · 특정 종목 매수·매도 권유가 아님 · 숫자는 그날 자동수집 데이터 기준</footer>
+</div>
+<script>
+const dirClass = s => s==='up'?'up':s==='down'?'down':'flat';
+function chgClass(t){ if(!t) return 'flat';
+  if(/상한|^\+|↑|급등/.test(t)) return 'up';
+  if(/하한|^-|↓|급락/.test(t)) return 'down'; return 'flat'; }
+const esc = s => (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+function coCard(c){
+  return `<div class="card"><div class="tier ${c.tier}">${c.tier}</div>
+   <div class="co"><div class="top">
+     <span class="nm">${esc(c.name)}</span>
+     <span class="sec">${esc(c.sector)}</span>
+     ${c.theme?`<span class="th">${esc(c.theme)}</span>`:''}
+     <span class="chg ${chgClass(c.change)}">${esc(c.change)}</span>
+     <span class="cap">· 시총 ${esc(c.cap)}</span>
+   </div><div class="desc">${esc(c.desc)}</div></div></div>`;
+}
+function render(d){
+  const ind = d.indicators.map(i=>`<div class="c"><div class="n">${esc(i.name)}</div>
+     <div class="v">${esc(i.value)}</div><div class="d ${dirClass(i.dir)}">${esc(i.change)}</div></div>`).join('');
+  const flowChips = m => (d.flow[m]||[]).map((s,idx)=>`<span class="chip"><b>${idx+1}</b> ${esc(s)}</span>`).join('');
+  const study = m => (d.study[m]||[]).map(coCard).join('');
+  const mv = d.myview && d.myview.trim();
+  document.getElementById('app').innerHTML = `
+   <div class="headline">⚡ ${esc(d.headline)}</div>
+   <section><h2>🌡️ 지표 한눈에</h2><div class="ind">${ind}</div></section>
+   <section class="news"><h2>📰 오늘 무슨 일</h2>
+     <div class="c"><div class="lab">🇺🇸 미국</div>${esc(d.news.us)}</div>
+     <div class="c"><div class="lab">🇰🇷 한국</div>${esc(d.news.kr)}</div>
+     <div class="c"><div class="lab">🌍 거시</div>${esc(d.news.macro)}</div></section>
+   <section><h2>💰 돈이 어디로 (오늘 주도 섹터)</h2>
+     <div class="mkt"><div class="flag">🇰🇷 한국</div><div class="chips">${flowChips('kr')}</div></div>
+     <div class="mkt"><div class="flag">🇺🇸 미국</div><div class="chips">${flowChips('us')}</div></div></section>
+   <section><h2>🏷️ 오늘의 기업 공부</h2>
+     <div class="mkt"><div class="flag">🇰🇷 한국</div>${study('kr')}</div>
+     <div class="mkt"><div class="flag">🇺🇸 미국</div>${study('us')}</div></section>
+   <section><h2>✍️ 내 판단</h2>
+     <div class="myview">${mv?esc(d.myview).replace(/\n/g,'<br>'):'<b>여기는 네가 채우는 칸.</b> 위 뉴스·지표·섹터를 다 보고 "나는 이렇게 본다"를 적는 곳. (아직 비어있음)'}</div></section>`;
+}
+async function load(date){
+  try{
+    const r = await fetch(`data/${date}.json?v=`+Date.now());
+    render(await r.json());
+    window.scrollTo(0,0);
+  }catch(e){ document.getElementById('app').innerHTML='<div class="err">'+date+' 데이터를 못 불러왔어.</div>'; }
+}
+(async function(){
+  try{
+    const dates = await (await fetch('data/index.json?v='+Date.now())).json();
+    const sel = document.getElementById('dateSel');
+    sel.innerHTML = dates.map(d=>`<option value="${d}">${d}</option>`).join('');
+    sel.onchange = ()=>load(sel.value);
+    if(dates.length) load(dates[0]);
+    else document.getElementById('app').innerHTML='<div class="err">아직 브리핑이 없어.</div>';
+  }catch(e){ document.getElementById('app').innerHTML='<div class="err">목록을 못 불러왔어.</div>'; }
+})();
+</script>
+</body>
+</html>
