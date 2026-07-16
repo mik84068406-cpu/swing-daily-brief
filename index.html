@@ -53,6 +53,15 @@
   .co .cap{font-size:12px;color:var(--sub)}
   .co .desc{font-size:13px;color:var(--sub);margin-top:3px}
   .up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--flat)}
+  .topbox{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:8px;overflow:hidden}
+  .topbox summary{cursor:pointer;padding:12px 16px;font-weight:600;list-style:none}
+  .topbox summary::-webkit-details-marker{display:none}
+  .topbox summary::after{content:' ▾';color:var(--sub)}
+  .topbox[open] summary::after{content:' ▴'}
+  .tlist{padding:0 12px 10px}
+  .trow{display:grid;grid-template-columns:28px 1fr 90px 110px;gap:6px;padding:5px 4px;font-size:13px;border-top:1px solid var(--line);align-items:center}
+  .trow.thead{color:var(--sub);font-size:11px;border-top:none}
+  .trank{color:var(--sub)} .tchg{text-align:right} .tval{text-align:right;color:var(--sub)}
   .myview{background:var(--card);border:1px dashed var(--accent);border-radius:12px;padding:14px 16px;color:var(--sub);font-size:14px}
   .myview b{color:var(--tx)}
   footer{margin-top:34px;color:var(--sub);font-size:12px;text-align:center;border-top:1px solid var(--line);padding-top:16px}
@@ -92,6 +101,13 @@ function render(d){
   const study = m => (d.study[m]||[]).map(coCard).join('');
   const mv = d.myview && d.myview.trim();
   const av = d.aiview && d.aiview.trim();
+  const topRow = (t,i)=>{const c=+t.change;const cls=c>0?'up':c<0?'down':'flat';const ar=c>0?'▲':c<0?'▼':'—';
+    return `<div class="trow"><span class="trank">${i+1}</span><span class="tname">${esc(t.name)}</span><span class="tchg ${cls}">${ar} ${Math.abs(c).toFixed(2)}%</span><span class="tval">${esc(t.value)}</span></div>`;};
+  const topList = m => (d.top&&d.top[m]||[]).map(topRow).join('');
+  const topSec = (d.top&&(d.top.kr||[]).length) ? `
+   <section><h2>💰 거래대금 TOP${(d.top.kr||[]).length} (개별기업 · ETF 제외)</h2>
+     <details class="topbox"><summary>🇰🇷 한국 — 눌러서 펼치기</summary><div class="tlist"><div class="trow thead"><span class="trank">#</span><span class="tname">종목</span><span class="tchg">등락</span><span class="tval">거래대금</span></div>${topList('kr')}</div></details>
+     <details class="topbox"><summary>🇺🇸 미국 — 눌러서 펼치기</summary><div class="tlist"><div class="trow thead"><span class="trank">#</span><span class="tname">종목</span><span class="tchg">등락</span><span class="tval">거래대금</span></div>${topList('us')}</div></details></section>`:'';
   document.getElementById('app').innerHTML = `
    <div class="headline">⚡ ${esc(d.headline)}</div>
    <section><h2>🌡️ 지표 한눈에</h2><div class="ind">${ind}</div></section>
@@ -102,6 +118,7 @@ function render(d){
    <section><h2>💰 돈이 어디로 (오늘 주도 섹터)</h2>
      <div class="mkt"><div class="flag">🇰🇷 한국</div><div class="chips">${flowChips('kr')}</div></div>
      <div class="mkt"><div class="flag">🇺🇸 미국</div><div class="chips">${flowChips('us')}</div></div></section>
+   ${topSec}
    <section><h2>🏷️ 오늘의 기업 공부</h2>
      <div class="mkt"><div class="flag">🇰🇷 한국</div>${study('kr')}</div>
      <div class="mkt"><div class="flag">🇺🇸 미국</div>${study('us')}</div></section>
