@@ -91,6 +91,7 @@ function render(d){
   const flowChips = m => (d.flow[m]||[]).map((s,idx)=>`<span class="chip"><b>${idx+1}</b> ${esc(s)}</span>`).join('');
   const study = m => (d.study[m]||[]).map(coCard).join('');
   const mv = d.myview && d.myview.trim();
+  const av = d.aiview && d.aiview.trim();
   document.getElementById('app').innerHTML = `
    <div class="headline">⚡ ${esc(d.headline)}</div>
    <section><h2>🌡️ 지표 한눈에</h2><div class="ind">${ind}</div></section>
@@ -105,7 +106,8 @@ function render(d){
      <div class="mkt"><div class="flag">🇰🇷 한국</div>${study('kr')}</div>
      <div class="mkt"><div class="flag">🇺🇸 미국</div>${study('us')}</div></section>
    <section><h2>✍️ 내 판단</h2>
-     <div class="myview">${mv?esc(d.myview).replace(/\n/g,'<br>'):'<b>여기는 네가 채우는 칸.</b> 위 뉴스·지표·섹터를 다 보고 "나는 이렇게 본다"를 적는 곳. (아직 비어있음)'}</div></section>`;
+     <div class="myview">${mv?esc(d.myview).replace(/\n/g,'<br>'):'<b>여기는 네가 채우는 칸.</b> 위 뉴스·지표·섹터를 다 보고 "나는 이렇게 본다"를 적는 곳. (아직 비어있음)'}</div>
+     ${av?`<div class="myview" style="margin-top:8px;border-style:solid"><b>🤖 AI 한줄</b> — ${esc(d.aiview).replace(/\n/g,'<br>')}</div>`:''}</section>`;
 }
 async function load(date){
   try{
