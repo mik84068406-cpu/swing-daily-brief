@@ -190,303 +190,423 @@
     "kr": [
       {
         "name": "SK하이닉스",
+        "sector": "반도체(메모리·HBM)",
+        "cap": "1,313조",
         "change": -11.53,
         "value": "102,612억원"
       },
       {
         "name": "삼성전자",
+        "sector": "반도체(메모리)",
+        "cap": "1,491조",
         "change": -8.77,
         "value": "68,384억원"
       },
       {
         "name": "삼성전자우",
+        "sector": "반도체(우선주)",
+        "cap": "138조",
         "change": -10.42,
         "value": "7,798억원"
       },
       {
         "name": "원익IPS",
+        "sector": "반도체장비",
+        "cap": "7조",
         "change": -1.4,
         "value": "2,469억원"
       },
       {
         "name": "한화오션",
+        "sector": "조선",
+        "cap": "27조",
         "change": 5.73,
         "value": "2,343억원"
       },
       {
         "name": "주성엔지니어링",
+        "sector": "반도체장비",
+        "cap": "9조",
         "change": -10.31,
         "value": "2,222억원"
       },
       {
         "name": "SK이터닉스",
+        "sector": "에너지(신재생)",
+        "cap": "2조",
         "change": -2.44,
         "value": "2,205억원"
       },
       {
         "name": "현대약품",
+        "sector": "제약(중소)",
+        "cap": "2,432억",
         "change": 13.26,
         "value": "1,853억원"
       },
       {
         "name": "두산에너빌리티",
+        "sector": "원전·발전설비",
+        "cap": "45조",
         "change": -4.52,
         "value": "1,773억원"
       },
       {
         "name": "HLB",
+        "sector": "바이오",
+        "cap": "5조",
         "change": 1.73,
         "value": "1,301억원"
       },
       {
         "name": "제주반도체",
+        "sector": "반도체(메모리설계)",
+        "cap": "3조",
         "change": -8.08,
         "value": "1,235억원"
       },
       {
         "name": "삼성공조",
+        "sector": "자동차부품",
+        "cap": "1,104억",
         "change": 17.07,
         "value": "1,067억원"
       },
       {
         "name": "한화솔루션",
+        "sector": "태양광·화학",
+        "cap": "5조",
         "change": -10.39,
         "value": "1,063억원"
       },
       {
         "name": "모나미",
+        "sector": "문구",
+        "cap": "705억",
         "change": 8.27,
         "value": "1,037억원"
       },
       {
         "name": "코오롱티슈진",
+        "sector": "바이오",
+        "cap": "5조",
         "change": -20.28,
         "value": "1,007억원"
       },
       {
         "name": "기가레인",
+        "sector": "반도체장비·RF",
+        "cap": "958억",
         "change": -3.75,
         "value": "964억원"
       },
       {
         "name": "카카오",
+        "sector": "플랫폼(메신저)",
+        "cap": "16조",
         "change": 2.87,
         "value": "945억원"
       },
       {
         "name": "파세코",
+        "sector": "가전(중소)",
+        "cap": "1,606억",
         "change": 0.25,
         "value": "932억원"
       },
       {
         "name": "케이뱅크",
+        "sector": "은행(인터넷)",
+        "cap": "3조",
         "change": 11.13,
         "value": "886억원"
       },
       {
         "name": "JW신약",
+        "sector": "제약(중소)",
+        "cap": "1,104억",
         "change": 5.35,
         "value": "875억원"
       },
       {
         "name": "삼성중공업",
+        "sector": "조선",
+        "cap": "20조",
         "change": 2.06,
         "value": "825억원"
       },
       {
         "name": "HPSP",
+        "sector": "반도체장비",
+        "cap": "3조",
         "change": -8.99,
         "value": "803억원"
       },
       {
         "name": "씨피시스템",
+        "sector": "",
+        "cap": "1,224억",
         "change": 12.37,
         "value": "761억원"
       },
       {
         "name": "금호건설",
+        "sector": "건설",
+        "cap": "4,061억",
         "change": -18.54,
         "value": "759억원"
       },
       {
         "name": "디앤디파마텍",
+        "sector": "바이오(신약)",
+        "cap": "3조",
         "change": -9.61,
         "value": "739억원"
       },
       {
         "name": "동화약품",
+        "sector": "제약",
+        "cap": "1,603억",
         "change": -4.49,
         "value": "659억원"
       },
       {
         "name": "대한항공",
+        "sector": "항공",
+        "cap": "10조",
         "change": -0.56,
         "value": "650억원"
       },
       {
         "name": "빛과전자",
+        "sector": "광통신부품",
+        "cap": "2,919억",
         "change": -8.32,
         "value": "634억원"
       },
       {
         "name": "에코프로",
+        "sector": "2차전지(지주)",
+        "cap": "11조",
         "change": -7.41,
         "value": "630억원"
       },
       {
         "name": "우리금융지주",
+        "sector": "은행(지주)",
+        "cap": "23조",
         "change": 0.64,
         "value": "624억원"
       }
     ],
     "us": [
       {
-        "name": "MU",
+        "name": "마이크론 (MU)",
+        "sector": "반도체(메모리)",
+        "cap": "$964B",
         "change": -5.65,
         "value": "39,064백만USD"
       },
       {
-        "name": "NVDA",
+        "name": "엔비디아 (NVDA)",
+        "sector": "반도체(AI)",
+        "cap": "$5.0T",
         "change": -2.4,
         "value": "24,111백만USD"
       },
       {
-        "name": "SNDK",
+        "name": "샌디스크 (SNDK)",
+        "sector": "반도체(메모리)",
+        "cap": "$209B",
         "change": -12.63,
         "value": "24,009백만USD"
       },
       {
-        "name": "AAPL",
+        "name": "애플 (AAPL)",
+        "sector": "빅테크(하드웨어)",
+        "cap": "$4.9T",
         "change": 1.76,
         "value": "20,887백만USD"
       },
       {
-        "name": "SKHYV",
+        "name": "SK하이닉스 ADR (SKHYV)",
+        "sector": "반도체(메모리·HBM)",
+        "cap": "$1.2T",
         "change": 0,
         "value": "18,090백만USD"
       },
       {
-        "name": "TSLA",
+        "name": "테슬라 (TSLA)",
+        "sector": "전기차",
+        "cap": "$1.5T",
         "change": -0.86,
         "value": "11,315백만USD"
       },
       {
-        "name": "AMZN",
+        "name": "아마존 (AMZN)",
+        "sector": "빅테크(커머스·클라우드)",
+        "cap": "$2.7T",
         "change": -1.99,
         "value": "11,155백만USD"
       },
       {
-        "name": "INTC",
+        "name": "인텔 (INTC)",
+        "sector": "반도체",
+        "cap": "$487B",
         "change": -5.84,
         "value": "10,264백만USD"
       },
       {
-        "name": "TSM",
+        "name": "TSMC (TSM)",
+        "sector": "반도체(파운드리)",
+        "cap": "$2.1T",
         "change": -2.32,
         "value": "10,159백만USD"
       },
       {
-        "name": "SKHY",
+        "name": "SK하이닉스 ADR (SKHY)",
+        "sector": "반도체(메모리·HBM)",
+        "cap": "$1.1T",
         "change": -13.69,
         "value": "8,144백만USD"
       },
       {
-        "name": "SPCX",
+        "name": "스페이스X 관련 (SPCX)",
+        "sector": "우주항공",
+        "cap": "$1.7T",
         "change": -3.08,
         "value": "7,081백만USD"
       },
       {
-        "name": "ORCL",
+        "name": "오라클 (ORCL)",
+        "sector": "소프트웨어(클라우드)",
+        "cap": "$358B",
         "change": -6.25,
         "value": "6,747백만USD"
       },
       {
-        "name": "MRVL",
+        "name": "마벨테크 (MRVL)",
+        "sector": "반도체(데이터센터)",
+        "cap": "$169B",
         "change": -8.71,
         "value": "6,508백만USD"
       },
       {
-        "name": "IBM",
+        "name": "IBM (IBM)",
+        "sector": "IT서비스",
+        "cap": "$206B",
         "change": 3.72,
         "value": "4,887백만USD"
       },
       {
-        "name": "NFLX",
+        "name": "넷플릭스 (NFLX)",
+        "sector": "미디어",
+        "cap": "$313B",
         "change": 0.91,
         "value": "4,801백만USD"
       },
       {
-        "name": "PLTR",
+        "name": "팔란티어 (PLTR)",
+        "sector": "AI소프트웨어",
+        "cap": "$322B",
         "change": 0.51,
         "value": "3,841백만USD"
       },
       {
-        "name": "BE",
+        "name": "블룸에너지 (BE)",
+        "sector": "에너지(연료전지)",
+        "cap": "$59B",
         "change": -13.64,
         "value": "3,349백만USD"
       },
       {
-        "name": "KLAC",
+        "name": "KLA (KLAC)",
+        "sector": "반도체장비",
+        "cap": "$287B",
         "change": -2.29,
         "value": "3,236백만USD"
       },
       {
-        "name": "AAL",
+        "name": "아메리칸항공 (AAL)",
+        "sector": "항공",
+        "cap": "$10B",
         "change": -0.19,
         "value": "2,973백만USD"
       },
       {
-        "name": "HOOD",
+        "name": "로빈후드 (HOOD)",
+        "sector": "핀테크(증권)",
+        "cap": "$95B",
         "change": -8.24,
         "value": "2,958백만USD"
       },
       {
-        "name": "ASTS",
+        "name": "AST스페이스모바일 (ASTS)",
+        "sector": "우주(위성통신)",
+        "cap": "$21B",
         "change": -17.04,
         "value": "2,900백만USD"
       },
       {
-        "name": "GLW",
+        "name": "코닝 (GLW)",
+        "sector": "소재(유리·광학)",
+        "cap": "$136B",
         "change": -9.19,
         "value": "2,784백만USD"
       },
       {
-        "name": "ABT",
+        "name": "애보트 (ABT)",
+        "sector": "헬스케어(의료기기)",
+        "cap": "$172B",
         "change": 10.71,
         "value": "2,753백만USD"
       },
       {
-        "name": "CSCO",
+        "name": "시스코 (CSCO)",
+        "sector": "네트워크",
+        "cap": "$432B",
         "change": -1.89,
         "value": "2,703백만USD"
       },
       {
-        "name": "NU",
+        "name": "누홀딩스(누뱅크) (NU)",
+        "sector": "핀테크(중남미)",
+        "cap": "$67B",
         "change": -0.65,
         "value": "2,433백만USD"
       },
       {
-        "name": "BAC",
+        "name": "뱅크오브아메리카 (BAC)",
+        "sector": "은행",
+        "cap": "$436B",
         "change": -0.16,
         "value": "2,296백만USD"
       },
       {
-        "name": "RKLB",
+        "name": "로켓랩 (RKLB)",
+        "sector": "우주(발사체)",
+        "cap": "$42B",
         "change": -11.61,
         "value": "2,060백만USD"
       },
       {
-        "name": "NOW",
+        "name": "서비스나우 (NOW)",
+        "sector": "소프트웨어(기업용)",
+        "cap": "$107B",
         "change": -0.69,
         "value": "1,911백만USD"
       },
       {
-        "name": "PYPL",
+        "name": "페이팔 (PYPL)",
+        "sector": "핀테크(결제)",
+        "cap": "$50B",
         "change": 2.18,
         "value": "1,882백만USD"
       },
       {
-        "name": "CRWV",
+        "name": "코어위브 (CRWV)",
+        "sector": "AI클라우드(GPU)",
+        "cap": "$40B",
         "change": -5.46,
         "value": "1,809백만USD"
       }

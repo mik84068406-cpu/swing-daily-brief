@@ -62,6 +62,7 @@
   .trow{display:grid;grid-template-columns:28px 1fr 90px 110px;gap:6px;padding:5px 4px;font-size:13px;border-top:1px solid var(--line);align-items:center}
   .trow.thead{color:var(--sub);font-size:11px;border-top:none}
   .trank{color:var(--sub)} .tchg{text-align:right} .tval{text-align:right;color:var(--sub)}
+  .tsub{font-size:11px;color:var(--sub);margin-top:1px}
   .myview{background:var(--card);border:1px dashed var(--accent);border-radius:12px;padding:14px 16px;color:var(--sub);font-size:14px}
   .myview b{color:var(--tx)}
   footer{margin-top:34px;color:var(--sub);font-size:12px;text-align:center;border-top:1px solid var(--line);padding-top:16px}
@@ -103,7 +104,8 @@ function render(d){
   const av = d.aiview && d.aiview.trim();
   const ic = d.indicomment && d.indicomment.trim();
   const topRow = (t,i)=>{const c=+t.change;const cls=c>0?'up':c<0?'down':'flat';const ar=c>0?'▲':c<0?'▼':'—';
-    return `<div class="trow"><span class="trank">${i+1}</span><span class="tname">${esc(t.name)}</span><span class="tchg ${cls}">${ar} ${Math.abs(c).toFixed(2)}%</span><span class="tval">${esc(t.value)}</span></div>`;};
+    const sub=(t.sector||t.cap)?`<div class="tsub">${esc(t.sector||'')}${t.sector&&t.cap?' · ':''}${t.cap?esc('시총 '+t.cap):''}</div>`:'';
+    return `<div class="trow"><span class="trank">${i+1}</span><span class="tname">${esc(t.name)}${sub}</span><span class="tchg ${cls}">${ar} ${Math.abs(c).toFixed(2)}%</span><span class="tval">${esc(t.value)}</span></div>`;};
   const topList = m => (d.top&&d.top[m]||[]).map(topRow).join('');
   const topSec = (d.top&&(d.top.kr||[]).length) ? `
    <section><h2>💰 거래대금 TOP${(d.top.kr||[]).length} (개별기업 · ETF 제외)</h2>
