@@ -65,6 +65,8 @@
   .tsub{font-size:11px;color:var(--sub);margin-top:1px}
   .tname a{color:inherit;text-decoration:none;border-bottom:1px dashed var(--sub)}
   .tname a:hover,.tname a:active{opacity:.75}
+  .trap a{color:inherit;text-decoration:none;border-bottom:1px dashed var(--sub)}
+  .trap a:hover,.trap a:active{opacity:.75}
   .myview{background:var(--card);border:1px dashed var(--accent);border-radius:12px;padding:14px 16px;color:var(--sub);font-size:14px}
   .myview b{color:var(--tx)}
   footer{margin-top:34px;color:var(--sub);font-size:12px;text-align:center;border-top:1px solid var(--line);padding-top:16px}
@@ -110,6 +112,10 @@ function render(d){
     const nm=t.tv?`<a href="${t.tv}" target="_blank" rel="noopener">${esc(t.name)} 📈</a>`:esc(t.name);
     return `<div class="trow"><span class="trank">${i+1}</span><span class="tname">${nm}${sub}</span><span class="tchg ${cls}">${ar} ${Math.abs(c).toFixed(2)}%</span><span class="tval">${esc(t.value)}</span></div>`;};
   const topList = m => (d.top&&d.top[m]||[]).map(topRow).join('');
+  const trapSec = d.trap ? `
+   <section><h2>🪤 오늘 봐야 될 차트</h2><div class="myview trap" style="border-style:solid">${
+     d.trap.length ? d.trap.map(t=>`<div style="margin:3px 0">${t.tv?`<a href="${t.tv}" target="_blank" rel="noopener"><b>${esc(t.name)}</b> 📈</a>`:`<b>${esc(t.name)}</b>`} <span style="color:var(--sub)">(${esc(t.market)} ${esc(t.sector)})</span> — ${esc(t.verdict)}${t.detail?`<div class="tsub">${esc(t.detail)}</div>`:''}</div>`).join('')
+     : '오늘 자리 온 차트 없음 — 대기'}</div></section>`:'';
   const topSec = (d.top&&(d.top.kr||[]).length) ? `
    <section><h2>💰 거래대금 TOP${(d.top.kr||[]).length} (개별기업 · ETF 제외)</h2>
      <details class="topbox"><summary>🇰🇷 한국 — 눌러서 펼치기</summary><div class="tlist"><div class="trow thead"><span class="trank">#</span><span class="tname">종목</span><span class="tchg">등락</span><span class="tval">거래대금</span></div>${topList('kr')}</div></details>
@@ -125,6 +131,7 @@ function render(d){
    <section><h2>💰 돈이 어디로 (오늘 주도 섹터)</h2>
      <div class="mkt"><div class="flag">🇰🇷 한국</div><div class="chips">${flowChips('kr')}</div></div>
      <div class="mkt"><div class="flag">🇺🇸 미국</div><div class="chips">${flowChips('us')}</div></div></section>
+   ${trapSec}
    ${topSec}
    <section><h2>🏷️ 오늘의 기업 공부</h2>
      <div class="mkt"><div class="flag">🇰🇷 한국</div>${study('kr')}</div>

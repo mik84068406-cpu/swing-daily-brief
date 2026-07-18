@@ -697,5 +697,15 @@
         "tv": "https://kr.tradingview.com/chart/?symbol=ASTS"
       }
     ]
-  }
+  },
+  "trap": [
+    {
+      "market": "미국",
+      "sector": "반도체",
+      "name": "마이크론(MU)",
+      "verdict": "🪤🪤 겹침 자리! 60일선+전저점 860$ (2근거) — 매물대 확인하고 멈춤 기다려",
+      "detail": "20선 -17.0% · 60선 -2.0% · 200선 위(상승 조수)",
+      "tv": "https://kr.tradingview.com/chart/?symbol=MU"
+    }
+  ]
 }
