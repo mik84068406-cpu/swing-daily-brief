@@ -219,210 +219,240 @@
         "sector": "반도체(메모리·HBM)",
         "cap": "1,313조",
         "change": -11.53,
-        "value": "102,612억원"
+        "value": "102,612억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A000660"
       },
       {
         "name": "삼성전자",
         "sector": "반도체(메모리)",
         "cap": "1,491조",
         "change": -8.77,
-        "value": "68,384억원"
+        "value": "68,384억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A005930"
       },
       {
         "name": "삼성전자우",
         "sector": "반도체(우선주)",
         "cap": "138조",
         "change": -10.42,
-        "value": "7,798억원"
+        "value": "7,798억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A005935"
       },
       {
         "name": "원익IPS",
         "sector": "반도체장비",
         "cap": "7조",
         "change": -1.4,
-        "value": "2,469억원"
+        "value": "2,469억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A240810"
       },
       {
         "name": "한화오션",
         "sector": "조선",
         "cap": "27조",
         "change": 5.73,
-        "value": "2,343억원"
+        "value": "2,343억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A042660"
       },
       {
         "name": "주성엔지니어링",
         "sector": "반도체장비",
         "cap": "9조",
         "change": -10.31,
-        "value": "2,222억원"
+        "value": "2,222억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A036930"
       },
       {
         "name": "SK이터닉스",
         "sector": "에너지(신재생)",
         "cap": "2조",
         "change": -2.44,
-        "value": "2,205억원"
+        "value": "2,205억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150"
       },
       {
         "name": "현대약품",
         "sector": "제약(중소)",
         "cap": "2,432억",
         "change": 13.26,
-        "value": "1,853억원"
+        "value": "1,853억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A004310"
       },
       {
         "name": "두산에너빌리티",
         "sector": "원전·발전설비",
         "cap": "45조",
         "change": -4.52,
-        "value": "1,773억원"
+        "value": "1,773억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A034020"
       },
       {
         "name": "HLB",
         "sector": "바이오",
         "cap": "5조",
         "change": 1.73,
-        "value": "1,301억원"
+        "value": "1,301억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A028300"
       },
       {
         "name": "제주반도체",
         "sector": "반도체(메모리설계)",
         "cap": "3조",
         "change": -8.08,
-        "value": "1,235억원"
+        "value": "1,235억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A080220"
       },
       {
         "name": "삼성공조",
         "sector": "자동차부품",
         "cap": "1,104억",
         "change": 17.07,
-        "value": "1,067억원"
+        "value": "1,067억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A006660"
       },
       {
         "name": "한화솔루션",
         "sector": "태양광·화학",
         "cap": "5조",
         "change": -10.39,
-        "value": "1,063억원"
+        "value": "1,063억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A009830"
       },
       {
         "name": "모나미",
         "sector": "문구",
         "cap": "705억",
         "change": 8.27,
-        "value": "1,037억원"
+        "value": "1,037억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A005360"
       },
       {
         "name": "코오롱티슈진",
         "sector": "바이오",
         "cap": "5조",
         "change": -20.28,
-        "value": "1,007억원"
+        "value": "1,007억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A950160"
       },
       {
         "name": "기가레인",
         "sector": "반도체장비·RF",
         "cap": "958억",
         "change": -3.75,
-        "value": "964억원"
+        "value": "964억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A049080"
       },
       {
         "name": "카카오",
         "sector": "플랫폼(메신저)",
         "cap": "16조",
         "change": 2.87,
-        "value": "945억원"
+        "value": "945억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A035720"
       },
       {
         "name": "파세코",
         "sector": "가전(중소)",
         "cap": "1,606억",
         "change": 0.25,
-        "value": "932억원"
+        "value": "932억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A037070"
       },
       {
         "name": "케이뱅크",
         "sector": "은행(인터넷)",
         "cap": "3조",
         "change": 11.13,
-        "value": "886억원"
+        "value": "886억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A279570"
       },
       {
         "name": "JW신약",
         "sector": "제약(중소)",
         "cap": "1,104억",
         "change": 5.35,
-        "value": "875억원"
+        "value": "875억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A067290"
       },
       {
         "name": "삼성중공업",
         "sector": "조선",
         "cap": "20조",
         "change": 2.06,
-        "value": "825억원"
+        "value": "825억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A010140"
       },
       {
         "name": "HPSP",
         "sector": "반도체장비",
         "cap": "3조",
         "change": -8.99,
-        "value": "803억원"
+        "value": "803억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A403870"
       },
       {
         "name": "씨피시스템",
         "sector": "케이블보호장치(반도체·2차전지용)",
         "cap": "1,224억",
         "change": 12.37,
-        "value": "761억원"
+        "value": "761억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A413630"
       },
       {
         "name": "금호건설",
         "sector": "건설",
         "cap": "4,061억",
         "change": -18.54,
-        "value": "759억원"
+        "value": "759억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A002990"
       },
       {
         "name": "디앤디파마텍",
         "sector": "바이오(신약)",
         "cap": "3조",
         "change": -9.61,
-        "value": "739억원"
+        "value": "739억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A347850"
       },
       {
         "name": "동화약품",
         "sector": "제약",
         "cap": "1,603억",
         "change": -4.49,
-        "value": "659억원"
+        "value": "659억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A000020"
       },
       {
         "name": "대한항공",
         "sector": "항공",
         "cap": "10조",
         "change": -0.56,
-        "value": "650억원"
+        "value": "650억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A003490"
       },
       {
         "name": "빛과전자",
         "sector": "광통신부품",
         "cap": "2,919억",
         "change": -8.32,
-        "value": "634억원"
+        "value": "634억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A069540"
       },
       {
         "name": "에코프로",
         "sector": "2차전지(지주)",
         "cap": "11조",
         "change": -7.41,
-        "value": "630억원"
+        "value": "630억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A086520"
       },
       {
         "name": "우리금융지주",
         "sector": "은행(지주)",
         "cap": "23조",
         "change": 0.64,
-        "value": "624억원"
+        "value": "624억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A316140"
       }
     ],
     "us": [
@@ -431,210 +461,240 @@
         "sector": "반도체(메모리)",
         "cap": "$959B",
         "change": -0.5,
-        "value": "53,318백만USD"
+        "value": "53,318백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=MU"
       },
       {
         "name": "엔비디아 (NVDA)",
         "sector": "반도체(AI)",
         "cap": "$4.9T",
         "change": -2.21,
-        "value": "28,031백만USD"
+        "value": "28,031백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=NVDA"
       },
       {
         "name": "샌디스크 (SNDK)",
         "sector": "반도체(메모리)",
         "cap": "$201B",
         "change": -3.99,
-        "value": "26,590백만USD"
+        "value": "26,590백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=SNDK"
       },
       {
         "name": "애플 (AAPL)",
         "sector": "빅테크(하드웨어)",
         "cap": "$4.9T",
         "change": 0.14,
-        "value": "21,134백만USD"
+        "value": "21,134백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=AAPL"
       },
       {
         "name": "AMD (AMD)",
         "sector": "반도체",
         "cap": "$808B",
         "change": -1.03,
-        "value": "14,950백만USD"
+        "value": "14,950백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMD"
       },
       {
         "name": "메타 (META)",
         "sector": "빅테크(SNS·AI)",
         "cap": "$1.6T",
         "change": -2.79,
-        "value": "13,544백만USD"
+        "value": "13,544백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=META"
       },
       {
         "name": "마이크로소프트 (MSFT)",
         "sector": "빅테크(클라우드·AI)",
         "cap": "$2.9T",
         "change": -1.82,
-        "value": "12,991백만USD"
+        "value": "12,991백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=MSFT"
       },
       {
         "name": "인텔 (INTC)",
         "sector": "반도체",
         "cap": "$478B",
         "change": -2.0,
-        "value": "11,415백만USD"
+        "value": "11,415백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=INTC"
       },
       {
         "name": "테슬라 (TSLA)",
         "sector": "전기차",
         "cap": "$1.4T",
         "change": -2.61,
-        "value": "11,409백만USD"
+        "value": "11,409백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=TSLA"
       },
       {
         "name": "SK하이닉스 ADR (SKHY)",
         "sector": "반도체(메모리·HBM)",
         "cap": "$1.1T",
         "change": 1.13,
-        "value": "11,089백만USD"
+        "value": "11,089백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=SKHY"
       },
       {
         "name": "알파벳(구글) (GOOGL)",
         "sector": "빅테크(광고·AI)",
         "cap": "$4.2T",
         "change": -2.17,
-        "value": "10,352백만USD"
+        "value": "10,352백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=GOOGL"
       },
       {
         "name": "스페이스X 관련 (SPCX)",
         "sector": "우주항공",
         "cap": "$1.6T",
         "change": -5.43,
-        "value": "10,320백만USD"
+        "value": "10,320백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=SPCX"
       },
       {
         "name": "아마존 (AMZN)",
         "sector": "빅테크(커머스·클라우드)",
         "cap": "$2.7T",
         "change": -1.06,
-        "value": "9,908백만USD"
+        "value": "9,908백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMZN"
       },
       {
         "name": "넷플릭스 (NFLX)",
         "sector": "미디어",
         "cap": "$290B",
         "change": -7.26,
-        "value": "9,738백만USD"
+        "value": "9,738백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=NFLX"
       },
       {
         "name": "브로드컴 (AVGO)",
         "sector": "반도체(AI)",
         "cap": "$1.8T",
         "change": -0.97,
-        "value": "8,460백만USD"
+        "value": "8,460백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=AVGO"
       },
       {
         "name": "TSMC (TSM)",
         "sector": "반도체(파운드리)",
         "cap": "$2.1T",
         "change": -2.77,
-        "value": "8,313백만USD"
+        "value": "8,313백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=TSM"
       },
       {
         "name": "알파벳(구글) (GOOG)",
         "sector": "빅테크(광고·AI)",
         "cap": "$4.2T",
         "change": -2.17,
-        "value": "7,506백만USD"
+        "value": "7,506백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=GOOG"
       },
       {
         "name": "마벨테크 (MRVL)",
         "sector": "반도체(데이터센터)",
         "cap": "$169B",
         "change": 0.2,
-        "value": "5,574백만USD"
+        "value": "5,574백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=MRVL"
       },
       {
         "name": "네비우스 (NBIS)",
         "sector": "AI클라우드(데이터센터)",
         "cap": "$45B",
         "change": 3.46,
-        "value": "4,409백만USD"
+        "value": "4,409백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=NBIS"
       },
       {
         "name": "오라클 (ORCL)",
         "sector": "소프트웨어(클라우드)",
         "cap": "$364B",
         "change": 1.77,
-        "value": "4,246백만USD"
+        "value": "4,246백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=ORCL"
       },
       {
         "name": "팔란티어 (PLTR)",
         "sector": "AI소프트웨어",
         "cap": "$317B",
         "change": -1.53,
-        "value": "4,179백만USD"
+        "value": "4,179백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=PLTR"
       },
       {
         "name": "시스코 (CSCO)",
         "sector": "네트워크",
         "cap": "$441B",
         "change": 2.08,
-        "value": "3,183백만USD"
+        "value": "3,183백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=CSCO"
       },
       {
         "name": "로빈후드 (HOOD)",
         "sector": "핀테크(증권)",
         "cap": "$90B",
         "change": -5.72,
-        "value": "2,698백만USD"
+        "value": "2,698백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=HOOD"
       },
       {
         "name": "코카콜라 (KO)",
         "sector": "필수소비재",
         "cap": "$351B",
         "change": -3.96,
-        "value": "2,681백만USD"
+        "value": "2,681백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KO"
       },
       {
         "name": "아메리칸항공 (AAL)",
         "sector": "항공",
         "cap": "$10B",
         "change": -3.97,
-        "value": "2,647백만USD"
+        "value": "2,647백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=AAL"
       },
       {
         "name": "월마트 (WMT)",
         "sector": "리테일(필수소비)",
         "cap": "$909B",
         "change": -0.62,
-        "value": "2,606백만USD"
+        "value": "2,606백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=WMT"
       },
       {
         "name": "코어위브 (CRWV)",
         "sector": "AI클라우드(GPU)",
         "cap": "$40B",
         "change": 0.41,
-        "value": "2,588백만USD"
+        "value": "2,588백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=CRWV"
       },
       {
         "name": "뱅크오브아메리카 (BAC)",
         "sector": "은행",
         "cap": "$435B",
         "change": -0.36,
-        "value": "2,233백만USD"
+        "value": "2,233백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=BAC"
       },
       {
         "name": "웰스파고 (WFC)",
         "sector": "은행",
         "cap": "$268B",
         "change": -0.64,
-        "value": "1,990백만USD"
+        "value": "1,990백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=WFC"
       },
       {
         "name": "AST스페이스모바일 (ASTS)",
         "sector": "우주(위성통신)",
         "cap": "$22B",
         "change": 5.07,
-        "value": "1,740백만USD"
+        "value": "1,740백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=ASTS"
       }
     ]
   }
