@@ -48,6 +48,8 @@
   .tag.구조{color:#ffb454;border-color:#ffb45455} .tag.일회성{color:var(--sub)}
   .hl .body{padding:0 14px 12px;font-size:13.5px;color:var(--sub);line-height:1.65;border-top:1px solid var(--line);padding-top:10px}
   .hl .why{color:var(--tx);margin-top:6px} .hl .why b{color:var(--accent)}
+  .mgrp{font-size:13px;font-weight:700;color:var(--sub);margin:16px 0 7px;padding-bottom:5px;border-bottom:1px solid var(--line)}
+  .mgrp:first-of-type{margin-top:0}
   .chips{display:flex;flex-wrap:wrap;gap:8px}
   .chip{background:var(--card2);border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:13px;font-weight:600}
   .chip b{color:var(--accent)}
@@ -125,8 +127,12 @@ function render(d){
   const topList = m => (d.top&&d.top[m]||[]).map(topRow).join('');
   const FG={kr:'🇰🇷',us:'🇺🇸',macro:'🌍'};
   const hlRow = n => `<details class="hl"><summary><span class="fg">${FG[n.market]||'📰'}</span><span class="ttl">${esc(n.title)}</span>${n.type?`<span class="tag ${esc(n.type)}">${esc(n.type)}</span>`:''}</summary><div class="body">${esc(n.summary).replace(/\n/g,'<br>')}${n.why?`<div class="why"><b>왜 중요</b> — ${esc(n.why)}</div>`:''}${n.tickers&&n.tickers.length?`<div class="why"><b>관련</b> — ${esc(n.tickers.join(', '))}</div>`:''}</div></details>`;
+  const MKT=[['us','🇺🇸 미국'],['macro','🌍 거시'],['kr','🇰🇷 한국']];
   const newsSec = (d.headlines&&d.headlines.length)
-    ? `<section class="news"><h2>📰 오늘 무슨 일 — 제목 눌러서 펼치기</h2>${d.headlines.map(hlRow).join('')}</section>`
+    ? `<section class="news"><h2>📰 오늘 무슨 일 — 제목 눌러서 펼치기</h2>${
+        MKT.map(([k,lab])=>{const rows=d.headlines.filter(n=>n.market===k);
+          return rows.length?`<div class="mgrp">${lab}</div>${rows.map(hlRow).join('')}`:'';}).join('')
+      }</section>`
     : `<section class="news"><h2>📰 오늘 무슨 일</h2>
      <div class="c"><div class="lab">🇺🇸 미국</div>${esc(d.news.us)}</div>
      <div class="c"><div class="lab">🇰🇷 한국</div>${esc(d.news.kr)}</div>
