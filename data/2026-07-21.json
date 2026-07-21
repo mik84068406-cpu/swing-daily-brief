@@ -1,19 +1,19 @@
 {
   "date": "2026-07-21",
   "weekday": "화",
-  "headline": "간밤 미국 반도체는 진정(SOX +0.6%)됐지만, 2거래일 연속 사이드카 발동한 코스피(-4.46%)·코스닥(-5.33%)의 전일 낙폭이 오늘 개장서 진정될지가 관건",
+  "headline": "코스피 +3.56%(6,747.95) V자 반등 — 반도체 수출 호조·기관 매수에 전일 급락분 대부분 되돌림, 코스닥도 장중 낙폭 딛고 강보합",
   "indicators": [
     {
       "name": "코스피",
-      "value": "6,516.27",
-      "change": "-4.46%",
-      "dir": "down"
+      "value": "6,747.95",
+      "change": "+3.56%",
+      "dir": "up"
     },
     {
       "name": "코스닥",
-      "value": "749.64",
-      "change": "-5.33%",
-      "dir": "down"
+      "value": "753.34",
+      "change": "+0.49%",
+      "dir": "up"
     },
     {
       "name": "나스닥",
@@ -36,32 +36,32 @@
     {
       "name": "탐욕지수(F&G)",
       "value": "38 (공포)",
-      "change": "+1p",
-      "dir": "up"
+      "change": "+0p",
+      "dir": "flat"
     },
     {
       "name": "달러/원",
-      "value": "1,475.4원",
-      "change": "-0.81%",
+      "value": "1,474.6원",
+      "change": "-0.86%",
       "dir": "down"
     },
     {
       "name": "달러인덱스",
-      "value": "100.99",
-      "change": "+0.24%",
-      "dir": "up"
+      "value": "100.90",
+      "change": "-0.09%",
+      "dir": "down"
     },
     {
       "name": "WTI유가",
-      "value": "$82.42",
-      "change": "-0.08%",
+      "value": "$82.10",
+      "change": "-1.36%",
       "dir": "down"
     },
     {
       "name": "금",
-      "value": "$4,012",
-      "change": "-0.02%",
-      "dir": "down"
+      "value": "$4,085",
+      "change": "+1.86%",
+      "dir": "up"
     },
     {
       "name": "미 10년물",
@@ -71,15 +71,15 @@
     },
     {
       "name": "비트코인",
-      "value": "$65,120",
-      "change": "+0.66%",
+      "value": "$65,864",
+      "change": "+0.97%",
       "dir": "up"
     }
   ],
-  "indicomment": "코스피는 전일 -4%대로 무너졌는데 정작 VIX는 오히려 내리고 원화도 강세야 — 글로벌 패닉이 아니라 한국 반도체·수급에 국한된 흔들림이었다는 신호로 보여.",
+  "indicomment": "어제 -4.46% 급락분을 오늘 +3.56%로 거의 되돌렸는데, 기관이 1.4조 사들이는 동안 개인은 1.66조를 팔았어 — 패닉셀이 낙폭과대 인식으로 뒤집힌 손바뀜 장으로 보여.",
   "news": {
     "us": "간밤 나스닥은 -0.05%로 보합, 필라델피아반도체지수(SOX)는 오히려 +0.60% 반등 — 지난주 후반 조정 이후 미국 반도체는 일단 진정된 모습.",
-    "kr": "전일(7/20, 월) 코스피는 6,516.27(-4.46%), 코스닥은 749.64(-5.33%)로 마감하며 2거래일 연속 사이드카(매도 서킷브레이커)가 발동됐다(국내 시장은 오늘 오전 9시 개장 전). 전일 장중엔 외국인·기관이 한때 순매수로 전환했다는 보도가 있었으나 최종 마감 기준 수급 규모는 확인 필요.",
+    "kr": "오늘(7/21, 화) 코스피는 6,747.95(+3.56%)로 V자 반등 마감, 코스닥도 장중 2%대 하락을 딛고 753.34(+0.49%) 강보합 전환했다. 반도체 수출 호조와 미국-이란 중재 기대감에 삼성전자·SK하이닉스가 지수를 견인. 수급은 기관 순매수 1조3901억원, 외국인 순매수 2950억원, 개인 순매도 1조6574억원.",
     "macro": "미국-이란 지정학 긴장 고조가 이어지는 가운데, 국내는 7월16일 한은이 3년6개월 만에 기준금리를 2.75%로 인상한 이후 긴축 기조가 유지되는 중."
   },
   "flow": {
@@ -143,56 +143,87 @@
     "kr": {
       "in": [
         {
-          "sector": "에너지",
-          "change": 7.5,
-          "n": 1,
-          "leader": "SK이터닉스 +7.5",
-          "note": "5일 +24% 급등 상태 — 추격 금지 구간(덫스캔 경고)"
+          "sector": "반도체",
+          "change": 4.91,
+          "n": 5,
+          "leader": "SK하이닉스 +4.1 · 삼성전자 +6.2 · 삼성전자우 +7.0 · 제주반도체 +0.4 · 하나마이크론 +0.9",
+          "note": "코스피 시총 절반이 여기 — 갈아탈 곳이 없어 지수 전체가 눌림"
         },
         {
-          "sector": "제약",
-          "change": 7.14,
-          "n": 2,
-          "leader": "JW신약 +2.5 · 삼익제약 +12.4",
+          "sector": "원전·발전설비",
+          "change": 3.09,
+          "n": 1,
+          "leader": "두산에너빌리티 +3.1",
           "note": ""
         },
         {
-          "sector": "반도체장비·RF",
-          "change": 15.06,
+          "sector": "전선",
+          "change": 8.23,
           "n": 1,
-          "leader": "기가레인 +15.1",
+          "leader": "대원전선 +8.2",
           "note": ""
         }
       ],
       "out": [
         {
-          "sector": "반도체",
-          "change": -4.08,
-          "n": 6,
-          "leader": "SK하이닉스 -4.2 · 삼성전자 -4.3 · 삼성전자우 -1.6 · 하나마이크론 +2.5 · 제주반도체 -4.8",
-          "note": "코스피 시총 절반이 여기 — 갈아탈 곳이 없어 지수 전체가 눌림"
+          "sector": "제약",
+          "change": -15.48,
+          "n": 3,
+          "leader": "삼천당제약 -29.8 · 현대약품 +9.8 · JW신약 +6.2",
+          "note": ""
         },
         {
+          "sector": "바이오",
+          "change": -5.13,
+          "n": 1,
+          "leader": "디앤디파마텍 -5.1",
+          "note": "소수 종목만 튀는 개별 테마 — 섹터 전체 강세는 아님"
+        }
+      ],
+      "mixed": [
+        {
           "sector": "반도체장비",
-          "change": -12.19,
-          "n": 5,
-          "leader": "원익IPS -18.2 · 주성엔지니어링 -10.6 · 피에스케이 -12.6 · HPSP -7.1 · 테크윙 -1.3",
+          "change": 0.42,
+          "n": 3,
+          "leader": "주성엔지니어링 +0.8 · 원익IPS +0.9 · HPSP -1.0",
           "note": "대장주(-4%)보다 훨씬 크게 맞음 — 약한 고리부터 무너지는 패턴"
         },
         {
-          "sector": "조선",
-          "change": -4.51,
-          "n": 2,
-          "leader": "한화오션 -4.0 · 삼성중공업 -6.0",
-          "note": ""
+          "sector": "에너지",
+          "change": 0.0,
+          "n": 1,
+          "leader": "SK이터닉스 +0.0",
+          "note": "5일 +24% 급등 상태 — 추격 금지 구간(덫스캔 경고)"
         }
-      ],
-      "mixed": []
+      ]
     }
   },
   "myview": "[어제(7/20) 예측 채점 → 빗나감]\n나: 한국 약세가 미국으로 전이될 것 → 결과: SOX +0.6%로 진정. 틀렸다.\n배운 것: 어제 하락은 미국발이 아니라 한국 자체 이슈(키옥시아 패닉·사이드카 2거래일)였다. 인과 방향을 반대로 봤다.\n\n[오늘(7/21) 새 예측]\n1) 미국이 안 빠진 건 아직 실적 발표 전이라 판단을 유보 중이기 때문이다.\n2) 그래서 오늘 한국은 반등할 수 있다(미국이 안 빠졌으니 따라 내려갈 명분이 준다).\n3) 하지만 실적이 다 나오면 결국 떨어진다. 실적은 무조건 좋게 나올 것이다. 삼성전자가 사상 최대 실적에도 떨어졌듯이, 다른 데도 좋게 나와도 떨어질 것이다.\n▶ 핵심 명제: \"좋은 실적이 더 이상 주가를 올리지 못한다\"\n\n[채점 기준 · 미리 못 박음]\n· 내가 맞음 = 실적 좋게 나왔는데도 주가 하락 → \"좋아도 못 오른다\" 확정\n· 반대(빈센트 뷰)가 맞음 = 실적 발표로 불확실성이 해소되며 반등 시작 (헌법 제2조 해소 랠리)\n· 둘 다 아님 = 실적이 실제로 나쁘게 나옴 (그럼 새 게임)\n▶ 확인 시점: 이번 주 미국 빅테크 실적 + SK하이닉스 실적\n\n[오늘 실전 메모]\n어제 코스피 -4.46% = 급락일 → 헌법상 오늘 신규진입 금지. 반등이 와도 못 산다. 오늘 반등이 진짜 바닥인지 죽은 고양이 반등인지는 하루 지나야 보인다. 규칙이 그 하루를 벌어준다.",
-  "aiview": "전일 코스피·코스닥이 2거래일 연속 사이드카를 발동시킨 급락 국면이었는데, 간밤 미국 반도체(SOX +0.6%)는 오히려 반등해 디커플링이 나타났다 — 이건 글로벌 위험회피라기보다 국내 반도체 소부장 수급·밸류에이션 부담이 자체적으로 터진 성격이 강했다는 뜻으로 읽힌다. 오늘 오전 개장에서 이 흐름이 진정되는지, 아니면 3거래일 연속으로 이어지는지가 핵심 관전 포인트. 리스크는 미국-이란 갈등이 유가·안전자산 쪽으로 재확산되는 경우이고, 확인 포인트는 ①오늘 개장 후 코스피·코스닥 낙폭이 멈추는지 ②전일 마감 기준 외국인·기관 수급이 실제 순매수였는지다.",
+  "aiview": "코스피가 이틀 연속 사이드카까지 갔던 급락분을 하루 만에 +3.56%로 대부분 되돌렸는데, 기관이 1.4조를 사들이는 동안 개인은 1.66조를 팔았다 — 패닉이 낙폭과대 인식으로 뒤집힌 반발 매수 성격이 강하다. 리스크는 개인 매도가 지속되며 오늘이 단순 데드캣 반등에 그치는 경우, 그리고 이번 주 미국 빅테크 실적(캐펙스 가이던스)에서 반도체 수요 둔화가 확인되면 다시 흔들릴 수 있다는 점이다. 내일 확인 포인트는 ①오늘 반등이 2거래일 연속으로 이어지는지(바닥 신호 강화) ②외국인·기관 순매수가 하루짜리인지 이어지는지다.",
   "headlines": [
+    {
+      "market": "kr",
+      "type": "일회성",
+      "title": "코스피 V자 반등, 반도체 수출 호조+기관 매수",
+      "summary": "코스피가 전 거래일 대비 231.68포인트(+3.56%) 오른 6,747.95에 마감. 코스닥도 장중 2%대 하락에서 강보합(+0.49%, 753.34)으로 전환. 7월 반도체 수출 호조와 미국-이란 중재 기대감에 삼성전자·SK하이닉스가 지수를 견인. 수급은 기관 순매수 1조3901억원, 외국인 순매수 2950억원, 개인 순매도 1조6574억원.",
+      "why": "이틀 연속 사이드카까지 갔던 급락분을 하루 만에 대부분 되돌렸다는 건 낙폭과대 인식이 강했다는 뜻. 다만 개인이 대거 팔고 기관이 받은 손바뀜이라 추세 전환인지는 하루 더 봐야 함.",
+      "tickers": [
+        "코스피",
+        "코스닥",
+        "삼성전자",
+        "SK하이닉스"
+      ],
+      "sources": [
+        {
+          "name": "아주경제",
+          "url": "https://www.ajunews.com/view/20260721154618795"
+        },
+        {
+          "name": "파이낸셜뉴스",
+          "url": "https://www.fnnews.com/news/202607211402110264"
+        }
+      ]
+    },
     {
       "market": "kr",
       "type": "구조",
@@ -400,27 +431,27 @@
         "name": "SK하이닉스",
         "sector": "반도체(메모리·HBM)",
         "desc": "메모리 반도체 2위, AI 서버용 HBM에서는 세계 1위",
-        "cap": "1257조",
-        "change": -4.23,
-        "value": "105,358억원",
+        "cap": "1309조",
+        "change": 4.08,
+        "value": "83,826억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A000660"
       },
       {
         "name": "삼성전자",
         "sector": "반도체(메모리)",
         "desc": "메모리 반도체 1위, 스마트폰·가전까지 하는 종합 전자",
-        "cap": "1426조",
-        "change": -4.31,
-        "value": "60,054억원",
+        "cap": "1514조",
+        "change": 6.15,
+        "value": "52,174억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A005930"
       },
       {
         "name": "삼성전자우",
         "sector": "반도체(우선주)",
         "desc": "삼성전자 우선주 — 의결권 없는 대신 배당이 조금 더 많음",
-        "cap": "136조",
-        "change": -1.63,
-        "value": "7,517억원",
+        "cap": "145조",
+        "change": 6.97,
+        "value": "5,506억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A005935"
       },
       {
@@ -428,243 +459,243 @@
         "sector": "에너지(신재생)",
         "desc": "태양광·풍력 발전소를 짓고 운영하는 신재생에너지 회사",
         "cap": "2조",
-        "change": 7.5,
-        "value": "4,140억원",
+        "change": 0.0,
+        "value": "4,133억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150"
       },
       {
-        "name": "원익IPS",
-        "sector": "반도체장비",
-        "desc": "반도체 만들 때 웨이퍼에 막을 입히는 증착장비 제조",
-        "cap": "6조",
-        "change": -18.19,
-        "value": "2,584억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A240810"
+        "name": "삼천당제약",
+        "sector": "제약",
+        "desc": "",
+        "cap": "4조",
+        "change": -29.79,
+        "value": "2,444억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A000250"
       },
       {
         "name": "주성엔지니어링",
         "sector": "반도체장비",
         "desc": "반도체·디스플레이 증착장비, 국내 장비사 중 기술력 상위",
         "cap": "8조",
-        "change": -10.64,
-        "value": "2,337억원",
+        "change": 0.77,
+        "value": "1,953억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A036930"
       },
       {
         "name": "두산에너빌리티",
         "sector": "원전·발전설비",
         "desc": "원자력·가스터빈 등 발전소 설비를 만드는 중공업 회사",
-        "cap": "42조",
-        "change": -7.03,
-        "value": "1,848억원",
+        "cap": "43조",
+        "change": 3.09,
+        "value": "1,707억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A034020"
       },
       {
-        "name": "한화오션",
-        "sector": "조선",
-        "desc": "옛 대우조선해양. LNG선·군함을 만드는 조선 3사 중 하나",
-        "cap": "25조",
-        "change": -4.04,
-        "value": "1,806억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A042660"
+        "name": "대원전선",
+        "sector": "전선",
+        "desc": "",
+        "cap": "9,284억",
+        "change": 8.23,
+        "value": "1,358억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A006340"
       },
       {
-        "name": "피에스케이",
-        "sector": "반도체장비(세정·디스컴)",
-        "desc": "반도체 웨이퍼 세정·불순물 제거 장비 제조",
-        "cap": "5조",
-        "change": -12.59,
-        "value": "1,441억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A319660"
-      },
-      {
-        "name": "한성기업",
-        "sector": "수산식품",
-        "desc": "참치캔·어묵 등을 만드는 수산물 가공 식품회사",
-        "cap": "632억",
-        "change": -29.96,
-        "value": "1,396억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A003680"
-      },
-      {
-        "name": "흥구석유",
-        "sector": "",
-        "desc": "대구·경북 지역 주유소에 기름을 공급하는 석유 유통업체",
-        "cap": "2,016억",
-        "change": 11.91,
-        "value": "1,252억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A024060"
-      },
-      {
-        "name": "하나마이크론",
-        "sector": "반도체(패키징·후공정)",
-        "desc": "반도체를 칩 형태로 포장하는 후공정(패키징) 전문",
-        "cap": "2조",
-        "change": 2.52,
-        "value": "1,124억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A067310"
-      },
-      {
-        "name": "HPSP",
+        "name": "원익IPS",
         "sector": "반도체장비",
-        "desc": "반도체 수율을 높이는 고압 수소 어닐링 장비, 세계 독점급",
-        "cap": "3조",
-        "change": -7.06,
-        "value": "874억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A403870"
+        "desc": "반도체 만들 때 웨이퍼에 막을 입히는 증착장비 제조",
+        "cap": "6조",
+        "change": 0.87,
+        "value": "1,337억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A240810"
+      },
+      {
+        "name": "흥아해운",
+        "sector": "",
+        "desc": "",
+        "cap": "4,496억",
+        "change": 2.69,
+        "value": "1,140억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A003280"
       },
       {
         "name": "제주반도체",
         "sector": "반도체(메모리설계)",
         "desc": "휴대폰·IoT에 들어가는 소용량 메모리를 설계하는 팹리스",
         "cap": "3조",
-        "change": -4.76,
-        "value": "828억원",
+        "change": 0.38,
+        "value": "1,053억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A080220"
       },
       {
-        "name": "JW신약",
+        "name": "현대약품",
         "sector": "제약(중소)",
-        "desc": "피부질환·비뇨기 치료제 중심의 중소 제약사",
-        "cap": "1,132억",
-        "change": 2.54,
-        "value": "822억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A067290"
+        "desc": "",
+        "cap": "2,186억",
+        "change": 9.81,
+        "value": "941억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A004310"
       },
       {
-        "name": "기가레인",
-        "sector": "반도체장비·RF",
-        "desc": "반도체 식각장비와 통신용 RF 부품을 만드는 회사",
-        "cap": "1,103억",
-        "change": 15.06,
-        "value": "770억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A049080"
+        "name": "HPSP",
+        "sector": "반도체장비",
+        "desc": "반도체 수율을 높이는 고압 수소 어닐링 장비, 세계 독점급",
+        "cap": "3조",
+        "change": -1.01,
+        "value": "886억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A403870"
       },
       {
-        "name": "삼성공조",
-        "sector": "자동차부품",
-        "desc": "자동차·건설기계용 라디에이터 등 열교환기 제조",
-        "cap": "1,021억",
-        "change": -7.51,
-        "value": "739억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A006660"
-      },
-      {
-        "name": "테크윙",
-        "sector": "반도체장비(테스트핸들러)",
-        "desc": "반도체 검사 공정에서 칩을 옮기는 테스트핸들러 1위",
-        "cap": "2조",
-        "change": -1.32,
-        "value": "737억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A089030"
-      },
-      {
-        "name": "한화솔루션",
-        "sector": "태양광·화학",
-        "desc": "태양광 모듈(큐셀)과 석유화학을 함께 하는 회사",
-        "cap": "5조",
-        "change": -3.08,
-        "value": "731억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A009830"
-      },
-      {
-        "name": "삼익제약",
-        "sector": "제약",
-        "desc": "일반의약품 중심의 중소 제약사",
-        "cap": "626억",
-        "change": 12.39,
-        "value": "720억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A014950"
-      },
-      {
-        "name": "파두",
-        "sector": "반도체(팹리스·스토리지컨트롤러)",
-        "desc": "데이터센터용 SSD 컨트롤러를 설계하는 팹리스",
-        "cap": "4조",
-        "change": 1.7,
-        "value": "708억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A440110"
-      },
-      {
-        "name": "한일사료",
-        "sector": "사료",
-        "desc": "소·돼지용 배합사료를 만드는 축산 사료 회사",
-        "cap": "1,091억",
-        "change": 14.94,
-        "value": "704억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A005860"
-      },
-      {
-        "name": "한울반도체",
-        "sector": "검사장비(MLCC·디스플레이)",
-        "desc": "이름과 달리 MLCC·디스플레이 검사장비가 주력",
-        "cap": "1,076억",
-        "change": 22.09,
-        "value": "679억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A320000"
-      },
-      {
-        "name": "1Q K반도체TOP2+",
+        "name": "모나리자",
         "sector": "",
-        "desc": "삼성전자·SK하이닉스 등에 투자하는 ETF (개별기업 아님)",
-        "cap": "2,757억",
-        "change": -4.64,
-        "value": "677억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A0182R0"
-      },
-      {
-        "name": "금호건설",
-        "sector": "건설",
-        "desc": "아파트·토목 공사를 하는 중견 건설사",
-        "cap": "4,046억",
-        "change": -0.37,
-        "value": "656억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A002990"
-      },
-      {
-        "name": "우리금융지주",
-        "sector": "은행(지주)",
-        "desc": "우리은행을 중심으로 한 4대 금융지주 중 하나",
-        "cap": "22조",
-        "change": -3.02,
-        "value": "644억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A316140"
-      },
-      {
-        "name": "레몬헬스케어",
-        "sector": "헬스케어(디지털의료)",
-        "desc": "병원 예약·진료비 결제를 앱으로 연결하는 의료 플랫폼",
-        "cap": "933억",
-        "change": 29.93,
-        "value": "594억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A365660"
-      },
-      {
-        "name": "에코프로",
-        "sector": "2차전지(지주)",
-        "desc": "2차전지 양극재 소재를 만드는 에코프로 그룹 지주사",
-        "cap": "10조",
-        "change": -8.12,
-        "value": "559억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A086520"
-      },
-      {
-        "name": "삼성중공업",
-        "sector": "조선",
-        "desc": "LNG선·해양플랜트를 만드는 조선 3사 중 하나",
-        "cap": "18조",
-        "change": -6.05,
-        "value": "551억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A010140"
+        "desc": "",
+        "cap": "618억",
+        "change": -2.93,
+        "value": "764억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A012690"
       },
       {
         "name": "디앤디파마텍",
         "sector": "바이오(신약)",
         "desc": "비만·뇌질환 신약을 개발하는 바이오 회사",
         "cap": "3조",
-        "change": -6.4,
-        "value": "550억원",
+        "change": -5.13,
+        "value": "732억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A347850"
+      },
+      {
+        "name": "미래에셋증권",
+        "sector": "",
+        "desc": "",
+        "cap": "21조",
+        "change": 0.54,
+        "value": "662억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A006800"
+      },
+      {
+        "name": "대한광통신",
+        "sector": "광통신",
+        "desc": "",
+        "cap": "2조",
+        "change": 4.23,
+        "value": "645억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A010170"
+      },
+      {
+        "name": "레몬헬스케어",
+        "sector": "헬스케어(디지털의료)",
+        "desc": "병원 예약·진료비 결제를 앱으로 연결하는 의료 플랫폼",
+        "cap": "848억",
+        "change": -9.16,
+        "value": "633억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A365660"
+      },
+      {
+        "name": "한화솔루션",
+        "sector": "태양광·화학",
+        "desc": "태양광 모듈(큐셀)과 석유화학을 함께 하는 회사",
+        "cap": "5조",
+        "change": -0.56,
+        "value": "627억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A009830"
+      },
+      {
+        "name": "우리금융지주",
+        "sector": "은행(지주)",
+        "desc": "우리은행을 중심으로 한 4대 금융지주 중 하나",
+        "cap": "22조",
+        "change": -0.16,
+        "value": "596억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A316140"
+      },
+      {
+        "name": "미래생명자원",
+        "sector": "",
+        "desc": "",
+        "cap": "502억",
+        "change": -6.64,
+        "value": "579억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A218150"
+      },
+      {
+        "name": "1Q K반도체TOP2+",
+        "sector": "",
+        "desc": "삼성전자·SK하이닉스 등에 투자하는 ETF (개별기업 아님)",
+        "cap": "3,009억",
+        "change": 5.4,
+        "value": "575억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A0182R0"
+      },
+      {
+        "name": "삼성중공업",
+        "sector": "조선",
+        "desc": "LNG선·해양플랜트를 만드는 조선 3사 중 하나",
+        "cap": "19조",
+        "change": 1.43,
+        "value": "562억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A010140"
+      },
+      {
+        "name": "흥구석유",
+        "sector": "",
+        "desc": "대구·경북 지역 주유소에 기름을 공급하는 석유 유통업체",
+        "cap": "1,864억",
+        "change": -7.51,
+        "value": "533억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A024060"
+      },
+      {
+        "name": "대우건설",
+        "sector": "",
+        "desc": "",
+        "cap": "6조",
+        "change": 1.79,
+        "value": "532억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A047040"
+      },
+      {
+        "name": "JW신약",
+        "sector": "제약(중소)",
+        "desc": "피부질환·비뇨기 치료제 중심의 중소 제약사",
+        "cap": "1,202억",
+        "change": 6.19,
+        "value": "516억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A067290"
+      },
+      {
+        "name": "한성기업",
+        "sector": "수산식품",
+        "desc": "참치캔·어묵 등을 만드는 수산물 가공 식품회사",
+        "cap": "534억",
+        "change": -15.44,
+        "value": "507억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A003680"
+      },
+      {
+        "name": "하나마이크론",
+        "sector": "반도체(패키징·후공정)",
+        "desc": "반도체를 칩 형태로 포장하는 후공정(패키징) 전문",
+        "cap": "2조",
+        "change": 0.95,
+        "value": "485억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A067310"
+      },
+      {
+        "name": "대한전선",
+        "sector": "",
+        "desc": "",
+        "cap": "5조",
+        "change": 3.91,
+        "value": "481억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A001440"
+      },
+      {
+        "name": "스모트로닉",
+        "sector": "",
+        "desc": "",
+        "cap": "1,232억",
+        "change": 30.0,
+        "value": "452억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A066590"
       }
     ],
     "us": [
@@ -807,7 +838,7 @@
         "name": "넷플릭스 (NFLX)",
         "sector": "미디어",
         "desc": "세계 최대 스트리밍 서비스, 광고 요금제로 확장 중",
-        "cap": "$285B",
+        "cap": "$281B",
         "change": -1.96,
         "value": "4,028백만USD",
         "tv": "https://kr.tradingview.com/chart/?symbol=NFLX"
