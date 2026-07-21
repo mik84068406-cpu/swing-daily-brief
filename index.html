@@ -37,6 +37,17 @@
   .ind .d{font-size:12px;margin-top:1px}
   .news .c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:9px}
   .news .lab{font-size:12px;font-weight:700;color:var(--accent);margin-bottom:3px}
+  .hl{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:7px;overflow:hidden}
+  .hl summary{cursor:pointer;padding:11px 14px;list-style:none;display:flex;gap:9px;align-items:flex-start;font-size:14px;line-height:1.45}
+  .hl summary::-webkit-details-marker{display:none}
+  .hl summary::after{content:'▾';color:var(--sub);margin-left:auto;flex:0 0 auto;font-size:11px}
+  .hl[open] summary::after{content:'▴'}
+  .hl .fg{flex:0 0 auto}
+  .hl .ttl{flex:1;font-weight:600}
+  .tag{flex:0 0 auto;font-size:10px;font-weight:700;padding:2px 7px;border-radius:6px;border:1px solid var(--line);white-space:nowrap;margin-top:2px}
+  .tag.구조{color:#ffb454;border-color:#ffb45455} .tag.일회성{color:var(--sub)}
+  .hl .body{padding:0 14px 12px;font-size:13.5px;color:var(--sub);line-height:1.65;border-top:1px solid var(--line);padding-top:10px}
+  .hl .why{color:var(--tx);margin-top:6px} .hl .why b{color:var(--accent)}
   .chips{display:flex;flex-wrap:wrap;gap:8px}
   .chip{background:var(--card2);border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:13px;font-weight:600}
   .chip b{color:var(--accent)}
@@ -112,6 +123,14 @@ function render(d){
     const nm=t.tv?`<a href="${t.tv}" target="_blank" rel="noopener">${esc(t.name)} 📈</a>`:esc(t.name);
     return `<div class="trow"><span class="trank">${i+1}</span><span class="tname">${nm}${sub}</span><span class="tchg ${cls}">${ar} ${Math.abs(c).toFixed(2)}%</span><span class="tval">${esc(t.value)}</span></div>`;};
   const topList = m => (d.top&&d.top[m]||[]).map(topRow).join('');
+  const FG={kr:'🇰🇷',us:'🇺🇸',macro:'🌍'};
+  const hlRow = n => `<details class="hl"><summary><span class="fg">${FG[n.market]||'📰'}</span><span class="ttl">${esc(n.title)}</span>${n.type?`<span class="tag ${esc(n.type)}">${esc(n.type)}</span>`:''}</summary><div class="body">${esc(n.summary).replace(/\n/g,'<br>')}${n.why?`<div class="why"><b>왜 중요</b> — ${esc(n.why)}</div>`:''}${n.tickers&&n.tickers.length?`<div class="why"><b>관련</b> — ${esc(n.tickers.join(', '))}</div>`:''}</div></details>`;
+  const newsSec = (d.headlines&&d.headlines.length)
+    ? `<section class="news"><h2>📰 오늘 무슨 일 — 제목 눌러서 펼치기</h2>${d.headlines.map(hlRow).join('')}</section>`
+    : `<section class="news"><h2>📰 오늘 무슨 일</h2>
+     <div class="c"><div class="lab">🇺🇸 미국</div>${esc(d.news.us)}</div>
+     <div class="c"><div class="lab">🇰🇷 한국</div>${esc(d.news.kr)}</div>
+     <div class="c"><div class="lab">🌍 거시</div>${esc(d.news.macro)}</div></section>`;
   const trapSec = d.trap ? `
    <section><h2>🪤 오늘 봐야 될 차트</h2><div class="myview trap" style="border-style:solid">${
      d.trap.length ? d.trap.map(t=>`<div style="margin:3px 0">${t.tv?`<a href="${t.tv}" target="_blank" rel="noopener"><b>${esc(t.name)}</b> 📈</a>`:`<b>${esc(t.name)}</b>`} <span style="color:var(--sub)">(${esc(t.market)} ${esc(t.sector)})</span> — ${esc(t.verdict)}${t.detail?`<div class="tsub">${esc(t.detail)}</div>`:''}</div>`).join('')
@@ -124,10 +143,7 @@ function render(d){
    <div class="headline">⚡ ${esc(d.headline)}</div>
    <section><h2>🌡️ 지표 한눈에</h2><div class="ind">${ind}</div>
      ${ic?`<div class="myview" style="margin-top:10px;border-style:solid"><b>🤖 지표 읽기</b> — ${esc(d.indicomment).replace(/\n/g,'<br>')}</div>`:''}</section>
-   <section class="news"><h2>📰 오늘 무슨 일</h2>
-     <div class="c"><div class="lab">🇺🇸 미국</div>${esc(d.news.us)}</div>
-     <div class="c"><div class="lab">🇰🇷 한국</div>${esc(d.news.kr)}</div>
-     <div class="c"><div class="lab">🌍 거시</div>${esc(d.news.macro)}</div></section>
+   ${newsSec}
    <section><h2>💰 돈이 어디로 (오늘 주도 섹터)</h2>
      <div class="mkt"><div class="flag">🇰🇷 한국</div><div class="chips">${flowChips('kr')}</div></div>
      <div class="mkt"><div class="flag">🇺🇸 미국</div><div class="chips">${flowChips('us')}</div></div></section>
