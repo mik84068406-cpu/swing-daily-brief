@@ -50,6 +50,10 @@
   .hl .why{color:var(--tx);margin-top:6px} .hl .why b{color:var(--accent)}
   .mgrp{font-size:13px;font-weight:700;color:var(--sub);margin:16px 0 7px;padding-bottom:5px;border-bottom:1px solid var(--line)}
   .mgrp:first-of-type{margin-top:0}
+  .hl .src{font-size:12px;color:var(--sub);margin-top:9px;padding-top:8px;border-top:1px dashed var(--line)}
+  .hl .src b{color:var(--sub);font-weight:700;margin-right:4px}
+  .hl .src a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+  .hl .src a:hover,.hl .src a:active{opacity:.75}
   .chips{display:flex;flex-wrap:wrap;gap:8px}
   .chip{background:var(--card2);border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:13px;font-weight:600}
   .chip b{color:var(--accent)}
@@ -126,7 +130,8 @@ function render(d){
     return `<div class="trow"><span class="trank">${i+1}</span><span class="tname">${nm}${sub}</span><span class="tchg ${cls}">${ar} ${Math.abs(c).toFixed(2)}%</span><span class="tval">${esc(t.value)}</span></div>`;};
   const topList = m => (d.top&&d.top[m]||[]).map(topRow).join('');
   const FG={kr:'🇰🇷',us:'🇺🇸',macro:'🌍'};
-  const hlRow = n => `<details class="hl"><summary><span class="fg">${FG[n.market]||'📰'}</span><span class="ttl">${esc(n.title)}</span>${n.type?`<span class="tag ${esc(n.type)}">${esc(n.type)}</span>`:''}</summary><div class="body">${esc(n.summary).replace(/\n/g,'<br>')}${n.why?`<div class="why"><b>왜 중요</b> — ${esc(n.why)}</div>`:''}${n.tickers&&n.tickers.length?`<div class="why"><b>관련</b> — ${esc(n.tickers.join(', '))}</div>`:''}</div></details>`;
+  const srcRow = s => (s&&s.length)?`<div class="src"><b>출처</b> ${s.map(x=>x.url?`<a href="${x.url}" target="_blank" rel="noopener">${esc(x.name||x.url)}</a>`:esc(x.name||x)).join(' · ')}</div>`:'';
+  const hlRow = n => `<details class="hl"><summary><span class="fg">${FG[n.market]||'📰'}</span><span class="ttl">${esc(n.title)}</span>${n.type?`<span class="tag ${esc(n.type)}">${esc(n.type)}</span>`:''}</summary><div class="body">${esc(n.summary).replace(/\n/g,'<br>')}${n.why?`<div class="why"><b>왜 중요</b> — ${esc(n.why)}</div>`:''}${n.tickers&&n.tickers.length?`<div class="why"><b>관련</b> — ${esc(n.tickers.join(', '))}</div>`:''}${srcRow(n.sources)}</div></details>`;
   const MKT=[['us','🇺🇸 미국'],['macro','🌍 거시'],['kr','🇰🇷 한국']];
   const newsSec = (d.headlines&&d.headlines.length)
     ? `<section class="news"><h2>📰 오늘 무슨 일 — 제목 눌러서 펼치기</h2>${
