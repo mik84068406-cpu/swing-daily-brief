@@ -59,6 +59,7 @@
   .frow{display:grid;grid-template-columns:96px 62px 1fr;gap:8px;align-items:baseline;
     background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin-bottom:5px}
   .fsec{font-weight:700;font-size:14px}
+  .fn{display:block;font-size:11px;color:var(--sub);font-weight:400;margin-top:1px}
   .fchg{font-weight:700;font-size:14px;text-align:right}
   .flead{font-size:13px;color:var(--sub)}
   .fnote{grid-column:1/-1;font-size:12px;color:var(--sub);margin-top:2px}
@@ -129,7 +130,7 @@ function render(d){
      <div class="v">${esc(i.value)}</div><div class="d ${dirClass(i.dir)}">${esc(i.change)}</div></div>`).join('');
   const flowChips = m => (d.flow[m]||[]).map((s,idx)=>`<span class="chip"><b>${idx+1}</b> ${esc(s)}</span>`).join('');
   const isObj = v => v && typeof v==='object' && !Array.isArray(v);
-  const fRow = s => `<div class="frow"><span class="fsec">${esc(s.sector)}</span><span class="fchg ${(+s.change>0)?'up':(+s.change<0)?'down':'flat'}">${(+s.change>0?'+':'')}${(+s.change).toFixed(1)}%</span><span class="flead">${esc(s.leader||'')}</span>${s.note?`<span class="fnote">${esc(s.note)}</span>`:''}</div>`;
+  const fRow = s => `<div class="frow"><span class="fsec">${esc(s.sector)}${s.n?`<span class="fn">${s.n}종목</span>`:''}</span><span class="fchg ${(+s.change>0)?'up':(+s.change<0)?'down':'flat'}">${(+s.change>0?'+':'')}${(+s.change).toFixed(1)}%</span><span class="flead">${esc(s.leader||'')}</span>${s.note?`<span class="fnote">${esc(s.note)}</span>`:''}</div>`;
   const flowBox = m => {const f=d.flow[m];
     if(!isObj(f)) return `<div class="chips">${flowChips(m)}</div>`;
     const iN=(f.in||[]).length, oN=(f.out||[]).length;
