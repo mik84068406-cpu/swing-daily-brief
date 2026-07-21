@@ -54,6 +54,15 @@
   .hl .src b{color:var(--sub);font-weight:700;margin-right:4px}
   .hl .src a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
   .hl .src a:hover,.hl .src a:active{opacity:.75}
+  .foldbox{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .foldbox>summary{cursor:pointer;list-style:none;padding:13px 16px;display:flex;align-items:baseline;gap:10px}
+  .foldbox>summary::-webkit-details-marker{display:none}
+  .foldbox>summary::after{content:'▾';color:var(--sub);margin-left:auto;font-size:12px}
+  .foldbox[open]>summary::after{content:'▴'}
+  .ftitle{font-size:14px;font-weight:700}
+  .fprev{font-size:12px;color:var(--sub)}
+  .fbody{padding:2px 14px 14px}
+  .fbody .mkt:first-child{margin-top:4px}
   .fgrp{font-size:12px;font-weight:700;margin:12px 0 6px}
   .fgrp.in{color:var(--up)} .fgrp.out{color:var(--down)} .fgrp.mix{color:var(--sub)}
   .frow{display:grid;grid-template-columns:96px 62px 1fr;gap:8px;align-items:baseline;
@@ -130,6 +139,7 @@ function render(d){
      <div class="v">${esc(i.value)}</div><div class="d ${dirClass(i.dir)}">${esc(i.change)}</div></div>`).join('');
   const flowChips = m => (d.flow[m]||[]).map((s,idx)=>`<span class="chip"><b>${idx+1}</b> ${esc(s)}</span>`).join('');
   const isObj = v => v && typeof v==='object' && !Array.isArray(v);
+  const fold = (title, preview, inner) => `<section><details class="foldbox"><summary><span class="ftitle">${title}</span>${preview?`<span class="fprev">${esc(preview)}</span>`:''}</summary><div class="fbody">${inner}</div></details></section>`;
   const fRow = s => `<div class="frow"><span class="fsec">${esc(s.sector)}${s.n?`<span class="fn">${s.n}종목</span>`:''}</span><span class="fchg ${(+s.change>0)?'up':(+s.change<0)?'down':'flat'}">${(+s.change>0?'+':'')}${(+s.change).toFixed(1)}%</span><span class="flead">${esc(s.leader||'')}</span>${s.note?`<span class="fnote">${esc(s.note)}</span>`:''}</div>`;
   const flowBox = m => {const f=d.flow[m];
     if(!isObj(f)) return `<div class="chips">${flowChips(m)}</div>`;
@@ -148,39 +158,47 @@ function render(d){
   const srcRow = s => (s&&s.length)?`<div class="src"><b>출처</b> ${s.map(x=>x.url?`<a href="${x.url}" target="_blank" rel="noopener">${esc(x.name||x.url)}</a>`:esc(x.name||x)).join(' · ')}</div>`:'';
   const hlRow = n => `<details class="hl"><summary><span class="fg">${FG[n.market]||'📰'}</span><span class="ttl">${esc(n.title)}</span>${n.type?`<span class="tag ${esc(n.type)}">${esc(n.type)}</span>`:''}</summary><div class="body">${esc(n.summary).replace(/\n/g,'<br>')}${n.why?`<div class="why"><b>왜 중요</b> — ${esc(n.why)}</div>`:''}${n.tickers&&n.tickers.length?`<div class="why"><b>관련</b> — ${esc(n.tickers.join(', '))}</div>`:''}${srcRow(n.sources)}</div></details>`;
   const MKT=[['us','🇺🇸 미국'],['macro','🌍 거시'],['kr','🇰🇷 한국']];
-  const newsSec = (d.headlines&&d.headlines.length)
-    ? `<section class="news"><h2>📰 오늘 무슨 일 — 제목 눌러서 펼치기</h2>${
-        MKT.map(([k,lab])=>{const rows=d.headlines.filter(n=>n.market===k);
+  const hs = d.headlines||[];
+  const nPrev = hs.length ? `${hs.length}건 · 구조 ${hs.filter(n=>n.type==='구조').length} · 일회성 ${hs.filter(n=>n.type==='일회성').length}` : '';
+  const newsSec = hs.length
+    ? fold('📰 오늘 무슨 일', nPrev, `<div class="news">${
+        MKT.map(([k,lab])=>{const rows=hs.filter(n=>n.market===k);
           return rows.length?`<div class="mgrp">${lab}</div>${rows.map(hlRow).join('')}`:'';}).join('')
-      }</section>`
-    : `<section class="news"><h2>📰 오늘 무슨 일</h2>
+      }</div>`)
+    : fold('📰 오늘 무슨 일', '', `<div class="news">
      <div class="c"><div class="lab">🇺🇸 미국</div>${esc(d.news.us)}</div>
      <div class="c"><div class="lab">🇰🇷 한국</div>${esc(d.news.kr)}</div>
-     <div class="c"><div class="lab">🌍 거시</div>${esc(d.news.macro)}</div></section>`;
+     <div class="c"><div class="lab">🌍 거시</div>${esc(d.news.macro)}</div></div>`);
+  const fc = m => {const f=d.flow&&d.flow[m]; return isObj(f)?((f.in||[]).length+(f.out||[]).length+(f.mixed||[]).length):0;};
+  const flowCount = (()=>{const f=d.flow&&d.flow.us; if(!isObj(f)) return '';
+    const ins=(d.flow.us.in||[]).length+(d.flow.kr.in||[]).length, outs=(d.flow.us.out||[]).length+(d.flow.kr.out||[]).length;
+    return `들어옴 ${ins} · 빠짐 ${outs}`;})();
   const trapSec = d.trap ? `
    <section><h2>🪤 오늘 봐야 될 차트</h2><div class="myview trap" style="border-style:solid">${
      d.trap.length ? d.trap.map(t=>`<div style="margin:3px 0">${t.tv?`<a href="${t.tv}" target="_blank" rel="noopener"><b>${esc(t.name)}</b> 📈</a>`:`<b>${esc(t.name)}</b>`} <span style="color:var(--sub)">(${esc(t.market)} ${esc(t.sector)})</span> — ${esc(t.verdict)}${t.detail?`<div class="tsub">${esc(t.detail)}</div>`:''}</div>`).join('')
      : '오늘 자리 온 차트 없음 — 대기'}</div></section>`:'';
-  const topSec = (d.top&&(d.top.kr||[]).length) ? `
-   <section><h2>💰 거래대금 TOP${(d.top.kr||[]).length} (개별기업 · ETF 제외)</h2>
-     <details class="topbox"><summary>🇰🇷 한국 — 눌러서 펼치기</summary><div class="tlist"><div class="trow thead"><span class="trank">#</span><span class="tname">종목</span><span class="tchg">등락</span><span class="tval">거래대금</span></div>${topList('kr')}</div></details>
-     <details class="topbox"><summary>🇺🇸 미국 — 눌러서 펼치기</summary><div class="tlist"><div class="trow thead"><span class="trank">#</span><span class="tname">종목</span><span class="tchg">등락</span><span class="tval">거래대금</span></div>${topList('us')}</div></details></section>`:'';
+  const thead = `<div class="trow thead"><span class="trank">#</span><span class="tname">종목</span><span class="tchg">등락</span><span class="tval">거래대금</span></div>`;
+  const topSec = (d.top&&(d.top.kr||[]).length)
+    ? fold(`💰 거래대금 TOP${(d.top.kr||[]).length}`, '개별기업 · ETF 제외',
+        `<details class="topbox"><summary>🇰🇷 한국</summary><div class="tlist">${thead}${topList('kr')}</div></details>
+         <details class="topbox"><summary>🇺🇸 미국</summary><div class="tlist">${thead}${topList('us')}</div></details>`)
+    : '';
   document.getElementById('app').innerHTML = `
    <div class="headline">⚡ ${esc(d.headline)}</div>
    <section><h2>🌡️ 지표 한눈에</h2><div class="ind">${ind}</div>
      ${ic?`<div class="myview" style="margin-top:10px;border-style:solid"><b>🤖 지표 읽기</b> — ${esc(d.indicomment).replace(/\n/g,'<br>')}</div>`:''}</section>
    ${newsSec}
-   <section><h2>💰 돈이 어디로 (오늘 주도 섹터)</h2>
+   ${fold('💰 돈이 어디로 (주도 섹터)', flowCount, `
      <div class="mkt"><div class="flag">🇺🇸 미국</div>${flowBox('us')}</div>
-     <div class="mkt"><div class="flag">🇰🇷 한국</div>${flowBox('kr')}</div></section>
+     <div class="mkt"><div class="flag">🇰🇷 한국</div>${flowBox('kr')}</div>`)}
    ${trapSec}
    ${topSec}
-   <section><h2>🏷️ 오늘의 기업 공부</h2>
+   ${fold('🏷️ 오늘의 기업 공부', `한국 ${(d.study.kr||[]).length} · 미국 ${(d.study.us||[]).length}`, `
      <div class="mkt"><div class="flag">🇰🇷 한국</div>${study('kr')}</div>
-     <div class="mkt"><div class="flag">🇺🇸 미국</div>${study('us')}</div></section>
-   <section><h2>✍️ 내 판단</h2>
+     <div class="mkt"><div class="flag">🇺🇸 미국</div>${study('us')}</div>`)}
+   ${fold('✍️ 내 판단 · AI 한줄', mv?'작성됨':'아직 비어있음', `
      <div class="myview">${mv?esc(d.myview).replace(/\n/g,'<br>'):'<b>여기는 네가 채우는 칸.</b> 위 뉴스·지표·섹터를 다 보고 "나는 이렇게 본다"를 적는 곳. (아직 비어있음)'}</div>
-     ${av?`<div class="myview" style="margin-top:8px;border-style:solid"><b>🤖 AI 한줄</b> — ${esc(d.aiview).replace(/\n/g,'<br>')}</div>`:''}</section>`;
+     ${av?`<div class="myview" style="margin-top:8px;border-style:solid"><b>🤖 AI 한줄</b> — ${esc(d.aiview).replace(/\n/g,'<br>')}</div>`:''}`)}`;
 }
 async function load(date){
   try{
