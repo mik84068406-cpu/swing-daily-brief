@@ -98,6 +98,7 @@
   .trow.thead{color:var(--sub);font-size:11px;border-top:none}
   .trank{color:var(--sub)} .tchg{text-align:right} .tval{text-align:right;color:var(--sub)}
   .tsub{font-size:11px;color:var(--sub);margin-top:1px}
+  .tdesc{font-size:12px;color:var(--tx);opacity:.78;margin-top:3px;line-height:1.45}
   .tname a{color:inherit;text-decoration:none;border-bottom:1px dashed var(--sub)}
   .tname a:hover,.tname a:active{opacity:.75}
   .trap a{color:inherit;text-decoration:none;border-bottom:1px dashed var(--sub)}
@@ -150,7 +151,8 @@ function render(d){
   const av = d.aiview && d.aiview.trim();
   const ic = d.indicomment && d.indicomment.trim();
   const topRow = (t,i)=>{const c=+t.change;const cls=c>0?'up':c<0?'down':'flat';const ar=c>0?'▲':c<0?'▼':'—';
-    const sub=(t.sector||t.cap)?`<div class="tsub">${esc(t.sector||'')}${t.sector&&t.cap?' · ':''}${t.cap?esc('시총 '+t.cap):''}</div>`:'';
+    const sub=((t.sector||t.cap)?`<div class="tsub">${esc(t.sector||'')}${t.sector&&t.cap?' · ':''}${t.cap?esc('시총 '+t.cap):''}</div>`:'')
+      +(t.desc?`<div class="tdesc">${esc(t.desc)}</div>`:'');
     const nm=t.tv?`<a href="${t.tv}" target="_blank" rel="noopener">${esc(t.name)} 📈</a>`:esc(t.name);
     return `<div class="trow"><span class="trank">${i+1}</span><span class="tname">${nm}${sub}</span><span class="tchg ${cls}">${ar} ${Math.abs(c).toFixed(2)}%</span><span class="tval">${esc(t.value)}</span></div>`;};
   const topList = m => (d.top&&d.top[m]||[]).map(topRow).join('');
@@ -193,9 +195,6 @@ function render(d){
      <div class="mkt"><div class="flag">🇰🇷 한국</div>${flowBox('kr')}</div>`)}
    ${trapSec}
    ${topSec}
-   ${fold('🏷️ 오늘의 기업 공부', `한국 ${(d.study.kr||[]).length} · 미국 ${(d.study.us||[]).length}`, `
-     <div class="mkt"><div class="flag">🇰🇷 한국</div>${study('kr')}</div>
-     <div class="mkt"><div class="flag">🇺🇸 미국</div>${study('us')}</div>`)}
    ${fold('✍️ 내 판단 · AI 한줄', mv?'작성됨':'아직 비어있음', `
      <div class="myview">${mv?esc(d.myview).replace(/\n/g,'<br>'):'<b>여기는 네가 채우는 칸.</b> 위 뉴스·지표·섹터를 다 보고 "나는 이렇게 본다"를 적는 곳. (아직 비어있음)'}</div>
      ${av?`<div class="myview" style="margin-top:8px;border-style:solid"><b>🤖 AI 한줄</b> — ${esc(d.aiview).replace(/\n/g,'<br>')}</div>`:''}`)}`;
