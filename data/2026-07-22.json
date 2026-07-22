@@ -981,11 +981,35 @@
   "trap": [
     {
       "market": "미국",
-      "sector": "워치리스트",
+      "sector": "TOP30",
       "name": "마이크로소프트(MSFT)",
       "verdict": "👀 추적: 아래 4.8% 지점에 겹침 존(20일선+전저점 373$~384$) — 슬슬 지켜봐",
       "detail": "20선 +3.6% · 60선 -1.5% · ⚠️200선 아래(하락 조수)",
       "tv": "https://kr.tradingview.com/chart/?symbol=MSFT"
+    },
+    {
+      "market": "미국",
+      "sector": "TOP30",
+      "name": "팔란티어(PLTR)",
+      "verdict": "👀 추적: 아래 6.2% 지점에 겹침 존(20일선+전저점 123$~126$) — 슬슬 지켜봐",
+      "detail": "20선 +5.1% · 60선 -0.8% · ⚠️200선 아래(하락 조수)",
+      "tv": "https://kr.tradingview.com/chart/?symbol=PLTR"
+    },
+    {
+      "market": "미국",
+      "sector": "TOP30",
+      "name": "유아이패스(PATH)",
+      "verdict": "👀 추적: 아래 9.0% 지점에 겹침 존(60일선+전저점 11$) — 슬슬 지켜봐",
+      "detail": "20선 +5.5% · 60선 +9.5% · ⚠️200선 아래(하락 조수)",
+      "tv": "https://kr.tradingview.com/chart/?symbol=PATH"
+    },
+    {
+      "market": "미국",
+      "sector": "TOP30",
+      "name": "누홀딩스(누뱅크)(NU)",
+      "verdict": "👀 추적: 아래 8.7% 지점에 겹침 존(60일선+전저점 13$) — 슬슬 지켜봐",
+      "detail": "20선 +6.6% · 60선 +9.1% · ⚠️200선 아래(하락 조수)",
+      "tv": "https://kr.tradingview.com/chart/?symbol=NU"
     }
   ]
 }
