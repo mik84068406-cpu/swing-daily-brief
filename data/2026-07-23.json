@@ -950,54 +950,5 @@
       }
     ]
   },
-  "trap": [
-    {
-      "market": "한국",
-      "sector": "TOP30",
-      "name": "두산로보틱스",
-      "verdict": "🔔 스프링 완성! 전저점 63,700원 이탈(59,700원)→오늘 종가 회복 · 거래량 3.3배🔥·RSI 37 — 내일 진입 검토, 실전카드(무효선 59,700원) [거래량 평소의 3.3배]",
-      "detail": "20선 -13.2% · 60선 -31.8% · ⚠️200선 아래(하락 조수) · 🔻하락 추세 중(20선과 크게 이격 — 떨어지는 칼 주의)",
-      "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A454910"
-    },
-    {
-      "market": "미국",
-      "sector": "TOP30",
-      "name": "소파이(SOFI)",
-      "verdict": "🪤🪤 겹침 자리! 60일선+전저점 존 17$ 위에서 마감 (2근거) — 매물대 확인하고 멈춤 기다려",
-      "detail": "20선 -4.5% · 60선 +0.4% · ⚠️200선 아래(하락 조수)",
-      "tv": "https://kr.tradingview.com/chart/?symbol=SOFI"
-    },
-    {
-      "market": "미국",
-      "sector": "TOP30",
-      "name": "알파벳(구글)(GOOG)",
-      "verdict": "⚠️ 존(20일선+전저점 349$~353$) 아래 마감 — 이평선은 깼지만 그 아래 매물대가 받치는지 차트로 확인해줘 (판단은 너)",
-      "detail": "20선 -3.1% · 60선 -6.8% · 200선 위(상승 조수)",
-      "tv": "https://kr.tradingview.com/chart/?symbol=GOOG"
-    },
-    {
-      "market": "미국",
-      "sector": "TOP30",
-      "name": "월마트(WMT)",
-      "verdict": "⚠️ 존(20일선+전저점 110$~113$) 아래 마감 — 이평선은 깼지만 그 아래 매물대가 받치는지 차트로 확인해줘 (판단은 너)",
-      "detail": "20선 -3.4% · 60선 -9.2% · ⚠️200선 아래(하락 조수)",
-      "tv": "https://kr.tradingview.com/chart/?symbol=WMT"
-    },
-    {
-      "market": "미국",
-      "sector": "TOP30",
-      "name": "뱅크오브아메리카(BAC)",
-      "verdict": "👀 추적: 아래 9.1% 지점에 겹침 존(60일선+전저점 55$~57$) — 슬슬 지켜봐",
-      "detail": "20선 +3.5% · 60선 +11.7% · 200선 위(상승 조수)",
-      "tv": "https://kr.tradingview.com/chart/?symbol=BAC"
-    },
-    {
-      "market": "미국",
-      "sector": "TOP30",
-      "name": "누홀딩스(누뱅크)(NU)",
-      "verdict": "👀 추적: 아래 9.5% 지점에 겹침 존(60일선+전저점 13$) — 슬슬 지켜봐",
-      "detail": "20선 +6.7% · 60선 +10.0% · ⚠️200선 아래(하락 조수)",
-      "tv": "https://kr.tradingview.com/chart/?symbol=NU"
-    }
-  ]
+  "trap": []
 }
