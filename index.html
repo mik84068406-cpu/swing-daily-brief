@@ -143,7 +143,7 @@ function render(d){
     '탐욕지수(F&G)':'↓내리면 공포',
     '달러/원':'↑오르면 원화 약세',
     '달러인덱스':'↑오르면 달러 강세',
-    '미 10년물':'↑오르면 금리 부담',
+    '미 10년물':'↑금리↑=채권값↓ · 20bp↑면 큰 움직임',
   };
   const ind = d.indicators.map(i=>`<div class="c"><div class="n">${esc(i.name)}${HINT[i.name]?`<span class="hint">${esc(HINT[i.name])}</span>`:''}</div>
      <div class="v">${esc(i.value)}</div><div class="d ${dirClass(i.dir)}">${esc(i.change)}</div></div>`).join('');
