@@ -33,6 +33,7 @@
   .ind{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:9px}
   .ind .c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 13px}
   .ind .n{font-size:12px;color:var(--sub)}
+  .ind .n .hint{display:block;font-size:10px;color:var(--sub);opacity:.72;margin-top:1px;letter-spacing:-.2px}
   .ind .v{font-size:18px;font-weight:700;margin-top:2px}
   .ind .d{font-size:12px;margin-top:1px}
   .news .c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:9px}
@@ -136,7 +137,15 @@ function coCard(c){
    </div><div class="desc">${esc(c.desc)}</div></div></div>`;
 }
 function render(d){
-  const ind = d.indicators.map(i=>`<div class="c"><div class="n">${esc(i.name)}</div>
+  // 지표별 방향 힌트 — "숫자가 어느 쪽으로 가면 나쁜 건지" 헷갈리는 것만 (2026-07-24)
+  const HINT = {
+    '공포지수(VIX)':'↑오르면 공포',
+    '탐욕지수(F&G)':'↓내리면 공포',
+    '달러/원':'↑오르면 원화 약세',
+    '달러인덱스':'↑오르면 달러 강세',
+    '미 10년물':'↑오르면 금리 부담',
+  };
+  const ind = d.indicators.map(i=>`<div class="c"><div class="n">${esc(i.name)}${HINT[i.name]?`<span class="hint">${esc(HINT[i.name])}</span>`:''}</div>
      <div class="v">${esc(i.value)}</div><div class="d ${dirClass(i.dir)}">${esc(i.change)}</div></div>`).join('');
   const flowChips = m => (d.flow[m]||[]).map((s,idx)=>`<span class="chip"><b>${idx+1}</b> ${esc(s)}</span>`).join('');
   const isObj = v => v && typeof v==='object' && !Array.isArray(v);
