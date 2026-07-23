@@ -956,11 +956,13 @@
   "trap": [
     {
       "market": "미국",
-      "sector": "빅테크",
+      "sector": "빅테크(광고·AI)",
       "name": "알파벳(구글)(GOOGL)",
       "verdict": "🚨 셀링 클라이맥스(거래량 2.1배 · RSI 31) — 바닥 '후보' 관찰 시작. 매수 아님(떨어지는 칼 도중), 회복 마감 나오면 🔔로 승격 [거래량 평소의 2.1배]",
       "detail": "20선 -10.1% · 60선 -13.9% · 거래량 2.1배🔥 · RSI 31↓ · ⚠️200선 아래(하락 조수) · 🔻하락 추세 중(20선과 크게 이격 — 떨어지는 칼 주의)",
-      "tv": "https://kr.tradingview.com/chart/?symbol=GOOGL"
+      "tv": "https://kr.tradingview.com/chart/?symbol=GOOGL",
+      "desc": "검색·유튜브·안드로이드를 가진 구글의 모회사",
+      "trigger": "🔔 승격 · 거래량 2.1배 · RSI 31"
     },
     {
       "market": "미국",
@@ -968,31 +970,29 @@
       "name": "테슬라(TSLA)",
       "verdict": "🚨 셀링 클라이맥스(거래량 3.0배 · RSI 29) — 바닥 '후보' 관찰 시작. 매수 아님(떨어지는 칼 도중), 회복 마감 나오면 🔔로 승격 [거래량 평소의 3.0배]",
       "detail": "20선 -18.4% · 60선 -20.9% · 거래량 3.0배🔥 · RSI 29↓ · ⚠️200선 아래(하락 조수) · 🔻하락 추세 중(20선과 크게 이격 — 떨어지는 칼 주의)",
-      "tv": "https://kr.tradingview.com/chart/?symbol=TSLA"
+      "tv": "https://kr.tradingview.com/chart/?symbol=TSLA",
+      "desc": "전기차 1위이자 자율주행·로봇(옵티머스)에 투자 중",
+      "trigger": "🔔 승격 · 거래량 3.0배 · RSI 29"
     },
     {
       "market": "미국",
-      "sector": "TOP30",
-      "name": "알파벳(구글)(GOOG)",
-      "verdict": "🔍 패닉 발생(양봉 대기) — 패닉일(오늘): 거래량 2.1배🔥 · RSI 32↓ — 오늘이 패닉일, 양봉 확인 전(관찰만) · 차트 확인(전저점·이평·지지는 내 판단)",
-      "detail": "20선 -9.4% · 60선 -13.1% · 거래량 2.1배🔥 · RSI 32 · ⚠️200선 아래(하락 조수)",
-      "tv": "https://kr.tradingview.com/chart/?symbol=GOOG"
-    },
-    {
-      "market": "미국",
-      "sector": "TOP30",
+      "sector": "통신장비",
       "name": "NOK(NOK)",
       "verdict": "🔍 패닉 발생(양봉 대기) — 패닉일(오늘): 거래량 2.1배🔥 · RSI 32↓ — 오늘이 패닉일, 양봉 확인 전(관찰만) · 차트 확인(전저점·이평·지지는 내 판단)",
       "detail": "20선 -17.5% · 60선 -27.3% · 거래량 2.1배🔥 · RSI 32↓ · 200선 위(상승 조수) · 🔻하락 추세 중(20선과 크게 이격 — 떨어지는 칼 주의)",
-      "tv": "https://kr.tradingview.com/chart/?symbol=NOK"
+      "tv": "https://kr.tradingview.com/chart/?symbol=NOK",
+      "desc": "핀란드 통신장비 회사, 5G 네트워크 장비가 주력",
+      "trigger": "🔍 패닉(양봉 대기) · 거래량 2.1배 · RSI 32"
     },
     {
       "market": "미국",
-      "sector": "TOP30",
+      "sector": "반도체(차량·산업용)",
       "name": "STM(STM)",
       "verdict": "🔍 패닉 발생(양봉 대기) — 패닉일(오늘): 거래량 3.0배🔥 · RSI 33↓ — 오늘이 패닉일, 양봉 확인 전(관찰만) · 차트 확인(전저점·이평·지지는 내 판단)",
       "detail": "20선 -21.5% · 60선 -20.7% · 거래량 3.0배🔥 · RSI 33 · 200선 위(상승 조수) · 🔻하락 추세 중(20선과 크게 이격 — 떨어지는 칼 주의)",
-      "tv": "https://kr.tradingview.com/chart/?symbol=STM"
+      "tv": "https://kr.tradingview.com/chart/?symbol=STM",
+      "desc": "자동차·산업용 반도체 중심의 유럽(프랑스·이탈리아) 반도체 회사",
+      "trigger": "🔍 패닉(양봉 대기) · 거래량 3.0배 · RSI 33"
     }
   ],
   "trapinfo": {
