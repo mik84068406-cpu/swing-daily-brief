@@ -193,7 +193,7 @@ function render(d){
     return `들어옴 ${ins} · 빠짐 ${outs}`;})();
   const trapSec = d.trap ? `
    <section><h2>🪤 오늘 봐야 될 차트</h2><div class="myview trap" style="border-style:solid">${
-     d.trap.length ? d.trap.map(t=>`<div class="trapitem">${t.tv?`<a href="${t.tv}" target="_blank" rel="noopener"><b>${esc(t.name)}</b> 📈</a>`:`<b>${esc(t.name)}</b>`} <span class="tsec">${esc(t.market)} · ${esc(t.sector)}</span><span class="ttrig">${esc(t.trigger||'')}</span>${t.desc?`<div class="tdesc">${esc(t.desc)}</div>`:''}</div>`).join('')
+     d.trap.length ? d.trap.map(t=>`<div class="trapitem">${t.tv?`<a href="${t.tv}" target="_blank" rel="noopener"><b>${esc(t.name)}</b> 📈</a>`:`<b>${esc(t.name)}</b>`} <span class="tsec">${esc(t.market)} · ${esc(t.sector)}${t.cap?` · 시총 ${esc(t.cap)}`:''}${t.price?` · ${esc(t.price)}`:''}</span><span class="ttrig">${esc(t.trigger||'')}</span>${t.desc?`<div class="tdesc">${esc(t.desc)}</div>`:''}</div>`).join('')
      : ''}${(()=>{const i=d.trapinfo||{};if(!i)return '';
         // RSI낮은순·거래량큰순 목록은 제거 (2026-07-24, 비랑: "안 볼 것 같다 · 볼 게 너무 많아진다").
         // 통과 종목이 있으면 그것만 보고, 0건일 때만 "살 자리 없음" 한 줄.
