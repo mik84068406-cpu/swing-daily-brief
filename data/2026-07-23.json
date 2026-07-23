@@ -913,7 +913,7 @@
   },
   "trap": [],
   "trapinfo": {
-    "기준": "거래량 1.5배↑ 그리고 RSI 35↓ (둘 다)",
+    "기준": "거래량 1.5배↑ 그리고 RSI 35↓ (같은 날 둘 다) · 최근 3일 내 + 양봉 방아쇠",
     "스캔수": {
       "한국": 25,
       "미국": 26
@@ -925,6 +925,7 @@
         "market": "미국",
         "volx": 2.1,
         "rsi": 39,
+        "pass": false,
         "gap": 0.128
       },
       {
@@ -932,6 +933,7 @@
         "market": "한국",
         "volx": 1.9,
         "rsi": 45,
+        "pass": false,
         "gap": 0.278
       },
       {
@@ -939,7 +941,108 @@
         "market": "미국",
         "volx": 1.0,
         "rsi": 36,
+        "pass": false,
         "gap": 0.349
+      }
+    ],
+    "RSI낮은순": [
+      {
+        "name": "넷플릭스(NFLX)",
+        "market": "미국",
+        "volx": 0.9,
+        "rsi": 32,
+        "pass": false,
+        "gap": 0.427
+      },
+      {
+        "name": "오라클(ORCL)",
+        "market": "미국",
+        "volx": 0.5,
+        "rsi": 32,
+        "pass": false,
+        "gap": 0.652
+      },
+      {
+        "name": "로켓랩(RKLB)",
+        "market": "미국",
+        "volx": 0.9,
+        "rsi": 35,
+        "pass": false,
+        "gap": 0.407
+      },
+      {
+        "name": "월마트(WMT)",
+        "market": "미국",
+        "volx": 1.0,
+        "rsi": 36,
+        "pass": false,
+        "gap": 0.349
+      },
+      {
+        "name": "서비스나우(NOW)",
+        "market": "미국",
+        "volx": 2.1,
+        "rsi": 39,
+        "pass": false,
+        "gap": 0.128
+      },
+      {
+        "name": "아메리칸항공(AAL)",
+        "market": "미국",
+        "volx": 0.8,
+        "rsi": 39,
+        "pass": false,
+        "gap": 0.587
+      }
+    ],
+    "거래량큰순": [
+      {
+        "name": "다날",
+        "market": "한국",
+        "volx": 30.1,
+        "rsi": 53,
+        "pass": false,
+        "gap": 0.509
+      },
+      {
+        "name": "코스모로보틱스",
+        "market": "한국",
+        "volx": 13.7,
+        "rsi": 51,
+        "pass": false,
+        "gap": 0.471
+      },
+      {
+        "name": "SK오션플랜트",
+        "market": "한국",
+        "volx": 10.3,
+        "rsi": 60,
+        "pass": false,
+        "gap": 0.704
+      },
+      {
+        "name": "지엔씨에너지",
+        "market": "한국",
+        "volx": 7.2,
+        "rsi": 81,
+        "pass": false,
+        "gap": 1.312
+      },
+      {
+        "name": "에스피지",
+        "market": "한국",
+        "volx": 4.1,
+        "rsi": 54,
+        "pass": false,
+        "gap": 0.53
+      },
+      {
+        "name": "슈퍼마이크로(SMCI)",
+        "market": "미국",
+        "volx": 3.9,
+        "rsi": 54,
+        "pass": false,
+        "gap": 0.54
       }
     ]
   }

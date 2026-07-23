@@ -178,12 +178,18 @@ function render(d){
   const trapSec = d.trap ? `
    <section><h2>🪤 오늘 봐야 될 차트</h2><div class="myview trap" style="border-style:solid">${
      d.trap.length ? d.trap.map(t=>`<div style="margin:3px 0">${t.tv?`<a href="${t.tv}" target="_blank" rel="noopener"><b>${esc(t.name)}</b> 📈</a>`:`<b>${esc(t.name)}</b>`} <span style="color:var(--sub)">(${esc(t.market)} ${esc(t.sector)})</span> — ${esc(t.verdict)}${t.detail?`<div class="tsub">${esc(t.detail)}</div>`:''}</div>`).join('')
-     : (()=>{const i=d.trapinfo||{};const sc=i['스캔수']||{};const tot=Object.values(sc).reduce((a,b)=>a+b,0);
-        const nr=(i['근접']||[]).map(n=>`<div style="margin:2px 0">· ${esc(n.name)} <span style="color:var(--sub)">(거래량 ${n.volx}배 · RSI ${n.rsi})</span></div>`).join('');
-        return `<b>오늘 살 자리 없음 — 대기</b><div class="tsub" style="margin-top:6px">`
-          + (tot?`스캔 ${tot}종목(${Object.entries(sc).map(([k,v])=>k+' '+v).join(' · ')}) · 통과 0`:'스캔 완료 · 통과 0')
-          + (i['기준']?`<br>기준: ${esc(i['기준'])}`:'')
-          + `</div>` + (nr?`<div class="tsub" style="margin-top:6px">가장 근접했던 종목${nr}</div>`:'');})()}</div></section>`:'';
+     : ''}${(()=>{const i=d.trapinfo||{};if(!i)return '';
+        const sc=i['스캔수']||{};const tot=Object.values(sc).reduce((a,b)=>a+b,0);
+        const row=n=>`<div style="margin:2px 0">· ${esc(n.name)} <span style="color:var(--sub)">거래량 ${n.volx}배 · RSI ${n.rsi}</span></div>`;
+        const rl=(i['RSI낮은순']||[]).map(row).join('');
+        const vh=(i['거래량큰순']||[]).map(row).join('');
+        const head=(d.trap&&d.trap.length)?'':`<b>오늘 살 자리 없음 — 대기</b>`;
+        return head+`<div class="tsub" style="margin-top:6px">`
+          + (tot?`스캔 ${tot}종목(${Object.entries(sc).map(([k,v])=>k+' '+v).join(' · ')}) · 통과 ${i['통과']||0}`:'')
+          + (i['기준']?`<br>기준: ${esc(i['기준'])}`:'')+`</div>`
+          + (rl?`<div class="tsub" style="margin-top:8px"><b>👀 RSI 낮은 순 (과매도 쪽)</b>${rl}</div>`:'')
+          + (vh?`<div class="tsub" style="margin-top:8px"><b>🔥 거래량 큰 순 (변화 일어나는 곳)</b>${vh}</div>`:'')
+          + `<div class="tsub" style="margin-top:6px;opacity:.75">※ 통과는 아니지만 차트 볼 후보 — 전저점·이평·지지 판단은 내가</div>`;})()}</div></section>`:'';
   const thead = `<div class="trow thead"><span class="trank">#</span><span class="tname">종목</span><span class="tchg">등락</span><span class="tval">거래대금</span></div>`;
   const topSec = (d.top&&(d.top.kr||[]).length)
     ? fold(`💰 거래대금 TOP${(d.top.kr||[]).length}`, '개별기업 · ETF 제외',
