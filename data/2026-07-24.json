@@ -1,0 +1,1119 @@
+{
+  "date": "2026-07-24",
+  "weekday": "금",
+  "headline": "테슬라 -14.5%·알파벳 -7%대 어닝쇼크에 나스닥 -2.15%·VIX +12%, 美 신규관세 60개국 오늘 자정 발효 — 한국은 전일(7/23) +4.40% 마감 후 개장 대기",
+  "indicators": [
+    {
+      "name": "코스피",
+      "value": "7,096.89",
+      "change": "+4.40%",
+      "dir": "up"
+    },
+    {
+      "name": "코스닥",
+      "value": "790.28",
+      "change": "+5.22%",
+      "dir": "up"
+    },
+    {
+      "name": "나스닥",
+      "value": "25,137.69",
+      "change": "-2.15%",
+      "dir": "down"
+    },
+    {
+      "name": "반도체(SOX)",
+      "value": "12,343.84",
+      "change": "-0.54%",
+      "dir": "down"
+    },
+    {
+      "name": "공포지수(VIX)",
+      "value": "18.70",
+      "change": "+12.38%",
+      "dir": "up"
+    },
+    {
+      "name": "탐욕지수(F&G)",
+      "value": "40 (공포)",
+      "change": "-3p",
+      "dir": "down"
+    },
+    {
+      "name": "달러/원",
+      "value": "1,474.1원",
+      "change": "-0.10%",
+      "dir": "down"
+    },
+    {
+      "name": "달러인덱스",
+      "value": "101.42",
+      "change": "+0.28%",
+      "dir": "up"
+    },
+    {
+      "name": "WTI유가",
+      "value": "$92.36",
+      "change": "+6.37%",
+      "dir": "up"
+    },
+    {
+      "name": "금",
+      "value": "$4,052",
+      "change": "-2.28%",
+      "dir": "down"
+    },
+    {
+      "name": "미 10년물",
+      "value": "4.70%",
+      "change": "+0.99%",
+      "dir": "up"
+    },
+    {
+      "name": "비트코인",
+      "value": "$65,120",
+      "change": "-1.48%",
+      "dir": "down"
+    }
+  ],
+  "indicomment": "VIX가 하루 만에 12% 뛰고 공포지수도 더 밀렸는데, 금은 오히려 2%대 빠졌어 — 진짜 패닉이면 금이 올라야 하는데 안 올랐다는 건, 지금 증시 하락이 공포보다는 유가·금리가 같이 뛰는 인플레 신호에 더 가깝다는 뜻이야.",
+  "news": {
+    "us": "테슬라(-14.52%)·알파벳(-7.13%)이 실적 발표 후 정규장에서 급락하며 나스닥이 -2.15%(VIX +12.38%)로 밀렸다. 반도체 STM도 3분기 가이던스 쇼크로 -18.67%를 기록했다.",
+    "kr": "한국 증시는 전일(7/23) 마감 기준 코스피 +4.40%(7,096.89)·코스닥 +5.22%(790.28)로 반도체·건설·조선이 동반 강세였다. 오늘 개장은 아직이라 간밤 미국발 급락을 어떻게 소화할지가 관건이다.",
+    "macro": "美 무역대표부가 60개국에 새 관세(10~12.5%)를 오늘 자정 발효한다 — 한국은 12.5%에서 작년 합의한 15% 상한을 지킬 수 있을지가 쟁점이다. FOMC는 7/28~29로 임박했고, 중동 확전 우려로 유가는 6주 최고치다."
+  },
+  "flow": {
+    "us": {
+      "in": [
+        {
+          "sector": "우주항공",
+          "change": 2.59,
+          "n": 1,
+          "leader": "스페이스X 관련 +2.6",
+          "note": ""
+        },
+        {
+          "sector": "미디어",
+          "change": 0.53,
+          "n": 1,
+          "leader": "넷플릭스 +0.5",
+          "note": ""
+        }
+      ],
+      "out": [
+        {
+          "sector": "빅테크",
+          "change": -4.86,
+          "n": 5,
+          "leader": "알파벳(구글) -7.1 · 알파벳(구글) -6.9 · 애플 -1.3 · 마이크로소프트 -2.2 · 아마존 -4.6",
+          "note": ""
+        },
+        {
+          "sector": "전기차",
+          "change": -14.52,
+          "n": 1,
+          "leader": "테슬라 -14.5",
+          "note": ""
+        },
+        {
+          "sector": "소프트웨어",
+          "change": -4.1,
+          "n": 2,
+          "leader": "서비스나우 -3.7 · 오라클 -4.6",
+          "note": ""
+        }
+      ],
+      "mixed": [
+        {
+          "sector": "반도체",
+          "change": 0.11,
+          "n": 6,
+          "leader": "마이크론 +3.2 · 엔비디아 -1.6 · AMD -2.3 · 인텔 -2.3 · SK하이닉스 ADR +2.6",
+          "note": ""
+        },
+        {
+          "sector": "IT서비스",
+          "change": 0.43,
+          "n": 1,
+          "leader": "IBM +0.4",
+          "note": ""
+        }
+      ]
+    },
+    "kr": {
+      "in": [
+        {
+          "sector": "반도체",
+          "change": 4.42,
+          "n": 4,
+          "leader": "SK하이닉스 +4.9 · 삼성전자 +3.6 · 삼성전자우 +3.2 · 제주반도체 +7.9",
+          "note": ""
+        },
+        {
+          "sector": "에너지",
+          "change": 30.0,
+          "n": 1,
+          "leader": "SK이터닉스 +30.0",
+          "note": ""
+        },
+        {
+          "sector": "건설",
+          "change": 13.57,
+          "n": 4,
+          "leader": "삼성E&A +12.9 · GS건설 +18.2 · 금호건설 +8.4 · 대우건설 +7.0",
+          "note": ""
+        }
+      ],
+      "out": [],
+      "mixed": []
+    }
+  },
+  "myview": "",
+  "aiview": "오늘 장의 성격은 '美 AI 빅테크 실적이 예상보다 못한 마진·현금흐름을 보이며 나스닥이 조정받은 날'에 가깝다 — 지수 낙폭(-2.15%)은 테슬라(-14.5%)·알파벳(-7%대) 같은 개별 대형주 급락에 크게 좌우된 구간적 조정으로 보이고, 추세 전환이라 단정할 근거는 아직 없다. 리스크는 오늘 자정 발효되는 60개국 신규관세다 — 한국이 12.5%에서 작년 합의한 15% 상한을 지키면 불확실성 해소 재료가 될 수 있지만, 못 지키면 원화·수출주에 추가 부담이 될 수 있다. 확인 포인트는 ①한국 관세율 확정 내용 ②FOMC(7/28~29) 스탠스 ③한국 개장 후 간밤 미국발 충격이 실제로 얼마나 반영되는지다.",
+  "headlines": [
+    {
+      "market": "us",
+      "type": "구조",
+      "title": "테슬라 -14.52%, 영업마진 붕괴·FCF 적자전환",
+      "summary": "테슬라는 2분기 매출이 늘었음에도(+26%) 순이익이 전년 대비 약 5% 줄어든 11억달러(시장 전망 13억달러 하회)에 그쳤다. 가격 인하와 비용 증가로 차량당 이익이 줄었고, 자본지출이 전년 대비 142% 급증(57.9억달러)하며 잉여현금흐름이 적자로 전환됐다. 주가는 정규장에서 -14.52%(319.69달러) 급락했다.",
+      "why": "로보택시·AI 등 미래 사업 투자가 당장의 수익성을 갉아먹고 있다는 우려가 현실화된 사례로, '캐펙스 확대가 주가엔 독'이라는 최근 빅테크 실적 시즌의 공통된 패턴을 재확인시켰다.",
+      "tickers": [
+        "TSLA"
+      ],
+      "sources": [
+        {
+          "name": "블록미디어",
+          "url": "https://www.blockmedia.co.kr/archives/1120104"
+        },
+        {
+          "name": "글로벌이코노믹",
+          "url": "https://www.g-enews.com/article/Securities/2026/07/202607230630068345e250e8e188_1"
+        }
+      ]
+    },
+    {
+      "market": "us",
+      "type": "구조",
+      "title": "알파벳 -7%대, 서프라이즈 실적에도 캐펙스 부담",
+      "summary": "알파벳은 2분기 매출 1,198억달러(전망 1,169억달러 상회)로 서프라이즈를 냈지만, 2026년 캐펙스 계획을 최대 1,900억달러에서 최대 2,050억달러로 상향하고 2분기 잉여현금흐름이 -59억달러를 기록하자 주가가 정규장에서 -7.13%(GOOGL)·-6.89%(GOOG) 급락했다.",
+      "why": "실적 자체는 좋았는데 '앞으로 돈을 더 써야 한다'는 신호에 주가가 빠지는 패턴이 테슬라와 동일하다 — 다만 이 캐펙스 확대는 반도체(메모리) 쪽엔 수요 신호로 반대 해석될 여지가 있다.",
+      "tickers": [
+        "GOOGL",
+        "GOOG"
+      ],
+      "sources": [
+        {
+          "name": "헤럴드경제",
+          "url": "https://biz.heraldcorp.com/article/10817538"
+        },
+        {
+          "name": "한국경제",
+          "url": "https://www.hankyung.com/article/202607230496i"
+        }
+      ]
+    },
+    {
+      "market": "us",
+      "type": "일회성",
+      "title": "STM -18.67%, 3분기 가이던스 쇼크",
+      "summary": "STMicroelectronics는 2분기 EPS(31센트)가 시장 예상(26센트)을 웃돌았음에도, 3분기 매출 가이던스가 시장 전망(37.9억달러)에 못 미치는 약 37억달러로 제시되며 주가가 -15~18%대 급락했다. 데이터센터向 매출 목표 상향 같은 긍정적 내용은 가이던스 부진에 묻혔다.",
+      "why": "차량·산업용 반도체 수요 둔화 신호로 해석될 수 있어, 메모리(마이크론) 강세와 대비되는 반도체 내 온도차를 보여준다.",
+      "tickers": [
+        "STM"
+      ],
+      "sources": [
+        {
+          "name": "GuruFocus",
+          "url": "https://www.gurufocus.com/news/8974899/stmicroelectronics-stm-stock-plummets-after-disappointing-q3-forecast"
+        },
+        {
+          "name": "MarketScreener",
+          "url": "https://www.marketscreener.com/news/stmicroelectronics-profit-misses-estimates-shares-fall-14-ce7f51ded88efe20"
+        }
+      ]
+    },
+    {
+      "market": "us",
+      "type": "구조",
+      "title": "나스닥 -2.15%·VIX +12%, AI 캐펙스 재평가 국면",
+      "summary": "테슬라·알파벳의 실적 후폭풍으로 나스닥이 -2.15%(25,137.69), VIX가 +12.38%(18.70)로 뛰었다. 빅테크의 실적 시즌은 이제 시작 단계로, 마이크로소프트·메타(7/29)·애플·아마존(7/30) 실적이 이어진다.",
+      "why": "지수 하락폭 자체는 개별 대형주(테슬라·알파벳) 낙폭에 크게 좌우된 구간적 조정으로 보이며, AI 투자의 수익성 입증 여부가 남은 실적 시즌 내내 시장의 핵심 변수로 남을 전망이다.",
+      "tickers": [
+        "나스닥",
+        "VIX",
+        "MSFT",
+        "META",
+        "AAPL",
+        "AMZN"
+      ],
+      "sources": [
+        {
+          "name": "Investing.com",
+          "url": "https://kr.investing.com/news/stock-market-news/article-1992343"
+        },
+        {
+          "name": "자체 수집(야후·네이버)"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "type": "구조",
+      "title": "美 60개국 신규관세 오늘 자정 발효",
+      "summary": "미 무역대표부(USTR)는 기존 10% 보편관세가 만료되는 오늘, 강제노동 관련 조사를 근거로 60개국에 10~12.5%의 새 관세를 발효한다. 캐나다·EU 등 6개국엔 10%, 한국 포함 나머지 54개국엔 12.5%가 적용될 전망이다. 이는 미 무역 전체의 99.4%를 포괄하는 조치다.",
+      "why": "한국은 작년 3,500억달러 대미 투자 약속으로 상호관세를 15%로 낮추는 합의를 확보했는데, 이번 12.5%가 그 15% 상한과 별도로 추가되는지 흡수되는지가 수출주(반도체·자동차)의 향방을 가를 쟁점이다.",
+      "tickers": [
+        "관세",
+        "USTR"
+      ],
+      "sources": [
+        {
+          "name": "한국경제",
+          "url": "https://www.hankyung.com/article/2026072178097"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/07/23/trump-tariffs-trade-deadline.html"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "type": "구조",
+      "title": "FOMC 7/28~29 임박, 동결 우세",
+      "summary": "연준 FOMC가 현지시간 7/28~29 이틀간 열리고, 결과는 29일 오후 2시(ET) 발표된다. 이번 회의는 경제전망요약(SEP) 발표가 없는 회차다. 물가 지표가 견조해 인상 가능성도 일부 거론되지만 시장은 여전히 동결을 우세하게 본다.",
+      "why": "한국은 이미 7/16 기준금리를 2.75%로 올린 상태라, 미국이 동결하면 금리차가 좁혀져 원화에 우호적인 환경이 이어질 수 있다. 확정 전까지는 컨센서스일 뿐 단정하지 않는다.",
+      "tickers": [
+        "FOMC",
+        "달러/원"
+      ],
+      "sources": [
+        {
+          "name": "연방준비제도",
+          "url": "https://www.federalreserve.gov/newsevents/2026-july.htm"
+        },
+        {
+          "name": "FedRateCalc",
+          "url": "https://fedratecalc.com/fomc-meeting-schedule/july-2026/"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "type": "구조",
+      "title": "중동 확전 우려에 유가 6주 최고, 금은 되레 하락",
+      "summary": "예멘 후티 반군의 해상운송 위협 등으로 중동 긴장이 다시 고조되며 WTI가 $92.36(+6.37%)까지 올라 6주 만에 최고치를 기록했다. 반면 금은 $4,052(-2.28%)로 하락해, 안전자산끼리도 엇갈린 반응을 보였다.",
+      "why": "유가 상승은 물가·달러 강세로 이어질 수 있어 연준의 다음 결정 셈법에 영향을 줄 수 있다. 전면전으로 격화되면 배럴당 100~120달러대까지 오를 수 있다는 전망도 나온다.",
+      "tickers": [
+        "WTI",
+        "금"
+      ],
+      "sources": [
+        {
+          "name": "뉴스핌",
+          "url": "https://www.newspim.com/news/view/20260723000038"
+        },
+        {
+          "name": "더쎈뉴스",
+          "url": "https://www.mhns.co.kr/news/articleView.html?idxno=753860"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "type": "구조",
+      "title": "AI 캐펙스 거품 논쟁 심화",
+      "summary": "모건스탠리는 2026년 빅테크의 글로벌 AI 투자 예산을 8,050억달러로 추산한다. 美 재무부 분석가들은 AI 수익화가 실패하면 닷컴버블 붕괴와 유사한 충격이 데이터센터·반도체 제조업 전반으로 퍼질 수 있다고 경고한 반면, 딜로이트 등은 이번 실적 시즌이 AI 투자가 실제 매출로 이어지고 있음을 보여준다고 평가한다.",
+      "why": "테슬라·알파벳의 오늘 급락이 이 논쟁의 최신 증거다 — 남은 마이크로소프트·메타(7/29), 애플·아마존(7/30) 실적이 이 논쟁의 다음 분수령이다.",
+      "tickers": [
+        "MSFT",
+        "META",
+        "AAPL",
+        "AMZN"
+      ],
+      "sources": [
+        {
+          "name": "서울신문",
+          "url": "https://www.seoul.co.kr/news/economy/industry/2026/07/21/20260721031002"
+        },
+        {
+          "name": "Deloitte Korea",
+          "url": "https://www.deloitte.com/kr/ko/our-thinking/global-economic-review/ger-2026-07-1st.html"
+        }
+      ]
+    },
+    {
+      "market": "kr",
+      "type": "일회성",
+      "title": "코스피 전일 마감 +4.40%, 오늘 개장 대기",
+      "summary": "간밤 수집된 수치는 어제(7/23) 마감치다 — 코스피 +4.40%(7,096.89)·코스닥 +5.22%(790.28)로 반도체·조선·건설이 동반 강세였다. 오늘 한국장은 아직 개장 전이며, 밤사이 미국 나스닥이 -2.15% 급락한 만큼 개장 직후 반응이 관전포인트다.",
+      "why": "장전 데이터 수집 특성상 오늘 아침 수치는 전일 마감분이다 — 오늘 실제 방향은 개장 후 확인해야 한다.",
+      "tickers": [
+        "코스피",
+        "코스닥"
+      ],
+      "sources": [
+        {
+          "name": "자체 수집(네이버·야후)"
+        }
+      ]
+    },
+    {
+      "market": "kr",
+      "type": "구조",
+      "title": "美 신규관세, 韓 수출주 사정권",
+      "summary": "오늘 자정 발효되는 美 60개국 관세에서 한국은 12.5%가 유력하다. 작년 확보한 '15% 상한' 합의가 그대로 유지될지, 이번 조치가 추가로 얹어질지가 핵심 쟁점이다.",
+      "why": "삼성전자·SK하이닉스(반도체), 현대차·기아(자동차) 등 대형 수출주가 이 조치의 직접 영향권에 있다.",
+      "tickers": [
+        "관세",
+        "삼성전자",
+        "SK하이닉스",
+        "현대차"
+      ],
+      "sources": [
+        {
+          "name": "한국경제",
+          "url": "https://www.hankyung.com/article/2026072178097"
+        },
+        {
+          "name": "이데일리",
+          "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01643286645516160"
+        }
+      ]
+    },
+    {
+      "market": "kr",
+      "type": "구조",
+      "title": "외국인 반도체 순매수, 美 급락 뒤 지속 여부 관건",
+      "summary": "전일(7/23) 외국인은 삼성전자·SK하이닉스를 중심으로 순매수하며 나흘 연속 매수 우위를 이어갔다. 그러나 간밤 미국에서 테슬라·알파벳 실적 충격으로 나스닥이 급락한 만큼, 오늘 이 매수세가 이어질지는 확인이 필요하다.",
+      "why": "어제 랠리의 근거였던 'AI 캐펙스 확대→반도체 수혜' 논리가 오늘 미국 증시에선 정반대로(캐펙스 확대=마진 훼손) 해석됐다 — 같은 재료의 두 얼굴이 국내 수급에 어떻게 반영될지 지켜봐야 한다.",
+      "tickers": [
+        "삼성전자",
+        "SK하이닉스"
+      ],
+      "sources": [
+        {
+          "name": "이투데이",
+          "url": "https://www.etoday.co.kr/news/view/2606782"
+        },
+        {
+          "name": "디지털데일리",
+          "url": "https://www.ddaily.co.kr/page/view/2026072310025176492"
+        }
+      ]
+    }
+  ],
+  "top": {
+    "kr": [
+      {
+        "name": "SK하이닉스",
+        "sector": "반도체(메모리·HBM)",
+        "desc": "메모리 반도체 2위, AI 서버용 HBM에서는 세계 1위",
+        "cap": "1368조",
+        "change": 4.86,
+        "value": "77,777억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A000660"
+      },
+      {
+        "name": "삼성전자",
+        "sector": "반도체(메모리)",
+        "desc": "메모리 반도체 1위, 스마트폰·가전까지 하는 종합 전자",
+        "cap": "1578조",
+        "change": 3.65,
+        "value": "43,049억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A005930"
+      },
+      {
+        "name": "SK이터닉스",
+        "sector": "에너지(신재생)",
+        "desc": "태양광·풍력 발전소를 짓고 운영하는 신재생에너지 회사",
+        "cap": "3조",
+        "change": 30.0,
+        "value": "13,590억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150"
+      },
+      {
+        "name": "삼성전자우",
+        "sector": "반도체(우선주)",
+        "desc": "삼성전자 우선주 — 의결권 없는 대신 배당이 조금 더 많음",
+        "cap": "153조",
+        "change": 3.24,
+        "value": "4,486억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A005935"
+      },
+      {
+        "name": "NAVER",
+        "sector": "플랫폼(포털·AI)",
+        "desc": "검색·쇼핑·웹툰을 가진 국내 최대 포털, 자체 AI(하이퍼클로바) 개발",
+        "cap": "35조",
+        "change": 11.73,
+        "value": "4,079억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A035420"
+      },
+      {
+        "name": "대원전선",
+        "sector": "전선",
+        "desc": "전력·통신용 케이블을 만드는 전선 제조사",
+        "cap": "1조",
+        "change": 16.78,
+        "value": "3,870억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A006340"
+      },
+      {
+        "name": "삼성E&A",
+        "sector": "건설(플랜트)",
+        "desc": "옛 삼성엔지니어링. 정유·석유화학 플랜트를 짓는 건설사, 중동 수주 비중 큼",
+        "cap": "9조",
+        "change": 12.95,
+        "value": "3,272억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A028050"
+      },
+      {
+        "name": "GS건설",
+        "sector": "건설",
+        "desc": "아파트(자이)·플랜트를 짓는 국내 대형 건설사",
+        "cap": "3조",
+        "change": 18.21,
+        "value": "2,620억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A006360"
+      },
+      {
+        "name": "SK텔레콤",
+        "sector": "통신",
+        "desc": "국내 1위 이동통신사, AI·데이터센터 사업으로도 확장 중",
+        "cap": "21조",
+        "change": 5.74,
+        "value": "2,481억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A017670"
+      },
+      {
+        "name": "주성엔지니어링",
+        "sector": "반도체장비",
+        "desc": "반도체·디스플레이 증착장비, 국내 장비사 중 기술력 상위",
+        "cap": "8조",
+        "change": 1.17,
+        "value": "2,476억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A036930"
+      },
+      {
+        "name": "SK오션플랜트",
+        "sector": "조선(해상풍력·특수선)",
+        "desc": "해상풍력 하부구조물과 특수선박을 만드는 조선사",
+        "cap": "1조",
+        "change": 19.61,
+        "value": "2,143억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A100090"
+      },
+      {
+        "name": "코스모로보틱스",
+        "sector": "로봇",
+        "desc": "코스모그룹 계열 로봇 사업 회사",
+        "cap": "5,338억",
+        "change": -6.37,
+        "value": "1,976억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A439960"
+      },
+      {
+        "name": "한화오션",
+        "sector": "조선",
+        "desc": "옛 대우조선해양. LNG선·군함을 만드는 조선 3사 중 하나",
+        "cap": "28조",
+        "change": 7.15,
+        "value": "1,653억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A042660"
+      },
+      {
+        "name": "원익IPS",
+        "sector": "반도체장비",
+        "desc": "반도체 만들 때 웨이퍼에 막을 입히는 증착장비 제조",
+        "cap": "6조",
+        "change": 1.43,
+        "value": "1,349억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A240810"
+      },
+      {
+        "name": "한화솔루션",
+        "sector": "태양광·화학",
+        "desc": "태양광 모듈(큐셀)과 석유화학을 함께 하는 회사",
+        "cap": "5조",
+        "change": 10.5,
+        "value": "1,299억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A009830"
+      },
+      {
+        "name": "두산에너빌리티",
+        "sector": "원전·발전설비",
+        "desc": "원자력·가스터빈 등 발전소 설비를 만드는 중공업 회사",
+        "cap": "47조",
+        "change": 5.78,
+        "value": "1,265억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A034020"
+      },
+      {
+        "name": "지엔씨에너지",
+        "sector": "",
+        "desc": "",
+        "cap": "7,492억",
+        "change": 29.96,
+        "value": "1,249억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A119850"
+      },
+      {
+        "name": "제주반도체",
+        "sector": "반도체(메모리설계)",
+        "desc": "휴대폰·IoT에 들어가는 소용량 메모리를 설계하는 팹리스",
+        "cap": "3조",
+        "change": 7.87,
+        "value": "1,225억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A080220"
+      },
+      {
+        "name": "삼성중공업",
+        "sector": "조선",
+        "desc": "LNG선·해양플랜트를 만드는 조선 3사 중 하나",
+        "cap": "21조",
+        "change": 9.49,
+        "value": "960억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A010140"
+      },
+      {
+        "name": "금호건설",
+        "sector": "건설",
+        "desc": "아파트·토목 공사를 하는 중견 건설사",
+        "cap": "4,210억",
+        "change": 8.45,
+        "value": "887억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A002990"
+      },
+      {
+        "name": "대우건설",
+        "sector": "건설",
+        "desc": "아파트·플랜트를 짓는 국내 대형 건설사 중 하나",
+        "cap": "7조",
+        "change": 7.01,
+        "value": "854억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A047040"
+      },
+      {
+        "name": "다날",
+        "sector": "",
+        "desc": "",
+        "cap": "3,506억",
+        "change": 17.94,
+        "value": "824억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A064260"
+      },
+      {
+        "name": "에스피지",
+        "sector": "로봇부품(감속기·모터)",
+        "desc": "하모닉·RV·유성 감속기를 모두 만드는 국내 유일 회사, 로봇 관절 핵심부품",
+        "cap": "2조",
+        "change": 1.33,
+        "value": "821억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A058610"
+      },
+      {
+        "name": "카카오",
+        "sector": "플랫폼(메신저)",
+        "desc": "카카오톡 기반 메신저·모빌리티·핀테크 계열사를 거느린 플랫폼 그룹",
+        "cap": "16조",
+        "change": 4.65,
+        "value": "815억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A035720"
+      },
+      {
+        "name": "흥구석유",
+        "sector": "",
+        "desc": "대구·경북 지역 주유소에 기름을 공급하는 석유 유통업체",
+        "cap": "2,080억",
+        "change": 1.17,
+        "value": "798억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A024060"
+      },
+      {
+        "name": "대한전선",
+        "sector": "",
+        "desc": "",
+        "cap": "6조",
+        "change": 12.93,
+        "value": "797억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A001440"
+      },
+      {
+        "name": "디앤디파마텍",
+        "sector": "바이오(신약)",
+        "desc": "비만·뇌질환 신약을 개발하는 바이오 회사",
+        "cap": "3조",
+        "change": 8.47,
+        "value": "782억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A347850"
+      },
+      {
+        "name": "HPSP",
+        "sector": "반도체장비",
+        "desc": "반도체 수율을 높이는 고압 수소 어닐링 장비, 세계 독점급",
+        "cap": "3조",
+        "change": 2.19,
+        "value": "775억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A403870"
+      },
+      {
+        "name": "에코프로",
+        "sector": "2차전지(지주)",
+        "desc": "2차전지 양극재 소재를 만드는 에코프로 그룹 지주사",
+        "cap": "11조",
+        "change": 9.34,
+        "value": "762억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A086520"
+      },
+      {
+        "name": "테크윙",
+        "sector": "반도체장비(테스트핸들러)",
+        "desc": "반도체 검사 공정에서 칩을 옮기는 테스트핸들러 1위",
+        "cap": "2조",
+        "change": 9.96,
+        "value": "741억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A089030"
+      }
+    ],
+    "us": [
+      {
+        "name": "마이크론 (MU)",
+        "sector": "반도체(메모리)",
+        "desc": "D램·낸드를 만드는 미국 유일 메모리 회사, HBM에도 진출",
+        "cap": "$1.1T",
+        "change": 3.2,
+        "value": "39,494백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=MU"
+      },
+      {
+        "name": "테슬라 (TSLA)",
+        "sector": "전기차",
+        "desc": "전기차 1위이자 자율주행·로봇(옵티머스)에 투자 중",
+        "cap": "$1.2T",
+        "change": -14.52,
+        "value": "36,776백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=TSLA"
+      },
+      {
+        "name": "엔비디아 (NVDA)",
+        "sector": "반도체(AI)",
+        "desc": "AI 학습용 GPU를 사실상 독점하는 세계 시총 1위권 기업",
+        "cap": "$5.1T",
+        "change": -1.56,
+        "value": "22,970백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=NVDA"
+      },
+      {
+        "name": "알파벳(구글) (GOOGL)",
+        "sector": "빅테크(광고·AI)",
+        "desc": "검색·유튜브·안드로이드를 가진 구글의 모회사",
+        "cap": "$3.9T",
+        "change": -7.13,
+        "value": "21,938백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=GOOGL"
+      },
+      {
+        "name": "알파벳(구글) (GOOG)",
+        "sector": "빅테크(광고·AI)",
+        "desc": "GOOGL과 같은 회사의 다른 주식 종류(의결권 있음), 사업은 동일",
+        "cap": "$3.9T",
+        "change": -6.89,
+        "value": "14,805백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=GOOG"
+      },
+      {
+        "name": "AMD (AMD)",
+        "sector": "반도체",
+        "desc": "엔비디아를 추격하는 CPU·AI 가속기 제조사",
+        "cap": "$880B",
+        "change": -2.29,
+        "value": "14,529백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMD"
+      },
+      {
+        "name": "애플 (AAPL)",
+        "sector": "빅테크(하드웨어)",
+        "desc": "아이폰·맥을 만드는 회사, 서비스 매출 비중이 커지는 중",
+        "cap": "$4.7T",
+        "change": -1.3,
+        "value": "13,122백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=AAPL"
+      },
+      {
+        "name": "인텔 (INTC)",
+        "sector": "반도체",
+        "desc": "미국 대표 반도체 회사. 파운드리 전환 중이며 미 정부가 지원",
+        "cap": "$504B",
+        "change": -2.33,
+        "value": "12,882백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=INTC"
+      },
+      {
+        "name": "마이크로소프트 (MSFT)",
+        "sector": "빅테크(클라우드·AI)",
+        "desc": "윈도우·오피스에 더해 클라우드(애저)와 오픈AI 지분 보유",
+        "cap": "$2.8T",
+        "change": -2.24,
+        "value": "11,553백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=MSFT"
+      },
+      {
+        "name": "아마존 (AMZN)",
+        "sector": "빅테크(커머스·클라우드)",
+        "desc": "전자상거래 1위이자 클라우드(AWS) 세계 1위",
+        "cap": "$2.5T",
+        "change": -4.57,
+        "value": "11,066백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMZN"
+      },
+      {
+        "name": "스페이스X 관련 (SPCX)",
+        "sector": "우주항공",
+        "desc": "스페이스X 관련 투자 상품 — 개별 기업 주식이 아님",
+        "cap": "$1.6T",
+        "change": 2.59,
+        "value": "8,784백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=SPCX"
+      },
+      {
+        "name": "SK하이닉스 ADR (SKHY)",
+        "sector": "반도체(메모리·HBM)",
+        "desc": "SK하이닉스의 미국 예탁증서(ADR) — 본주와 가격이 따로 움직임",
+        "cap": "$1.2T",
+        "change": 2.56,
+        "value": "6,092백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=SKHY"
+      },
+      {
+        "name": "서비스나우 (NOW)",
+        "sector": "소프트웨어(기업용)",
+        "desc": "기업 업무 자동화 소프트웨어(서비스나우)",
+        "cap": "$95B",
+        "change": -3.69,
+        "value": "4,484백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=NOW"
+      },
+      {
+        "name": "팔란티어 (PLTR)",
+        "sector": "AI소프트웨어",
+        "desc": "정부·기업에 데이터 분석 소프트웨어를 파는 AI 회사",
+        "cap": "$296B",
+        "change": -0.96,
+        "value": "3,653백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=PLTR"
+      },
+      {
+        "name": "오라클 (ORCL)",
+        "sector": "소프트웨어(클라우드)",
+        "desc": "기업용 데이터베이스 1위, 최근 AI 클라우드로 확장 중",
+        "cap": "$346B",
+        "change": -4.61,
+        "value": "3,572백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=ORCL"
+      },
+      {
+        "name": "IBM (IBM)",
+        "sector": "IT서비스",
+        "desc": "기업용 컨설팅·소프트웨어·메인프레임의 원조 IT 기업",
+        "cap": "$194B",
+        "change": 0.43,
+        "value": "3,157백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=IBM"
+      },
+      {
+        "name": "넷플릭스 (NFLX)",
+        "sector": "미디어",
+        "desc": "세계 최대 스트리밍 서비스, 광고 요금제로 확장 중",
+        "cap": "$287B",
+        "change": 0.53,
+        "value": "3,077백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=NFLX"
+      },
+      {
+        "name": "슈퍼마이크로 (SMCI)",
+        "sector": "AI서버",
+        "desc": "엔비디아 GPU를 넣은 AI 서버를 조립해 파는 회사",
+        "cap": "$20B",
+        "change": 2.09,
+        "value": "2,631백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=SMCI"
+      },
+      {
+        "name": "누홀딩스(누뱅크) (NU)",
+        "sector": "핀테크(중남미)",
+        "desc": "브라질 중심 중남미 최대 디지털은행",
+        "cap": "$69B",
+        "change": -2.21,
+        "value": "2,573백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=NU"
+      },
+      {
+        "name": "엑슨모빌 (XOM)",
+        "sector": "에너지(석유)",
+        "desc": "미국 최대 석유·가스 기업, 유가에 실적이 직결",
+        "cap": "$650B",
+        "change": 1.58,
+        "value": "2,473백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=XOM"
+      },
+      {
+        "name": "AT&T (T)",
+        "sector": "통신",
+        "desc": "미국 2위 통신사 AT&T",
+        "cap": "$160B",
+        "change": -0.35,
+        "value": "2,367백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=T"
+      },
+      {
+        "name": "월마트 (WMT)",
+        "sector": "리테일(필수소비)",
+        "desc": "세계 최대 오프라인 유통업체, 경기 방어주 성격",
+        "cap": "$863B",
+        "change": -0.85,
+        "value": "2,330백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=WMT"
+      },
+      {
+        "name": "뱅크오브아메리카 (BAC)",
+        "sector": "은행",
+        "desc": "미국 2위 상업은행 뱅크오브아메리카",
+        "cap": "$435B",
+        "change": -0.55,
+        "value": "1,778백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=BAC"
+      },
+      {
+        "name": "노키아 (NOK)",
+        "sector": "통신장비",
+        "desc": "핀란드 통신장비 회사, 5G 네트워크 장비가 주력",
+        "cap": "$54B",
+        "change": -5.35,
+        "value": "1,766백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=NOK"
+      },
+      {
+        "name": "ST마이크로 (STM)",
+        "sector": "반도체(차량·산업용)",
+        "desc": "자동차·산업용 반도체 중심의 유럽(프랑스·이탈리아) 반도체 회사",
+        "cap": "$48B",
+        "change": -18.67,
+        "value": "1,722백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=STM"
+      },
+      {
+        "name": "아이렌리미티드 (IREN)",
+        "sector": "비트코인채굴→AI데이터센터",
+        "desc": "비트코인 채굴장을 AI 데이터센터로 바꾸고 있는 회사",
+        "cap": "$15B",
+        "change": -1.7,
+        "value": "1,692백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=IREN"
+      },
+      {
+        "name": "아메리칸항공 (AAL)",
+        "sector": "항공",
+        "desc": "미국 3대 항공사 중 하나인 아메리칸항공",
+        "cap": "$9B",
+        "change": -8.35,
+        "value": "1,646백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=AAL"
+      },
+      {
+        "name": "우버 (UBER)",
+        "sector": "플랫폼(모빌리티)",
+        "desc": "차량호출·배달 앱 세계 1위",
+        "cap": "$140B",
+        "change": -2.02,
+        "value": "1,623백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=UBER"
+      },
+      {
+        "name": "스트래티지(MSTR) (MSTR)",
+        "sector": "크립토(BTC보유)",
+        "desc": "비트코인을 대량 보유한 소프트웨어 회사(옛 마이크로스트래티지)",
+        "cap": "$34B",
+        "change": -6.38,
+        "value": "1,603백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=MSTR"
+      },
+      {
+        "name": "CSX (CSX)",
+        "sector": "철도",
+        "desc": "미국 동부 화물철도 운영사",
+        "cap": "$98B",
+        "change": 5.77,
+        "value": "1,539백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=CSX"
+      }
+    ]
+  },
+  "trap": [
+    {
+      "market": "미국",
+      "sector": "빅테크",
+      "name": "알파벳(구글)(GOOGL)",
+      "verdict": "🚨 셀링 클라이맥스(거래량 2.1배 · RSI 31) — 바닥 '후보' 관찰 시작. 매수 아님(떨어지는 칼 도중), 회복 마감 나오면 🔔로 승격 [거래량 평소의 2.1배]",
+      "detail": "20선 -10.1% · 60선 -13.9% · 거래량 2.1배🔥 · RSI 31↓ · ⚠️200선 아래(하락 조수) · 🔻하락 추세 중(20선과 크게 이격 — 떨어지는 칼 주의)",
+      "tv": "https://kr.tradingview.com/chart/?symbol=GOOGL"
+    },
+    {
+      "market": "미국",
+      "sector": "전기차",
+      "name": "테슬라(TSLA)",
+      "verdict": "🚨 셀링 클라이맥스(거래량 3.0배 · RSI 29) — 바닥 '후보' 관찰 시작. 매수 아님(떨어지는 칼 도중), 회복 마감 나오면 🔔로 승격 [거래량 평소의 3.0배]",
+      "detail": "20선 -18.4% · 60선 -20.9% · 거래량 3.0배🔥 · RSI 29↓ · ⚠️200선 아래(하락 조수) · 🔻하락 추세 중(20선과 크게 이격 — 떨어지는 칼 주의)",
+      "tv": "https://kr.tradingview.com/chart/?symbol=TSLA"
+    }
+  ],
+  "trapinfo": {
+    "기준": "거래량 1.5배↑ 그리고 RSI 35↓ (같은 날 둘 다) · 최근 3일 내 + 양봉 방아쇠",
+    "스캔수": {
+      "한국": 25,
+      "미국": 26
+    },
+    "통과": 2,
+    "근접": [
+      {
+        "name": "알파벳(구글)(GOOG)",
+        "market": "미국",
+        "volx": 2.1,
+        "rsi": 32,
+        "pass": true,
+        "tv": "https://kr.tradingview.com/chart/?symbol=GOOG",
+        "gap": 0.0
+      },
+      {
+        "name": "NOK(NOK)",
+        "market": "미국",
+        "volx": 2.1,
+        "rsi": 32,
+        "pass": true,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NOK",
+        "gap": 0.0
+      },
+      {
+        "name": "STM(STM)",
+        "market": "미국",
+        "volx": 3.0,
+        "rsi": 33,
+        "pass": true,
+        "tv": "https://kr.tradingview.com/chart/?symbol=STM",
+        "gap": 0.0
+      }
+    ],
+    "RSI낮은순": [
+      {
+        "name": "IBM(IBM)",
+        "market": "미국",
+        "volx": 1.2,
+        "rsi": 30,
+        "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=IBM",
+        "gap": 0.231
+      },
+      {
+        "name": "아메리칸항공(AAL)",
+        "market": "미국",
+        "volx": 0.8,
+        "rsi": 30,
+        "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AAL",
+        "gap": 0.465
+      },
+      {
+        "name": "오라클(ORCL)",
+        "market": "미국",
+        "volx": 0.7,
+        "rsi": 30,
+        "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=ORCL",
+        "gap": 0.5
+      },
+      {
+        "name": "넷플릭스(NFLX)",
+        "market": "미국",
+        "volx": 0.9,
+        "rsi": 34,
+        "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NFLX",
+        "gap": 0.426
+      },
+      {
+        "name": "월마트(WMT)",
+        "market": "미국",
+        "volx": 0.9,
+        "rsi": 35,
+        "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=WMT",
+        "gap": 0.369
+      },
+      {
+        "name": "서비스나우(NOW)",
+        "market": "미국",
+        "volx": 2.4,
+        "rsi": 36,
+        "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NOW",
+        "gap": 0.034
+      }
+    ],
+    "거래량큰순": [
+      {
+        "name": "다날",
+        "market": "한국",
+        "volx": 30.1,
+        "rsi": 53,
+        "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A064260",
+        "gap": 0.509
+      },
+      {
+        "name": "코스모로보틱스",
+        "market": "한국",
+        "volx": 13.7,
+        "rsi": 51,
+        "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A439960",
+        "gap": 0.471
+      },
+      {
+        "name": "SK오션플랜트",
+        "market": "한국",
+        "volx": 10.3,
+        "rsi": 60,
+        "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A100090",
+        "gap": 0.704
+      },
+      {
+        "name": "지엔씨에너지",
+        "market": "한국",
+        "volx": 7.2,
+        "rsi": 81,
+        "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A119850",
+        "gap": 1.312
+      },
+      {
+        "name": "에스피지",
+        "market": "한국",
+        "volx": 4.1,
+        "rsi": 54,
+        "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A058610",
+        "gap": 0.53
+      },
+      {
+        "name": "GS건설",
+        "market": "한국",
+        "volx": 3.5,
+        "rsi": 62,
+        "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A006360",
+        "gap": 0.766
+      }
+    ]
+  }
+}
