@@ -926,6 +926,7 @@
         "volx": 2.1,
         "rsi": 39,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NOW",
         "gap": 0.128
       },
       {
@@ -934,6 +935,7 @@
         "volx": 1.9,
         "rsi": 45,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A009830",
         "gap": 0.278
       },
       {
@@ -942,6 +944,7 @@
         "volx": 1.0,
         "rsi": 36,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=WMT",
         "gap": 0.349
       }
     ],
@@ -952,6 +955,7 @@
         "volx": 0.9,
         "rsi": 32,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NFLX",
         "gap": 0.427
       },
       {
@@ -960,6 +964,7 @@
         "volx": 0.5,
         "rsi": 32,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=ORCL",
         "gap": 0.652
       },
       {
@@ -968,6 +973,7 @@
         "volx": 0.9,
         "rsi": 35,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=RKLB",
         "gap": 0.407
       },
       {
@@ -976,6 +982,7 @@
         "volx": 1.0,
         "rsi": 36,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=WMT",
         "gap": 0.349
       },
       {
@@ -984,6 +991,7 @@
         "volx": 2.1,
         "rsi": 39,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NOW",
         "gap": 0.128
       },
       {
@@ -992,6 +1000,7 @@
         "volx": 0.8,
         "rsi": 39,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AAL",
         "gap": 0.587
       }
     ],
@@ -1002,6 +1011,7 @@
         "volx": 30.1,
         "rsi": 53,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A064260",
         "gap": 0.509
       },
       {
@@ -1010,6 +1020,7 @@
         "volx": 13.7,
         "rsi": 51,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A439960",
         "gap": 0.471
       },
       {
@@ -1018,6 +1029,7 @@
         "volx": 10.3,
         "rsi": 60,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A100090",
         "gap": 0.704
       },
       {
@@ -1026,6 +1038,7 @@
         "volx": 7.2,
         "rsi": 81,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A119850",
         "gap": 1.312
       },
       {
@@ -1034,6 +1047,7 @@
         "volx": 4.1,
         "rsi": 54,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A058610",
         "gap": 0.53
       },
       {
@@ -1042,6 +1056,7 @@
         "volx": 3.9,
         "rsi": 54,
         "pass": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=SMCI",
         "gap": 0.54
       }
     ]

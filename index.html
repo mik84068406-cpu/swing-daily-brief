@@ -180,7 +180,7 @@ function render(d){
      d.trap.length ? d.trap.map(t=>`<div style="margin:3px 0">${t.tv?`<a href="${t.tv}" target="_blank" rel="noopener"><b>${esc(t.name)}</b> 📈</a>`:`<b>${esc(t.name)}</b>`} <span style="color:var(--sub)">(${esc(t.market)} ${esc(t.sector)})</span> — ${esc(t.verdict)}${t.detail?`<div class="tsub">${esc(t.detail)}</div>`:''}</div>`).join('')
      : ''}${(()=>{const i=d.trapinfo||{};if(!i)return '';
         const sc=i['스캔수']||{};const tot=Object.values(sc).reduce((a,b)=>a+b,0);
-        const row=n=>`<div style="margin:2px 0">· ${esc(n.name)} <span style="color:var(--sub)">거래량 ${n.volx}배 · RSI ${n.rsi}</span></div>`;
+        const row=n=>`<div style="margin:3px 0">· ${n.tv?`<a href="${n.tv}" target="_blank" rel="noopener"><b>${esc(n.name)}</b> 📈</a>`:`<b>${esc(n.name)}</b>`} <span style="color:var(--sub)">거래량 ${n.volx}배 · RSI ${n.rsi}</span></div>`;
         const rl=(i['RSI낮은순']||[]).map(row).join('');
         const vh=(i['거래량큰순']||[]).map(row).join('');
         const head=(d.trap&&d.trap.length)?'':`<b>오늘 살 자리 없음 — 대기</b>`;
