@@ -111,6 +111,19 @@
   .trapitem .ttrig{display:inline-block;font-size:11px;color:var(--sub);background:var(--line);
                    border-radius:6px;padding:1px 7px;margin-left:7px;white-space:nowrap}
   .trapitem .tdesc{font-size:13px;margin-top:3px;opacity:.9}
+  /* 🚀 돌파 스캔 (2026-07-24) */
+  .boreg{font-weight:600;padding:7px 10px;border-radius:9px;margin-bottom:10px;font-size:14px}
+  .boreg.ok{background:rgba(34,160,90,.12);color:var(--up)}
+  .boreg.no{background:rgba(220,70,70,.12);color:var(--down)}
+  .boreg .bosub{display:block;font-size:11px;font-weight:400;color:var(--sub);margin-top:2px}
+  .bohead{font-weight:600;font-size:14px;margin:10px 0 6px}
+  .bocard{border:1px solid var(--line);border-radius:10px;padding:9px 11px;margin-bottom:8px}
+  .bocard .botop{font-size:15px}
+  .bocard .tsec{color:var(--sub);font-size:12px;margin-left:6px}
+  .bocard .tdesc{font-size:12.5px;color:var(--sub);margin:2px 0 5px}
+  .bogrid{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px}
+  .bogrid .red{color:var(--down)} .bogrid .grn{color:var(--up)}
+  .bogrid .ord{flex-basis:100%;margin-top:4px;font-weight:600}
   .myview{background:var(--card);border:1px dashed var(--accent);border-radius:12px;padding:14px 16px;color:var(--sub);font-size:14px}
   .myview b{color:var(--tx)}
   footer{margin-top:34px;color:var(--sub);font-size:12px;text-align:center;border-top:1px solid var(--line);padding-top:16px}
@@ -191,8 +204,34 @@ function render(d){
   const flowCount = (()=>{const f=d.flow&&d.flow.us; if(!isObj(f)) return '';
     const ins=(d.flow.us.in||[]).length+(d.flow.kr.in||[]).length, outs=(d.flow.us.out||[]).length+(d.flow.kr.out||[]).length;
     return `들어옴 ${ins} · 빠짐 ${outs}`;})();
+  // 🚀 돌파 스캔 (2026-07-24) — 메인 매매 신호. 국면(200일선) → 돌파 → 근접 순.
+  const boSec = (()=>{ const b=d.breakout; if(!b) return '';
+    const g=b['국면']||{}, bull=g['상승장'];
+    const head=`<div class="boreg ${bull?'ok':'no'}">${bull?'✅ 상승장':'❌ 하락장 — 오늘은 신규진입 금지'}
+       <span class="bosub">나스닥 ${Number(g['종가']).toLocaleString()} · 200일선 ${Number(g['sma200']).toLocaleString()} (${g['이격']>0?'+':''}${g['이격']}%)</span></div>`;
+    const hits=(b['돌파']||[]).map(t=>{const u=t.unit||'';
+      return `<div class="bocard">
+        <div class="botop">${t.tv?`<a href="${t.tv}" target="_blank" rel="noopener"><b>${esc(t.name)}</b> 📈</a>`:`<b>${esc(t.name)}</b>`}
+          <span class="tsec">${esc(t.market)}${t.sector?' · '+esc(t.sector):''}</span></div>
+        ${t.desc?`<div class="tdesc">${esc(t.desc)}</div>`:''}
+        <div class="bogrid">
+          <span>종가 <b>${Number(t.close).toLocaleString()}${u}</b></span>
+          <span>돌파선 ${Number(t.pivot).toLocaleString()}${u}</span>
+          <span class="red">손절 <b>${Number(t.stop).toLocaleString()}${u}</b> (−${t.stoppct}%)</span>
+          <span class="grn">절반익절 <b>${Number(t.target).toLocaleString()}${u}</b></span>
+          <span>전량청산 ${Number(t.exitlow).toLocaleString()}${u}</span>
+          <span class="ord">👉 ${t.shares}주 = ${Number(t.pos).toLocaleString()}원 · 최대손실 ${Number(t.loss).toLocaleString()}원${t.capped?' (30만 상한)':''}</span>
+        </div></div>`;}).join('');
+    const near=(b['근접']||[]).map(n=>`<div style="margin:2px 0">· ${n.tv?`<a href="${n.tv}" target="_blank" rel="noopener">${esc(n.name)} 📈</a>`:esc(n.name)} <span style="color:var(--sub)">${Number(n.close).toLocaleString()} → ${Number(n.pivot).toLocaleString()} (+${n.gap}%)</span></div>`).join('');
+    return `<section><h2>🚀 돌파 (터틀)</h2><div class="myview" style="border-style:solid">
+      ${head}
+      ${hits?`<div class="bohead">🚀 돌파 발생 ${(b['돌파']||[]).length}건 — 내일 시가 진입 검토</div>${hits}`:'<div class="bohead">🚀 돌파 발생: 없음</div>'}
+      ${near?`<div class="tsub" style="margin-top:9px"><b>👀 근접 (내일 넘길 수 있음)</b>${near}</div>`:''}
+      <div class="tsub" style="margin-top:9px;opacity:.8">규칙: 55일 고점 종가돌파 → 익일 시가 · 손절 −2N · 3R에서 절반익절+손절을 본절로 · 나머지는 20일 저점까지<br>⚠️ 검증중 — 승률 37%, 10번 중 6번 손절이 정상</div>
+    </div></section>`;})();
+
   const trapSec = d.trap ? `
-   <section><h2>🪤 오늘 봐야 될 차트</h2><div class="myview trap" style="border-style:solid">${
+   <section><h2>🪤 참고: 많이 빠진 차트 <span style="font-size:12px;color:var(--sub);font-weight:400">(바닥 매수 — 검증 미통과, 매매 신호 아님)</span></h2><div class="myview trap" style="border-style:solid">${
      d.trap.length ? d.trap.map(t=>`<div class="trapitem">${t.tv?`<a href="${t.tv}" target="_blank" rel="noopener"><b>${esc(t.name)}</b> 📈</a>`:`<b>${esc(t.name)}</b>`} <span class="tsec">${esc(t.market)} · ${esc(t.sector)}${t.cap?` · 시총 ${esc(t.cap)}`:''}${t.price?` · ${esc(t.price)}`:''}</span><span class="ttrig">${esc(t.trigger||'')}</span>${t.desc?`<div class="tdesc">${esc(t.desc)}</div>`:''}</div>`).join('')
      : ''}${(()=>{const i=d.trapinfo||{};if(!i)return '';
         // RSI낮은순·거래량큰순 목록은 제거 (2026-07-24, 비랑: "안 볼 것 같다 · 볼 게 너무 많아진다").
@@ -216,7 +255,8 @@ function render(d){
    ${fold('💰 돈이 어디로 (주도 섹터)', flowCount, `
      <div class="mkt"><div class="flag">🇺🇸 미국</div>${flowBox('us')}</div>
      <div class="mkt"><div class="flag">🇰🇷 한국</div>${flowBox('kr')}</div>`)}
-   ${trapSec}
+   ${boSec}
+   ${d.trap&&d.trap.length?fold('🪤 참고: 많이 빠진 차트', '바닥 매수 — 검증 미통과, 매매 신호 아님', trapSec.replace(/^\s*<section>[\s\S]*?<\/h2>/,'').replace(/<\/section>$/,'')):''}
    ${topSec}
    ${fold('✍️ 내 판단 · AI 한줄', mv?'작성됨':'아직 비어있음', `
      <div class="myview">${mv?esc(d.myview).replace(/\n/g,'<br>'):'<b>여기는 네가 채우는 칸.</b> 위 뉴스·지표·섹터를 다 보고 "나는 이렇게 본다"를 적는 곳. (아직 비어있음)'}</div>

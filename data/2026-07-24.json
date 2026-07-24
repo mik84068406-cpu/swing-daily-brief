@@ -953,6 +953,90 @@
       }
     ]
   },
+  "breakout": {
+    "날짜": "2026-07-24",
+    "국면": {
+      "지수": "나스닥",
+      "종가": 25137.69,
+      "sma200": 23932.93,
+      "상승장": true,
+      "이격": 5.0
+    },
+    "돌파": [
+      {
+        "name": "지엔씨에너지",
+        "market": "한국",
+        "unit": "원",
+        "sector": "",
+        "desc": "",
+        "close": 47300.0,
+        "pivot": 45550.0,
+        "stop": 40191.81,
+        "stoppct": 15.0,
+        "target": 68624.56,
+        "exitlow": 18690.0,
+        "shares": 4.22,
+        "pos": 199629,
+        "loss": 30000,
+        "capped": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A119850"
+      },
+      {
+        "name": "CSX(CSX)",
+        "market": "미국",
+        "unit": "$",
+        "sector": "철도",
+        "desc": "미국 동부 화물철도 운영사",
+        "close": 52.81,
+        "pivot": 51.29,
+        "stop": 50.71,
+        "stoppct": 4.0,
+        "target": 59.1,
+        "exitlow": 45.93,
+        "shares": 3.854,
+        "pos": 300000,
+        "loss": 11907,
+        "capped": true,
+        "tv": "https://kr.tradingview.com/chart/?symbol=CSX"
+      },
+      {
+        "name": "SK이터닉스",
+        "market": "한국",
+        "unit": "원",
+        "sector": "에너지(신재생)",
+        "desc": "태양광·풍력 발전소를 짓고 운영하는 신재생에너지 회사",
+        "close": 82300.0,
+        "pivot": 80600.0,
+        "stop": 66911.87,
+        "stoppct": 18.7,
+        "target": 128464.38,
+        "exitlow": 39250.0,
+        "shares": 1.95,
+        "pos": 160448,
+        "loss": 30000,
+        "capped": false,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150"
+      }
+    ],
+    "근접": [
+      {
+        "name": "뱅크오브아메리카(BAC)",
+        "market": "미국",
+        "close": 61.28,
+        "pivot": 62.12,
+        "gap": 1.4,
+        "tv": "https://kr.tradingview.com/chart/?symbol=BAC"
+      },
+      {
+        "name": "누홀딩스(누뱅크)(NU)",
+        "market": "미국",
+        "close": 14.19,
+        "pivot": 14.6,
+        "gap": 2.9,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NU"
+      }
+    ]
+  },
   "trap": [
     {
       "market": "미국",
