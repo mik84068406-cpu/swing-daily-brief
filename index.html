@@ -207,8 +207,11 @@ function render(d){
   // 🚀 돌파 스캔 (2026-07-24) — 메인 매매 신호. 국면(200일선) → 돌파 → 근접 순.
   const boSec = (()=>{ const b=d.breakout; if(!b) return '';
     const g=b['국면']||{}, bull=g['상승장'];
+    const crashing=(b['급락일']||[]);
+    const cd=b['급락상세']||{};
     const head=`<div class="boreg ${bull?'ok':'no'}">${bull?'✅ 상승장':'❌ 하락장 — 오늘은 신규진입 금지'}
-       <span class="bosub">나스닥 ${Number(g['종가']).toLocaleString()} · 200일선 ${Number(g['sma200']).toLocaleString()} (${g['이격']>0?'+':''}${g['이격']}%)</span></div>`;
+       <span class="bosub">나스닥 ${Number(g['종가']).toLocaleString()} · 200일선 ${Number(g['sma200']).toLocaleString()} (${g['이격']>0?'+':''}${g['이격']}%)</span></div>`
+      + (crashing.length?`<div class="boreg no">🚨 급락일 진행 중 (${crashing.map(k=>k+' '+cd[k].chg+'%').join(' · ')}) — 오늘 신규진입 금지 (헌법 금지3조)<span class="bosub">'떨어지는 칼은 안 잡는다.' 돌파가 떠도 내일 멈춤 확인 후에만 검토.</span></div>`:'');
     const hits=(b['돌파']||[]).map(t=>{const u=t.unit||'';
       return `<div class="bocard">
         <div class="botop">${t.tv?`<a href="${t.tv}" target="_blank" rel="noopener"><b>${esc(t.name)}</b> 📈</a>`:`<b>${esc(t.name)}</b>`}
