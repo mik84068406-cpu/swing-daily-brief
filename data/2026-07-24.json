@@ -1030,6 +1030,7 @@
         "pos": 300000,
         "loss": 11913,
         "capped": true,
+        "earn": "2026-07-22",
         "tv": "https://kr.tradingview.com/chart/?symbol=CSX"
       },
       {
@@ -1048,6 +1049,7 @@
         "pos": 157719,
         "loss": 30000,
         "capped": false,
+        "earn": null,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150"
       }
     ],

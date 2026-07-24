@@ -124,6 +124,8 @@
   .bogrid{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px}
   .bogrid .red{color:var(--down)} .bogrid .grn{color:var(--up)}
   .bogrid .ord{flex-basis:100%;margin-top:4px;font-weight:600}
+  .bocard.skip{opacity:.6}
+  .boearn{font-size:12.5px;color:var(--down);font-weight:600;margin:2px 0 5px}
   .myview{background:var(--card);border:1px dashed var(--accent);border-radius:12px;padding:14px 16px;color:var(--sub);font-size:14px}
   .myview b{color:var(--tx)}
   footer{margin-top:34px;color:var(--sub);font-size:12px;text-align:center;border-top:1px solid var(--line);padding-top:16px}
@@ -213,9 +215,10 @@ function render(d){
        <span class="bosub">나스닥 ${Number(g['종가']).toLocaleString()} · 200일선 ${Number(g['sma200']).toLocaleString()} (${g['이격']>0?'+':''}${g['이격']}%)</span></div>`
       + (crashing.length?`<div class="boreg no">🚨 급락일 진행 중 (${crashing.map(k=>k+' '+cd[k].chg+'%').join(' · ')}) — 오늘 신규진입 금지 (헌법 금지3조)<span class="bosub">'떨어지는 칼은 안 잡는다.' 돌파가 떠도 내일 멈춤 확인 후에만 검토.</span></div>`:'');
     const hits=(b['돌파']||[]).map(t=>{const u=t.unit||'';
-      return `<div class="bocard">
+      return `<div class="bocard${t.earn?' skip':''}">
         <div class="botop">${t.tv?`<a href="${t.tv}" target="_blank" rel="noopener"><b>${esc(t.name)}</b> 📈</a>`:`<b>${esc(t.name)}</b>`}
           <span class="tsec">${esc(t.market)}${t.sector?' · '+esc(t.sector):''}</span></div>
+        ${t.earn?`<div class="boearn">🚫 실적 ${esc(t.earn)} (±2일) — 진입 보류 (실적 갭 위 추격)</div>`:''}
         ${t.desc?`<div class="tdesc">${esc(t.desc)}</div>`:''}
         <div class="bogrid">
           <span>종가 <b>${Number(t.close).toLocaleString()}${u}</b></span>
