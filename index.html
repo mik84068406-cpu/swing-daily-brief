@@ -216,7 +216,7 @@ function render(d){
       return `<div class="boreg ${bull?'ok':'no'}">${bull?'✅':'❌'} ${m?`[${m}] `:''}${bull?'상승장':'하락장 — 신규진입 금지'}
        <span class="bosub">${g['지수']||'나스닥'} ${Number(g['종가']).toLocaleString()} · 200일선 ${Number(g['sma200']).toLocaleString()} (${g['이격']>0?'+':''}${g['이격']}%)</span></div>`;}).join('')
       + (crashing.length?`<div class="boreg no">🚨 급락일 진행 중 (${crashing.map(k=>k+' '+cd[k].chg+'%').join(' · ')}) — 오늘 신규진입 금지 (헌법 금지3조)<span class="bosub">'떨어지는 칼은 안 잡는다.' 돌파가 떠도 내일 멈춤 확인 후에만 검토.</span></div>`:'')
-      + Object.entries(b['매크로이벤트']||{}).map(([m,evs])=>`<div class="boreg no">📅 [${m}] ${evs.join(' · ')} — 이벤트 들고 넘어가기 금지: 통과 전 신규진입 보류</div>`).join('');
+      + Object.entries(b['매크로이벤트']||{}).map(([m,evs])=>`<div class="boreg">📅 [${m}] ${evs.join(' · ')} <span class="bosub">알림만 — 진입 금지 아님 (7/26 백테스트: FOMC 갭이 2N 손절을 뚫은 건 10년 80회 중 0~1회). 실적일만 차단.</span></div>`).join('');
     const hits=(b['돌파']||[]).map(t=>{const u=t.unit||'';
       return `<div class="bocard${t.earn?' skip':''}">
         <div class="botop">${t.tv?`<a href="${t.tv}" target="_blank" rel="noopener"><b>${esc(t.name)}</b> 📈</a>`:`<b>${esc(t.name)}</b>`}
