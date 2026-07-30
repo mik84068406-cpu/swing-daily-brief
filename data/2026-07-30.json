@@ -962,28 +962,56 @@
         "tk": "GLD",
         "close": 371.08,
         "bull": false,
-        "gap": 17.5
+        "gap": 17.5,
+        "tv": "https://kr.tradingview.com/chart/?symbol=GLD"
       },
       {
         "name": "은",
         "tk": "SLV",
         "close": 51.77,
         "bull": false,
-        "gap": 56.2
+        "gap": 56.2,
+        "tv": "https://kr.tradingview.com/chart/?symbol=SLV"
       },
       {
         "name": "원유",
         "tk": "USO",
         "close": 129.31,
         "bull": true,
-        "gap": 19.2
+        "gap": 19.2,
+        "tv": "https://kr.tradingview.com/chart/?symbol=USO"
       },
       {
         "name": "미국채20년",
         "tk": "TLT",
         "close": 82.85,
         "bull": false,
-        "gap": 6.0
+        "gap": 6.0,
+        "tv": "https://kr.tradingview.com/chart/?symbol=TLT"
+      },
+      {
+        "name": "S&P500",
+        "tk": "SPY",
+        "close": 729.46,
+        "bull": true,
+        "gap": 4.2,
+        "tv": "https://kr.tradingview.com/chart/?symbol=SPY"
+      },
+      {
+        "name": "나스닥100",
+        "tk": "QQQ",
+        "close": 661.73,
+        "bull": true,
+        "gap": 13.1,
+        "tv": "https://kr.tradingview.com/chart/?symbol=QQQ"
+      },
+      {
+        "name": "다우존스",
+        "tk": "DIA",
+        "close": 515.41,
+        "bull": true,
+        "gap": 3.3,
+        "tv": "https://kr.tradingview.com/chart/?symbol=DIA"
       }
     ],
     "돌파": [],
@@ -1000,6 +1028,7 @@
   },
   "positions": [
     {
+      "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A413630",
       "name": "씨피시스템",
       "mkt": "한국",
       "qty": 29,
@@ -1013,6 +1042,7 @@
       "tag": "터틀 (검증)"
     },
     {
+      "tv": "https://kr.tradingview.com/chart/?symbol=SECZ",
       "name": "시큐리타이즈",
       "mkt": "미국",
       "qty": 4,
