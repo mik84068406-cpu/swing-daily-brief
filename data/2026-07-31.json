@@ -968,7 +968,7 @@
         "close": 377.16,
         "bull": false,
         "gap": 15.6,
-        "tv": "https://kr.tradingview.com/chart/?symbol=GLD"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AGLD"
       },
       {
         "name": "은",
@@ -976,7 +976,7 @@
         "close": 53.5,
         "bull": false,
         "gap": 51.1,
-        "tv": "https://kr.tradingview.com/chart/?symbol=SLV"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASLV"
       },
       {
         "name": "원유",
@@ -984,7 +984,7 @@
         "close": 127.48,
         "bull": true,
         "gap": 20.9,
-        "tv": "https://kr.tradingview.com/chart/?symbol=USO"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUSO"
       },
       {
         "name": "미국채20년",
@@ -992,7 +992,7 @@
         "close": 82.8,
         "bull": false,
         "gap": 6.0,
-        "tv": "https://kr.tradingview.com/chart/?symbol=TLT"
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ATLT"
       },
       {
         "name": "S&P500",
@@ -1000,7 +1000,7 @@
         "close": 741.69,
         "bull": true,
         "gap": 2.5,
-        "tv": "https://kr.tradingview.com/chart/?symbol=SPY"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASPY"
       },
       {
         "name": "나스닥100",
@@ -1008,7 +1008,7 @@
         "close": 683.55,
         "bull": true,
         "gap": 9.5,
-        "tv": "https://kr.tradingview.com/chart/?symbol=QQQ"
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AQQQ"
       },
       {
         "name": "다우존스",
@@ -1016,7 +1016,7 @@
         "close": 521.51,
         "bull": true,
         "gap": 2.1,
-        "tv": "https://kr.tradingview.com/chart/?symbol=DIA"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADIA"
       },
       {
         "name": "코스피200",
@@ -1054,7 +1054,7 @@
         "close": 521.51,
         "pivot": 532.54,
         "gap": 2.1,
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3ADIA"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADIA"
       },
       {
         "name": "S&P500(SPY)",
@@ -1062,7 +1062,7 @@
         "close": 741.69,
         "pivot": 760.4,
         "gap": 2.5,
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3ASPY"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASPY"
       }
     ]
   },
