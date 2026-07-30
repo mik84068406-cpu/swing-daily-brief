@@ -956,6 +956,36 @@
       }
     },
     "매크로이벤트": {},
+    "원자재현황": [
+      {
+        "name": "금",
+        "tk": "GLD",
+        "close": 371.08,
+        "bull": false,
+        "gap": 17.5
+      },
+      {
+        "name": "은",
+        "tk": "SLV",
+        "close": 51.77,
+        "bull": false,
+        "gap": 56.2
+      },
+      {
+        "name": "원유",
+        "tk": "USO",
+        "close": 129.31,
+        "bull": true,
+        "gap": 19.2
+      },
+      {
+        "name": "미국채20년",
+        "tk": "TLT",
+        "close": 82.85,
+        "bull": false,
+        "gap": 6.0
+      }
+    ],
     "돌파": [],
     "근접": [
       {
@@ -968,6 +998,34 @@
       }
     ]
   },
+  "positions": [
+    {
+      "name": "씨피시스템",
+      "mkt": "한국",
+      "qty": 29,
+      "entry": 4400.0,
+      "cur": 3550.0,
+      "pnl_won": -24650,
+      "pnl_pct": -19.32,
+      "stop": 3365.0,
+      "exitlow": 1938.0,
+      "need_update": false,
+      "tag": "터틀 (검증)"
+    },
+    {
+      "name": "시큐리타이즈",
+      "mkt": "미국",
+      "qty": 4,
+      "entry": 12.06,
+      "cur": 6.599999904632568,
+      "pnl_won": -31365,
+      "pnl_pct": -45.27,
+      "stop": null,
+      "exitlow": null,
+      "need_update": false,
+      "tag": "명제 B유형(터틀 아님) · 8/13 실적까지 보유 후 재판정"
+    }
+  ],
   "trap": [
     {
       "market": "한국",

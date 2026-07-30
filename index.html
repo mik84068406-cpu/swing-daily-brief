@@ -207,6 +207,17 @@ function render(d){
     const ins=(d.flow.us.in||[]).length+(d.flow.kr.in||[]).length, outs=(d.flow.us.out||[]).length+(d.flow.kr.out||[]).length;
     return `들어옴 ${ins} · 빠짐 ${outs}`;})();
   // 🚀 돌파 스캔 (2026-07-24) — 메인 매매 신호. 국면(200일선) → 돌파 → 근접 순.
+  // 💼 보유 포지션 (2026-07-30) — 진입가·손익·손절·청산선 + 손절 갱신 알림
+  const posSec = (()=>{ const ps=d.positions; if(!ps||!ps.length) return '';
+    const cards=ps.map(p=>{
+      const upd=p.need_update?`<div class="boearn">⬆️ 손절 갱신 필요 — 청산선(${Number(p.exitlow).toLocaleString()})이 손절가를 추월. 아침에 조건주문 수정</div>`:'';
+      const ex=(p.exitlow!=null)?`<span>청산선 ${Number(p.exitlow).toLocaleString()}</span>`:'';
+      const stop=(p.stop!=null)?`<span class="red">손절 <b>${Number(p.stop).toLocaleString()}</b></span>`:'<span class="red">손절 없음(조건부 포지션)</span>';
+      const pnlCls=(p.pnl_won>=0)?'grn':'red';
+      return `<div class="bocard"><div class="botop"><b>${esc(p.name)}</b> <span class="tsec">${esc(p.mkt)} · ${p.qty}주 · ${esc(p.tag||'')}</span></div>${upd}
+        <div class="bogrid"><span>진입 ${Number(p.entry).toLocaleString()}</span><span>현재 <b>${p.cur!=null?Number(p.cur).toLocaleString():'?'}</b></span>
+        <span class="${pnlCls}">${p.pnl_won!=null?(p.pnl_won>=0?'+':'')+Number(p.pnl_won).toLocaleString()+'원 ('+p.pnl_pct+'%)':''}</span>${stop}${ex}</div></div>`;}).join('');
+    return `<section><h2>💼 보유 포지션</h2><div class="myview" style="border-style:solid">${cards}</div></section>`;})();
   const boSec = (()=>{ const b=d.breakout; if(!b) return '';
     const g0=b['국면']||{};
     const gs=('상승장' in g0)?{'미국':g0}:g0;   // 구형(나스닥 하나)·신형(시장별) 둘 다 지원
@@ -215,6 +226,7 @@ function render(d){
     const head=Object.keys(gs).map(m=>{const g=gs[m], bull=g['상승장'];
       return `<div class="boreg ${bull?'ok':'no'}">${bull?'✅':'❌'} ${m?`[${m}] `:''}${bull?'상승장 — 신호 유효':'하락장 — 이 시장은 신규진입 쉼 (200일선 아래)'}
        <span class="bosub">${g['지수']||'나스닥'} ${Number(g['종가']).toLocaleString()} · 200일선 ${Number(g['sma200']).toLocaleString()} (${g['이격']>0?'+':''}${g['이격']}%)</span></div>`;}).join('')
+      + ((b['원자재현황']&&b['원자재현황'].length)?`<div class="boreg">🥇 원자재: ${b['원자재현황'].map(c=>`${c.name} ${c.bull?'🟢':'⚫'} ${Number(c.close).toLocaleString()}$${c.gap>0?' (돌파까지 +'+c.gap+'%)':' 🚀돌파!'}`).join(' · ')} <span class="bosub">🟢=자기 200일선 위 · ⚫=아래(신호 무시)</span></div>`:'')
       + (crashing.length?`<div class="boreg">📉 급락 감지 (${crashing.map(k=>k+' '+cd[k].chg+'%').join(' · ')}) <span class="bosub">알림만 — 진입 금지 아님 (7/26 백테스트로 급락일 필터 기각: 급락일 돌파 자체가 10년에 0.2~1.1%뿐). 진입을 막는 건 200일선·실적일뿐.</span></div>`:'')
       + Object.entries(b['매크로이벤트']||{}).map(([m,evs])=>`<div class="boreg">📅 [${m}] ${evs.join(' · ')} <span class="bosub">알림만 — 진입 금지 아님 (7/26 백테스트: FOMC 갭이 2N 손절을 뚫은 건 10년 80회 중 0~1회). 실적일만 차단.</span></div>`).join('');
     const hits=(b['돌파']||[]).map(t=>{const u=t.unit||'';
@@ -264,6 +276,7 @@ function render(d){
    ${fold('💰 돈이 어디로 (주도 섹터)', flowCount, `
      <div class="mkt"><div class="flag">🇺🇸 미국</div>${flowBox('us')}</div>
      <div class="mkt"><div class="flag">🇰🇷 한국</div>${flowBox('kr')}</div>`)}
+   ${posSec}
    ${boSec}
    ${d.trap&&d.trap.length?fold('🪤 참고: 많이 빠진 차트', '바닥 매수 — 검증 미통과, 매매 신호 아님', trapSec.replace(/^\s*<section>[\s\S]*?<\/h2>/,'').replace(/<\/section>$/,'')):''}
    ${topSec}
