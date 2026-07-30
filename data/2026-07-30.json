@@ -1012,6 +1012,33 @@
         "bull": true,
         "gap": 3.3,
         "tv": "https://kr.tradingview.com/chart/?symbol=DIA"
+      },
+      {
+        "name": "코스피200",
+        "tk": "KODEX 200",
+        "close": 87635.0,
+        "bull": false,
+        "gap": 73.6,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A069500",
+        "krw": true
+      },
+      {
+        "name": "코스피200(타이거)",
+        "tk": "TIGER 200",
+        "close": 87840.0,
+        "bull": false,
+        "gap": 73.4,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A102110",
+        "krw": true
+      },
+      {
+        "name": "코스닥150",
+        "tk": "KODEX 코스닥150",
+        "close": 10605.0,
+        "bull": false,
+        "gap": 96.1,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A229200",
+        "krw": true
       }
     ],
     "돌파": [],
