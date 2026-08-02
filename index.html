@@ -257,6 +257,7 @@ function render(d){
         ${t.earn?`<div class="boearn">🚫 실적 ${esc(t.earn)} (±2일) — 진입 보류 (실적 갭 위 추격)</div>`:''}
         ${t.mktbull===false?`<div class="boearn">❌ ${esc(t.market)} 지수 하락장 — 참고만 (진입 금지)</div>`:''}
         ${t.desc?`<div class="tdesc">${esc(t.desc)}</div>`:''}
+        ${(d.signalnotes&&d.signalnotes[t.name])?`<div class="tdesc" style="border-left:3px solid var(--accent);padding-left:8px;margin-top:6px">📌 ${esc(d.signalnotes[t.name]).replace(/\n/g,'<br>')}</div>`:''}
         <div class="bogrid">
           <span>종가 <b>${Number(t.close).toLocaleString()}${u}</b></span>
           <span>돌파선 ${Number(t.pivot).toLocaleString()}${u}</span>
@@ -264,7 +265,7 @@ function render(d){
           <span>전량청산 ${Number(t.exitlow).toLocaleString()}${u}</span>
           <span class="ord">👉 ${t.shares}주 = ${Number(t.pos).toLocaleString()}원 · 최대손실 ${Number(t.loss).toLocaleString()}원${t.capped?' (30만 상한)':''}</span>
         </div></div>`;}).join('');
-    const near=(b['근접']||[]).map(n=>`<div class="nearitem">· ${n.tv?`<a href="${n.tv}" target="_blank" rel="noopener">${esc(n.name)} 📈</a>`:`<b>${esc(n.name)}</b>`} <span style="color:var(--sub)">${Number(n.close).toLocaleString()} → ${Number(n.pivot).toLocaleString()} <b style="color:var(--tx)">(+${n.gap}%)</b></span></div>`).join('');
+    const near=(b['근접']||[]).map(n=>`<div class="nearitem">· ${n.tv?`<a href="${n.tv}" target="_blank" rel="noopener">${esc(n.name)} 📈</a>`:`<b>${esc(n.name)}</b>`} <span style="color:var(--sub)">${Number(n.close).toLocaleString()} → ${Number(n.pivot).toLocaleString()} <b style="color:var(--tx)">(+${n.gap}%)</b></span>${(d.signalnotes&&d.signalnotes[n.name])?`<div class="tdesc" style="border-left:3px solid var(--accent);padding-left:8px;margin:4px 0 6px 12px">📌 ${esc(d.signalnotes[n.name]).replace(/\n/g,'<br>')}</div>`:''}</div>`).join('');
     return `<section><h2>🚀 돌파 (터틀)</h2><div class="myview" style="border-style:solid">
       ${head}
       ${hits?`<div class="bohead">🚀 돌파 발생 ${(b['돌파']||[]).length}건 — 내일 시가 진입 검토</div>${hits}`:'<div class="bohead">🚀 돌파 발생: 없음</div>'}
@@ -299,11 +300,8 @@ function render(d){
      <div class="mkt"><div class="flag">🇰🇷 한국</div>${flowBox('kr')}</div>`)}
    ${posSec}
    ${boSec}
-   ${d.trap&&d.trap.length?fold('🪤 참고: 많이 빠진 차트', '바닥 매수 — 검증 미통과, 매매 신호 아님', trapSec.replace(/^\s*<section>[\s\S]*?<\/h2>/,'').replace(/<\/section>$/,'')):''}
    ${topSec}
-   ${fold('✍️ 내 판단 · AI 한줄', mv?'작성됨':'아직 비어있음', `
-     <div class="myview">${mv?esc(d.myview).replace(/\n/g,'<br>'):'<b>여기는 네가 채우는 칸.</b> 위 뉴스·지표·섹터를 다 보고 "나는 이렇게 본다"를 적는 곳. (아직 비어있음)'}</div>
-     ${av?`<div class="myview" style="margin-top:8px;border-style:solid"><b>🤖 AI 한줄</b> — ${esc(d.aiview).replace(/\n/g,'<br>')}</div>`:''}`)}`;
+   ${av?`<section><div class="myview" style="border-style:solid"><b>🤖 시황 한줄</b> <span style="font-size:11px;color:var(--sub)">(참고용 — 매매 근거 아님, 매매는 위 🚀 신호가 전부)</span><br>${esc(d.aiview).replace(/\n/g,'<br>')}</div></section>`:''}`;
 }
 async function load(date){
   try{
