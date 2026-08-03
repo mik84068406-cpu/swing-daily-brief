@@ -306,6 +306,8 @@ function render(d){
    <div class="headline">⚡ ${esc(d.headline)}</div>
    <section><h2>🌡️ 지표 한눈에</h2><div class="ind">${ind}</div>
      ${ic?`<div class="myview" style="margin-top:10px;border-style:solid"><b>🤖 지표 읽기</b> — ${esc(d.indicomment).replace(/\n/g,'<br>')}</div>`:''}</section>
+   ${posSec}
+   ${boSec}
    ${newsSec}
    ${topSec}
    ${av?`<section><div class="myview" style="border-style:solid"><b>🤖 시황 한줄</b> <span style="font-size:11px;color:var(--sub)">(참고용 — 매매 근거 아님, 매매는 위 🚀 신호가 전부)</span><br>${esc(d.aiview).replace(/\n/g,'<br>')}</div></section>`:''}`;
