@@ -1073,12 +1073,39 @@
         "grp": "채권"
       },
       {
+        "name": "미국채1-3년",
+        "tk": "SHY",
+        "close": 82.0,
+        "bull": false,
+        "gap": 0.4,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ASHY",
+        "grp": "채권"
+      },
+      {
         "name": "물가연동채",
         "tk": "TIP",
         "close": 107.63,
         "bull": false,
         "gap": 3.4,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ATIP",
+        "grp": "채권"
+      },
+      {
+        "name": "우량회사채",
+        "tk": "LQD",
+        "close": 106.25,
+        "bull": false,
+        "gap": 3.3,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ALQD",
+        "grp": "채권"
+      },
+      {
+        "name": "하이일드채",
+        "tk": "HYG",
+        "close": 79.48,
+        "bull": false,
+        "gap": 1.1,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AHYG",
         "grp": "채권"
       },
       {
@@ -1236,6 +1263,26 @@
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A229200",
         "krw": true,
         "grp": "지수"
+      },
+      {
+        "name": "한국리츠",
+        "tk": "TIGER 리츠부동산인프라",
+        "close": 3995.0,
+        "bull": true,
+        "gap": 8.3,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A329200",
+        "krw": true,
+        "grp": "부동산"
+      },
+      {
+        "name": "한국리츠2",
+        "tk": "KODEX 한국부동산리츠인프라",
+        "close": 4210.0,
+        "bull": true,
+        "gap": 9.2,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A476800",
+        "krw": true,
+        "grp": "부동산"
       }
     ],
     "돌파": [],
