@@ -1055,30 +1055,12 @@
         "grp": "원자재"
       },
       {
-        "name": "미국채20년",
-        "tk": "TLT",
-        "close": 82.25,
-        "bull": false,
-        "gap": 6.7,
-        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ATLT",
-        "grp": "채권"
-      },
-      {
         "name": "미국채7-10년",
         "tk": "IEF",
         "close": 92.95,
         "bull": false,
         "gap": 2.3,
         "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AIEF",
-        "grp": "채권"
-      },
-      {
-        "name": "물가연동채",
-        "tk": "TIP",
-        "close": 107.63,
-        "bull": false,
-        "gap": 3.4,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ATIP",
         "grp": "채권"
       },
       {
@@ -1091,94 +1073,13 @@
         "grp": "채권"
       },
       {
-        "name": "하이일드채",
-        "tk": "HYG",
-        "close": 79.48,
+        "name": "물가연동채",
+        "tk": "TIP",
+        "close": 107.63,
         "bull": false,
-        "gap": 1.1,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AHYG",
+        "gap": 3.4,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ATIP",
         "grp": "채권"
-      },
-      {
-        "name": "달러인덱스",
-        "tk": "UUP",
-        "close": 28.17,
-        "bull": true,
-        "gap": 1.5,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUUP",
-        "grp": "통화"
-      },
-      {
-        "name": "엔화",
-        "tk": "FXY",
-        "close": 57.66,
-        "bull": false,
-        "gap": 1.2,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AFXY",
-        "grp": "통화"
-      },
-      {
-        "name": "스위스프랑",
-        "tk": "FXF",
-        "close": 109.04,
-        "bull": false,
-        "gap": 3.7,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AFXF",
-        "grp": "통화"
-      },
-      {
-        "name": "미국리츠",
-        "tk": "VNQ",
-        "close": 98.95,
-        "bull": true,
-        "gap": 2.9,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AVNQ",
-        "grp": "부동산"
-      },
-      {
-        "name": "미국리츠2",
-        "tk": "SCHH",
-        "close": 24.28,
-        "bull": true,
-        "gap": 3.1,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASCHH",
-        "grp": "부동산"
-      },
-      {
-        "name": "모기지리츠",
-        "tk": "REM",
-        "close": 21.5,
-        "bull": false,
-        "gap": 5.6,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AREM",
-        "grp": "부동산"
-      },
-      {
-        "name": "필수소비재",
-        "tk": "XLP",
-        "close": 85.05,
-        "bull": true,
-        "gap": 4.4,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AXLP",
-        "grp": "방어섹터"
-      },
-      {
-        "name": "유틸리티",
-        "tk": "XLU",
-        "close": 44.35,
-        "bull": false,
-        "gap": 5.1,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AXLU",
-        "grp": "방어섹터"
-      },
-      {
-        "name": "금광주",
-        "tk": "GDX",
-        "close": 74.1,
-        "bull": false,
-        "gap": 31.7,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AGDX",
-        "grp": "방어섹터"
       },
       {
         "name": "S&P500",
@@ -1205,24 +1106,6 @@
         "bull": true,
         "gap": 1.6,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADIA",
-        "grp": "지수"
-      },
-      {
-        "name": "미국중형400",
-        "tk": "MDY",
-        "close": 686.32,
-        "bull": true,
-        "gap": 2.6,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AMDY",
-        "grp": "지수"
-      },
-      {
-        "name": "미국소형2000",
-        "tk": "IWM",
-        "close": 291.2,
-        "bull": true,
-        "gap": 4.0,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AIWM",
         "grp": "지수"
       },
       {
@@ -1254,26 +1137,6 @@
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A229200",
         "krw": true,
         "grp": "지수"
-      },
-      {
-        "name": "한국리츠",
-        "tk": "TIGER 리츠부동산인프라",
-        "close": 3995.0,
-        "bull": true,
-        "gap": 8.3,
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A329200",
-        "krw": true,
-        "grp": "부동산"
-      },
-      {
-        "name": "한국리츠2",
-        "tk": "KODEX 한국부동산리츠인프라",
-        "close": 4210.0,
-        "bull": true,
-        "gap": 9.2,
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A476800",
-        "krw": true,
-        "grp": "부동산"
       }
     ],
     "돌파": [],
@@ -1303,14 +1166,6 @@
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A316140"
       },
       {
-        "name": "달러인덱스(UUP)",
-        "market": "원자재",
-        "close": 28.17,
-        "pivot": 28.6,
-        "gap": 1.5,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUUP"
-      },
-      {
         "name": "다우존스(DIA)",
         "market": "원자재",
         "close": 524.32,
@@ -1325,22 +1180,6 @@
         "pivot": 760.4,
         "gap": 1.8,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASPY"
-      },
-      {
-        "name": "미국중형400(MDY)",
-        "market": "원자재",
-        "close": 686.32,
-        "pivot": 704.45,
-        "gap": 2.6,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AMDY"
-      },
-      {
-        "name": "미국리츠(VNQ)",
-        "market": "원자재",
-        "close": 98.95,
-        "pivot": 101.8,
-        "gap": 2.9,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AVNQ"
       }
     ]
   },
