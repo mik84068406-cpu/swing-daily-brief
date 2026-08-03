@@ -1073,15 +1073,6 @@
         "grp": "채권"
       },
       {
-        "name": "미국채1-3년",
-        "tk": "SHY",
-        "close": 82.0,
-        "bull": false,
-        "gap": 0.4,
-        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ASHY",
-        "grp": "채권"
-      },
-      {
         "name": "물가연동채",
         "tk": "TIP",
         "close": 107.63,
@@ -1375,7 +1366,7 @@
       "qty": 4,
       "entry": 12.06,
       "cur": 6.670000076293945,
-      "pnl_won": -30836,
+      "pnl_won": -30766,
       "pnl_pct": -44.69,
       "stop": null,
       "exitlow": null,
