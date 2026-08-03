@@ -1007,12 +1007,116 @@
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUSO"
       },
       {
+        "name": "원자재종합",
+        "tk": "DBC",
+        "close": 29.45,
+        "bull": true,
+        "gap": 7.9,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADBC"
+      },
+      {
+        "name": "천연가스",
+        "tk": "UNG",
+        "close": 10.06,
+        "bull": false,
+        "gap": 21.6,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUNG"
+      },
+      {
+        "name": "백금",
+        "tk": "PPLT",
+        "close": 14.96,
+        "bull": false,
+        "gap": 33.2,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3APPLT"
+      },
+      {
+        "name": "구리",
+        "tk": "CPER",
+        "close": 39.56,
+        "bull": true,
+        "gap": 3.1,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ACPER"
+      },
+      {
+        "name": "농산물",
+        "tk": "DBA",
+        "close": 27.51,
+        "bull": true,
+        "gap": 4.8,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADBA"
+      },
+      {
         "name": "미국채20년",
         "tk": "TLT",
         "close": 82.25,
         "bull": false,
         "gap": 6.7,
         "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ATLT"
+      },
+      {
+        "name": "미국채7-10년",
+        "tk": "IEF",
+        "close": 92.95,
+        "bull": false,
+        "gap": 2.3,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AIEF"
+      },
+      {
+        "name": "물가연동채",
+        "tk": "TIP",
+        "close": 107.63,
+        "bull": false,
+        "gap": 3.4,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ATIP"
+      },
+      {
+        "name": "달러인덱스",
+        "tk": "UUP",
+        "close": 28.17,
+        "bull": true,
+        "gap": 1.5,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUUP"
+      },
+      {
+        "name": "엔화",
+        "tk": "FXY",
+        "close": 57.66,
+        "bull": false,
+        "gap": 1.2,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AFXY"
+      },
+      {
+        "name": "스위스프랑",
+        "tk": "FXF",
+        "close": 109.04,
+        "bull": false,
+        "gap": 3.7,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AFXF"
+      },
+      {
+        "name": "필수소비재",
+        "tk": "XLP",
+        "close": 85.05,
+        "bull": true,
+        "gap": 4.4,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AXLP"
+      },
+      {
+        "name": "유틸리티",
+        "tk": "XLU",
+        "close": 44.35,
+        "bull": false,
+        "gap": 5.1,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AXLU"
+      },
+      {
+        "name": "금광주",
+        "tk": "GDX",
+        "close": 74.1,
+        "bull": false,
+        "gap": 31.7,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AGDX"
       },
       {
         "name": "S&P500",
@@ -1091,6 +1195,14 @@
         "pivot": 33850.0,
         "gap": 1.5,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A316140"
+      },
+      {
+        "name": "달러인덱스(UUP)",
+        "market": "원자재",
+        "close": 28.17,
+        "pivot": 28.6,
+        "gap": 1.5,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUUP"
       },
       {
         "name": "다우존스(DIA)",
