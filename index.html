@@ -292,10 +292,22 @@ function render(d){
           + (tot?`스캔 ${tot}종목(${Object.entries(sc).map(([k,v])=>k+' '+v).join(' · ')}) · 통과 ${i['통과']||0}`:'')
           + `<br>기준: 거래량 1.5배↑ AND RSI 35↓ · 전저점·이평·지지 판단은 내가</div>`;})()}</div></section>`:'';
   const thead = `<div class="trow thead"><span class="trank">#</span><span class="tname">종목</span><span class="tchg">등락</span><span class="tval">거래대금</span></div>`;
+  // 🌐 기타자산 목록 (2026-08-03 신설, 비랑 — 한국·미국과 나란한 제3 카테고리)
+  const etcList = (()=>{ const c=(d.breakout&&d.breakout['원자재현황'])||[]; if(!c.length) return '';
+    const order=['원자재','채권','통화','부동산','방어섹터','지수'];
+    const grps={}; c.forEach(x=>{const g=x.grp||'기타';(grps[g]=grps[g]||[]).push(x);});
+    return order.filter(g=>grps[g]).map(g=>{
+      const rows=grps[g].sort((a,b)=>a.gap-b.gap).map(x=>{
+        const nm=x.tv?`<a href="${x.tv}" target="_blank" rel="noopener">${esc(x.name)} 📈</a>`:esc(x.name);
+        const st=x.bull?'<span class="grn">🟢</span>':'<span style="opacity:.5">⚫</span>';
+        const gv=x.gap>0?`<span style="color:var(--sub)">돌파까지 +${x.gap}%</span>`:'<b class="grn">🚀 돌파!</b>';
+        return `<div class="trow"><span class="trank">${st}</span><span class="tname">${nm}</span><span class="tchg">${Number(x.close).toLocaleString()}${x.krw?'원':'$'}</span><span class="tval">${gv}</span></div>`;}).join('');
+      return `<div class="cmdgrp" style="margin-left:4px">[${g}]</div>${rows}`;}).join('');})();
   const topSec = (d.top&&(d.top.kr||[]).length)
-    ? fold(`💰 거래대금 TOP${(d.top.kr||[]).length}`, '개별기업 · ETF 제외',
+    ? fold(`💰 거래대금 TOP${(d.top.kr||[]).length} · 기타자산`, '개별기업 · ETF 제외 / 기타자산 26종 별도',
         `<details class="topbox"><summary>🇰🇷 한국</summary><div class="tlist">${thead}${topList('kr')}</div></details>
-         <details class="topbox"><summary>🇺🇸 미국</summary><div class="tlist">${thead}${topList('us')}</div></details>`)
+         <details class="topbox"><summary>🇺🇸 미국</summary><div class="tlist">${thead}${topList('us')}</div></details>
+         ${etcList?`<details class="topbox"><summary>🌐 기타자산 (원자재·채권·통화·부동산·방어·지수 26종)</summary><div class="tlist"><div class="trow thead"><span class="trank">국면</span><span class="tname">자산</span><span class="tchg">현재가</span><span class="tval">돌파까지</span></div>${etcList}</div></details>`:''}`)
     : '';
   document.getElementById('app').innerHTML = `
    <div class="headline">⚡ ${esc(d.headline)}</div>
