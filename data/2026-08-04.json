@@ -1097,6 +1097,28 @@
         "grp": "지수"
       }
     ],
+    "상시추적": [
+      {
+        "name": "SK이터닉스",
+        "market": "한국",
+        "close": 46550.0,
+        "pivot": 87700.0,
+        "gap": 88.4,
+        "exitlow": 40050.0,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150",
+        "krw": true
+      },
+      {
+        "name": "씨피시스템",
+        "market": "한국",
+        "close": 4070.0,
+        "pivot": 5100.0,
+        "gap": 25.3,
+        "exitlow": 1938.0,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A413630",
+        "krw": true
+      }
+    ],
     "돌파": [
       {
         "name": "마이크로소프트(MSFT)",

@@ -296,11 +296,19 @@ function render(d){
         const gv=x.gap>0?`<span style="color:var(--sub)">돌파까지 +${x.gap}%</span>`:'<b class="grn">🚀 돌파!</b>';
         return `<div class="trow"><span class="trank">${st}</span><span class="tname">${nm}</span><span class="tchg">${Number(x.close).toLocaleString()}${x.krw?'원':'$'}</span><span class="tval">${gv}</span></div>`;}).join('');
       return `<div class="cmdgrp" style="margin-left:4px">[${g}]</div>${rows}`;}).join('');})();
+  // 📌 상시 추적 (2026-08-04) — 진입 이력 종목, 거래대금 밖으로 밀려도 계속 감시
+  const watchList = (()=>{ const w=(d.breakout&&d.breakout['상시추적'])||[]; if(!w.length) return '';
+    return w.slice().sort((a,b)=>a.gap-b.gap).map(x=>{
+      const nm=x.tv?`<a href="${x.tv}" target="_blank" rel="noopener">${esc(x.name)} 📈</a>`:esc(x.name);
+      const gv=x.gap>0?`<span style="color:var(--sub)">돌파까지 +${x.gap}%</span>`:'<b class="grn">🚀 돌파!</b>';
+      const u=x.krw?'원':'$';
+      return `<div class="trow"><span class="trank">📌</span><span class="tname">${nm}</span><span class="tchg">${Number(x.close).toLocaleString()}${u}</span><span class="tval">${gv}</span></div>`;}).join('');})();
   const topSec = (d.top&&(d.top.kr||[]).length)
     ? fold(`💰 거래대금 TOP${(d.top.kr||[]).length} · 기타자산`, '개별기업 · ETF 제외 / 기타자산 26종 별도',
         `<details class="topbox"><summary>🇰🇷 한국</summary><div class="tlist">${thead}${topList('kr')}</div></details>
          <details class="topbox"><summary>🇺🇸 미국</summary><div class="tlist">${thead}${topList('us')}</div></details>
-         ${etcList?`<details class="topbox"><summary>🌐 기타자산 26종 <span style="font-size:11px;color:var(--sub);font-weight:400">— 🟢살 수 있는 추세 / ⚫추세 죽음(신호 무시)</span></summary><div class="tlist"><div class="trow thead"><span class="trank">추세</span><span class="tname">자산</span><span class="tchg">현재가</span><span class="tval">돌파선까지</span></div>${etcList}</div></details>`:''}`)
+         ${etcList?`<details class="topbox"><summary>🌐 기타자산 <span style="font-size:11px;color:var(--sub);font-weight:400">— 🟢살 수 있는 추세 / ⚫추세 죽음(신호 무시)</span></summary><div class="tlist"><div class="trow thead"><span class="trank">추세</span><span class="tname">자산</span><span class="tchg">현재가</span><span class="tval">돌파선까지</span></div>${etcList}</div></details>`:''}
+         ${watchList?`<details class="topbox"><summary>📌 상시 추적 <span style="font-size:11px;color:var(--sub);font-weight:400">— 진입 이력 종목, 재돌파하면 다시 산다 (거래대금 빠져도 계속 감시)</span></summary><div class="tlist"><div class="trow thead"><span class="trank"></span><span class="tname">종목</span><span class="tchg">현재가</span><span class="tval">돌파선까지</span></div>${watchList}</div></details>`:''}`)
     : '';
   document.getElementById('app').innerHTML = `
    <div class="headline">⚡ ${esc(d.headline)}</div>
