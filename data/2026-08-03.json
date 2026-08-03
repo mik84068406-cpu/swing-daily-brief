@@ -1190,6 +1190,24 @@
         "grp": "지수"
       },
       {
+        "name": "미국중형400",
+        "tk": "MDY",
+        "close": 686.32,
+        "bull": true,
+        "gap": 2.6,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AMDY",
+        "grp": "지수"
+      },
+      {
+        "name": "미국소형2000",
+        "tk": "IWM",
+        "close": 291.2,
+        "bull": true,
+        "gap": 4.0,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AIWM",
+        "grp": "지수"
+      },
+      {
         "name": "코스피200",
         "tk": "KODEX 200",
         "close": 99105.0,
@@ -1269,6 +1287,14 @@
         "pivot": 760.4,
         "gap": 1.8,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASPY"
+      },
+      {
+        "name": "미국중형400(MDY)",
+        "market": "원자재",
+        "close": 686.32,
+        "pivot": 704.45,
+        "gap": 2.6,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AMDY"
       },
       {
         "name": "미국리츠(VNQ)",
