@@ -988,7 +988,8 @@
         "close": 371.54,
         "bull": false,
         "gap": 16.5,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AGLD"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AGLD",
+        "grp": "원자재"
       },
       {
         "name": "은",
@@ -996,7 +997,8 @@
         "close": 52.36,
         "bull": false,
         "gap": 54.4,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASLV"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASLV",
+        "grp": "원자재"
       },
       {
         "name": "원유",
@@ -1004,7 +1006,8 @@
         "close": 129.17,
         "bull": true,
         "gap": 19.3,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUSO"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUSO",
+        "grp": "원자재"
       },
       {
         "name": "원자재종합",
@@ -1012,7 +1015,8 @@
         "close": 29.45,
         "bull": true,
         "gap": 7.9,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADBC"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADBC",
+        "grp": "원자재"
       },
       {
         "name": "천연가스",
@@ -1020,7 +1024,8 @@
         "close": 10.06,
         "bull": false,
         "gap": 21.6,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUNG"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUNG",
+        "grp": "원자재"
       },
       {
         "name": "백금",
@@ -1028,7 +1033,8 @@
         "close": 14.96,
         "bull": false,
         "gap": 33.2,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3APPLT"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3APPLT",
+        "grp": "원자재"
       },
       {
         "name": "구리",
@@ -1036,7 +1042,8 @@
         "close": 39.56,
         "bull": true,
         "gap": 3.1,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ACPER"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ACPER",
+        "grp": "원자재"
       },
       {
         "name": "농산물",
@@ -1044,7 +1051,8 @@
         "close": 27.51,
         "bull": true,
         "gap": 4.8,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADBA"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADBA",
+        "grp": "원자재"
       },
       {
         "name": "미국채20년",
@@ -1052,7 +1060,8 @@
         "close": 82.25,
         "bull": false,
         "gap": 6.7,
-        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ATLT"
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ATLT",
+        "grp": "채권"
       },
       {
         "name": "미국채7-10년",
@@ -1060,7 +1069,8 @@
         "close": 92.95,
         "bull": false,
         "gap": 2.3,
-        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AIEF"
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AIEF",
+        "grp": "채권"
       },
       {
         "name": "물가연동채",
@@ -1068,7 +1078,8 @@
         "close": 107.63,
         "bull": false,
         "gap": 3.4,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ATIP"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ATIP",
+        "grp": "채권"
       },
       {
         "name": "달러인덱스",
@@ -1076,7 +1087,8 @@
         "close": 28.17,
         "bull": true,
         "gap": 1.5,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUUP"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUUP",
+        "grp": "통화"
       },
       {
         "name": "엔화",
@@ -1084,7 +1096,8 @@
         "close": 57.66,
         "bull": false,
         "gap": 1.2,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AFXY"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AFXY",
+        "grp": "통화"
       },
       {
         "name": "스위스프랑",
@@ -1092,7 +1105,35 @@
         "close": 109.04,
         "bull": false,
         "gap": 3.7,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AFXF"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AFXF",
+        "grp": "통화"
+      },
+      {
+        "name": "미국리츠",
+        "tk": "VNQ",
+        "close": 98.95,
+        "bull": true,
+        "gap": 2.9,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AVNQ",
+        "grp": "부동산"
+      },
+      {
+        "name": "미국리츠2",
+        "tk": "SCHH",
+        "close": 24.28,
+        "bull": true,
+        "gap": 3.1,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASCHH",
+        "grp": "부동산"
+      },
+      {
+        "name": "모기지리츠",
+        "tk": "REM",
+        "close": 21.5,
+        "bull": false,
+        "gap": 5.6,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AREM",
+        "grp": "부동산"
       },
       {
         "name": "필수소비재",
@@ -1100,7 +1141,8 @@
         "close": 85.05,
         "bull": true,
         "gap": 4.4,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AXLP"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AXLP",
+        "grp": "방어섹터"
       },
       {
         "name": "유틸리티",
@@ -1108,7 +1150,8 @@
         "close": 44.35,
         "bull": false,
         "gap": 5.1,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AXLU"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AXLU",
+        "grp": "방어섹터"
       },
       {
         "name": "금광주",
@@ -1116,7 +1159,8 @@
         "close": 74.1,
         "bull": false,
         "gap": 31.7,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AGDX"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AGDX",
+        "grp": "방어섹터"
       },
       {
         "name": "S&P500",
@@ -1124,7 +1168,8 @@
         "close": 747.03,
         "bull": true,
         "gap": 1.8,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASPY"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASPY",
+        "grp": "지수"
       },
       {
         "name": "나스닥100",
@@ -1132,7 +1177,8 @@
         "close": 687.99,
         "bull": true,
         "gap": 8.8,
-        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AQQQ"
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AQQQ",
+        "grp": "지수"
       },
       {
         "name": "다우존스",
@@ -1140,7 +1186,8 @@
         "close": 524.32,
         "bull": true,
         "gap": 1.6,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADIA"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADIA",
+        "grp": "지수"
       },
       {
         "name": "코스피200",
@@ -1149,7 +1196,8 @@
         "bull": true,
         "gap": 53.5,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A069500",
-        "krw": true
+        "krw": true,
+        "grp": "지수"
       },
       {
         "name": "코스피200(타이거)",
@@ -1158,7 +1206,8 @@
         "bull": true,
         "gap": 53.3,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A102110",
-        "krw": true
+        "krw": true,
+        "grp": "지수"
       },
       {
         "name": "코스닥150",
@@ -1167,7 +1216,8 @@
         "bull": true,
         "gap": 66.8,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A229200",
-        "krw": true
+        "krw": true,
+        "grp": "지수"
       }
     ],
     "돌파": [],
@@ -1219,6 +1269,14 @@
         "pivot": 760.4,
         "gap": 1.8,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASPY"
+      },
+      {
+        "name": "미국리츠(VNQ)",
+        "market": "원자재",
+        "close": 98.95,
+        "pivot": 101.8,
+        "gap": 2.9,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AVNQ"
       }
     ]
   },
