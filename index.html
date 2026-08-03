@@ -128,6 +128,12 @@
   .cmditem.off{opacity:.5}
   .cmdlegend{font-size:11px;color:var(--sub);margin-top:6px}
   .cmdgrp{font-size:12px;font-weight:700;color:var(--sub);margin:10px 0 2px;letter-spacing:.5px}
+  .nearbox{margin-top:10px;border-top:1px solid rgba(255,255,255,.1);padding-top:8px}
+  .nearbox>summary{cursor:pointer;font-size:15px;font-weight:700;color:var(--tx);list-style:none;padding:4px 0}
+  .nearbox>summary::-webkit-details-marker{display:none}
+  .nearbox>summary::before{content:'▸ ';color:var(--sub)}
+  .nearbox[open]>summary::before{content:'▾ '}
+  .nearwrap .nearitem{font-size:15px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05)}
   /* 돌파·근접·보유 카드 링크도 같은 색으로 통일 (기본 파랑/보라 방지) */
   .bocard a,.nearitem a{color:var(--tx);text-decoration:none;border-bottom:1px dashed var(--sub)}
   .bocard a:hover,.nearitem a:hover{border-bottom-style:solid}
@@ -243,19 +249,6 @@ function render(d){
     const head=Object.keys(gs).map(m=>{const g=gs[m], bull=g['상승장'];
       return `<div class="boreg ${bull?'ok':'no'}">${bull?'✅':'❌'} ${m?`[${m}] `:''}${bull?'상승장 — 신호 유효':'하락장 — 이 시장은 신규진입 쉼 (200일선 아래)'}
        <span class="bosub">${g['지수']||'나스닥'} ${Number(g['종가']).toLocaleString()} · 200일선 ${Number(g['sma200']).toLocaleString()} (${g['이격']>0?'+':''}${g['이격']}%)</span></div>`;}).join('')
-      + ((b['원자재현황']&&b['원자재현황'].length)?(()=>{
-          const all=b['원자재현황'];
-          const order=['원자재','채권','통화','부동산','방어섹터','지수'];
-          const grps={}; all.forEach(c=>{const g=c.grp||'기타';(grps[g]=grps[g]||[]).push(c);});
-          const body=order.filter(g=>grps[g]).map(g=>{
-            const items=grps[g].sort((a,b2)=>a.gap-b2.gap).map(c=>{
-              const nm=c.tv?`<a href="${c.tv}" target="_blank" rel="noopener">${esc(c.name)} 📈</a>`:`<b>${esc(c.name)}</b>`;
-              const gv=c.gap>0?`<span class="gapv" style="color:var(--sub)">+${c.gap}%</span>`:`<span class="gapv grn">🚀 돌파!</span>`;
-              return `<div class="cmditem ${c.bull?'on':'off'}">${c.bull?'🟢':'⚫'} ${nm}<br><span class="px">${Number(c.close).toLocaleString()}${c.krw?'원':'$'}</span> · ${gv}</div>`;}).join('');
-            return `<div class="cmdgrp">[${g}]</div><div class="cmdwrap">${items}</div>`;}).join('');
-          return `<div class="boreg">🌐 기타자산 상시 감시 <span style="font-size:11px;color:var(--sub)">(주식 외 — 하락장에도 신호가 나올 수 있는 판 · 전부 토스 매수 가능)</span>
-            ${body}<div class="cmdlegend">🟢=자기 200일선 위(신호 유효) · ⚫=아래(신호 무시) · 이름 클릭 시 차트 · 숫자=돌파선까지 남은 거리</div></div>`;})():'')
-      + (crashing.length?`<div class="boreg">📉 급락 감지 (${crashing.map(k=>k+' '+cd[k].chg+'%').join(' · ')}) <span class="bosub">알림만 — 진입 금지 아님 (7/26 백테스트로 급락일 필터 기각: 급락일 돌파 자체가 10년에 0.2~1.1%뿐). 진입을 막는 건 200일선·실적일뿐.</span></div>`:'')
       + Object.entries(b['매크로이벤트']||{}).map(([m,evs])=>`<div class="boreg">📅 [${m}] ${evs.join(' · ')} <span class="bosub">알림만 — 진입 금지 아님 (7/26 백테스트: FOMC 갭이 2N 손절을 뚫은 건 10년 80회 중 0~1회). 실적일만 차단.</span></div>`).join('');
     const hits=(b['돌파']||[]).map(t=>{const u=t.unit||'';
       return `<div class="bocard${t.earn?' skip':''}">
@@ -275,8 +268,8 @@ function render(d){
     const near=(b['근접']||[]).map(n=>`<div class="nearitem">· ${n.tv?`<a href="${n.tv}" target="_blank" rel="noopener">${esc(n.name)} 📈</a>`:`<b>${esc(n.name)}</b>`} <span style="color:var(--sub)">${Number(n.close).toLocaleString()} → ${Number(n.pivot).toLocaleString()} <b style="color:var(--tx)">(+${n.gap}%)</b></span>${(d.signalnotes&&d.signalnotes[n.name])?`<div class="tdesc" style="border-left:3px solid var(--accent);padding-left:8px;margin:4px 0 6px 12px">📌 ${esc(d.signalnotes[n.name]).replace(/\n/g,'<br>')}</div>`:''}</div>`).join('');
     return `<section><h2>🚀 돌파 (터틀)</h2><div class="myview" style="border-style:solid">
       ${head}
-      ${hits?`<div class="bohead">🚀 돌파 발생 ${(b['돌파']||[]).length}건 — 내일 시가 진입 검토</div>${hits}`:'<div class="bohead">🚀 돌파 발생: 없음</div>'}
-      ${near?`<div class="tsub" style="margin-top:9px"><b>👀 근접 (내일 넘길 수 있음)</b>${near}</div>`:''}
+      ${hits?`<div class="bohead">🚀 돌파 발생 ${(b['돌파']||[]).length}건 — 내일 시가 진입 검토</div>${hits}`:''}
+      ${near?`<details class="nearbox" open><summary>👀 근접 ${(b['근접']||[]).length}건 — 내일 넘길 수 있음</summary><div class="nearwrap">${near}</div></details>`:''}
       <div class="tsub" style="margin-top:9px;opacity:.8">규칙(7/25 확정): 55일 고점 종가돌파 → 익일 시가 · 손절 −2N · 청산 = 20일 저점 이탈 시 전량 (목표가·분할익절·불타기 없음)<br>⚠️ 검증중 — 승률 40%, 10번 중 6번 손절이 정상</div>
     </div></section>`;})();
 
@@ -314,11 +307,6 @@ function render(d){
    <section><h2>🌡️ 지표 한눈에</h2><div class="ind">${ind}</div>
      ${ic?`<div class="myview" style="margin-top:10px;border-style:solid"><b>🤖 지표 읽기</b> — ${esc(d.indicomment).replace(/\n/g,'<br>')}</div>`:''}</section>
    ${newsSec}
-   ${fold('💰 돈이 어디로 (주도 섹터)', flowCount, `
-     <div class="mkt"><div class="flag">🇺🇸 미국</div>${flowBox('us')}</div>
-     <div class="mkt"><div class="flag">🇰🇷 한국</div>${flowBox('kr')}</div>`)}
-   ${posSec}
-   ${boSec}
    ${topSec}
    ${av?`<section><div class="myview" style="border-style:solid"><b>🤖 시황 한줄</b> <span style="font-size:11px;color:var(--sub)">(참고용 — 매매 근거 아님, 매매는 위 🚀 신호가 전부)</span><br>${esc(d.aiview).replace(/\n/g,'<br>')}</div></section>`:''}`;
 }
