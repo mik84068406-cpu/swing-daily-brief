@@ -910,10 +910,10 @@
     "국면": {
       "미국": {
         "지수": "나스닥",
-        "종가": 25373.85,
-        "sma200": 23998.06,
+        "종가": 25913.9,
+        "sma200": 24015.02,
         "상승장": true,
-        "이격": 5.7
+        "이격": 7.9
       },
       "한국": {
         "지수": "코스피",
@@ -948,126 +948,126 @@
       {
         "name": "금",
         "tk": "GLD",
-        "close": 371.54,
+        "close": 371.71,
         "bull": false,
-        "gap": 16.5,
+        "gap": 16.4,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AGLD",
         "grp": "원자재"
       },
       {
         "name": "은",
         "tk": "SLV",
-        "close": 52.36,
+        "close": 52.46,
         "bull": false,
-        "gap": 54.4,
+        "gap": 54.1,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASLV",
         "grp": "원자재"
       },
       {
         "name": "원유",
         "tk": "USO",
-        "close": 129.17,
+        "close": 122.12,
         "bull": true,
-        "gap": 19.3,
+        "gap": 26.2,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUSO",
         "grp": "원자재"
       },
       {
         "name": "원자재종합",
         "tk": "DBC",
-        "close": 29.45,
+        "close": 28.88,
         "bull": true,
-        "gap": 7.9,
+        "gap": 10.1,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADBC",
         "grp": "원자재"
       },
       {
         "name": "천연가스",
         "tk": "UNG",
-        "close": 10.06,
+        "close": 10.11,
         "bull": false,
-        "gap": 21.6,
+        "gap": 21.0,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUNG",
         "grp": "원자재"
       },
       {
         "name": "백금",
         "tk": "PPLT",
-        "close": 14.96,
+        "close": 14.76,
         "bull": false,
-        "gap": 33.2,
+        "gap": 35.0,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3APPLT",
         "grp": "원자재"
       },
       {
         "name": "구리",
         "tk": "CPER",
-        "close": 39.56,
+        "close": 39.64,
         "bull": true,
-        "gap": 3.1,
+        "gap": 2.9,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ACPER",
         "grp": "원자재"
       },
       {
         "name": "농산물",
         "tk": "DBA",
-        "close": 27.51,
+        "close": 27.79,
         "bull": true,
-        "gap": 4.8,
+        "gap": 3.8,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADBA",
         "grp": "원자재"
       },
       {
         "name": "미국채7-10년",
         "tk": "IEF",
-        "close": 92.95,
+        "close": 92.82,
         "bull": false,
-        "gap": 2.3,
+        "gap": 2.4,
         "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AIEF",
         "grp": "채권"
       },
       {
         "name": "우량회사채",
         "tk": "LQD",
-        "close": 106.25,
+        "close": 106.11,
         "bull": false,
-        "gap": 3.3,
+        "gap": 3.4,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ALQD",
         "grp": "채권"
       },
       {
         "name": "물가연동채",
         "tk": "TIP",
-        "close": 107.63,
+        "close": 106.86,
         "bull": false,
-        "gap": 3.4,
+        "gap": 4.1,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ATIP",
         "grp": "채권"
       },
       {
         "name": "S&P500",
         "tk": "SPY",
-        "close": 747.03,
+        "close": 757.67,
         "bull": true,
-        "gap": 1.8,
+        "gap": 0.4,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASPY",
         "grp": "지수"
       },
       {
         "name": "나스닥100",
         "tk": "QQQ",
-        "close": 687.99,
+        "close": 700.07,
         "bull": true,
-        "gap": 8.8,
+        "gap": 6.9,
         "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AQQQ",
         "grp": "지수"
       },
       {
         "name": "다우존스",
         "tk": "DIA",
-        "close": 524.32,
+        "close": 531.22,
         "bull": true,
-        "gap": 1.6,
+        "gap": 0.2,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADIA",
         "grp": "지수"
       },
@@ -1124,68 +1124,71 @@
         "krw": true
       }
     ],
-    "데이터지연": [
-      "마이크론(MU)(4일)",
-      "마이크로소프트(MSFT)(4일)",
-      "엔비디아(NVDA)(4일)",
-      "아마존(AMZN)(4일)",
-      "애플(AAPL)(4일)",
-      "메타(META)(4일)",
-      "알파벳(구글)(GOOGL)(4일)",
-      "테슬라(TSLA)(4일)",
-      "AMD(AMD)(4일)",
-      "알파벳(구글)(GOOG)(4일)",
-      "인텔(INTC)(4일)",
-      "팔란티어(PLTR)(4일)",
-      "오라클(ORCL)(4일)",
-      "브로드컴(AVGO)(4일)",
-      "네비우스(NBIS)(4일)",
-      "블룸에너지(BE)(4일)",
-      "마벨테크(MRVL)(4일)",
-      "코어위브(CRWV)(4일)",
-      "서비스나우(NOW)(4일)",
-      "아스트라제네카(AZN)(4일)",
-      "월마트(WMT)(4일)",
-      "넷플릭스(NFLX)(4일)",
-      "코카콜라(KO)(4일)",
-      "로빈후드(HOOD)(4일)",
-      "아이렌리미티드(IREN)(4일)",
-      "브리스톨마이어스스큅(BMY)(4일)",
-      "소파이(SOFI)(4일)",
-      "AXT(AXTI)(4일)",
-      "원유(USO)(4일)",
-      "원자재종합(DBC)(4일)",
-      "구리(CPER)(4일)",
-      "농산물(DBA)(4일)",
-      "S&P500(SPY)(4일)",
-      "나스닥100(QQQ)(4일)",
-      "다우존스(DIA)(4일)"
-    ],
-    "돌파": [],
-    "근접": [
+    "데이터지연": [],
+    "돌파": [
       {
         "name": "마이크로소프트(MSFT)",
         "market": "미국",
-        "close": 464.72,
-        "pivot": 466.32,
-        "gap": 0.3,
+        "unit": "$",
+        "sector": "빅테크(클라우드·AI)",
+        "desc": "윈도우·오피스에 더해 클라우드(애저)와 오픈AI 지분 보유",
+        "close": 487.65,
+        "pivot": 466.84,
+        "stop": 456.71,
+        "stoppct": 6.3,
+        "exitlow": 373.35,
+        "shares": 0.677,
+        "pos": 472795,
+        "loss": 30000,
+        "capped": false,
+        "mktbull": true,
+        "earn": null,
         "tv": "https://kr.tradingview.com/chart/?symbol=MSFT"
-      },
-      {
-        "name": "브리스톨마이어스스큅(BMY)",
-        "market": "미국",
-        "close": 65.31,
-        "pivot": 65.56,
-        "gap": 0.4,
-        "tv": "https://kr.tradingview.com/chart/?symbol=BMY"
       },
       {
         "name": "아마존(AMZN)",
         "market": "미국",
-        "close": 271.58,
+        "unit": "$",
+        "sector": "빅테크(커머스·클라우드)",
+        "desc": "전자상거래 1위이자 클라우드(AWS) 세계 1위",
+        "close": 284.02,
         "pivot": 274.75,
-        "gap": 1.2,
+        "stop": 265.6,
+        "stoppct": 6.5,
+        "exitlow": 226.16,
+        "shares": 1.137,
+        "pos": 462578,
+        "loss": 30000,
+        "capped": false,
+        "mktbull": true,
+        "earn": null,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMZN"
+      }
+    ],
+    "근접": [
+      {
+        "name": "다우존스(DIA)",
+        "market": "원자재",
+        "close": 531.22,
+        "pivot": 532.54,
+        "gap": 0.2,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADIA"
+      },
+      {
+        "name": "브리스톨마이어스스큅(BMY)",
+        "market": "미국",
+        "close": 65.47,
+        "pivot": 65.66,
+        "gap": 0.3,
+        "tv": "https://kr.tradingview.com/chart/?symbol=BMY"
+      },
+      {
+        "name": "S&P500(SPY)",
+        "market": "원자재",
+        "close": 757.67,
+        "pivot": 760.4,
+        "gap": 0.4,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASPY"
       },
       {
         "name": "지엔씨에너지",
@@ -1196,20 +1199,12 @@
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A119850"
       },
       {
-        "name": "다우존스(DIA)",
+        "name": "구리(CPER)",
         "market": "원자재",
-        "close": 524.32,
-        "pivot": 532.54,
-        "gap": 1.6,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADIA"
-      },
-      {
-        "name": "S&P500(SPY)",
-        "market": "원자재",
-        "close": 747.03,
-        "pivot": 760.4,
-        "gap": 1.8,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASPY"
+        "close": 39.64,
+        "pivot": 40.78,
+        "gap": 2.9,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ACPER"
       }
     ]
   },
@@ -1234,9 +1229,9 @@
       "mkt": "미국",
       "qty": 4,
       "entry": 12.06,
-      "cur": 6.670000076293945,
-      "pnl_won": -30888,
-      "pnl_pct": -44.69,
+      "cur": 6.94,
+      "pnl_won": -29341,
+      "pnl_pct": -42.45,
       "stop": null,
       "exitlow": null,
       "need_update": false,
