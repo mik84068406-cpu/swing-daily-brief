@@ -128,6 +128,11 @@
   .cmditem.off{opacity:.5}
   .cmdlegend{font-size:11px;color:var(--sub);margin-top:6px}
   .cmdgrp{font-size:12px;font-weight:700;color:var(--sub);margin:10px 0 2px;letter-spacing:.5px}
+  .ordbox{margin-top:8px;border-top:1px dashed var(--line);padding-top:6px}
+  .ordbox>summary{cursor:pointer;list-style:none;font-size:12px;color:var(--sub);padding:2px 0}
+  .ordbox>summary::-webkit-details-marker{display:none}
+  .ordbox>summary::before{content:'▸ ';}
+  .ordbox[open]>summary::before{content:'▾ ';}
   .nearbox{margin-top:10px;border-top:1px solid rgba(255,255,255,.1);padding-top:8px}
   .nearbox>summary{cursor:pointer;font-size:15px;font-weight:700;color:var(--tx);list-style:none;padding:4px 0}
   .nearbox>summary::-webkit-details-marker{display:none}
@@ -265,8 +270,9 @@ function render(d){
           <span>돌파선 ${Number(t.pivot).toLocaleString()}${u}</span>
           <span class="red">손절 <b>${Number(t.stop).toLocaleString()}${u}</b> (−${t.stoppct}%)</span>
           <span>전량청산 ${Number(t.exitlow).toLocaleString()}${u}</span>
-          <span class="ord">👉 ${t.shares}주 = ${Number(t.pos).toLocaleString()}원 · 최대손실 ${Number(t.loss).toLocaleString()}원${t.capped?' (30만 상한)':''}</span>
-        </div></div>`;}).join('');
+        </div>
+        <details class="ordbox"><summary>💰 주문 정보 (수량·금액)</summary><div class="ord">👉 ${t.shares}주 = ${Number(t.pos).toLocaleString()}원 · 최대손실 ${Number(t.loss).toLocaleString()}원${t.capped?' (상한 적용)':''}</div></details>
+        </div>`;}).join('');
     const near=(b['근접']||[]).map(n=>`<div class="nearitem">· ${n.tv?`<a href="${n.tv}" target="_blank" rel="noopener">${esc(n.name)} 📈</a>`:`<b>${esc(n.name)}</b>`} <span style="color:var(--sub)">${Number(n.close).toLocaleString()} → ${Number(n.pivot).toLocaleString()} <b style="color:var(--tx)">(+${n.gap}%)</b></span>${(d.signalnotes&&d.signalnotes[n.name])?`<div class="tdesc" style="border-left:3px solid var(--accent);padding-left:8px;margin:4px 0 6px 12px">📌 ${esc(d.signalnotes[n.name]).replace(/\n/g,'<br>')}</div>`:''}</div>`).join('');
     const hasHit=(b['돌파']||[]).length>0;
     return `<section><details class="foldbox" open><summary><span class="ftitle">🚀 돌파 (터틀)</span><span class="fprev">${hasHit?`🚀 신호 ${(b['돌파']||[]).length}건`:`대기 · 근접 ${(b['근접']||[]).length}건`}</span></summary><div class="fbody">
