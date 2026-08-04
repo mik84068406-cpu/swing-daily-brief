@@ -1186,10 +1186,11 @@
         "stop": 527.76,
         "stoppct": 2.3,
         "exitlow": 514.72,
-        "shares": 2367.575,
+        "shares": 1.656,
         "pos": 1279509,
         "loss": 30000,
         "capped": false,
+        "blocked": "",
         "mktbull": true,
         "earn": null,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADIA"
@@ -1205,10 +1206,11 @@
         "stop": 752.51,
         "stoppct": 2.4,
         "exitlow": 729.1,
-        "shares": 1594.121,
+        "shares": 1.115,
         "pos": 1229594,
         "loss": 30000,
         "capped": false,
+        "blocked": "",
         "mktbull": true,
         "earn": null,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASPY"
@@ -1228,6 +1230,7 @@
         "pos": 470487,
         "loss": 30000,
         "capped": false,
+        "blocked": "1주 미만(0.668주) — 손절 조건주문 불가로 진입 제외",
         "mktbull": true,
         "earn": null,
         "tv": "https://kr.tradingview.com/chart/?symbol=MSFT"
@@ -1235,7 +1238,7 @@
     ],
     "근접": [
       {
-        "name": "EA(EA)",
+        "name": "일렉트로닉아츠(EA)",
         "market": "미국",
         "close": 209.7,
         "pivot": 209.97,

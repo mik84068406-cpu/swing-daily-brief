@@ -258,9 +258,10 @@ function render(d){
       + ((b['데이터지연']&&b['데이터지연'].length)?`<div class="boreg no">⚠️ 데이터 지연 의심 ${b['데이터지연'].length}종목 — 이 판정은 옛 종가 기준일 수 있음<span class="bosub">야후가 최신 봉을 비워 보낼 때 발생. 아침 스캔과 결과가 다르면 <b>아침 것이 맞다.</b> ${b['데이터지연'].slice(0,6).join(' · ')}</span></div>`:'')
       + Object.entries(b['매크로이벤트']||{}).map(([m,evs])=>`<div class="boreg">📅 [${m}] ${evs.join(' · ')} <span class="bosub">알림만 — 진입 금지 아님 (7/26 백테스트: FOMC 갭이 2N 손절을 뚫은 건 10년 80회 중 0~1회). 실적일만 차단.</span></div>`).join('');
     const hits=(b['돌파']||[]).map(t=>{const u=t.unit||'';
-      return `<div class="bocard${t.earn?' skip':''}">
+      return `<div class="bocard${(t.earn||t.blocked)?' skip':''}">
         <div class="botop">${t.tv?`<a href="${t.tv}" target="_blank" rel="noopener"><b>${esc(t.name)}</b> 📈</a>`:`<b>${esc(t.name)}</b>`}
           <span class="tsec">${esc(t.market)}${t.sector?' · '+esc(t.sector):''}</span></div>
+        ${t.blocked?`<div class="boearn">🚫 ${esc(t.blocked)}</div>`:''}
         ${t.earn?`<div class="boearn">🚫 실적 ${esc(t.earn)} (±2일) — 진입 보류 (실적 갭 위 추격)</div>`:''}
         ${t.mktbull===false?`<div class="boearn">❌ ${esc(t.market)} 지수 하락장 — 참고만 (진입 금지)</div>`:''}
         ${t.desc?`<div class="tdesc">${esc(t.desc)}</div>`:''}
