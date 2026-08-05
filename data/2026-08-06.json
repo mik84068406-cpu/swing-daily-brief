@@ -1204,7 +1204,7 @@
         "pivot": 287.2,
         "gap": 5.3,
         "exitlow": 226.16,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMZN",
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AAMZN",
         "krw": false
       }
     ],
@@ -1215,7 +1215,7 @@
         "market": "미국",
         "unit": "$",
         "sector": "이커머스",
-        "desc": "",
+        "desc": "캐나다발 이커머스 플랫폼, 온라인 쇼핑몰 구축·결제를 지원하는 아마존 대항마",
         "close": 144.24,
         "pivot": 133.99,
         "stop": 129.37,
@@ -1228,14 +1228,14 @@
         "blocked": "",
         "mktbull": true,
         "earn": "2026-08-05",
-        "tv": "https://kr.tradingview.com/chart/?symbol=SHOP"
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ASHOP"
       },
       {
         "name": "아리스타네트웍스(ANET)",
         "market": "미국",
         "unit": "$",
         "sector": "네트워크(AI인프라)",
-        "desc": "",
+        "desc": "AI 데이터센터용 고성능 네트워크 스위치를 만드는 회사, 엔비디아와 밀접",
         "close": 197.31,
         "pivot": 194.35,
         "stop": 175.77,
@@ -1248,7 +1248,7 @@
         "blocked": "",
         "mktbull": true,
         "earn": "2026-08-04",
-        "tv": "https://kr.tradingview.com/chart/?symbol=ANET"
+        "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AANET"
       },
       {
         "name": "DASH(DASH)",
@@ -1268,7 +1268,7 @@
         "blocked": "",
         "mktbull": true,
         "earn": "2026-08-05",
-        "tv": "https://kr.tradingview.com/chart/?symbol=DASH"
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ADASH"
       },
       {
         "name": "보잉(BA)",
@@ -1288,7 +1288,7 @@
         "blocked": "",
         "mktbull": true,
         "earn": null,
-        "tv": "https://kr.tradingview.com/chart/?symbol=BA"
+        "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ABA"
       },
       {
         "name": "구리(CPER)",
@@ -1338,7 +1338,7 @@
         "close": 58.0,
         "pivot": 58.02,
         "gap": 0.0,
-        "tv": "https://kr.tradingview.com/chart/?symbol=XLF"
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AXLF"
       },
       {
         "name": "뱅크오브아메리카(BAC)",
@@ -1346,7 +1346,7 @@
         "close": 63.25,
         "pivot": 63.54,
         "gap": 0.5,
-        "tv": "https://kr.tradingview.com/chart/?symbol=BAC"
+        "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ABAC"
       },
       {
         "name": "GE에어로스페이스(GE)",
@@ -1354,7 +1354,7 @@
         "close": 381.22,
         "pivot": 382.97,
         "gap": 0.5,
-        "tv": "https://kr.tradingview.com/chart/?symbol=GE"
+        "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AGE"
       },
       {
         "name": "S&P500(SPY)",
@@ -1370,7 +1370,7 @@
         "close": 35.47,
         "pivot": 35.69,
         "gap": 0.6,
-        "tv": "https://kr.tradingview.com/chart/?symbol=U"
+        "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AU"
       },
       {
         "name": "IWM(IWM)",
@@ -1386,7 +1386,7 @@
         "close": 359.24,
         "pivot": 363.0,
         "gap": 1.0,
-        "tv": "https://kr.tradingview.com/chart/?symbol=JPM"
+        "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AJPM"
       },
       {
         "name": "SNOW(SNOW)",
@@ -1394,7 +1394,7 @@
         "close": 316.84,
         "pivot": 321.31,
         "gap": 1.4,
-        "tv": "https://kr.tradingview.com/chart/?symbol=SNOW"
+        "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ASNOW"
       }
     ]
   },
