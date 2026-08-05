@@ -957,9 +957,9 @@
       "한국": {
         "지수": "코스피",
         "종가": 6358.95,
-        "sma200": 5761.5,
+        "sma200": 5762.96,
         "상승장": true,
-        "이격": 10.4
+        "이격": 10.3
       },
       "원자재": {
         "지수": "자기 200일선(종목별)",
@@ -1113,9 +1113,9 @@
       {
         "name": "코스피200",
         "tk": "KODEX 200",
-        "close": 100330.0,
+        "close": 104905.0,
         "bull": true,
-        "gap": 51.6,
+        "gap": 45.0,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A069500",
         "krw": true,
         "grp": "지수"
@@ -1123,9 +1123,9 @@
       {
         "name": "코스피200(타이거)",
         "tk": "TIGER 200",
-        "close": 100435.0,
+        "close": 105140.0,
         "bull": true,
-        "gap": 51.7,
+        "gap": 44.9,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A102110",
         "krw": true,
         "grp": "지수"
@@ -1133,9 +1133,9 @@
       {
         "name": "코스닥150",
         "tk": "KODEX 코스닥150",
-        "close": 13330.0,
+        "close": 13650.0,
         "bull": true,
-        "gap": 56.0,
+        "gap": 52.4,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A229200",
         "krw": true,
         "grp": "지수"
@@ -1145,9 +1145,9 @@
       {
         "name": "SK이터닉스",
         "market": "한국",
-        "close": 55800.0,
+        "close": 58900.0,
         "pivot": 87700.0,
-        "gap": 57.2,
+        "gap": 48.9,
         "exitlow": 40050.0,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150",
         "krw": true
@@ -1155,9 +1155,9 @@
       {
         "name": "씨피시스템",
         "market": "한국",
-        "close": 4265.0,
+        "close": 4340.0,
         "pivot": 5100.0,
-        "gap": 19.6,
+        "gap": 17.5,
         "exitlow": 1938.0,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A413630",
         "krw": true
@@ -1175,6 +1175,66 @@
     ],
     "데이터지연": [],
     "돌파": [
+      {
+        "name": "DDOG(DDOG)",
+        "market": "미국",
+        "unit": "$",
+        "sector": "",
+        "desc": "",
+        "close": 288.15,
+        "pivot": 278.76,
+        "stop": 261.9,
+        "stoppct": 9.1,
+        "exitlow": 237.67,
+        "shares": 0.8,
+        "pos": 329363,
+        "loss": 30000,
+        "capped": false,
+        "blocked": "1주 미만(0.800주) — 손절 조건주문 불가로 진입 제외",
+        "mktbull": true,
+        "earn": "2026-08-06",
+        "tv": "https://kr.tradingview.com/chart/?symbol=DDOG"
+      },
+      {
+        "name": "U(U)",
+        "market": "미국",
+        "unit": "$",
+        "sector": "",
+        "desc": "",
+        "close": 35.22,
+        "pivot": 34.27,
+        "stop": 31.62,
+        "stoppct": 10.2,
+        "exitlow": 27.83,
+        "shares": 5.838,
+        "pos": 293880,
+        "loss": 30000,
+        "capped": false,
+        "blocked": "",
+        "mktbull": true,
+        "earn": "2026-08-06",
+        "tv": "https://kr.tradingview.com/chart/?symbol=U"
+      },
+      {
+        "name": "NET(NET)",
+        "market": "미국",
+        "unit": "$",
+        "sector": "",
+        "desc": "",
+        "close": 301.33,
+        "pivot": 293.8,
+        "stop": 272.27,
+        "stoppct": 9.6,
+        "exitlow": 250.69,
+        "shares": 0.722,
+        "pos": 311128,
+        "loss": 30000,
+        "capped": false,
+        "blocked": "1주 미만(0.722주) — 손절 조건주문 불가로 진입 제외",
+        "mktbull": true,
+        "earn": "2026-08-06",
+        "tv": "https://kr.tradingview.com/chart/?symbol=NET"
+      },
       {
         "name": "다우존스(DIA)",
         "market": "원자재",
@@ -1216,6 +1276,66 @@
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASPY"
       },
       {
+        "name": "LYFT(LYFT)",
+        "market": "미국",
+        "unit": "$",
+        "sector": "",
+        "desc": "",
+        "close": 16.73,
+        "pivot": 16.52,
+        "stop": 15.42,
+        "stoppct": 7.8,
+        "exitlow": 13.49,
+        "shares": 16.015,
+        "pos": 382942,
+        "loss": 30000,
+        "capped": false,
+        "blocked": "",
+        "mktbull": true,
+        "earn": "2026-08-06",
+        "tv": "https://kr.tradingview.com/chart/?symbol=LYFT"
+      },
+      {
+        "name": "XLF(XLF)",
+        "market": "원자재",
+        "unit": "$",
+        "sector": "",
+        "desc": "",
+        "close": 57.88,
+        "pivot": 57.6,
+        "stop": 56.44,
+        "stoppct": 2.5,
+        "exitlow": 54.95,
+        "shares": 14.609,
+        "pos": 1208575,
+        "loss": 30000,
+        "capped": false,
+        "blocked": "",
+        "mktbull": true,
+        "earn": null,
+        "tv": "https://kr.tradingview.com/chart/?symbol=XLF"
+      },
+      {
+        "name": "SNOW(SNOW)",
+        "market": "미국",
+        "unit": "$",
+        "sector": "",
+        "desc": "",
+        "close": 316.77,
+        "pivot": 315.42,
+        "stop": 287.82,
+        "stoppct": 9.1,
+        "exitlow": 253.0,
+        "shares": 0.725,
+        "pos": 328272,
+        "loss": 30000,
+        "capped": false,
+        "blocked": "1주 미만(0.725주) — 손절 조건주문 불가로 진입 제외",
+        "mktbull": true,
+        "earn": null,
+        "tv": "https://kr.tradingview.com/chart/?symbol=SNOW"
+      },
+      {
         "name": "마이크로소프트(MSFT)",
         "market": "미국",
         "unit": "$",
@@ -1238,20 +1358,28 @@
     ],
     "근접": [
       {
-        "name": "일렉트로닉아츠(EA)",
-        "market": "미국",
-        "close": 209.7,
-        "pivot": 209.97,
-        "gap": 0.1,
-        "tv": "https://kr.tradingview.com/chart/?symbol=EA"
-      },
-      {
         "name": "뱅크오브아메리카(BAC)",
         "market": "미국",
         "close": 62.9,
         "pivot": 62.99,
         "gap": 0.1,
         "tv": "https://kr.tradingview.com/chart/?symbol=BAC"
+      },
+      {
+        "name": "IWM(IWM)",
+        "market": "원자재",
+        "close": 301.71,
+        "pivot": 302.72,
+        "gap": 0.3,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AIWM"
+      },
+      {
+        "name": "JP모건(JPM)",
+        "market": "미국",
+        "close": 357.52,
+        "pivot": 359.3,
+        "gap": 0.5,
+        "tv": "https://kr.tradingview.com/chart/?symbol=JPM"
       },
       {
         "name": "팔란티어(PLTR)",
@@ -1262,28 +1390,36 @@
         "tv": "https://kr.tradingview.com/chart/?symbol=PLTR"
       },
       {
-        "name": "지엔씨에너지",
-        "market": "한국",
-        "close": 51200.0,
-        "pivot": 51900.0,
-        "gap": 1.4,
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A119850"
+        "name": "PANW(PANW)",
+        "market": "미국",
+        "close": 366.34,
+        "pivot": 368.8,
+        "gap": 0.7,
+        "tv": "https://kr.tradingview.com/chart/?symbol=PANW"
       },
       {
-        "name": "구리(CPER)",
-        "market": "원자재",
-        "close": 40.14,
-        "pivot": 40.75,
+        "name": "DASH(DASH)",
+        "market": "미국",
+        "close": 202.37,
+        "pivot": 203.88,
+        "gap": 0.7,
+        "tv": "https://kr.tradingview.com/chart/?symbol=DASH"
+      },
+      {
+        "name": "TGT(TGT)",
+        "market": "미국",
+        "close": 148.11,
+        "pivot": 150.07,
+        "gap": 1.3,
+        "tv": "https://kr.tradingview.com/chart/?symbol=TGT"
+      },
+      {
+        "name": "GE에어로스페이스(GE)",
+        "market": "미국",
+        "close": 377.28,
+        "pivot": 382.97,
         "gap": 1.5,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ACPER"
-      },
-      {
-        "name": "농산물(DBA)",
-        "market": "원자재",
-        "close": 27.66,
-        "pivot": 28.38,
-        "gap": 2.6,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADBA"
+        "tv": "https://kr.tradingview.com/chart/?symbol=GE"
       }
     ]
   },
