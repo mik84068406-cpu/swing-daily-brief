@@ -1,18 +1,18 @@
 {
   "date": "2026-08-05",
   "weekday": "수",
-  "headline": "이란-호르무즈 개방 기대에 유가 급락 + 팔란티어 실적 서프라이즈, 위험자산 랠리 — 나스닥 2.6%·코스피 1.6%·코스닥 5.9% 동반 급등",
+  "headline": "코스피 +3.76% 급등 6,598 마감, 매수 사이드카 발동 — 美 사상 최고치·호르무즈 개방 기대 훈풍에 외국인 1.4조 순매수",
   "indicators": [
     {
       "name": "코스피",
-      "value": "6,358.95",
-      "change": "+1.62%",
+      "value": "6,598.26",
+      "change": "+3.76%",
       "dir": "up"
     },
     {
       "name": "코스닥",
-      "value": "780.72",
-      "change": "+5.88%",
+      "value": "799.59",
+      "change": "+2.42%",
       "dir": "up"
     },
     {
@@ -36,31 +36,31 @@
     {
       "name": "탐욕지수(F&G)",
       "value": "58 (탐욕)",
-      "change": "+12p",
-      "dir": "up"
+      "change": "+0p",
+      "dir": "flat"
     },
     {
       "name": "달러/원",
-      "value": "1,429.3원",
-      "change": "+0.05%",
-      "dir": "up"
+      "value": "1,424.3원",
+      "change": "-0.30%",
+      "dir": "down"
     },
     {
       "name": "달러인덱스",
-      "value": "99.89",
-      "change": "-0.07%",
+      "value": "99.78",
+      "change": "-0.11%",
       "dir": "down"
     },
     {
       "name": "WTI유가",
-      "value": "$75.14",
-      "change": "-6.47%",
+      "value": "$75.29",
+      "change": "-0.63%",
       "dir": "down"
     },
     {
       "name": "금",
-      "value": "$4,134",
-      "change": "+2.49%",
+      "value": "$4,234",
+      "change": "+3.38%",
       "dir": "up"
     },
     {
@@ -71,40 +71,45 @@
     },
     {
       "name": "비트코인",
-      "value": "$64,172",
-      "change": "+1.12%",
+      "value": "$64,218",
+      "change": "+1.19%",
       "dir": "up"
     }
   ],
-  "indicomment": "나스닥이 2.6% 튀었는데 VIX도 같이 오르고 금값도 급등했어 — 랠리는 랠리인데 다들 헤지는 안 풀고 있다는 그림. 확신이 100%는 아니라는 뜻.",
+  "indicomment": "코스피가 미국의 사상 최고치 랠리를 그대로 이어받아 장중 4%대까지 오르며 매수 사이드카가 발동됐고, +3.76%로 마감했다. 다만 VIX와 금이 랠리 속에서도 함께 오른 건 이 훈풍에 시장이 완전히 베팅하진 않았다는 신호.",
+  "news": {
+    "us": "S&P500이 7,737로 두 달 만에 사상 최고치를 재경신했고 다우존스는 사상 처음 54,000선을 돌파(+1.71%), 나스닥도 2.59% 급등했다. 이란-오만의 호르무즈 해협 개방 협상 진전과 팔란티어의 실적 서프라이즈(매출 +93%)가 위험선호를 이끌었다. 유가는 개방 기대로 하락했지만 정작 안전자산인 금은 3%대 급등해 엇갈린 신호를 보였다.",
+    "kr": "코스피가 미국발 훈풍을 그대로 받아 장중 4%대 급등, 매수 사이드카까지 발동한 뒤 +3.76% 6,598.26으로 마감했다. 코스닥도 +2.42% 799.59. 외국인이 1조4,535억원, 기관이 1,735억원 순매수하며 지수를 끌어올렸다. 개별로는 SK하이닉스(+5.77%)·대한광통신(+18.57%)·마키나락스(+29.85%) 등이 거래대금 상위에 올랐다.",
+    "macro": "달러인덱스와 원/달러 환율이 동반 약세(-0.11%, -0.30%)를 보이며 위험선호 분위기를 반영했다. 美 10년물은 5.9bp 하락한 반면 2년물은 소폭 상승해 장단기 금리가 엇갈렸다. 트럼프발 강제노동 관세(7/23 확정, 80개국 이상 대상)는 여전히 시장 배경 변수로 남아있고, 한국은행 금통위는 8/27로 예정돼 있다."
+  },
   "headlines": [
     {
       "market": "us",
-      "title": "美 3대지수 위험자산 랠리",
+      "title": "美 3대지수 사상 최고치 — 다우 54,000 최초 돌파",
       "type": "일회성",
-      "summary": "S&P500이 사상 최고치(7,600대)로 마감, 나스닥도 2%대 급등. 이란-호르무즈 해협 개방 협상 기대에 유가가 급락하고 팔란티어 실적 서프라이즈까지 겹치며 위험선호가 강하게 살아났다.",
-      "why": "인플레 부담(유가 급락)과 기업실적(팔란티어) 두 재료가 동시에 호재로 작용한 날 — 다음 거래일에도 이어지는지가 관건.",
+      "summary": "S&P500이 7,737로 두 달 만에 사상 최고치를 재경신했고, 다우존스는 사상 처음 54,000선을 돌파(+1.71%)했다. 나스닥도 2.59% 급등했지만 6월 고점 대비로는 아직 2%가량 남아있다.",
+      "why": "강한 실적 시즌과 이란-호르무즈 협상 진전이 겹치며 위험선호가 강하게 살아난 하루 — 다음 거래일에도 이어지는지가 관건.",
       "tickers": [
         "SPY",
-        "QQQ",
-        "DIA"
+        "DIA",
+        "QQQ"
       ],
       "sources": [
         {
-          "name": "Benzinga",
-          "url": "https://www.benzinga.com/markets/equities/26/08/60920438/tocks-hit-records-palantir-earnings-oil-sink-hormuz-deal-hopes-markets-tuesday"
+          "name": "CNN",
+          "url": "https://www.cnn.com/2026/08/04/investing/us-stock-market"
         },
         {
-          "name": "뉴스핌",
-          "url": "https://www.newspim.com/news/view/20260804000121"
+          "name": "Investrade",
+          "url": "https://investrade.com/mid-morning-look-august-04-2026/"
         }
       ]
     },
     {
       "market": "us",
-      "title": "팔란티어 실적 서프라이즈",
+      "title": "팔란티어 2분기 매출 93% 급증, 실적 서프라이즈",
       "type": "일회성",
-      "summary": "팔란티어 2분기 매출이 전년 대비 93% 증가한 19억4천만달러, 미국 상업부문 매출은 149% 증가. 연간 매출 전망도 약 4억9,800만달러 상향하며 주가는 하루새 27~29% 급등했다.",
+      "summary": "팔란티어 2분기 매출이 전년 대비 93% 증가한 19억4천만달러, 미국 상업부문 매출은 149% 증가했다. 연간 매출 전망도 상향하며 주가는 하루새 27~29% 급등했다.",
       "why": "AI소프트웨어 성장 스토리가 숫자로 증명된 사례 — 미 상업(민간기업) 매출 확대가 특히 부각됨.",
       "tickers": [
         "PLTR"
@@ -122,16 +127,16 @@
     },
     {
       "market": "us",
-      "title": "반도체주 동반 급등",
+      "title": "반도체주 동반 급등(가중평균 +6.8%)",
       "type": "구조",
-      "summary": "인텔 +10.8%, AMD +7.0%, 마벨 +12.8%, 마이크론 +7.6%, 브로드컴 +6.6%. 인텔은 2026년 AI데이터센터향 자본지출 계획을 180억→200억달러로 상향한 게 재료, AMD는 데이터센터 매출 57% 성장이 배경.",
+      "summary": "인텔 +10.8%, AMD +7.0%, 마이크론 +7.6%, 브로드컴 +6.6%, 엔비디아 +2.6%. 인텔이 2026년 AI데이터센터향 자본지출을 200억달러로 상향한 게 재료가 됐다.",
       "why": "개별 종목이 아니라 섹터 전체가 같이 튄 날 — AI 자본지출 사이클이 아직 안 꺾였다는 신호로 해석됨.",
       "tickers": [
         "INTC",
         "AMD",
-        "MRVL",
         "MU",
-        "AVGO"
+        "AVGO",
+        "NVDA"
       ],
       "sources": [
         {
@@ -146,98 +151,77 @@
     },
     {
       "market": "us",
-      "title": "노보노디스크 실적 실망",
-      "type": "일회성",
-      "summary": "2분기 실적 발표 후 가이던스는 상향했음에도 미국 내 GLP-1(비만·당뇨) 성장 둔화 우려로 주가가 6% 하락. 최근 심장질환 신약 임상 실패까지 겹쳐 투자심리가 위축된 상태.",
-      "why": "위험선호 랠리 속에서도 개별 악재는 그대로 반영됨 — 실적 호조가 항상 주가를 못 올린다는 명제와 연결됨.",
+      "title": "은행주 랠리 지속 — JPM 2분기 사상 최대 순이익",
+      "type": "구조",
+      "summary": "JP모건이 2분기 212억달러로 미국 은행 사상 최대 순이익을 기록(EPS 6.14달러), 트레이딩 수익 +35%·IB수수료 +30%가 배경. BofA·모건스탠리·골드만도 함께 강세.",
+      "why": "규제완화 기대와 IPO 시장 회복까지 겹치며 은행주가 2년 연속 시장 대비 아웃퍼폼 중.",
       "tickers": [
-        "NVO"
+        "JPM",
+        "BAC",
+        "XLF"
       ],
       "sources": [
         {
-          "name": "Stocktwits",
-          "url": "https://stocktwits.com/news-articles/markets/equity/nvo-stock-drops-6-despite-raised-guidance-as-investors-worry-about-injectable-glp-1-sales-future/cZo5Hg0RJ4i"
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/jpm-stock-just-staged-record-195228915.html"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/07/13/bank-earnings-jpmorgan-chase-goldman-sachs-bank-of-america.html"
         }
       ]
     },
     {
       "market": "us",
-      "title": "치폴레 살모넬라 조사",
-      "type": "일회성",
-      "summary": "미네소타주에서 살모넬라 감염 사례가 발생, 확진 84명 중 75명이 치폴레에서 식사한 것으로 확인됐다. 문제된 할라페뇨는 다른 공급업체 제품으로 교체 완료했지만 주가는 하루 새 7.9~9.7% 급락했다.",
-      "why": "2015년 대장균 사태로 주가가 오래 짓눌렸던 전례가 있어 투자자들이 민감하게 반응 — 당국은 현재 식사가 위험하지 않다고 판단.",
+      "title": "클라우드·SaaS주 일제히 신고가 돌파(MSFT·SNOW·NET·DDOG·U)",
+      "type": "구조",
+      "summary": "마이크로소프트·스노우플레이크·클라우드플레어·데이터독·유니티가 나란히 55일 신고가를 돌파했다. 후자 셋은 8/6 전후 실적 발표를 앞두고 목표주가 상향이 이어지는 중.",
+      "why": "AI 인프라·보안 수요가 클라우드 섹터 전반의 밸류에이션을 밀어올리는 흐름 — 실적 시즌이 이 랠리를 검증하는 다음 관문.",
       "tickers": [
-        "CMG"
+        "MSFT",
+        "SNOW",
+        "NET",
+        "DDOG",
+        "U"
       ],
       "sources": [
         {
-          "name": "The Motley Fool",
-          "url": "https://www.fool.com/investing/2026/08/04/why-chipotle-stock-was-down-on-an-up-day/"
+          "name": "24/7 Wall St",
+          "url": "https://247wallst.com/investing/2026/08/03/coreweave-jumps-11-snowflake-gains-6-oracle-climbs-5-as-risk-on-mood-lifts-ai-cloud/"
+        },
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-cloudflare-net-stock-rocketing-021400887.html"
         }
       ]
     },
     {
       "market": "macro",
-      "title": "이란-호르무즈 개방 기대·유가 급락",
+      "title": "이란-오만 호르무즈 해협 개방 협상 진전",
       "type": "구조",
-      "summary": "미 재무장관이 CNBC에서 \"내일 호르무즈 해협을 개방하는 이란 딜이 나올 수 있다\"고 언급, 트럼프 대통령의 대이란 공습 계획 철회 소식과 맞물려 WTI가 5~6%대 급락(배럴당 $75~76)했다.",
-      "why": "지정학 리스크 완화 + 인플레 부담 경감 두 효과가 동시에 나타나 위험자산 전반에 훈풍 — 단, 딜이 아직 '기대' 단계이지 확정된 타결이 아님.",
+      "summary": "이란과 오만이 호르무즈 해협을 이란 통제 항로로 진입, 오만 통제 항로로 빠져나가는 방식의 개방안을 놓고 협상 중. 미국의 이란 항구 봉쇄 해제가 조건으로 걸려있어 아직 타결은 아니다.",
+      "why": "유가·위험자산 랠리의 핵심 재료 — 실제 타결 여부에 따라 되돌림 리스크가 남아있다.",
       "tickers": [
         "USO",
-        "XOM"
+        "WTI"
       ],
       "sources": [
         {
-          "name": "이투데이",
-          "url": "https://www.etoday.co.kr/news/view/2610588"
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/4/us-says-deal-on-reopening-hormuz-close-as-iran-oman-hold-positive-talks"
         },
         {
-          "name": "Benzinga",
-          "url": "https://www.benzinga.com/markets/equities/26/08/60920438/tocks-hit-records-palantir-earnings-oil-sink-hormuz-deal-hopes-markets-tuesday"
+          "name": "US News",
+          "url": "https://www.usnews.com/news/world/articles/2026-08-04/iran-and-oman-make-progress-on-a-deal-to-reopen-the-strait-of-hormuz-officials-say"
         }
       ]
     },
     {
       "market": "macro",
-      "title": "美 재무장관 엔화·원화 발언",
+      "title": "트럼프발 관세, 8/19 캐나다 500개 품목 발효 예정",
       "type": "구조",
-      "summary": "베선트 미 재무장관이 엔화를 떠받치기 위해 \"무엇이든 하겠다\"고 밝히며 미·일 공동 개입 방침을 재확인. 동시에 \"한국 원화의 과도한 변동성을 목격해왔다\"고 언급해 원화도 함께 주목받았다.",
-      "why": "엔화 약세가 다른 아시아 통화 약세로 번질 수 있다는 경고 — 원/달러 환율 변동성 확대 가능성을 미 정부가 공식적으로 짚었다는 점이 새로운 부분.",
-      "tickers": [
-        "FXY",
-        "UUP"
-      ],
-      "sources": [
-        {
-          "name": "뉴스핌",
-          "url": "https://www.newspim.com/news/view/20260804001456"
-        },
-        {
-          "name": "한국일보",
-          "url": "https://www.hankookilbo.com/news/article/A2026080421240001471"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "title": "한은 금통위 8/27 예정",
-      "type": "구조",
-      "summary": "한국은행 다음 금융통화위원회 통화정책방향 결정회의는 8월 27일로 예정돼 있다. 이번 브리핑 시점 기준 3주 이상 남아 임박 이슈는 아니다.",
-      "why": "직전 7월 인상 이후 시장이 다음 스탠스를 어떻게 잡는지 지켜볼 시점 — 회의 임박 시 재료로 재부각될 가능성.",
-      "tickers": [],
-      "sources": [
-        {
-          "name": "뉴시스",
-          "url": "https://www.newsis.com/view/NISX20251030_0003383692"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "title": "美 강제노동 관세 여전히 배경",
-      "type": "구조",
-      "summary": "지난 7월 23일 미 무역대표부(USTR)가 강제노동 관련 301조 관세를 확정, 80개 이상 교역국에 10~12.5% 세율을 적용 중이다. 미국 가구당 평균 세부담은 연 900달러 늘어난 것으로 추산된다.",
-      "why": "새 뉴스는 아니지만 발효 이후에도 계속 시장 배경으로 깔려있는 이슈 — 무역거래·소비 관련 종목에 지속적 영향.",
+      "summary": "7/20 서명된 캐나다산 주류·유제품·목재·전자·기계 등 554개 품목에 대한 관세가 8/19 발효를 앞두고 있다. 7/23에는 강제노동 관련 301조 관세가 80개국 이상을 대상으로 확정됐다(10~12.5%, 10년간 5,810억달러 세수 추정).",
+      "why": "지수에는 안 잡히지만 개별 기업·업종에 영향을 주는 배경 변수 — 발효일이 다가올수록 재부각될 가능성.",
       "tickers": [],
       "sources": [
         {
@@ -247,65 +231,80 @@
       ]
     },
     {
-      "market": "kr",
-      "title": "코스피·코스닥 동반 급등",
+      "market": "macro",
+      "title": "Fed 9월 금리 동결 전망 우세, 인하 기대 후퇴",
+      "type": "구조",
+      "summary": "JP모건 리서치는 연준이 연말까지 금리를 동결할 것으로 전망한다. 연초엔 2026년 중 인하를 점치는 시각이 많았지만, 에너지發 인플레 재발로 오히려 인상 가능성까지 일부 가격에 반영되는 분위기로 바뀌었다.",
+      "why": "금리 인하 기대가 옅어진 상태에서도 위험자산이 랠리했다는 건 오늘 상승이 실적·지정학 재료 주도였다는 뜻.",
+      "tickers": [],
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/personal-finance/banking/article/fed-rate-predictions-2026-154647304.html"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "title": "금값 급등, 유가 하락에도 안전자산 동반 강세",
       "type": "일회성",
-      "summary": "코스피 +1.62%(6,358.95), 코스닥은 +5.88%(780.72)로 3거래일 연속 매수 사이드카가 발동됐다(사상 처음). 코스피는 외국인·개인 순매수·기관 순매도, 코스닥은 기관이 약 5,000억원 순매수했다.",
-      "why": "미국 기술주 폭등 + 중동 리스크 완화가 그대로 국내 증시로 넘어온 스필오버 — 크기가 크지만 원인은 미국발로 뚜렷함.",
-      "tickers": [],
+      "summary": "금은 유가 급락(호르무즈 개방 기대)에도 불구하고 3%대 급등했다. 연준 정책 불확실성과 중국의 견조한 금 수요가 배경으로 꼽힌다.",
+      "why": "위험선호 랠리와 안전자산 매수가 동시에 나타난 하루 — 시장이 완전히 낙관에 베팅한 건 아니라는 신호로 해석 가능.",
+      "tickers": [
+        "GLD"
+      ],
       "sources": [
         {
-          "name": "뉴스핌",
-          "url": "https://www.newspim.com/news/view/20260804001266"
-        },
-        {
-          "name": "Businesskorea",
-          "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=274088"
+          "name": "국제뉴스",
+          "url": "https://www.gukjenews.com/news/articleView.html?idxno=3655834"
         }
       ]
     },
     {
       "market": "kr",
-      "title": "건설주 SMR 원전 테마 랠리",
-      "type": "구조",
-      "summary": "GS건설 +18.56%, 대우건설 +14.29%로 두자릿수 급등. 정부가 '2026년 세제개편안'에서 소형모듈원자로(SMR)를 국가전략기술에 포함해 R&D·시설투자 세액공제를 확대한다는 소식이 배경, 빌 게이츠 테라파워 방한설도 겹쳤다.",
-      "why": "정책(세제혜택)이 실적보다 먼저 주가를 움직인 케이스 — 단기 급등 구간이라 추격보다는 확인이 우선.",
+      "title": "코스피 매수 사이드카 발동, 외국인 1.4조 순매수",
+      "type": "일회성",
+      "summary": "코스피가 장중 4%대 급등하며 매수 사이드카가 발동됐고 +3.76% 6,598.26으로 마감했다. 외국인이 1조4,535억원, 기관이 1,735억원 순매수하며 지수 상승을 이끌었다.",
+      "why": "미국발 훈풍이 실제 외국인 자금 유입으로 이어졌는지를 보여주는 하루 — 코스피 이격도(200일선 대비 +14.2%)가 커진 상태라 단기 과열 경계 필요.",
       "tickers": [],
       "sources": [
         {
-          "name": "금강일보",
-          "url": "http://www.ggilbo.com/news/articleView.html?idxno=1173278"
+          "name": "이투데이",
+          "url": "https://www.etoday.co.kr/news/view/2611280"
         },
         {
-          "name": "포쓰저널",
-          "url": "https://www.4th.kr/news/articleView.html?idxno=2109330"
+          "name": "헤럴드경제",
+          "url": "https://biz.heraldcorp.com/article/10831237"
         }
       ]
     },
     {
       "market": "kr",
-      "title": "NAVER·SK텔레콤 AI 재료 동반 급등",
+      "title": "반도체 대장주 동반 강세, 거래대금 1위",
       "type": "구조",
-      "summary": "SK텔레콤 +11.46%(AIDC얼라이언스 민간 공동의장 선임, AI데이터센터 전문법인 'SK하이퍼' 설립·2030년까지 7,500억원 투자 계획), NAVER +9.16%(엔비디아·브룩필드와 200MW 규모 AI 팩토리 투자 구조 부각).",
-      "why": "정부 '독자 AI파운데이션모델(독파모)' 프로젝트 2차 평가와 맞물려 통신·플랫폼의 AI 인프라 투자가 재부각된 흐름.",
-      "tickers": [],
+      "summary": "SK하이닉스 +5.77%(거래대금 6.3조원), 삼성전자 +2.5%(5.6조원)로 코스피 거래대금 상위 1·2위를 차지했다. 국내 반도체 섹터 가중평균 등락률은 +4.27%.",
+      "why": "미국 반도체 랠리(마이크론·인텔·AMD)를 국내 대장주가 그대로 이어받은 흐름 — 코스피 상승의 실질적 주도주.",
+      "tickers": [
+        "005930",
+        "000660"
+      ],
       "sources": [
         {
-          "name": "파이낸셜뉴스",
-          "url": "https://www.fnnews.com/news/202608041103430206"
-        },
-        {
-          "name": "이데일리",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=03348886645544040&mediaCodeNo=257"
+          "name": "세계일보",
+          "url": "https://segye.com/newsView/20260805508062"
         }
       ]
+    },
+    {
+      "market": "kr",
+      "title": "전선·광통신 테마주 급등",
+      "type": "일회성",
+      "summary": "대원전선 +12.04%, 대한전선 +11.57%로 전선 섹터가 가중평균 +11.98% 급등했고, 대한광통신은 +18.57% 단독 급등하며 거래대금 상위권에 신규 진입했다.",
+      "why": "AI 데이터센터·전력망 투자 확대 기대에 따른 테마성 순환매 — 개별 실적 재료보다는 수급 쏠림 성격이 강해 추격보다 확인이 먼저인 자리.",
+      "tickers": [],
+      "sources": []
     }
   ],
-  "news": {
-    "us": "팔란티어 실적 서프라이즈(+27%)와 이란-호르무즈 개방 기대에 따른 유가 급락으로 위험자산 랠리, S&P500 사상 최고치. 반도체주(인텔·AMD·마벨) 동반 급등, 노보노디스크·치폴레는 개별 악재로 급락.",
-    "kr": "미국발 훈풍에 코스피 1.62%·코스닥 5.88% 동반 급등, 코스닥은 3거래일 연속 매수 사이드카. GS건설·대우건설은 SMR 세제혜택 기대로 두자릿수 상승, NAVER·SK텔레콤은 AI 사업 재료로 동반 급등.",
-    "macro": "베선트 미 재무장관이 엔화 약세 저지 의지를 밝히며 원화 변동성도 언급, 한국은행 금통위는 8/27 예정. 트럼프발 강제노동 관세(7/23 확정)는 여전히 시장 배경 변수."
-  },
   "flow": {
     "us": {
       "in": [
@@ -314,21 +313,21 @@
           "change": 6.77,
           "n": 8,
           "leader": "마이크론 +7.6 · 엔비디아 +2.6 · AMD +7.0 · 인텔 +10.8 · 브로드컴 +6.6",
-          "note": ""
+          "note": "AI 데이터센터 자본지출 사이클이 아직 안 꺾였다는 신호로 반도체 전 종목이 동반 급등 — 인텔은 AI데이터센터향 캐펙스를 200억달러로 상향한 게 재료."
         },
         {
           "sector": "AI소프트웨어",
           "change": 29.45,
           "n": 1,
           "leader": "팔란티어 +29.4",
-          "note": ""
+          "note": "팔란티어 2분기 매출이 전년비 93% 급증(미 상업부문 +149%)하며 실적 서프라이즈, 홀로 섹터 등락률을 끌어올림."
         },
         {
           "sector": "우주항공",
           "change": 9.43,
           "n": 1,
           "leader": "스페이스X 관련 +9.4",
-          "note": ""
+          "note": "위험선호 랠리에 스페이스X 관련주가 동반 상승 — 개별 재료보다는 전반적 리스크온 분위기 편승."
         }
       ],
       "out": [],
@@ -338,326 +337,326 @@
           "change": 0.48,
           "n": 4,
           "leader": "마이크로소프트 +1.1 · 애플 +2.0 · 아마존 -2.3 · 알파벳(구글) +1.1",
-          "note": ""
+          "note": "반도체·AI소프트웨어보다 상대적으로 약한 흐름, 아마존만 홀로 하락하며 섹터 전체를 끌어내림."
         },
         {
           "sector": "게임",
           "change": -0.1,
           "n": 1,
           "leader": "일렉트로닉아츠 -0.1",
-          "note": ""
+          "note": "사실상 보합 — 오늘 랠리에서 소외된 섹터."
         }
       ]
     },
     "kr": {
       "in": [
         {
-          "sector": "에너지",
-          "change": 19.87,
-          "n": 1,
-          "leader": "SK이터닉스 +19.9",
-          "note": ""
+          "sector": "반도체",
+          "change": 4.27,
+          "n": 4,
+          "leader": "SK하이닉스 +5.8 · 삼성전자 +2.5 · 삼성전자우 +4.2 · 제주반도체 +7.9",
+          "note": "코스피 급등의 실질적 주도주 — 거래대금 1위(12.4조원). 미국 반도체 랠리를 그대로 이어받았다."
         },
         {
-          "sector": "플랫폼",
-          "change": 8.13,
+          "sector": "전선",
+          "change": 11.98,
           "n": 2,
-          "leader": "NAVER +9.2 · 카카오 +1.9",
-          "note": ""
+          "leader": "대원전선 +12.0 · 대한전선 +11.6",
+          "note": "AI 데이터센터·전력망 투자 확대 기대에 전선주 동반 급등, 개별 재료보다는 테마성 순환매 성격."
         },
         {
-          "sector": "건설",
-          "change": 13.75,
-          "n": 3,
-          "leader": "GS건설 +18.6 · 대우건설 +14.3 · 삼성E&A +7.5",
-          "note": ""
+          "sector": "광통신",
+          "change": 18.57,
+          "n": 1,
+          "leader": "대한광통신 +18.6",
+          "note": "AI 데이터센터향 광통신 부품 수요 기대로 단독 급등 — 거래대금 상위권 신규 진입."
         }
       ],
-      "out": [],
-      "mixed": [
+      "out": [
         {
-          "sector": "반도체",
-          "change": 0.47,
-          "n": 5,
-          "leader": "SK하이닉스 +0.6 · 삼성전자 +0.2 · 삼성전자우 -0.9 · 제주반도체 +7.5 · 원익홀딩스 +2.7",
-          "note": ""
+          "sector": "바이오",
+          "change": -6.37,
+          "n": 2,
+          "leader": "디앤디파마텍 -18.1 · 코오롱티슈진 +17.2",
+          "note": "종목별로 극과 극 — 디앤디파마텍은 실망 매물로 급락, 코오롱티슈진은 개별 호재로 급등해 섹터 평균이 왜곡됨."
         }
-      ]
+      ],
+      "mixed": []
     }
   },
   "myview": "",
-  "aiview": "팔란티어 실적과 중동 리스크 완화가 겹치며 위험자산 전반이 강하게 반응한 하루(나스닥 +2.6%·코스피 +1.6%·코스닥 +5.9%). 다만 VIX와 금값이 랠리와 함께 오른 점은 시장이 100% 확신하고 있진 않다는 신호. 확인 포인트: 이란-호르무즈 딜이 실제로 타결되는지, 반도체·건설 테마의 급등이 다음 거래일에도 이어지는지.",
+  "aiview": "오늘 코스피는 미국의 사상 최고치 경신과 호르무즈 개방 기대를 그대로 받아 사이드카까지 발동하며 +3.76%로 마감했다 — 외국인 1.4조원 순매수가 실제 자금 유입을 증명한 하루. 다만 VIX(+4.04%)와 금(+3.38%)이 랠리와 동시에 오른 건 시장이 100% 안심하지 않았다는 신호이고, 이란-오만 호르무즈 딜은 아직 협상 진행 중(타결 전)이라 되돌림 리스크가 남아있다. 내일 확인할 것: ①호르무즈 협상 실제 타결 여부 ②오늘 급등한 코스닥 테마주(전선·광통신)의 거래대금이 다음날도 유지되는지 ③DDOG·U·NET 등 8/6 전후 실적 발표 종목들의 결과.",
   "top": {
     "kr": [
       {
         "name": "SK하이닉스",
         "sector": "반도체(메모리·HBM)",
         "desc": "메모리 반도체 2위, AI 서버용 HBM에서는 세계 1위",
-        "cap": "1152조",
-        "change": 0.64,
-        "value": "81,916억원",
+        "cap": "1218조",
+        "change": 5.77,
+        "value": "62,802억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A000660"
       },
       {
         "name": "삼성전자",
         "sector": "반도체(메모리)",
         "desc": "메모리 반도체 1위, 스마트폰·가전까지 하는 종합 전자",
-        "cap": "1403조",
-        "change": 0.21,
-        "value": "68,793억원",
+        "cap": "1438조",
+        "change": 2.5,
+        "value": "55,774억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A005930"
-      },
-      {
-        "name": "SK이터닉스",
-        "sector": "에너지(신재생)",
-        "desc": "태양광·풍력 발전소를 짓고 운영하는 신재생에너지 회사",
-        "cap": "2조",
-        "change": 19.87,
-        "value": "7,242억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150"
-      },
-      {
-        "name": "NAVER",
-        "sector": "플랫폼(포털·AI)",
-        "desc": "검색·쇼핑·웹툰을 가진 국내 최대 포털, 자체 AI(하이퍼클로바) 개발",
-        "cap": "36조",
-        "change": 9.16,
-        "value": "5,137억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A035420"
-      },
-      {
-        "name": "삼성전자우",
-        "sector": "반도체(우선주)",
-        "desc": "삼성전자 우선주 — 의결권 없는 대신 배당이 조금 더 많음",
-        "cap": "142조",
-        "change": -0.9,
-        "value": "4,459억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A005935"
-      },
-      {
-        "name": "SK텔레콤",
-        "sector": "통신",
-        "desc": "국내 1위 이동통신사, AI·데이터센터 사업으로도 확장 중",
-        "cap": "20조",
-        "change": 11.46,
-        "value": "2,214억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A017670"
       },
       {
         "name": "대원전선",
         "sector": "전선",
         "desc": "전력·통신용 케이블을 만드는 전선 제조사",
         "cap": "1조",
-        "change": 5.19,
-        "value": "2,118억원",
+        "change": 12.04,
+        "value": "6,777억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A006340"
-      },
-      {
-        "name": "지엔씨에너지",
-        "sector": "발전설비",
-        "desc": "비상·상용 발전기 제조사, 데이터센터용 비상발전기 수요 확대 수혜",
-        "cap": "8,422억",
-        "change": 21.9,
-        "value": "1,836억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A119850"
-      },
-      {
-        "name": "두산에너빌리티",
-        "sector": "원전·발전설비",
-        "desc": "원자력·가스터빈 등 발전소 설비를 만드는 중공업 회사",
-        "cap": "47조",
-        "change": 7.83,
-        "value": "1,833억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A034020"
-      },
-      {
-        "name": "주성엔지니어링",
-        "sector": "반도체장비",
-        "desc": "반도체·디스플레이 증착장비, 국내 장비사 중 기술력 상위",
-        "cap": "6조",
-        "change": 6.42,
-        "value": "1,759억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A036930"
-      },
-      {
-        "name": "GS건설",
-        "sector": "건설",
-        "desc": "아파트(자이)·플랜트를 짓는 국내 대형 건설사",
-        "cap": "2조",
-        "change": 18.56,
-        "value": "1,479억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A006360"
-      },
-      {
-        "name": "에스피지",
-        "sector": "로봇부품(감속기·모터)",
-        "desc": "하모닉·RV·유성 감속기를 모두 만드는 국내 유일 회사, 로봇 관절 핵심부품",
-        "cap": "2조",
-        "change": 0.09,
-        "value": "1,466억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A058610"
-      },
-      {
-        "name": "대우건설",
-        "sector": "건설",
-        "desc": "아파트·플랜트를 짓는 국내 대형 건설사 중 하나",
-        "cap": "6조",
-        "change": 14.29,
-        "value": "1,393억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A047040"
-      },
-      {
-        "name": "제주반도체",
-        "sector": "반도체(메모리설계)",
-        "desc": "휴대폰·IoT에 들어가는 소용량 메모리를 설계하는 팹리스",
-        "cap": "2조",
-        "change": 7.53,
-        "value": "1,290억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A080220"
-      },
-      {
-        "name": "삼성E&A",
-        "sector": "건설(플랜트)",
-        "desc": "옛 삼성엔지니어링. 정유·석유화학 플랜트를 짓는 건설사, 중동 수주 비중 큼",
-        "cap": "9조",
-        "change": 7.55,
-        "value": "1,270억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A028050"
-      },
-      {
-        "name": "코스모로보틱스",
-        "sector": "로봇",
-        "desc": "코스모그룹 계열 로봇 사업 회사",
-        "cap": "5,835억",
-        "change": 0.56,
-        "value": "1,168억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A439960"
       },
       {
         "name": "대한광통신",
         "sector": "광통신",
         "desc": "광섬유·광케이블을 만드는 통신 인프라 소재 회사",
         "cap": "2조",
-        "change": 10.05,
-        "value": "1,143억원",
+        "change": 18.57,
+        "value": "4,833억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A010170"
+      },
+      {
+        "name": "삼성전자우",
+        "sector": "반도체(우선주)",
+        "desc": "삼성전자 우선주 — 의결권 없는 대신 배당이 조금 더 많음",
+        "cap": "148조",
+        "change": 4.25,
+        "value": "4,093억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A005935"
+      },
+      {
+        "name": "SK이터닉스",
+        "sector": "에너지(신재생)",
+        "desc": "태양광·풍력 발전소를 짓고 운영하는 신재생에너지 회사",
+        "cap": "2조",
+        "change": 3.41,
+        "value": "3,866억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150"
       },
       {
         "name": "디앤디파마텍",
         "sector": "바이오(신약)",
         "desc": "비만·뇌질환 신약을 개발하는 바이오 회사",
-        "cap": "3조",
-        "change": 14.29,
-        "value": "1,135억원",
+        "cap": "2조",
+        "change": -18.06,
+        "value": "3,756억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A347850"
-      },
-      {
-        "name": "에코프로",
-        "sector": "2차전지(지주)",
-        "desc": "2차전지 양극재 소재를 만드는 에코프로 그룹 지주사",
-        "cap": "11조",
-        "change": 5.94,
-        "value": "1,089억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A086520"
       },
       {
         "name": "한화솔루션",
         "sector": "태양광·화학",
         "desc": "태양광 모듈(큐셀)과 석유화학을 함께 하는 회사",
         "cap": "5조",
-        "change": 8.06,
-        "value": "1,067억원",
+        "change": 12.5,
+        "value": "2,371억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A009830"
+      },
+      {
+        "name": "코오롱티슈진",
+        "sector": "바이오",
+        "desc": "골관절염 세포유전자치료제를 개발하는 바이오 회사, 임상 리스크가 큼",
+        "cap": "2조",
+        "change": 17.21,
+        "value": "1,863억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A950160"
+      },
+      {
+        "name": "SK텔레콤",
+        "sector": "통신",
+        "desc": "국내 1위 이동통신사, AI·데이터센터 사업으로도 확장 중",
+        "cap": "20조",
+        "change": 1.75,
+        "value": "1,818억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A017670"
+      },
+      {
+        "name": "두산에너빌리티",
+        "sector": "원전·발전설비",
+        "desc": "원자력·가스터빈 등 발전소 설비를 만드는 중공업 회사",
+        "cap": "49조",
+        "change": 5.48,
+        "value": "1,691억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A034020"
+      },
+      {
+        "name": "대우건설",
+        "sector": "건설",
+        "desc": "아파트·플랜트를 짓는 국내 대형 건설사 중 하나",
+        "cap": "7조",
+        "change": 6.78,
+        "value": "1,524억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A047040"
+      },
+      {
+        "name": "코스모로보틱스",
+        "sector": "로봇",
+        "desc": "코스모그룹 계열 로봇 사업 회사",
+        "cap": "6,166억",
+        "change": 5.67,
+        "value": "1,507억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A439960"
+      },
+      {
+        "name": "주성엔지니어링",
+        "sector": "반도체장비",
+        "desc": "반도체·디스플레이 증착장비, 국내 장비사 중 기술력 상위",
+        "cap": "7조",
+        "change": 5.07,
+        "value": "1,467억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A036930"
+      },
+      {
+        "name": "GS건설",
+        "sector": "건설",
+        "desc": "아파트(자이)·플랜트를 짓는 국내 대형 건설사",
+        "cap": "3조",
+        "change": 8.35,
+        "value": "1,422억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A006360"
+      },
+      {
+        "name": "제주반도체",
+        "sector": "반도체(메모리설계)",
+        "desc": "휴대폰·IoT에 들어가는 소용량 메모리를 설계하는 팹리스",
+        "cap": "3조",
+        "change": 7.86,
+        "value": "1,384억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A080220"
+      },
+      {
+        "name": "마키나락스",
+        "sector": "산업AI(피지컬AI)",
+        "desc": "공장 설비·로봇을 지능화하는 산업용 AI OS '런웨이' 개발사, 2026-05 상장",
+        "cap": "5,291억",
+        "change": 29.85,
+        "value": "1,323억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A477850"
       },
       {
         "name": "원익IPS",
         "sector": "반도체장비",
         "desc": "반도체 만들 때 웨이퍼에 막을 입히는 증착장비 제조",
         "cap": "5조",
-        "change": 2.99,
-        "value": "1,041억원",
+        "change": 1.24,
+        "value": "1,243억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A240810"
       },
       {
-        "name": "씨피시스템",
-        "sector": "케이블보호장치(반도체·2차전지용)",
+        "name": "삼성E&A",
+        "sector": "건설(플랜트)",
+        "desc": "옛 삼성엔지니어링. 정유·석유화학 플랜트를 짓는 건설사, 중동 수주 비중 큼",
+        "cap": "10조",
+        "change": 2.83,
+        "value": "1,185억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A028050"
+      },
+      {
+        "name": "성호전자",
+        "sector": "",
         "desc": "",
-        "cap": "1,554억",
-        "change": 4.79,
-        "value": "874억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A413630"
+        "cap": "1조",
+        "change": 13.03,
+        "value": "1,095억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A043260"
+      },
+      {
+        "name": "대한항공",
+        "sector": "항공",
+        "desc": "국내 최대 항공사, 아시아나항공을 합병한 통합 국적 항공사",
+        "cap": "10조",
+        "change": 3.07,
+        "value": "1,040억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A003490"
+      },
+      {
+        "name": "대한전선",
+        "sector": "전선",
+        "desc": "전력·통신용 케이블을 만드는 전선 제조사",
+        "cap": "6조",
+        "change": 11.57,
+        "value": "1,015억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A001440"
+      },
+      {
+        "name": "광전자",
+        "sector": "",
+        "desc": "",
+        "cap": "4,091억",
+        "change": 21.31,
+        "value": "999억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A017900"
       },
       {
         "name": "카카오",
         "sector": "플랫폼(메신저)",
         "desc": "카카오톡 기반 메신저·모빌리티·핀테크 계열사를 거느린 플랫폼 그룹",
         "cap": "17조",
-        "change": 1.88,
-        "value": "845억원",
+        "change": 0.66,
+        "value": "979억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A035720"
       },
       {
-        "name": "삼성중공업",
-        "sector": "조선",
-        "desc": "LNG선·해양플랜트를 만드는 조선 3사 중 하나",
-        "cap": "19조",
-        "change": 3.59,
-        "value": "757억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A010140"
+        "name": "두산퓨얼셀",
+        "sector": "",
+        "desc": "",
+        "cap": "2조",
+        "change": 20.98,
+        "value": "947억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A336260"
       },
       {
         "name": "HPSP",
         "sector": "반도체장비",
         "desc": "반도체 수율을 높이는 고압 수소 어닐링 장비, 세계 독점급",
         "cap": "3조",
-        "change": 4.27,
-        "value": "678억원",
+        "change": 3.39,
+        "value": "910억원",
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A403870"
       },
       {
-        "name": "스피어",
-        "sector": "우주항공소재",
-        "desc": "로켓 발사체용 특수합금 소재를 스페이스X 등에 공급하는 회사",
-        "cap": "1조",
-        "change": 23.14,
-        "value": "677억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A347700"
+        "name": "빛과전자",
+        "sector": "광통신부품",
+        "desc": "",
+        "cap": "3,257억",
+        "change": 29.89,
+        "value": "812억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A069540"
       },
       {
-        "name": "원익홀딩스",
-        "sector": "반도체(가스공급)",
-        "desc": "반도체·디스플레이용 특수가스를 정제·공급하는 원익그룹 지주사, 로봇·AI로 확장 중",
-        "cap": "2조",
-        "change": 2.72,
-        "value": "675억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A030530"
+        "name": "이랜시스",
+        "sector": "",
+        "desc": "",
+        "cap": "1,978억",
+        "change": 29.82,
+        "value": "644억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A264850"
       },
       {
-        "name": "코오롱티슈진",
-        "sector": "바이오",
-        "desc": "골관절염 세포유전자치료제를 개발하는 바이오 회사, 임상 리스크가 큼",
-        "cap": "1조",
-        "change": 11.41,
-        "value": "660억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A950160"
+        "name": "삼성중공업",
+        "sector": "조선",
+        "desc": "LNG선·해양플랜트를 만드는 조선 3사 중 하나",
+        "cap": "20조",
+        "change": 2.54,
+        "value": "628억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A010140"
       },
       {
-        "name": "위닉스",
-        "sector": "생활가전",
-        "desc": "제습기·공기청정기 등 생활가전을 만드는 회사",
-        "cap": "1,044억",
-        "change": -0.34,
-        "value": "643억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A044340"
-      },
-      {
-        "name": "현대무벡스",
-        "sector": "물류자동화",
-        "desc": "자동창고·물류로봇 등 물류자동화 설비를 만드는 회사",
-        "cap": "3조",
-        "change": 2.38,
-        "value": "602억원",
-        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A319400"
+        "name": "PS일렉트로닉스",
+        "sector": "통신부품·자동화장비",
+        "desc": "이동통신용 전력증폭기(RF) 모듈과 스마트 자동화 장비를 만드는 회사",
+        "cap": "4,391억",
+        "change": 14.08,
+        "value": "622억원",
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A332570"
       }
     ],
     "us": [
@@ -899,7 +898,7 @@
         "name": "온세미컨덕터 (ON)",
         "sector": "반도체(전력·차량용)",
         "desc": "전기차·산업용 전력반도체가 주력인 미국 반도체회사",
-        "cap": "$31B",
+        "cap": "$19B",
         "change": 0.47,
         "value": "1,961백만USD",
         "tv": "https://kr.tradingview.com/chart/?symbol=ON"
@@ -934,15 +933,23 @@
     ]
   },
   "signalnotes": {
-    "다우존스(DIA)": "다우존스 30개 초우량주를 담은 ETF. 이란-호르무즈 해협 개방 기대에 유가가 급락하고 팔란티어 실적 서프라이즈까지 겹치며 위험자산 랠리가 일었고, 사상 최고치를 새로 쓰며 55일 신고가를 돌파했다.",
-    "S&P500(SPY)": "미국 대표기업 500개를 담은 세계 최대 ETF. 같은 배경(유가 급락+팔란티어 실적)으로 사상 최고치를 경신하며 55일 신고가를 돌파했다.",
-    "마이크로소프트(MSFT)": "클라우드(애저)와 오픈AI 지분을 보유한 빅테크. 반도체·AI소프트웨어 랠리에 동반 상승하며 55일 신고가를 돌파했다. 다음 실적 발표는 10월 말~11월 초 예정으로 임박 이슈는 없음.",
-    "EA(EA)": "게임회사(FIFA·매든NFL). ⚠️ 사우디 PIF·실버레이크 컨소시엄의 550억달러 규모 비상장화(LBO) 거래가 미국시간 8/4 장마감(한국시간 8/5 새벽) 기준으로 종료될 예정이었다. 주당 인수가는 210달러 현금이고 현재가 209.70달러는 그 가격에 수렴해 있던 것 — 실제 상장폐지 완료 여부는 확인 필요하며, 완료됐다면 더 이상 거래 대상이 아니라 일반적 돌파 신호와 성격이 다르다.",
-    "뱅크오브아메리카(BAC)": "미국 2위 상업은행. 오늘 뚜렷한 개별 재료는 확인되지 않았고, 시장 전반의 위험선호 랠리에 동반 상승한 것으로 보인다.",
-    "팔란티어(PLTR)": "정부·기업에 데이터분석 소프트웨어를 파는 AI 회사. 2분기 매출이 전년비 93% 증가(19.4억달러), 미국 상업부문은 149% 증가하며 연간 전망치를 상향, 하루 새 27~29% 급등했다.",
-    "지엔씨에너지": "비상·상용 발전기 제조사. SK(약 420억원)·네이버(약 630억원, 데이터센터 '각 세종' 2·3단계) 등 AI데이터센터용 비상발전기 대형 공급계약이 잇따라 확인되며 급등세를 탔다.",
-    "구리(CPER)": "구리 선물을 추종하는 원자재 ETF, 경기·AI인프라 수요 바로미터로 불림. AI·전력망 투자 기대로 완만히 상승 중이나 오늘 특정 단발 재료는 확인되지 않았다.",
-    "농산물(DBA)": "밀·옥수수·설탕 등 농산물 선물을 담은 ETF, 주식과 상관관계가 낮은 자산군. 오늘 특별한 개별 재료는 확인되지 않았다."
+    "DDOG(DDOG)": "클라우드 애플리케이션 모니터링(APM) 소프트웨어 기업. 7월 말 모건스탠리·BTIG·씨티가 목표주가를 일제히 상향(280~330달러대)하며 랠리, 올해 들어서만 110%대 상승했다. 8/6 실적 발표를 앞두고 있어 실적 갭 리스크로 진입 보류.",
+    "U(U)": "게임엔진·모바일광고 플랫폼 기업(Unity). 웰스파고가 목표주가를 상향했고 최근 분기 전략매출이 +35% 성장한 게 재료, 8/5 프리마켓 실적 발표를 앞둔 기대감이 반영됐다. 실적 갭 구간이라 진입 보류.",
+    "NET(NET)": "클라우드 보안·CDN 기업(Cloudflare). BofA가 목표주가를 330달러로 상향하며 52주 신고가를 경신했고, 8/6 실적 발표를 앞둔 기대감이 겹쳤다. 실적 갭 구간으로 진입 보류.",
+    "다우존스(DIA)": "다우존스 지수 추종 ETF. 오늘 다우 지수가 사상 처음 54,000선을 돌파하며 최고치를 경신 — 팔란티어 실적과 호르무즈 개방 기대가 위험자산 전반을 끌어올린 결과.",
+    "S&P500(SPY)": "S&P500 지수 추종 ETF. 이날 S&P500이 두 달 만에 사상 최고치를 재경신(7,737선) — 강한 실적 시즌과 기술주 반등이 배경. 다만 매수 수량이 1주 미만이라 조건주문이 불가해 진입 자체는 제외됨.",
+    "LYFT(LYFT)": "차량공유 플랫폼(우버 경쟁사). 최근 한 달 8%대 반등했고 8/6 실적 발표를 앞두고 있다(EPS 컨센서스 0.39달러, 전년비 +56%). 올해 들어 -27%로 부진했던 종목이라 실적 결과에 따라 변동성이 클 수 있어 진입 보류.",
+    "XLF(XLF)": "미국 대형 은행·금융주를 담은 섹터 ETF. JP모건이 2분기 사상 최대 순이익(212억달러)을 냈고 BofA·모건스탠리·골드만도 트레이딩 수익 호조로 동반 강세 — 규제완화 기대까지 겹쳐 2년 연속 시장 대비 아웃퍼폼 중.",
+    "SNOW(SNOW)": "데이터 클라우드 플랫폼 기업(Snowflake). 웰스파고가 목표주가를 500달러로 대폭 상향했고 AI 보안·에이전트 연동 신기능(Cortex AI Gateway) 발표까지 겹쳐 4년 만에 신고가를 기록했다.",
+    "마이크로소프트(MSFT)": "빅테크 대장주. 최근 실적에서 Azure 매출이 +43% 성장하며 시가총액이 하루새 4,500억달러 늘었고, 애널리스트 목표주가 평균이 560달러를 넘어섰다. 다만 대규모 AI 투자 부담에 대한 밸류에이션 우려도 함께 제기되는 중.",
+    "뱅크오브아메리카(BAC)": "미국 2위 대형은행. JPM·모건스탠리·골드만과 함께 트레이딩 수익 호조로 은행 섹터 전반이 랠리 중이며, 돌파선(62.99달러)까지 0.1% 남은 근접 자리.",
+    "IWM(IWM)": "미국 중소형주 2,000개를 담은 러셀2000 지수 ETF. 위험선호 랠리가 대형주를 넘어 중소형주까지 확산되는지를 보여주는 지표 — 돌파선까지 0.3% 남음.",
+    "JP모건(JPM)": "미국 최대 은행. 2분기 사상 최대 순이익(212억달러) 발표 후 랠리가 이어지는 중이며, 52주 신고가(351.24달러) 근처에서 움직이고 있다.",
+    "팔란티어(PLTR)": "AI·빅데이터 분석 기업. 오늘 실적 서프라이즈(매출 +93%)로 하루새 27~29% 급등했지만, 이미 크게 뛴 뒤라 55일 고점까지는 아직 0.6% 남아있다.",
+    "PANW(PANW)": "사이버보안 기업(Palo Alto Networks). AI 기반 보안 수요 확대와 최근 인수합병 통합이 진행 중이며, 7/17 사상 최고치(368.80달러) 근처에서 등락 중 — 돌파선까지 0.7%.",
+    "DASH(DASH)": "음식배달 플랫폼(DoorDash). FAA가 드론 배송 항공운항증명(Part 135)을 승인한 게 최근 재료이며, 오늘 장 마감 후 실적 발표가 예정돼 있다(EPS 컨센서스 0.47달러). 돌파선까지 0.7% 남았지만 실적 갭 리스크가 크다.",
+    "TGT(TGT)": "미국 대형 유통업체(Target). 최근 한 주 5%대 반등하며 돌파선(150.07달러)까지 1.3% 남았다. 8/12 배당락(주당 1.16달러)을 앞둔 자리.",
+    "GE에어로스페이스(GE)": "항공엔진 제조사. 2분기 영업이익 가이던스를 105.5억~107.5억달러로 상향(기존 98.5억~102.5억)하며 실적 서프라이즈를 냈고, 최근 3개월 +18%대 상승했다 — 돌파선까지 1.5%."
   },
   "breakout": {
     "날짜": "2026-08-05",
@@ -956,10 +963,10 @@
       },
       "한국": {
         "지수": "코스피",
-        "종가": 6358.95,
-        "sma200": 5776.56,
+        "종가": 6598.26,
+        "sma200": 5776.57,
         "상승장": true,
-        "이격": 10.1
+        "이격": 14.2
       },
       "원자재": {
         "지수": "자기 200일선(종목별)",
@@ -972,7 +979,7 @@
     "급락일": [],
     "급락상세": {
       "코스피": {
-        "chg": 1.62,
+        "chg": 3.76,
         "crash": false,
         "thr": -3.0
       },
@@ -1113,9 +1120,9 @@
       {
         "name": "코스피200",
         "tk": "KODEX 200",
-        "close": 104810.0,
+        "close": 104300.0,
         "bull": true,
-        "gap": 45.2,
+        "gap": 45.9,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A069500",
         "krw": true,
         "grp": "지수"
@@ -1123,9 +1130,9 @@
       {
         "name": "코스피200(타이거)",
         "tk": "TIGER 200",
-        "close": 105055.0,
+        "close": 104625.0,
         "bull": true,
-        "gap": 45.0,
+        "gap": 45.6,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A102110",
         "krw": true,
         "grp": "지수"
@@ -1133,9 +1140,9 @@
       {
         "name": "코스닥150",
         "tk": "KODEX 코스닥150",
-        "close": 13600.0,
+        "close": 13545.0,
         "bull": true,
-        "gap": 52.9,
+        "gap": 53.6,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A229200",
         "krw": true,
         "grp": "지수"
@@ -1145,9 +1152,9 @@
       {
         "name": "SK이터닉스",
         "market": "한국",
-        "close": 57500.0,
+        "close": 57700.0,
         "pivot": 87700.0,
-        "gap": 52.5,
+        "gap": 52.0,
         "exitlow": 40050.0,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150",
         "krw": true
@@ -1155,9 +1162,9 @@
       {
         "name": "씨피시스템",
         "market": "한국",
-        "close": 4315.0,
+        "close": 4335.0,
         "pivot": 5100.0,
-        "gap": 18.2,
+        "gap": 17.6,
         "exitlow": 1938.0,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A413630",
         "krw": true
@@ -1186,7 +1193,7 @@
         "stop": 261.9,
         "stoppct": 9.1,
         "exitlow": 237.67,
-        "shares": 1.2,
+        "shares": 1.204,
         "pos": 494044,
         "loss": 45000,
         "capped": false,
@@ -1206,7 +1213,7 @@
         "stop": 31.62,
         "stoppct": 10.2,
         "exitlow": 27.83,
-        "shares": 8.757,
+        "shares": 8.788,
         "pos": 440820,
         "loss": 45000,
         "capped": false,
@@ -1226,8 +1233,8 @@
         "stop": 272.27,
         "stoppct": 9.6,
         "exitlow": 250.69,
-        "shares": 1.084,
-        "pos": 466693,
+        "shares": 1.087,
+        "pos": 466676,
         "loss": 45000,
         "capped": false,
         "blocked": "",
@@ -1246,9 +1253,9 @@
         "stop": 527.76,
         "stoppct": 2.3,
         "exitlow": 514.72,
-        "shares": 1.165,
+        "shares": 1.169,
         "pos": 900000,
-        "loss": 21102,
+        "loss": 21104,
         "capped": true,
         "blocked": "",
         "mktbull": true,
@@ -1266,11 +1273,11 @@
         "stop": 752.51,
         "stoppct": 2.4,
         "exitlow": 729.1,
-        "shares": 0.816,
+        "shares": 0.819,
         "pos": 900000,
         "loss": 21958,
         "capped": true,
-        "blocked": "1주 미만(0.816주) — 손절 조건주문 불가로 진입 제외",
+        "blocked": "1주 미만(0.819주) — 손절 조건주문 불가로 진입 제외",
         "mktbull": true,
         "earn": null,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASPY"
@@ -1286,7 +1293,7 @@
         "stop": 15.42,
         "stoppct": 7.8,
         "exitlow": 13.49,
-        "shares": 24.022,
+        "shares": 24.106,
         "pos": 574412,
         "loss": 45000,
         "capped": false,
@@ -1306,9 +1313,9 @@
         "stop": 56.44,
         "stoppct": 2.5,
         "exitlow": 54.95,
-        "shares": 10.879,
+        "shares": 10.917,
         "pos": 900000,
-        "loss": 22340,
+        "loss": 22348,
         "capped": true,
         "blocked": "",
         "mktbull": true,
@@ -1326,8 +1333,8 @@
         "stop": 287.82,
         "stoppct": 9.1,
         "exitlow": 253.0,
-        "shares": 1.088,
-        "pos": 492408,
+        "shares": 1.091,
+        "pos": 492407,
         "loss": 45000,
         "capped": false,
         "blocked": "",
@@ -1346,7 +1353,7 @@
         "stop": 461.39,
         "stoppct": 6.4,
         "exitlow": 373.35,
-        "shares": 1.002,
+        "shares": 1.005,
         "pos": 705731,
         "loss": 45000,
         "capped": false,
@@ -1430,9 +1437,9 @@
       "mkt": "한국",
       "qty": 29,
       "entry": 4400.0,
-      "cur": 4315.0,
-      "pnl_won": -2465,
-      "pnl_pct": -1.93,
+      "cur": 4335.0,
+      "pnl_won": -1885,
+      "pnl_pct": -1.48,
       "stop": 3365.0,
       "exitlow": 1938.0,
       "need_update": false,
@@ -1447,11 +1454,11 @@
       "mkt": "미국",
       "qty": 1.1656,
       "entry": 394651.0,
-      "cur": 396510.87679199217,
-      "pnl_won": 2168,
-      "pnl_pct": 0.47,
+      "cur": 395123.7767248535,
+      "pnl_won": 551,
+      "pnl_pct": 0.12,
       "stop": 367298.0,
-      "exitlow": 323245.9700341797,
+      "exitlow": 322115.17001586914,
       "need_update": false,
       "krw": true,
       "tag": "터틀 (검증)",
@@ -1465,7 +1472,7 @@
       "qty": 4,
       "entry": 12.06,
       "cur": 7.420000076293945,
-      "pnl_won": -26527,
+      "pnl_won": -26435,
       "pnl_pct": -38.47,
       "stop": null,
       "exitlow": null,
