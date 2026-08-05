@@ -1417,7 +1417,7 @@
       "risk_pct": 0.67
     },
     {
-      "tv": "",
+      "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AAMZN",
       "name": "아마존(AMZN)",
       "mkt": "미국",
       "qty": 1.1656,
@@ -1434,7 +1434,7 @@
       "risk_pct": 0.71
     },
     {
-      "tv": "",
+      "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADIA",
       "name": "다우존스(DIA)",
       "mkt": "미국",
       "qty": 1.0,
@@ -1451,7 +1451,7 @@
       "risk_pct": 0.4
     },
     {
-      "tv": "",
+      "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AXLF",
       "name": "XLF(XLF)",
       "mkt": "미국",
       "qty": 10.0,
@@ -1468,7 +1468,7 @@
       "risk_pct": 0.46
     },
     {
-      "tv": "",
+      "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ASNOW",
       "name": "SNOW(SNOW)",
       "mkt": "미국",
       "qty": 1.0,
@@ -1485,7 +1485,7 @@
       "risk_pct": 0.92
     },
     {
-      "tv": "https://kr.tradingview.com/chart/?symbol=SECZ",
+      "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ASECZ",
       "name": "시큐리타이즈",
       "mkt": "미국",
       "qty": 4,
