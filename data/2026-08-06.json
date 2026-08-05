@@ -1500,5 +1500,10 @@
       "risk_pct": null
     }
   ],
+  "risk": {
+    "used": 3.16,
+    "limit": 5.0,
+    "free": 1.84
+  },
   "trap": []
 }

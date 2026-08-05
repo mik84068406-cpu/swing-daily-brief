@@ -246,7 +246,10 @@ function render(d){
         <div class="bogrid"><span>진입 ${Number(p.entry).toLocaleString()}</span><span>현재 <b>${p.cur!=null?Number(p.cur).toLocaleString():'?'}</b></span>
         <span class="${pnlCls}">${p.pnl_won!=null?(p.pnl_won>=0?'+':'')+Number(p.pnl_won).toLocaleString()+'원 ('+p.pnl_pct+'%)':''}</span>${stop}${ex}</div></div>`;}).join('');
     const need=ps.some(p=>p.need_update);
-    return `<section><details class="foldbox"${need?' open':''}><summary><span class="ftitle">💼 보유 포지션</span><span class="fprev">${ps.length}건${need?' · ⬆️ 손절 갱신 필요':''} (클릭해서 열기)</span></summary><div class="fbody">${cards}</div></details></section>`;})();
+    const rk=d.risk||{};
+    const rkTxt=(rk.used!=null)
+      ? `<div class="boearn" style="border-left:3px solid ${rk.free<1?'#e5484d':'#3aa675'}">🛡 오픈 리스크 <b>${rk.used}%</b> / 한도 ${rk.limit}% — 여유 <b>${rk.free}%p</b>${rk.free<1?' · ⚠️ 새 종목 하나가 보통 1%다. 자리 거의 없음':''}</div>` : '';
+    return `<section><details class="foldbox"${need?' open':''}><summary><span class="ftitle">💼 보유 포지션</span><span class="fprev">${ps.length}건${rk.used!=null?` · 리스크 ${rk.used}%`:''}${need?' · ⬆️ 손절 갱신 필요':''} (클릭해서 열기)</span></summary><div class="fbody">${rkTxt}${cards}</div></details></section>`;})();
   const boSec = (()=>{ const b=d.breakout; if(!b) return '';
     const g0=b['국면']||{};
     const gs=('상승장' in g0)?{'미국':g0}:g0;   // 구형(나스닥 하나)·신형(시장별) 둘 다 지원
