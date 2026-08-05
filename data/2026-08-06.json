@@ -1226,6 +1226,9 @@
         "loss": 42278,
         "capped": false,
         "blocked": "",
+        "skip": "",
+        "ok": false,
+        "risk_pct": 0.94,
         "mktbull": true,
         "earn": "2026-08-05",
         "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ASHOP"
@@ -1246,6 +1249,9 @@
         "loss": 30627,
         "capped": false,
         "blocked": "",
+        "skip": "",
+        "ok": false,
+        "risk_pct": 0.68,
         "mktbull": true,
         "earn": "2026-08-04",
         "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AANET"
@@ -1266,6 +1272,9 @@
         "loss": 22934,
         "capped": false,
         "blocked": "",
+        "skip": "",
+        "ok": false,
+        "risk_pct": 0.51,
         "mktbull": true,
         "earn": "2026-08-05",
         "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ADASH"
@@ -1286,6 +1295,9 @@
         "loss": 42063,
         "capped": false,
         "blocked": "",
+        "skip": "",
+        "ok": true,
+        "risk_pct": 0.93,
         "mktbull": true,
         "earn": null,
         "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ABA"
@@ -1306,6 +1318,9 @@
         "loss": 31214,
         "capped": true,
         "blocked": "",
+        "skip": "",
+        "ok": true,
+        "risk_pct": 0.69,
         "mktbull": true,
         "earn": null,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ACPER"
@@ -1326,6 +1341,9 @@
         "loss": 18017,
         "capped": true,
         "blocked": "",
+        "skip": "이미 보유 중 (중복 진입 금지)",
+        "ok": false,
+        "risk_pct": 0.4,
         "mktbull": true,
         "earn": null,
         "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADIA"
