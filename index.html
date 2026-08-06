@@ -320,7 +320,7 @@ function render(d){
     ? fold(`💰 거래대금 TOP${(d.top.kr||[]).length} · 기타자산`, '개별기업 · ETF 제외 / 기타자산 26종 별도',
         `<details class="topbox"><summary>🇰🇷 한국</summary><div class="tlist">${thead}${topList('kr')}</div></details>
          <details class="topbox"><summary>🇺🇸 미국</summary><div class="tlist">${thead}${topList('us')}</div></details>
-         ${etcList?`<details class="topbox"><summary>🌐 기타자산 <span style="font-size:11px;color:var(--sub);font-weight:400">— 🟢살 수 있는 추세 / ⚫추세 죽음(신호 무시)</span></summary><div class="tlist"><div class="trow thead"><span class="trank">추세</span><span class="tname">자산</span><span class="tchg">현재가</span><span class="tval">돌파선까지</span></div>${etcList}</div></details>`:''}
+         ${etcList?`<details class="topbox"><summary>🌐 기타자산 <span style="font-size:11px;color:#d33;font-weight:600">— ⛔감시망 제외(8/6) · 돌파해도 사지 않음. 참고 표시</span></summary><div class="tlist"><div class="trow thead"><span class="trank">추세</span><span class="tname">자산</span><span class="tchg">현재가</span><span class="tval">돌파선까지</span></div>${etcList}</div></details>`:''}
          ${watchList?`<details class="topbox"><summary>📌 상시 추적 <span style="font-size:11px;color:var(--sub);font-weight:400">— 진입 이력 종목, 재돌파하면 다시 산다 (거래대금 빠져도 계속 감시)</span></summary><div class="tlist"><div class="trow thead"><span class="trank"></span><span class="tname">종목</span><span class="tchg">현재가</span><span class="tval">돌파선까지</span></div>${watchList}</div></details>`:''}`)
     : '';
   document.getElementById('app').innerHTML = `
