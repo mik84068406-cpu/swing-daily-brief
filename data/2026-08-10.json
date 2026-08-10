@@ -1025,7 +1025,7 @@
       "한국": {
         "지수": "코스피",
         "종가": 6258.77,
-        "sma200": 5816.06,
+        "sma200": 5816.05,
         "상승장": true,
         "이격": 7.6
       },
@@ -1181,9 +1181,9 @@
       {
         "name": "코스피200",
         "tk": "KODEX 200",
-        "close": 98365.0,
+        "close": 98250.0,
         "bull": true,
-        "gap": 54.7,
+        "gap": 54.9,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A069500",
         "krw": true,
         "grp": "지수"
@@ -1191,9 +1191,9 @@
       {
         "name": "코스피200(타이거)",
         "tk": "TIGER 200",
-        "close": 98495.0,
+        "close": 98365.0,
         "bull": true,
-        "gap": 54.7,
+        "gap": 54.9,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A102110",
         "krw": true,
         "grp": "지수"
@@ -1201,9 +1201,9 @@
       {
         "name": "코스닥150",
         "tk": "KODEX 코스닥150",
-        "close": 14695.0,
+        "close": 14660.0,
         "bull": true,
-        "gap": 41.5,
+        "gap": 41.9,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A229200",
         "krw": true,
         "grp": "지수"
@@ -1213,9 +1213,9 @@
       {
         "name": "SK이터닉스",
         "market": "한국",
-        "close": 50800.0,
+        "close": 50700.0,
         "pivot": 87700.0,
-        "gap": 72.6,
+        "gap": 73.0,
         "exitlow": 41300.0,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150",
         "krw": true
@@ -1223,9 +1223,9 @@
       {
         "name": "씨피시스템",
         "market": "한국",
-        "close": 4090.0,
+        "close": 4085.0,
         "pivot": 5100.0,
-        "gap": 24.7,
+        "gap": 24.8,
         "exitlow": 2000.0,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A413630",
         "krw": true
@@ -3086,7 +3086,7 @@
           }
         ]
       },
-      "종목수": 103,
+      "종목수": 100,
       "축수": 19
     }
   },
