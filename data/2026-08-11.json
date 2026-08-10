@@ -3451,20 +3451,18 @@
   },
   "stopcheck": {
     "date": "2026-08-11",
-    "time": "07:46",
+    "time": "07:50",
     "총": 8,
-    "문제": 3,
+    "문제": 2,
     "rows": [
       {
         "symbol": "413630",
         "name": "씨피시스템",
         "qty": 29.0,
         "market": "KR",
-        "problems": [
-          "⚠️ 지정가(LIMIT)로 걸려 있다 — 갭다운이면 그 가격에 안 붙어 체결이 안 될 수 있다. 시장가로 바꿀 것"
-        ],
+        "problems": [],
         "stop": 3365.0,
-        "type": "LIMIT",
+        "type": "MARKET",
         "cqty": 29.0,
         "status": "WATCHING"
       },
