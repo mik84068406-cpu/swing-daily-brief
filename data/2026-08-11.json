@@ -1507,14 +1507,6 @@
         "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AADBE"
       },
       {
-        "name": "XLF(XLF)",
-        "market": "원자재",
-        "close": 57.81,
-        "pivot": 58.41,
-        "gap": 1.0,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AXLF"
-      },
-      {
         "name": "센코라(COR)",
         "market": "미국",
         "close": 325.0,
@@ -1531,14 +1523,6 @@
         "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ALLY"
       },
       {
-        "name": "다우존스(DIA)",
-        "market": "원자재",
-        "close": 538.99,
-        "pivot": 546.75,
-        "gap": 1.4,
-        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADIA"
-      },
-      {
         "name": "페이팔(PYPL)",
         "market": "미국",
         "close": 59.07,
@@ -1553,6 +1537,22 @@
         "pivot": 198.19,
         "gap": 1.7,
         "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ACVX"
+      },
+      {
+        "name": "브로드리지(BR)",
+        "market": "미국",
+        "close": 173.4,
+        "pivot": 176.94,
+        "gap": 2.0,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ABR"
+      },
+      {
+        "name": "엑슨모빌(XOM)",
+        "market": "미국",
+        "close": 159.79,
+        "pivot": 163.68,
+        "gap": 2.4,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AXOM"
       }
     ],
     "감시망": {
