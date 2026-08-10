@@ -361,7 +361,7 @@ function render(d){
              + `<span class="wc">${cv}</span><span class="wv">${esc(x.val||'')}</span><span class="wg">${gv}</span>`
              + (x.desc?`<span class="wdesc">${esc(x.desc)}</span>`:'')+`</div>`;}).join('');
       const sum=`${items.length}종 · 오른 ${ups}${hit?` · <b class="grn">돌파 ${hit}</b>`:''} · 평균 <span class="${avg>0?'grn':(avg<0?'red':'flat')}">${avg>0?'+':''}${avg.toFixed(1)}%</span>`;
-      const tag=holding?`<span class="wheld big">보유중</span>`:'';
+      const tag=holding?`<span class="wheld big" title="이 축을 이미 보유 중 — 돌파가 나도 못 산다(묶음당 1개)">보유중</span> `:'';
       return `<details class="topbox"${hit?' open':''}><summary>${esc(ax)} ${tag}<span style="font-size:11px;color:var(--sub);font-weight:400">— ${sum}</span></summary><div class="tlist">${whead}${rows}</div></details>`;
     }).join('');
     return fold(`🔭 감시망 ${w['종목수']}종 · ${w['축수']}축`,
