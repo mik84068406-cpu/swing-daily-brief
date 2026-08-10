@@ -118,6 +118,11 @@
   .wdesc{grid-column:1/-1;font-size:11.5px;color:var(--sub);opacity:.85;line-height:1.45;padding:0 0 2px 2px}
   .wrow.dim{opacity:.45}
   .wlegend{font-size:11px;color:var(--sub);margin:8px 4px 0;line-height:1.6}
+  /* 보유 표시 — 그 축은 돌파가 나도 못 산다(묶음당 1개) */
+  .wheld{display:inline-block;font-size:10px;font-weight:700;padding:1px 5px;border-radius:5px;
+         background:rgba(46,204,113,.16);border:1px solid rgba(46,204,113,.45);color:#4ad07f;
+         vertical-align:middle}
+  .wheld.big{font-size:11px;margin-right:5px}
   .trap a{color:inherit;text-decoration:none;border-bottom:1px dashed var(--sub)}
   .trap a:hover,.trap a:active{opacity:.75}
   /* 🪤 항목: 회사가 먼저 보이게 (2026-07-24) — 방아쇠 문구는 짧은 꼬리표로 */
@@ -298,7 +303,7 @@ function render(d){
     return `<section><details class="foldbox" open><summary><span class="ftitle">🚀 돌파 (터틀)</span><span class="fprev">${hasHit?`🚀 신호 ${(b['돌파']||[]).length}건`:`대기 · 근접 ${(b['근접']||[]).length}건`}</span></summary><div class="fbody">
       ${head}
       ${hits?`<div class="bohead">🚀 돌파 발생 ${(b['돌파']||[]).length}건 — 내일 시가 진입 검토</div>${hits}`:''}
-      ${near?`<details class="nearbox" open><summary>👀 근접 ${(b['근접']||[]).length}건 — 내일 넘길 수 있음</summary><div class="nearwrap">${near}</div></details>`:''}
+      ${near?`<details class="nearbox"><summary>👀 근접 ${(b['근접']||[]).length}건 — 내일 넘길 수 있음</summary><div class="nearwrap">${near}</div></details>`:''}
       <div class="tsub" style="margin-top:9px;opacity:.8">규칙(7/25 확정): 55일 고점 종가돌파 → 익일 시가 · 손절 −2N · 청산 = 20일 저점 이탈 시 전량 (목표가·분할익절·불타기 없음)<br>⚠️ 검증중 — 승률 40%, 10번 중 6번 손절이 정상</div>
     </div></details></section>`;})();
 
@@ -338,10 +343,13 @@ function render(d){
   const watchSec = (()=>{ const w=(d.breakout&&d.breakout['감시망'])||null; if(!w||!w['축']) return '';
     const axes=w['축'];
     const whead=`<div class="wrow whead"><span class="wn">종목</span><span class="wc">등락</span><span class="wv">거래대금</span><span class="wg">돌파까지</span></div>`;
+    const heldAx=new Set(w['보유묶음']||[]);
     const body=Object.entries(axes).map(([ax,items])=>{
       const ups=items.filter(x=>x.chg>0).length;
       const avg=items.length?items.reduce((a,b)=>a+(b.chg||0),0)/items.length:0;
       const hit=items.filter(x=>x.broke).length;
+      // 이 축을 이미 들고 있으면 돌파가 나도 못 산다(묶음당 1개). 화면에 안 보이던 것을 표시(8/10 비랑)
+      const holding=heldAx.has(ax);
       const rows=items.map(x=>{
         const nm=x.tv?`<a href="${x.tv}" target="_blank" rel="noopener">${esc(x.name)} 📈</a>`:esc(x.name);
         const cc=x.chg==null?'':(x.chg>0?'grn':(x.chg<0?'red':'flat'));
@@ -349,11 +357,12 @@ function render(d){
         const gv=x.broke?'<b class="grn">🚀 돌파</b>'
                 :(x.lowvol?'<span style="color:var(--sub)">🚫저변동</span>'
                 :`<span style="color:var(--sub)">+${x.gap}%</span>`);
-        return `<div class="wrow${x.lowvol?' dim':''}"><span class="wn">${nm}${x.cap?`<span class="wcap">${esc(x.cap)}</span>`:''}</span>`
+        return `<div class="wrow${x.lowvol?' dim':''}"><span class="wn">${x.held?'<span class="wheld">보유</span> ':''}${nm}${x.cap?`<span class="wcap">${esc(x.cap)}</span>`:''}</span>`
              + `<span class="wc">${cv}</span><span class="wv">${esc(x.val||'')}</span><span class="wg">${gv}</span>`
              + (x.desc?`<span class="wdesc">${esc(x.desc)}</span>`:'')+`</div>`;}).join('');
       const sum=`${items.length}종 · 오른 ${ups}${hit?` · <b class="grn">돌파 ${hit}</b>`:''} · 평균 <span class="${avg>0?'grn':(avg<0?'red':'flat')}">${avg>0?'+':''}${avg.toFixed(1)}%</span>`;
-      return `<details class="topbox"${hit?' open':''}><summary>${esc(ax)} <span style="font-size:11px;color:var(--sub);font-weight:400">— ${sum}</span></summary><div class="tlist">${whead}${rows}</div></details>`;
+      const tag=holding?`<span class="wheld big">보유중</span>`:'';
+      return `<details class="topbox"${hit?' open':''}><summary>${esc(ax)} ${tag}<span style="font-size:11px;color:var(--sub);font-weight:400">— ${sum}</span></summary><div class="tlist">${whead}${rows}</div></details>`;
     }).join('');
     return fold(`🔭 감시망 ${w['종목수']}종 · ${w['축수']}축`,
       '우리가 서 있는 길목 — 여기 없는 종목은 돌파해도 사지 않는다',

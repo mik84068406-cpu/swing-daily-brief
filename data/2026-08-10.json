@@ -1025,7 +1025,7 @@
       "한국": {
         "지수": "코스피",
         "종가": 6258.77,
-        "sma200": 5816.05,
+        "sma200": 5816.03,
         "상승장": true,
         "이격": 7.6
       },
@@ -1181,9 +1181,9 @@
       {
         "name": "코스피200",
         "tk": "KODEX 200",
-        "close": 98250.0,
+        "close": 98370.0,
         "bull": true,
-        "gap": 54.9,
+        "gap": 54.7,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A069500",
         "krw": true,
         "grp": "지수"
@@ -1191,9 +1191,9 @@
       {
         "name": "코스피200(타이거)",
         "tk": "TIGER 200",
-        "close": 98365.0,
+        "close": 98545.0,
         "bull": true,
-        "gap": 54.9,
+        "gap": 54.6,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A102110",
         "krw": true,
         "grp": "지수"
@@ -1201,9 +1201,9 @@
       {
         "name": "코스닥150",
         "tk": "KODEX 코스닥150",
-        "close": 14660.0,
+        "close": 14650.0,
         "bull": true,
-        "gap": 41.9,
+        "gap": 42.0,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A229200",
         "krw": true,
         "grp": "지수"
@@ -1213,9 +1213,9 @@
       {
         "name": "SK이터닉스",
         "market": "한국",
-        "close": 50700.0,
+        "close": 51200.0,
         "pivot": 87700.0,
-        "gap": 73.0,
+        "gap": 71.3,
         "exitlow": 41300.0,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150",
         "krw": true
@@ -1223,9 +1223,9 @@
       {
         "name": "씨피시스템",
         "market": "한국",
-        "close": 4085.0,
+        "close": 4080.0,
         "pivot": 5100.0,
-        "gap": 24.8,
+        "gap": 25.0,
         "exitlow": 2000.0,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A413630",
         "krw": true
@@ -1447,7 +1447,7 @@
     ],
     "감시망": {
       "축": {
-        "AI전력": [
+        "AI캡엑스": [
           {
             "name": "이튼(ETN)",
             "tk": "ETN",
@@ -1462,6 +1462,7 @@
             "broke": false,
             "stoppct": 8.1,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AETN"
           },
           {
@@ -1478,6 +1479,7 @@
             "broke": false,
             "stoppct": 6.8,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AHUBB"
           },
           {
@@ -1494,6 +1496,7 @@
             "broke": false,
             "stoppct": 10.8,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ANVT"
           },
           {
@@ -1510,6 +1513,7 @@
             "broke": false,
             "stoppct": 11.3,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AANET"
           },
           {
@@ -1526,6 +1530,7 @@
             "broke": false,
             "stoppct": 17.5,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ACOHR"
           },
           {
@@ -1542,6 +1547,7 @@
             "broke": false,
             "stoppct": 9.6,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ASPXC"
           },
           {
@@ -1558,6 +1564,7 @@
             "broke": false,
             "stoppct": 17.6,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ALITE"
           },
           {
@@ -1574,6 +1581,7 @@
             "broke": false,
             "stoppct": 11.7,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AGEV"
           },
           {
@@ -1590,6 +1598,7 @@
             "broke": false,
             "stoppct": 9.8,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ACAT"
           },
           {
@@ -1606,6 +1615,7 @@
             "broke": false,
             "stoppct": 14.5,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AFN"
           },
           {
@@ -1622,6 +1632,7 @@
             "broke": false,
             "stoppct": 14.9,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AVRT"
           },
           {
@@ -1638,6 +1649,7 @@
             "broke": false,
             "stoppct": 16.1,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3APOWL"
           },
           {
@@ -1654,6 +1666,7 @@
             "broke": false,
             "stoppct": 15.3,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ACIEN"
           },
           {
@@ -1670,6 +1683,7 @@
             "broke": false,
             "stoppct": 13.7,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AAAON"
           },
           {
@@ -1686,6 +1700,7 @@
             "broke": false,
             "stoppct": 17.2,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AMOD"
           },
           {
@@ -1702,6 +1717,7 @@
             "broke": false,
             "stoppct": 23.4,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ANVTS"
           }
         ],
@@ -1720,6 +1736,7 @@
             "broke": true,
             "stoppct": 9.8,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AU"
           },
           {
@@ -1736,6 +1753,7 @@
             "broke": true,
             "stoppct": 8.6,
             "lowvol": false,
+            "held": true,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ASNOW"
           },
           {
@@ -1752,6 +1770,7 @@
             "broke": false,
             "stoppct": 10.5,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ANET"
           },
           {
@@ -1768,6 +1787,7 @@
             "broke": false,
             "stoppct": 8.8,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ACRWD"
           },
           {
@@ -1784,6 +1804,7 @@
             "broke": false,
             "stoppct": 10.1,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AMDB"
           },
           {
@@ -1800,6 +1821,7 @@
             "broke": false,
             "stoppct": 8.3,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3APANW"
           },
           {
@@ -1816,6 +1838,7 @@
             "broke": false,
             "stoppct": 10.6,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ANOW"
           },
           {
@@ -1832,6 +1855,7 @@
             "broke": false,
             "stoppct": 9.3,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AZS"
           },
           {
@@ -1848,6 +1872,7 @@
             "broke": false,
             "stoppct": 13.2,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ADDOG"
           },
           {
@@ -1864,6 +1889,7 @@
             "broke": false,
             "stoppct": 17.2,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ARBLX"
           }
         ],
@@ -1882,6 +1908,7 @@
             "broke": false,
             "stoppct": 6.3,
             "lowvol": false,
+            "held": true,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ABA"
           },
           {
@@ -1898,6 +1925,7 @@
             "broke": false,
             "stoppct": 8.4,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AATI"
           },
           {
@@ -1914,6 +1942,7 @@
             "broke": false,
             "stoppct": 5.6,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AGE"
           },
           {
@@ -1930,6 +1959,7 @@
             "broke": false,
             "stoppct": 12.5,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AKTOS"
           },
           {
@@ -1946,6 +1976,7 @@
             "broke": false,
             "stoppct": 6.7,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AHWM"
           },
           {
@@ -1962,6 +1993,7 @@
             "broke": false,
             "stoppct": 13.2,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AKRMN"
           },
           {
@@ -1978,6 +2010,7 @@
             "broke": false,
             "stoppct": 11.9,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AAVAV"
           },
           {
@@ -1994,6 +2027,7 @@
             "broke": false,
             "stoppct": 11.9,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AMRCY"
           },
           {
@@ -2010,6 +2044,7 @@
             "broke": false,
             "stoppct": 13.6,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3APSN"
           }
         ],
@@ -2028,6 +2063,7 @@
             "broke": false,
             "stoppct": 9.7,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ASHOP"
           },
           {
@@ -2044,6 +2080,7 @@
             "broke": false,
             "stoppct": 7.0,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ABR"
           },
           {
@@ -2060,6 +2097,7 @@
             "broke": false,
             "stoppct": 7.8,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ADLO"
           },
           {
@@ -2076,6 +2114,7 @@
             "broke": false,
             "stoppct": 8.0,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AIBKR"
           },
           {
@@ -2092,6 +2131,7 @@
             "broke": false,
             "stoppct": 8.4,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AFISV"
           },
           {
@@ -2108,6 +2148,7 @@
             "broke": false,
             "stoppct": 8.2,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AACIW"
           },
           {
@@ -2124,6 +2165,7 @@
             "broke": false,
             "stoppct": 16.4,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AFOUR"
           }
         ],
@@ -2142,6 +2184,7 @@
             "broke": false,
             "stoppct": 5.7,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ADE"
           },
           {
@@ -2158,6 +2201,7 @@
             "broke": false,
             "stoppct": 9.7,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ANOVT"
           },
           {
@@ -2174,6 +2218,7 @@
             "broke": false,
             "stoppct": 10.0,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ACGNX"
           },
           {
@@ -2190,6 +2235,7 @@
             "broke": false,
             "stoppct": 7.8,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ATKR"
           },
           {
@@ -2206,6 +2252,7 @@
             "broke": false,
             "stoppct": 7.2,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AROK"
           },
           {
@@ -2222,6 +2269,7 @@
             "broke": false,
             "stoppct": 13.2,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ARRX"
           }
         ],
@@ -2240,6 +2288,7 @@
             "broke": false,
             "stoppct": 20.1,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AARQQ"
           },
           {
@@ -2256,6 +2305,7 @@
             "broke": false,
             "stoppct": 14.3,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AQUBT"
           },
           {
@@ -2272,6 +2322,7 @@
             "broke": false,
             "stoppct": 14.9,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ALAES"
           },
           {
@@ -2288,6 +2339,7 @@
             "broke": false,
             "stoppct": 17.3,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AQBTS"
           },
           {
@@ -2304,6 +2356,7 @@
             "broke": false,
             "stoppct": 16.1,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ARGTI"
           },
           {
@@ -2320,6 +2373,7 @@
             "broke": false,
             "stoppct": 15.9,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AIONQ"
           }
         ],
@@ -2338,6 +2392,7 @@
             "broke": false,
             "stoppct": 6.0,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AMSFT"
           },
           {
@@ -2354,6 +2409,7 @@
             "broke": false,
             "stoppct": 8.4,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AADBE"
           },
           {
@@ -2370,6 +2426,7 @@
             "broke": false,
             "stoppct": 7.0,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AGOOGL"
           },
           {
@@ -2386,6 +2443,7 @@
             "broke": false,
             "stoppct": 7.8,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AMETA"
           }
         ],
@@ -2404,6 +2462,7 @@
             "broke": true,
             "stoppct": 9.7,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3APLTR"
           },
           {
@@ -2420,6 +2479,7 @@
             "broke": false,
             "stoppct": 12.8,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ASYM"
           },
           {
@@ -2436,6 +2496,7 @@
             "broke": false,
             "stoppct": 17.9,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AALGM"
           },
           {
@@ -2452,6 +2513,7 @@
             "broke": false,
             "stoppct": 20.9,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AAMKR"
           }
         ],
@@ -2470,6 +2532,7 @@
             "broke": false,
             "stoppct": 13.5,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ALEU"
           },
           {
@@ -2486,6 +2549,7 @@
             "broke": false,
             "stoppct": 8.9,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ABWXT"
           },
           {
@@ -2502,6 +2566,7 @@
             "broke": false,
             "stoppct": 15.7,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ASMR"
           },
           {
@@ -2518,6 +2583,7 @@
             "broke": false,
             "stoppct": 16.0,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AOKLO"
           }
         ],
@@ -2536,6 +2602,7 @@
             "broke": false,
             "stoppct": 4.6,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ACVX"
           },
           {
@@ -2552,6 +2619,7 @@
             "broke": false,
             "stoppct": 4.9,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AXOM"
           },
           {
@@ -2568,6 +2636,7 @@
             "broke": false,
             "stoppct": 6.4,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AOXY"
           },
           {
@@ -2584,6 +2653,7 @@
             "broke": false,
             "stoppct": 6.6,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ASLB"
           }
         ],
@@ -2602,6 +2672,7 @@
             "broke": true,
             "stoppct": 7.2,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ANEM"
           },
           {
@@ -2618,6 +2689,7 @@
             "broke": false,
             "stoppct": 8.2,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AFCX"
           },
           {
@@ -2634,6 +2706,7 @@
             "broke": false,
             "stoppct": 12.9,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AMP"
           },
           {
@@ -2650,6 +2723,7 @@
             "broke": false,
             "stoppct": 16.1,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AUSAR"
           }
         ],
@@ -2668,6 +2742,7 @@
             "broke": false,
             "stoppct": 17.1,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ARKLB"
           },
           {
@@ -2684,6 +2759,7 @@
             "broke": false,
             "stoppct": 19.1,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AASTS"
           },
           {
@@ -2700,6 +2776,7 @@
             "broke": false,
             "stoppct": 17.0,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ARDW"
           },
           {
@@ -2716,6 +2793,7 @@
             "broke": false,
             "stoppct": 18.1,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3APL"
           }
         ],
@@ -2734,6 +2812,7 @@
             "broke": true,
             "stoppct": 4.0,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3APFE"
           },
           {
@@ -2750,6 +2829,7 @@
             "broke": false,
             "stoppct": 6.9,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ALLY"
           },
           {
@@ -2766,6 +2846,7 @@
             "broke": false,
             "stoppct": 6.9,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ANVO"
           },
           {
@@ -2782,6 +2863,7 @@
             "broke": false,
             "stoppct": 13.8,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AMRNA"
           }
         ],
@@ -2800,6 +2882,7 @@
             "broke": false,
             "stoppct": 5.5,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3APYPL"
           },
           {
@@ -2816,6 +2899,7 @@
             "broke": false,
             "stoppct": 9.7,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ASOFI"
           },
           {
@@ -2832,6 +2916,7 @@
             "broke": false,
             "stoppct": 9.8,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AAFRM"
           },
           {
@@ -2848,6 +2933,7 @@
             "broke": false,
             "stoppct": 12.8,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AHOOD"
           }
         ],
@@ -2866,6 +2952,7 @@
             "broke": false,
             "stoppct": 5.3,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ACOR"
           },
           {
@@ -2882,6 +2969,7 @@
             "broke": false,
             "stoppct": 4.6,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ACAH"
           },
           {
@@ -2898,6 +2986,7 @@
             "broke": false,
             "stoppct": 4.8,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AWELL"
           },
           {
@@ -2914,6 +3003,7 @@
             "broke": false,
             "stoppct": 5.1,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AVTR"
           }
         ],
@@ -2932,6 +3022,7 @@
             "broke": false,
             "stoppct": 13.1,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ACOIN"
           },
           {
@@ -2948,6 +3039,7 @@
             "broke": false,
             "stoppct": 13.9,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AMSTR"
           },
           {
@@ -2964,6 +3056,7 @@
             "broke": false,
             "stoppct": 16.8,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ACRCL"
           }
         ],
@@ -2982,6 +3075,7 @@
             "broke": false,
             "stoppct": 5.6,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AWTS"
           },
           {
@@ -2998,6 +3092,7 @@
             "broke": false,
             "stoppct": 5.2,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AXYL"
           },
           {
@@ -3014,6 +3109,7 @@
             "broke": false,
             "stoppct": 7.1,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3APNR"
           }
         ],
@@ -3032,6 +3128,7 @@
             "broke": false,
             "stoppct": 11.0,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AFSLR"
           },
           {
@@ -3048,6 +3145,7 @@
             "broke": false,
             "stoppct": 15.4,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AENPH"
           }
         ],
@@ -3066,6 +3164,7 @@
             "broke": false,
             "stoppct": 9.4,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ASDGR"
           },
           {
@@ -3082,12 +3181,20 @@
             "broke": false,
             "stoppct": 12.4,
             "lowvol": false,
+            "held": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ARXRX"
           }
         ]
       },
       "종목수": 100,
-      "축수": 19
+      "축수": 19,
+      "보유묶음": [
+        "SaaS",
+        "금융",
+        "미국지수",
+        "방산",
+        "빅테크"
+      ]
     }
   },
   "positions": [
