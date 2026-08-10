@@ -102,6 +102,22 @@
   .tdesc{font-size:12px;color:var(--tx);opacity:.78;margin-top:3px;line-height:1.45}
   .tname a{color:inherit;text-decoration:none;border-bottom:1px dashed var(--sub)}
   .tname a:hover,.tname a:active{opacity:.75}
+  /* 🔭 감시망 (2026-08-10 신설, 비랑) — 「우리가 무엇을 보고 있나」가 브리핑에 없었다 */
+  .axgrp{margin-top:10px;border-top:1px solid var(--line);padding-top:8px}
+  .axgrp:first-of-type{border-top:none;margin-top:2px}
+  .axhead{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;font-size:13px;font-weight:700;padding:2px 4px}
+  .axhead .axn{color:var(--sub);font-size:11px;font-weight:400}
+  .wrow{display:grid;grid-template-columns:1fr 62px 74px 74px;gap:6px;padding:5px 4px;
+        font-size:13px;border-top:1px solid var(--line);align-items:baseline}
+  .wrow.whead{color:var(--sub);font-size:10.5px;border-top:none}
+  .wrow .wc{text-align:right} .wrow .wv{text-align:right;color:var(--sub);font-size:12px}
+  .wrow .wg{text-align:right;font-size:12px}
+  .wrow .wn a{color:inherit;text-decoration:none;border-bottom:1px dashed var(--sub)}
+  .wrow .wn a:hover{border-bottom-style:solid}
+  .wcap{font-size:11px;color:var(--sub);font-weight:400;margin-left:5px}
+  .wdesc{grid-column:1/-1;font-size:11.5px;color:var(--sub);opacity:.85;line-height:1.45;padding:0 0 2px 2px}
+  .wrow.dim{opacity:.45}
+  .wlegend{font-size:11px;color:var(--sub);margin:8px 4px 0;line-height:1.6}
   .trap a{color:inherit;text-decoration:none;border-bottom:1px dashed var(--sub)}
   .trap a:hover,.trap a:active{opacity:.75}
   /* 🪤 항목: 회사가 먼저 보이게 (2026-07-24) — 방아쇠 문구는 짧은 꼬리표로 */
@@ -316,12 +332,43 @@ function render(d){
       const gv=x.gap>0?`<span style="color:var(--sub)">돌파까지 +${x.gap}%</span>`:'<b class="grn">🚀 돌파!</b>';
       const u=x.krw?'원':'$';
       return `<div class="trow"><span class="trank">📌</span><span class="tname">${nm}</span><span class="tchg">${Number(x.close).toLocaleString()}${u}</span><span class="tval">${gv}</span></div>`;}).join('');})();
+  // 🔭 감시망 (2026-08-10 신설, 비랑) — 브리핑에 「거래대금 TOP30」은 있는데
+  //    정작 **우리가 감시하는 것**이 없었다. 축(상관묶음)으로 묶어 맨 위에 올린다.
+  //    축 = 「어느 길목에 서 있나」이므로, 이걸 보면 우리 판이 한눈에 보인다.
+  const watchSec = (()=>{ const w=(d.breakout&&d.breakout['감시망'])||null; if(!w||!w['축']) return '';
+    const axes=w['축'];
+    const whead=`<div class="wrow whead"><span class="wn">종목</span><span class="wc">등락</span><span class="wv">거래대금</span><span class="wg">돌파까지</span></div>`;
+    const body=Object.entries(axes).map(([ax,items])=>{
+      const ups=items.filter(x=>x.chg>0).length;
+      const avg=items.length?items.reduce((a,b)=>a+(b.chg||0),0)/items.length:0;
+      const hit=items.filter(x=>x.broke).length;
+      const rows=items.map(x=>{
+        const nm=x.tv?`<a href="${x.tv}" target="_blank" rel="noopener">${esc(x.name)} 📈</a>`:esc(x.name);
+        const cc=x.chg==null?'':(x.chg>0?'grn':(x.chg<0?'red':'flat'));
+        const cv=x.chg==null?'—':`<span class="${cc}">${x.chg>0?'+':''}${x.chg.toFixed(1)}%</span>`;
+        const gv=x.broke?'<b class="grn">🚀 돌파</b>'
+                :(x.lowvol?'<span style="color:var(--sub)">🚫저변동</span>'
+                :`<span style="color:var(--sub)">+${x.gap}%</span>`);
+        return `<div class="wrow${x.lowvol?' dim':''}"><span class="wn">${nm}${x.cap?`<span class="wcap">${esc(x.cap)}</span>`:''}</span>`
+             + `<span class="wc">${cv}</span><span class="wv">${esc(x.val||'')}</span><span class="wg">${gv}</span>`
+             + (x.desc?`<span class="wdesc">${esc(x.desc)}</span>`:'')+`</div>`;}).join('');
+      const sum=`${items.length}종 · 오른 ${ups}${hit?` · <b class="grn">돌파 ${hit}</b>`:''} · 평균 <span class="${avg>0?'grn':(avg<0?'red':'flat')}">${avg>0?'+':''}${avg.toFixed(1)}%</span>`;
+      return `<details class="topbox"${hit?' open':''}><summary>${esc(ax)} <span style="font-size:11px;color:var(--sub);font-weight:400">— ${sum}</span></summary><div class="tlist">${whead}${rows}</div></details>`;
+    }).join('');
+    return fold(`🔭 감시망 ${w['종목수']}종 · ${w['축수']}축`,
+      '우리가 서 있는 길목 — 여기 없는 종목은 돌파해도 사지 않는다',
+      body+`<div class="wlegend">축 = 상관 묶음(같은 뉴스에 같이 움직이는 것). <b>묶음당 한 번에 1종목만</b> 산다.<br>
+        🚫저변동 = 손절폭 2% 미만이라 자리만 크게 먹어 제외 · 회색 표시.
+        시총은 종목명 옆 회색.<br>
+        🇰🇷 한국은 미국 축을 완성한 뒤 <b>같은 축</b>으로 채운다 (지금은 비어 있음).</div>`);})();
+
   const topSec = (d.top&&(d.top.kr||[]).length)
-    ? fold(`💰 거래대금 TOP${(d.top.kr||[]).length} · 기타자산`, '개별기업 · ETF 제외 / 기타자산 26종 별도',
-        `<details class="topbox"><summary>🇰🇷 한국</summary><div class="tlist">${thead}${topList('kr')}</div></details>
-         <details class="topbox"><summary>🇺🇸 미국</summary><div class="tlist">${thead}${topList('us')}</div></details>
-         ${etcList?`<details class="topbox"><summary>🌐 기타자산 <span style="font-size:11px;color:#d33;font-weight:600">— ⛔감시망 제외(8/6) · 돌파해도 사지 않음. 참고 표시</span></summary><div class="tlist"><div class="trow thead"><span class="trank">추세</span><span class="tname">자산</span><span class="tchg">현재가</span><span class="tval">돌파선까지</span></div>${etcList}</div></details>`:''}
-         ${watchList?`<details class="topbox"><summary>📌 상시 추적 <span style="font-size:11px;color:var(--sub);font-weight:400">— 진입 이력 종목, 재돌파하면 다시 산다 (거래대금 빠져도 계속 감시)</span></summary><div class="tlist"><div class="trow thead"><span class="trank"></span><span class="tname">종목</span><span class="tchg">현재가</span><span class="tval">돌파선까지</span></div>${watchList}</div></details>`:''}`)
+    ? fold(`📊 시장 참고 <span style="font-size:12px;color:var(--sub);font-weight:400">(감시망 밖 — 매매 대상 아님)</span>`,
+        `거래대금 TOP${(d.top.kr||[]).length} · 기타자산 · 상시추적`,
+        `<details class="topbox"><summary>💰 거래대금 🇰🇷 한국 <span style="font-size:11px;color:var(--sub);font-weight:400">— 시장 전체 흐름 보기용</span></summary><div class="tlist">${thead}${topList('kr')}</div></details>
+         <details class="topbox"><summary>💰 거래대금 🇺🇸 미국 <span style="font-size:11px;color:var(--sub);font-weight:400">— 시장 전체 흐름 보기용</span></summary><div class="tlist">${thead}${topList('us')}</div></details>
+         ${etcList?`<details class="topbox"><summary>🌐 기타자산 <span style="font-size:11px;color:#d33;font-weight:600">— ⛔감시망 제외(8/6) · 돌파해도 사지 않음</span></summary><div class="tlist"><div class="trow thead"><span class="trank">추세</span><span class="tname">자산</span><span class="tchg">현재가</span><span class="tval">돌파선까지</span></div>${etcList}</div></details>`:''}
+         ${watchList?`<details class="topbox"><summary>📌 상시 추적 <span style="font-size:11px;color:var(--sub);font-weight:400">— 진입 이력 종목, 재돌파하면 다시 산다</span></summary><div class="tlist"><div class="trow thead"><span class="trank"></span><span class="tname">종목</span><span class="tchg">현재가</span><span class="tval">돌파선까지</span></div>${watchList}</div></details>`:''}`)
     : '';
   document.getElementById('app').innerHTML = `
    <div class="headline">⚡ ${esc(d.headline)}</div>
@@ -329,6 +376,7 @@ function render(d){
      ${ic?`<div class="myview" style="margin-top:10px;border-style:solid"><b>🤖 지표 읽기</b> — ${esc(d.indicomment).replace(/\n/g,'<br>')}</div>`:''}</section>
    ${posSec}
    ${boSec}
+   ${watchSec}
    ${newsSec}
    ${topSec}
    ${av?`<section><div class="myview" style="border-style:solid"><b>🤖 시황 한줄</b> <span style="font-size:11px;color:var(--sub)">(참고용 — 매매 근거 아님, 매매는 위 🚀 신호가 전부)</span><br>${esc(d.aiview).replace(/\n/g,'<br>')}</div></section>`:''}`;
