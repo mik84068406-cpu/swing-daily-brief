@@ -1025,7 +1025,7 @@
       "한국": {
         "지수": "코스피",
         "종가": 6258.77,
-        "sma200": 5815.98,
+        "sma200": 5816.06,
         "상승장": true,
         "이격": 7.6
       },
@@ -1181,9 +1181,9 @@
       {
         "name": "코스피200",
         "tk": "KODEX 200",
-        "close": 98430.0,
+        "close": 98365.0,
         "bull": true,
-        "gap": 54.6,
+        "gap": 54.7,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A069500",
         "krw": true,
         "grp": "지수"
@@ -1191,9 +1191,9 @@
       {
         "name": "코스피200(타이거)",
         "tk": "TIGER 200",
-        "close": 98565.0,
+        "close": 98495.0,
         "bull": true,
-        "gap": 54.6,
+        "gap": 54.7,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A102110",
         "krw": true,
         "grp": "지수"
@@ -1201,9 +1201,9 @@
       {
         "name": "코스닥150",
         "tk": "KODEX 코스닥150",
-        "close": 14675.0,
+        "close": 14695.0,
         "bull": true,
-        "gap": 41.7,
+        "gap": 41.5,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A229200",
         "krw": true,
         "grp": "지수"
@@ -1213,9 +1213,9 @@
       {
         "name": "SK이터닉스",
         "market": "한국",
-        "close": 50600.0,
+        "close": 50800.0,
         "pivot": 87700.0,
-        "gap": 73.3,
+        "gap": 72.6,
         "exitlow": 41300.0,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150",
         "krw": true
@@ -1223,9 +1223,9 @@
       {
         "name": "씨피시스템",
         "market": "한국",
-        "close": 4110.0,
+        "close": 4090.0,
         "pivot": 5100.0,
-        "gap": 24.1,
+        "gap": 24.7,
         "exitlow": 2000.0,
         "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A413630",
         "krw": true
@@ -2357,22 +2357,6 @@
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AADBE"
           },
           {
-            "name": "아마존(AMZN)",
-            "tk": "AMZN",
-            "market": "미국",
-            "desc": "전자상거래 1위이자 클라우드(AWS) 세계 1위",
-            "close": 274.48,
-            "krw": false,
-            "chg": 0.82,
-            "val": "$9.29B",
-            "cap": "",
-            "gap": 4.6,
-            "broke": false,
-            "stoppct": 6.5,
-            "lowvol": false,
-            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AAMZN"
-          },
-          {
             "name": "알파벳(구글)(GOOGL)",
             "tk": "GOOGL",
             "market": "미국",
@@ -3100,44 +3084,10 @@
             "lowvol": false,
             "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ARXRX"
           }
-        ],
-        "묶음없음": [
-          {
-            "name": "씨피시스템",
-            "tk": "씨피시스템",
-            "market": "한국",
-            "desc": "",
-            "close": 4110.0,
-            "krw": true,
-            "chg": 7.31,
-            "val": "$14.17B",
-            "cap": "",
-            "gap": 24.1,
-            "broke": false,
-            "stoppct": 25.6,
-            "lowvol": false,
-            "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A413630"
-          },
-          {
-            "name": "SK이터닉스",
-            "tk": "SK이터닉스",
-            "market": "한국",
-            "desc": "태양광·풍력 발전소를 짓고 운영하는 신재생에너지 회사",
-            "close": 50600.0,
-            "krw": true,
-            "chg": 0.2,
-            "val": "$77.68B",
-            "cap": "",
-            "gap": 73.3,
-            "broke": false,
-            "stoppct": 32.5,
-            "lowvol": false,
-            "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150"
-          }
         ]
       },
       "종목수": 103,
-      "축수": 20
+      "축수": 19
     }
   },
   "positions": [
