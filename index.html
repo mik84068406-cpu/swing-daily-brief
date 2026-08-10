@@ -123,6 +123,15 @@
          background:rgba(46,204,113,.16);border:1px solid rgba(46,204,113,.45);color:#4ad07f;
          vertical-align:middle}
   .wheld.big{font-size:11px;margin-right:5px}
+  /* 🛡 손절 점검 (2026-08-11) — 평소엔 한 줄, 문제 있을 때만 커진다 */
+  .slok{margin-top:10px;padding:8px 12px;border-radius:9px;font-size:13px;font-weight:700;
+        background:rgba(46,204,113,.10);border:1px solid rgba(46,204,113,.35);color:#4ad07f}
+  .slbad{margin-top:10px;padding:10px 12px;border-radius:9px;font-size:13.5px;
+         background:rgba(211,51,51,.12);border:1px solid rgba(211,51,51,.45)}
+  .slbad>b{color:#ff7b7b}
+  .slbad .slrow{margin-top:7px;padding-top:6px;border-top:1px dashed var(--line);font-size:13px}
+  .slbad .slrow .slnm{font-weight:700}
+  .slbad .slrow .slp{display:block;color:var(--sub);font-size:12.5px;margin-top:2px;line-height:1.5}
   .trap a{color:inherit;text-decoration:none;border-bottom:1px dashed var(--sub)}
   .trap a:hover,.trap a:active{opacity:.75}
   /* 🪤 항목: 회사가 먼저 보이게 (2026-07-24) — 방아쇠 문구는 짧은 꼬리표로 */
@@ -372,6 +381,18 @@ function render(d){
         보유·진입이력 종목은 여기 말고 아래 <b>📌 상시 추적</b>에 따로 나온다.<br>
         🇰🇷 한국은 미국 축을 완성한 뒤 <b>같은 축</b>으로 채운다 (지금은 비어 있음).</div>`);})();
 
+  // 🛡 손절 점검 (2026-08-11) — 계좌를 직접 읽어 「손절이 진짜로, 제대로 걸려 있나」를 본다.
+  //    8/10에 PLTR 손절이 지정가로 걸려 있던 걸 아무도 못 잡았다(비랑이 눈으로 발견).
+  //    장부만 보면 "걸림"으로 보이지만 실제 주문이 갭에 안 붙는 형태였다.
+  //    ★평소엔 한 줄이다. 문제가 있을 때만 커진다 — 커졌다는 것 자체가 신호.
+  const stopSec = (()=>{ const s=d.stopcheck; if(!s) return '';
+    const bad=(s.rows||[]).filter(r=>(r.problems||[]).length);
+    if(!bad.length) return `<div class="slok">🛡 손절 ${s['총']}건 전부 정상 <span style="font-weight:400;opacity:.8">— 시장가·수량·값 모두 확인</span></div>`;
+    const rows=bad.map(r=>`<div class="slrow"><span class="slnm">${esc(r.name)}(${esc(r.symbol)})</span> <span style="color:var(--sub)">${r.qty}주</span>`
+      + (r.problems||[]).map(p=>`<span class="slp">${esc(p)}</span>`).join('')+`</div>`).join('');
+    const gh=(s.ghosts||[]).length?`<div class="slrow" style="color:var(--sub)">📒 매매일지엔 열려 있는데 계좌엔 없다: ${s.ghosts.map(esc).join(' ')} — 청산가를 안 적었을 수 있다</div>`:'';
+    return `<div class="slbad"><b>🛡 손절 ${s['총']}건 중 ${bad.length}건 문제</b>${rows}${gh}</div>`;})();
+
   const topSec = (d.top&&(d.top.kr||[]).length)
     ? fold(`📊 시장 참고 <span style="font-size:12px;color:var(--sub);font-weight:400">(감시망 밖 — 매매 대상 아님)</span>`,
         `거래대금 TOP${(d.top.kr||[]).length} · 기타자산 · 상시추적`,
@@ -383,7 +404,8 @@ function render(d){
   document.getElementById('app').innerHTML = `
    <div class="headline">⚡ ${esc(d.headline)}</div>
    <section><h2>🌡️ 지표 한눈에</h2><div class="ind">${ind}</div>
-     ${ic?`<div class="myview" style="margin-top:10px;border-style:solid"><b>🤖 지표 읽기</b> — ${esc(d.indicomment).replace(/\n/g,'<br>')}</div>`:''}</section>
+     ${ic?`<div class="myview" style="margin-top:10px;border-style:solid"><b>🤖 지표 읽기</b> — ${esc(d.indicomment).replace(/\n/g,'<br>')}</div>`:''}
+     ${stopSec}</section>
    ${posSec}
    ${boSec}
    ${watchSec}

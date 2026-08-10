@@ -3449,5 +3449,106 @@
     "limit": 5.0,
     "free": 0.41
   },
+  "stopcheck": {
+    "date": "2026-08-11",
+    "time": "07:37",
+    "총": 8,
+    "문제": 3,
+    "rows": [
+      {
+        "symbol": "413630",
+        "name": "씨피시스템",
+        "qty": 29.0,
+        "market": "KR",
+        "problems": [
+          "⚠️ **LIMIT**(지정가) — 갭다운이면 그 가격에 안 붙어 체결 안 될 수 있다"
+        ],
+        "stop": 3365.0,
+        "type": "LIMIT",
+        "cqty": 29.0,
+        "status": "WATCHING"
+      },
+      {
+        "symbol": "BA",
+        "name": "보잉",
+        "qty": 2.0,
+        "market": "US",
+        "problems": [],
+        "stop": 320693.0,
+        "type": "MARKET",
+        "cqty": 2.0,
+        "status": "WATCHING"
+      },
+      {
+        "symbol": "SNOW",
+        "name": "스노우플레이크",
+        "qty": 1.003824,
+        "market": "US",
+        "problems": [],
+        "stop": 413963.0,
+        "type": "MARKET",
+        "cqty": 1.0,
+        "status": "WATCHING"
+      },
+      {
+        "symbol": "SECZ",
+        "name": "시큐리타이즈",
+        "qty": 4.0,
+        "market": "US",
+        "problems": [
+          "🚨 손절 주문이 **없다** — 무방비"
+        ],
+        "stop": null
+      },
+      {
+        "symbol": "AMZN",
+        "name": "아마존",
+        "qty": 1.15826,
+        "market": "US",
+        "problems": [
+          "⚠️ 수량 부족 — 보유 1.15826주 중 1주만 손절. 0.15826주(14%)가 무방비"
+        ],
+        "stop": 367298.0,
+        "type": "MARKET",
+        "cqty": 1.0,
+        "status": "WATCHING"
+      },
+      {
+        "symbol": "PLTR",
+        "name": "팔란티어",
+        "qty": 1.0,
+        "market": "US",
+        "problems": [],
+        "stop": 222231.0,
+        "type": "MARKET",
+        "cqty": 1.0,
+        "status": "WATCHING"
+      },
+      {
+        "symbol": "DIA",
+        "name": "DIA",
+        "qty": 1.005058,
+        "market": "US",
+        "problems": [],
+        "stop": 757845.0,
+        "type": "MARKET",
+        "cqty": 1.0,
+        "status": "WATCHING"
+      },
+      {
+        "symbol": "XLF",
+        "name": "XLF",
+        "qty": 10.019441,
+        "market": "US",
+        "problems": [],
+        "stop": 81036.0,
+        "type": "MARKET",
+        "cqty": 10.0,
+        "status": "WATCHING"
+      }
+    ],
+    "ghosts": [],
+    "journal_error": null
+  },
   "trap": []
 }
