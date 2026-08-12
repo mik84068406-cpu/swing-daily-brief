@@ -313,7 +313,12 @@ function render(d){
       ${head}
       ${hits?`<div class="bohead">🚀 돌파 발생 ${(b['돌파']||[]).length}건 — 내일 시가 진입 검토</div>${hits}`:''}
       ${near?`<details class="nearbox"><summary>👀 근접 ${(b['근접']||[]).length}건 — 내일 넘길 수 있음</summary><div class="nearwrap">${near}</div></details>`:''}
-      <div class="tsub" style="margin-top:9px;opacity:.8">규칙(7/25 확정): 55일 고점 종가돌파 → 익일 시가 · 손절 −2N · 청산 = 20일 저점 이탈 시 전량 (목표가·분할익절·불타기 없음)<br>⚠️ 검증중 — 승률 40%, 10번 중 6번 손절이 정상</div>
+      <div class="tsub" style="margin-top:9px;opacity:.8">${(()=>{
+        // ★2026-08-12: 규칙 숫자를 여기 글자로 박아두지 않는다. 돌파스캔.py가 실어 보낸 값을 쓴다.
+        //   전엔 "55일 · −2N · 20일"이 HTML에 적혀 있어서, 규칙을 바꿔도 사이트만 옛 규칙을 보여줬다.
+        const R=b['규칙'];
+        return R ? `규칙: ${R.entry_days}일 고점 종가돌파 → 익일 시가 · 손절 −${R.stop_n}N · 청산 = ${R.exit_days}일 저점 이탈 시 전량 (목표가·분할익절·불타기 없음)`
+                 : `규칙은 터틀_실전카드.md 기준 (이 브리핑엔 규칙 값이 안 실려 있음)`;})()}<br>⚠️ 검증중 — 승률 40%, 10번 중 6번 손절이 정상</div>
     </div></details></section>`;})();
 
   const trapSec = d.trap ? `
