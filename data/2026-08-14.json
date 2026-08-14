@@ -3399,21 +3399,6 @@
       "tag": "터틀 (검증)",
       "risk_won": 24064,
       "risk_pct": 0.53
-    },
-    {
-      "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ASECZ",
-      "name": "시큐리타이즈",
-      "mkt": "미국",
-      "qty": 4,
-      "entry": 12.06,
-      "cur": 5.699999809265137,
-      "pnl_won": -36033,
-      "pnl_pct": -52.74,
-      "stop": null,
-      "exitlow": null,
-      "need_update": false,
-      "tag": "명제 B유형(터틀 아님) · 2026-11-03 중간선거까지 보유 후 재판정",
-      "risk_pct": null
     }
   ],
   "risk": {
@@ -3423,9 +3408,9 @@
   },
   "stopcheck": {
     "date": "2026-08-14",
-    "time": "07:10",
-    "총": 8,
-    "문제": 2,
+    "time": "19:14",
+    "총": 7,
+    "문제": 1,
     "rows": [
       {
         "symbol": "413630",
@@ -3459,16 +3444,6 @@
         "type": "MARKET",
         "cqty": 1.0,
         "status": "WATCHING"
-      },
-      {
-        "symbol": "SECZ",
-        "name": "시큐리타이즈",
-        "qty": 4.0,
-        "market": "US",
-        "problems": [
-          "🚨 손절 주문이 아예 없다 — 무방비 상태"
-        ],
-        "stop": null
       },
       {
         "symbol": "AMZN",
