@@ -1,0 +1,2112 @@
+{
+  "date": "2026-09-28",
+  "weekday": "월",
+  "headline": "코스피 -2.70%, 7천선 붕괴 — 연휴 동안 쌓인 美 금리 급등 + 오라클 데이터센터 지연이 한꺼번에 반영",
+  "indicators": [
+    {
+      "name": "코스피",
+      "value": "6,889.74",
+      "change": "-2.70%",
+      "dir": "down"
+    },
+    {
+      "name": "코스닥",
+      "value": "846.58",
+      "change": "+0.25%",
+      "dir": "up"
+    },
+    {
+      "name": "나스닥",
+      "value": "27,068.72",
+      "change": "+0.48%",
+      "dir": "up"
+    },
+    {
+      "name": "미 2년물",
+      "value": "4.08%",
+      "change": "+1.2bp",
+      "dir": "up"
+    },
+    {
+      "name": "공포지수(VIX)",
+      "value": "16.02",
+      "change": "+7.73%",
+      "dir": "up"
+    },
+    {
+      "name": "탐욕지수(F&G)",
+      "value": "37 (공포)",
+      "change": "+0p",
+      "dir": "flat"
+    },
+    {
+      "name": "달러/원",
+      "value": "1,359.1원",
+      "change": "-0.61%",
+      "dir": "down"
+    },
+    {
+      "name": "달러인덱스",
+      "value": "101.21",
+      "change": "+0.24%",
+      "dir": "up"
+    },
+    {
+      "name": "WTI유가",
+      "value": "$94.26",
+      "change": "+2.00%",
+      "dir": "up"
+    },
+    {
+      "name": "금",
+      "value": "$4,178",
+      "change": "-3.30%",
+      "dir": "down"
+    },
+    {
+      "name": "미 10년물",
+      "value": "5.22%",
+      "change": "+3.9bp",
+      "dir": "up"
+    },
+    {
+      "name": "비트코인",
+      "value": "$83,508",
+      "change": "-1.12%",
+      "dir": "down"
+    }
+  ],
+  "indicomment": "미 10년물 5.22%에 유가 $94.26(+2.00%)까지 같이 올라왔고, 금은 $4,178(-3.30%)로 크게 빠졌어. 유가가 금리를 밀어 올리고 금리가 금을 누르는 구도라, 뉴몬트 들고 있으면 이 조합부터 봐.",
+  "news": {
+    "us": "미국은 지난 금요일(9/25, ET) 3대 지수가 모두 올라 주간 상승으로 마감했다. 다우 51,828.62(+0.93%), S&P500 7,743.41(+0.51%), 나스닥 27,068.72(+0.48%)다. 국채 매도세 속에서도 버텼고, 다우는 3주 연속 하락을 끊었다.\n\n종목은 갈렸다. 마이크로소프트가 코파일럿 개편(코드 생성·상시 AI 에이전트) 발표에 +3.66%(516.17달러)로 돌파선 바로 아래까지 왔고, 메타는 골드만삭스의 'AI 투자 회수' 경고에 -3.33% 밀렸다. 오라클은 뉴멕시코 '프로젝트 주피터' 데이터센터에 불가항력 조항을 발동했다는 소식에 -1.75%였다.\n\n주말(9/26, ET)엔 미중이 관세 휴전 기한을 11/10에서 2027년 1/10로 2개월 연장하고 약 300억달러 규모 비민감 품목 관세를 서로 낮추기로 했다. 미국 정규장은 오늘 밤 한국시간 9/28 22:30(ET 9/28 09:30)에 열린다.",
+    "kr": "추석 연휴 뒤 첫 거래일인 오늘 코스피가 191.18p(-2.70%) 내린 6,889.74에 마감해 7천선을 내줬다. 상승 출발했다가 장중 낙폭을 키웠다. 연휴 동안 미 30년물이 한때 5.5%대까지 오른 금리 부담에, 오라클 데이터센터 지연 소식이 겹치며 삼성전자(-5.43%, 27만원)·SK하이닉스(-5.05%, 176만8천원)가 5%대 급락했다. 코스닥은 846.58(+0.25%)로 오히려 올랐다.\n\n수급은 외국인 -3조2,263억원, 기관 -1조174억원 순매도, 개인 +2조6,054억원 순매수였다. 외국인은 SK하이닉스만 1조7,275억원, 삼성전자를 1조3,757억원 팔았다. 달러/원은 서울 주간 마감 기준 1,365.1원(+7.6원)이었다(지표판 1,359.1원은 다른 시점 시세라 방향이 다르게 보인다).\n\n⚠️한국 거래대금 TOP30은 수집 불가(네이버 거래상위 페이지 변경).",
+    "macro": "금리가 여전히 주인공이다. 미 30년물이 9/24(ET) 장중 5.5%대로 2004년 이후 최고를 찍었고, 지표판 기준 10년물 5.22%, 2년물 4.08%다. 연준은 9/16 금리를 올렸고(3.75~4.00%), 다음 회의 추가 인상 확률이 약 70%로 거론된다(Trading Economics 기준, 교차확인 못 함).\n\n그 뿌리는 유가다. 트럼프가 이란의 '7일 내 호르무즈 재개방' 안을 거부했고, 이란이 요구를 굽히지 않으면서 브렌트는 106달러 위, WTI는 $94.26(+2.00%)다. 트럼프는 이번 주 협상 재개를 언급했다. 유가·금리·달러가 같이 오르자 금은 $4,178(-3.30%)로 급락했고 비트코인도 $83,508(-1.12%)로 밀렸다."
+  },
+  "headlines": [
+    {
+      "market": "us",
+      "type": "지수",
+      "title": "美 3대지수 주간 상승 마감(9/25 ET) — 나스닥 +0.48%, 국채 매도세 버텨",
+      "summary": "9/25(ET) 다우 51,828.62(+0.93%), S&P500 7,743.41(+0.51%), 나스닥 27,068.72(+0.48%). 주 초반 금리 급등으로 흔들렸지만 금요일 반등으로 세 지수 모두 주간 상승을 지켰다.",
+      "why": "나스닥이 200일선 위라 미국 신호는 계속 유효하다. 다만 이 반등은 한국 연휴 중에 나온 거라, 오늘 한국 급락과 미국 상승이 같은 금리 재료를 놓고 다르게 반응한 셈이다.",
+      "tickers": [
+        "QQQ",
+        "SPY",
+        "DIA"
+      ],
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-september-25-dow-sp-500-nasdaq-081738529.html"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/09/24/stock-market-today-live-updates.html"
+        }
+      ]
+    },
+    {
+      "market": "us",
+      "type": "기업",
+      "title": "마이크로소프트 +3.66% — 코파일럿 개편, 돌파선까지 0.3%",
+      "summary": "9/25(ET) 코드 생성·상시 AI 에이전트(Autopilot)를 넣은 코파일럿 개편을 발표했고, 오펜하이머가 목표가를 570달러로 올렸다. 종가 516.17달러, 거래량은 3개월 평균보다 약 15% 많았다.",
+      "why": "오늘 돌파스캔 근접 1순위다(돌파선 517.78달러). AI 투자를 돈 받는 제품으로 바꾸는 쪽이라는 해석이라, 같은 날 메타가 'AI 투자 회수' 우려로 빠진 것과 대비된다.",
+      "tickers": [
+        "MSFT"
+      ],
+      "sources": [
+        {
+          "name": "Motley Fool",
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/09/25/stock-market-today-sept-25-microsoft-stock-jumps-4-after-revamping-copilot-with-code-generation-and-agentic-ai-tools/"
+        },
+        {
+          "name": "Benzinga",
+          "url": "https://www.benzinga.com/markets/tech/26/09/62001645/microsoft-gives-copilot-a-major-ai-makeover"
+        }
+      ]
+    },
+    {
+      "market": "us",
+      "type": "기업",
+      "title": "메타 -3.33% — 골드만 '하이퍼스케일러 AI 투자 회수 멀었다'",
+      "summary": "골드만삭스가 빅테크가 AI 설비투자 본전을 뽑으려면 연 3,000억달러 수준의 AI 매출이 필요하다고 경고했다. 뮤즈 흥행으로 9월에만 30%대 오른 뒤라 차익실현이 겹쳤다.",
+      "why": "'AI 캐펙스 회수' 의문은 반도체 수요 논리와 직결된다. 오라클 데이터센터 지연과 같은 주에 나와 오늘 한국 반도체 매도의 배경이 됐다.",
+      "tickers": [
+        "META"
+      ],
+      "sources": [
+        {
+          "name": "Benzinga",
+          "url": "https://www.benzinga.com/markets/tech/26/09/62011625/mark-zuckerberg-loses-nearly-9-billion-in-one-day-as-meta-stock-slides-4-after-goldman-questions-ai-spending-payoff"
+        },
+        {
+          "name": "Forbes",
+          "url": "https://www.forbes.com/sites/maryroeloffs/2026/09/25/mark-zuckerberg-loses-9-billion-in-a-day-as-goldman-sachs-pours-cold-water-on-meta-stock-rally/"
+        }
+      ]
+    },
+    {
+      "market": "us",
+      "type": "기업",
+      "title": "오라클, '프로젝트 주피터' 불가항력 발동 — 데이터센터 가동 지연 대비",
+      "summary": "오라클이 뉴멕시코 2.45GW 규모 '프로젝트 주피터'의 전력·인허가 차질에 대비해 불가항력 조항을 발동했다. 2028년 3분기 목표보다 가동이 늦어지면 정상 임대료 지급을 최대 3년 미룰 수 있는 권리다. 오라클 주가는 -1.75%.",
+      "why": "AI 데이터센터가 전력·인허가에 막힐 수 있다는 첫 공식 신호라 메모리 수요 기대를 직접 건드렸다. 오늘 삼성전자·SK하이닉스 5%대 급락의 직접 트리거로 꼽힌다.",
+      "tickers": [
+        "ORCL",
+        "CRWV"
+      ],
+      "sources": [
+        {
+          "name": "오피니언뉴스",
+          "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=144958"
+        },
+        {
+          "name": "증권플러스",
+          "url": "https://newsroom.stockplus.com/breaking-news/36736"
+        }
+      ]
+    },
+    {
+      "market": "us",
+      "type": "정책",
+      "title": "미중 관세 휴전 2027년 1/10까지 연장 + 300억달러 관세 상호 인하",
+      "summary": "워싱턴 정상회담 뒤 9/26(ET) 발표. 휴전 기한을 11/10에서 2027년 1/10로 2개월 늘리고, 비민감 품목 약 300억달러어치 관세를 서로 낮춘다. 희토류·대만·이란 문제는 풀리지 않았다.",
+      "why": "관세 결렬이라는 최악은 피했지만 연장폭이 2개월뿐이라 재료로는 약했다. 오늘 한국장이 이 소식에도 금리·반도체 악재에 밀렸다는 게 지금 시장의 우선순위를 보여준다.",
+      "tickers": [],
+      "sources": [
+        {
+          "name": "Axios",
+          "url": "https://www.axios.com/2026/09/26/us-china-tariffs-trade-30-billion"
+        },
+        {
+          "name": "경향신문",
+          "url": "https://www.khan.co.kr/article/202609272056005/"
+        },
+        {
+          "name": "서울경제",
+          "url": "https://m.sedaily.com/article/20094804"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "type": "금리",
+      "title": "美 30년물 5.5%대 — 2004년 이후 최고, 10년물 5.22%",
+      "summary": "30년물이 9/24(ET) 장중 5.5%대로 2004년 6월 이후 최고를 찍었다. 지표판 기준 10년물 5.22%(+3.9bp), 2년물 4.08%(+1.2bp). 고유가·견조한 지표가 추가 인상 기대를 키웠다.",
+      "why": "한국은 연휴로 이 금리 급등을 한 번에 맞았다. 고밸류 성장주 비중이 큰 돌파 후보들에겐 계속 역풍이다.",
+      "tickers": [],
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/09/24/us-treasury-yields-bonds-fed-inflation.html"
+        },
+        {
+          "name": "Trading Economics",
+          "url": "https://tradingeconomics.com/united-states/30-year-bond-yield"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "type": "지정학",
+      "title": "트럼프, 이란 '7일 호르무즈 재개방' 안 거부 — 브렌트 106달러 위",
+      "summary": "이란이 7일짜리 해협 재개방 제안을 고수했고 트럼프가 거부했다. 브렌트는 106달러를 넘었고 지표판 WTI는 $94.26(+2.00%). 트럼프는 이번 주 양측이 협상 테이블로 돌아온다고 밝혔다(Axios 인터뷰).",
+      "why": "유가가 고물가 → 금리 인상의 뿌리다. 이번 주 협상에서 해협 재개방이 나오면 금리·유가가 같이 꺾일 수 있는 가장 큰 변수다.",
+      "tickers": [],
+      "sources": [
+        {
+          "name": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-09-27/latest-oil-market-news-and-analysis-for-sept-28"
+        },
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-monday-september-28-2026-gold-prices-slump-as-iran-tensions-and-oil-prices-rise-110730952.html"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "type": "원자재",
+      "title": "금 $4,178(-3.30%) 급락 — 유가·금리·달러 동반 상승의 직격탄",
+      "summary": "현물 금이 장중 3% 넘게 빠져 4,160달러 아래까지 밀렸다. 호르무즈 교착으로 에너지 가격이 높게 유지되며 연준 추가 인상 압력이 커진 탓이다.",
+      "why": "보유 중인 뉴몬트(금광)에 바로 영향이 간다. 오늘 포지션현황에서 뉴몬트 손절 갱신 필요가 떴으니 토스 주문부터 맞춰둘 것.",
+      "tickers": [
+        "NEM"
+      ],
+      "sources": [
+        {
+          "name": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-09-27/gold-declines-as-hormuz-impasse-keeps-rate-hike-bets-elevated"
+        },
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-monday-september-28-2026-gold-prices-slump-as-iran-tensions-and-oil-prices-rise-110730952.html"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "type": "통화정책",
+      "title": "연준 다음 회의 추가 인상 확률 약 70% 거론",
+      "summary": "연준은 9/16 기준금리를 3.75~4.00%로 올렸고, 9월 점도표에서 올해 말 PCE 물가 전망을 3.7%로 높였다. 시장에선 다음 회의 25bp 추가 인상 확률이 약 70%로 거론된다(단일 출처, 확인 필요).",
+      "why": "좋은 경제지표가 주가엔 악재인 구도가 이어진다. 이번 주 나오는 미국 지표는 '금리 재료'로 읽어야 한다.",
+      "tickers": [],
+      "sources": [
+        {
+          "name": "Trading Economics",
+          "url": "https://tradingeconomics.com/united-states/government-bond-yield/news/508788"
+        },
+        {
+          "name": "BondSavvy",
+          "url": "https://www.bondsavvy.com/fixed-income-investments-blog/fed-dot-plot"
+        }
+      ]
+    },
+    {
+      "market": "kr",
+      "type": "지수",
+      "title": "코스피 6,889.74(-2.70%) — 연휴 뒤 첫날 7천선 붕괴",
+      "summary": "추석 연휴 뒤 첫 거래일, 상승 출발했다가 반도체 급락에 낙폭을 키워 191.18p 내렸다. 삼성전자 -5.43%(27만원), SK하이닉스 -5.05%(176만8천원). 코스닥은 846.58(+0.25%)로 선방했다.",
+      "why": "그래도 코스피는 200일선(6,267) 위라 한국 신호는 유효하다. 지수 전체보다 반도체 대형주에 매도가 몰린 하루다.",
+      "tickers": [
+        "005930",
+        "000660"
+      ],
+      "sources": [
+        {
+          "name": "서울신문",
+          "url": "https://www.seoul.co.kr/news/economy/securities/2026/09/28/20260928500195"
+        },
+        {
+          "name": "SBS Biz",
+          "url": "https://biz.sbs.co.kr/article/20000337042"
+        },
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/stock/2026/09/28/2026092815142274466"
+        }
+      ]
+    },
+    {
+      "market": "kr",
+      "type": "수급",
+      "title": "외국인 -3조2,263억·기관 -1조174억 매도, 개인 +2조6,054억 매수",
+      "summary": "외국인·기관 합산 4조원 넘게 팔았다. 외국인은 SK하이닉스 1조7,275억원·삼성전자 1조3,757억원, 기관은 삼성전자 6,644억원·SK하이닉스 4,910억원을 순매도했다.",
+      "why": "연휴 전(9/23) 외국인이 5,102억원 팔고 나간 흐름이 연휴 뒤 더 커졌다. 매도가 반도체 두 종목에 집중됐다는 점이 핵심이다.",
+      "tickers": [
+        "005930",
+        "000660"
+      ],
+      "sources": [
+        {
+          "name": "서울신문",
+          "url": "https://www.seoul.co.kr/news/economy/securities/2026/09/28/20260928500195"
+        },
+        {
+          "name": "데일리안",
+          "url": "https://www.dailian.co.kr/news/view/1695149/"
+        }
+      ]
+    },
+    {
+      "market": "kr",
+      "type": "환율",
+      "title": "달러/원 서울 마감 1,365.1원(+7.6원) — 외국인 매도에 원화 약세",
+      "summary": "서울 외환시장 주간 마감 기준 1,365.1원으로 7.6원 올랐다. 지표판의 1,359.1원(-0.61%)은 다른 시점 시세라 방향이 반대로 보인다.",
+      "why": "보유 종목이 전부 미국이라 환율은 원화 환산 손익에 바로 들어간다. 외국인 순매도가 이어지면 원화 약세도 같이 간다.",
+      "tickers": [],
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/economy/2026/09/28/2026092815334975532"
+        },
+        {
+          "name": "스페셜경제",
+          "url": "https://www.speconomy.com/news/articleView.html?idxno=418354"
+        }
+      ]
+    }
+  ],
+  "flow": {
+    "us": {
+      "in": [
+        {
+          "sector": "에너지",
+          "change": 8.27,
+          "n": 1,
+          "leader": "블룸에너지 +8.3",
+          "note": "블룸에너지 +8.27% — 거래대금 13위로 올라올 만큼 매수가 몰렸다(사유 확인 못 함)."
+        }
+      ],
+      "out": [
+        {
+          "sector": "전기차",
+          "change": -1.54,
+          "n": 1,
+          "leader": "테슬라 -1.5",
+          "note": "테슬라 -1.54%."
+        },
+        {
+          "sector": "AI소프트웨어",
+          "change": -1.52,
+          "n": 1,
+          "leader": "팔란티어 -1.5",
+          "note": "팔란티어 -1.52% — 전날 돌파 뒤 되밀려 돌파선 아래(189.67달러)로 내려왔다."
+        },
+        {
+          "sector": "소프트웨어",
+          "change": -1.75,
+          "n": 1,
+          "leader": "오라클 -1.8",
+          "note": "오라클 -1.75% — '프로젝트 주피터' 데이터센터 불가항력 발동 소식."
+        }
+      ],
+      "mixed": [
+        {
+          "sector": "반도체",
+          "change": -0.17,
+          "n": 6,
+          "leader": "마이크론 +0.2 · 엔비디아 +0.2 · 인텔 -3.5 · AMD +0.2 · 브로드컴 +0.7",
+          "note": "퀄컴 +3.97·브로드컴 +0.70·엔비디아·AMD +0.22·마이크론 +0.16 vs 인텔 -3.45 — 9/25(ET) 미국 반도체는 대체로 보합~강세였다. 오늘 한국 반도체 -5%는 그 뒤에 나온 오라클 뉴스·금리 누적분이다."
+        },
+        {
+          "sector": "빅테크",
+          "change": 0.42,
+          "n": 5,
+          "leader": "마이크로소프트 +3.7 · 메타 -3.3 · 애플 +1.5 · 아마존 +0.1 · 알파벳(구글) +0.5",
+          "note": "마이크로소프트 +3.66·애플 +1.53 vs 메타 -3.33 — 코파일럿 개편(MSFT)과 골드만의 AI 투자 회수 경고(META)로 명암이 갈렸다."
+        },
+        {
+          "sector": "우주항공",
+          "change": 0.44,
+          "n": 1,
+          "leader": "스페이스X +0.4",
+          "note": "스페이스X +0.44% — 보합권."
+        }
+      ]
+    },
+    "kr": {
+      "in": [],
+      "out": [],
+      "mixed": []
+    }
+  },
+  "signalnotes": {
+    "마이크로소프트(MSFT)": "윈도·오피스·애저 클라우드를 가진 시총 약 3.8조달러 빅테크다. 9/25(ET) 코드 생성·상시 AI 에이전트를 넣은 코파일럿 개편을 발표하고 오펜하이머가 목표가를 570달러로 올리며 +3.66% 뛰었다(Motley Fool·Benzinga). 돌파선까지 0.3%로 오늘 밤 한 번만 올라도 넘는 자리다.",
+    "아르킷퀀텀(ARQQ)": "영국 양자내성 암호화 소프트웨어 소형주다. 9/25(ET) +6.4%로 24.60달러, 1주일 +22%를 기록했고 법적 분쟁 합의로 오래된 악재를 털어낸 게 재료로 꼽힌다(GuruFocus). 매출이 아직 수백만달러 수준인 적자 기업이라 변동성이 매우 크다.",
+    "팔란티어(PLTR)": "정부·기업용 데이터 분석·AI 플랫폼 회사다. 9/23(ET) 55일 고점을 넘었다가 9/25엔 -1.52%(189.67달러)로 돌파선 아래로 되밀렸다. UBS가 목표가를 250달러로 올렸지만 주가는 금리 부담을 더 크게 받았다."
+  },
+  "myview": "",
+  "aiview": "오늘 장 성격 한 줄: '연휴 동안 밀린 숙제를 한 번에 낸 하루'다. 근거는 코스피가 -2.70% 빠지는 동안 매도가 삼성전자·SK하이닉스 두 종목에 몰렸고(외국인만 합쳐 3조원 넘게), 코스닥은 오히려 +0.25% 올랐다는 것이다. 시장 전체가 무너졌다기보다 'AI 데이터센터 투자 속도' 의심이 반도체 대형주를 직격했다.\n\n반대 시나리오: 오라클 불가항력은 '지연 대비 권리'지 확정된 지연이 아니다. 이번 주 이란 협상에서 호르무즈 재개방이 나오면 유가·금리가 같이 꺾이며 오늘 매도가 과했다는 쪽으로 돌 수 있다. 반대로 협상이 깨지고 금리가 더 오르면 금(뉴몬트)과 고밸류 성장주가 같이 흔들린다. 어느 쪽이든 손절(-2N)이 막아주는 영역이다.\n\n내일 확인 포인트: ①오늘 밤 마이크로소프트가 517.78달러를 종가로 넘는지(근접 1순위) ②뉴몬트 손절 주문을 갱신값으로 올렸는지, 시큐리타이즈 손절 없음 상태를 그대로 둘지 ③이란 협상 재개 여부와 미 10년물 5.2%대 유지 여부.",
+  "top": {
+    "kr": [],
+    "us": [
+      {
+        "name": "마이크론 (MU)",
+        "sector": "반도체(메모리)",
+        "desc": "D램·낸드를 만드는 미국 유일 메모리 회사, HBM에도 진출",
+        "cap": "$1.2T",
+        "change": 0.16,
+        "value": "22,672백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=MU"
+      },
+      {
+        "name": "엔비디아 (NVDA)",
+        "sector": "반도체(AI)",
+        "desc": "AI 학습용 GPU를 사실상 독점하는 세계 시총 1위권 기업",
+        "cap": "$5.4T",
+        "change": 0.22,
+        "value": "20,245백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=NVDA"
+      },
+      {
+        "name": "마이크로소프트 (MSFT)",
+        "sector": "빅테크(클라우드·AI)",
+        "desc": "윈도우·오피스에 더해 클라우드(애저)와 오픈AI 지분 보유",
+        "cap": "$3.8T",
+        "change": 3.66,
+        "value": "19,714백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=MSFT"
+      },
+      {
+        "name": "메타 (META)",
+        "sector": "빅테크(SNS·AI)",
+        "desc": "페이스북·인스타그램을 가진 SNS 회사, AI 인프라에 대규모 투자 중",
+        "cap": "$1.9T",
+        "change": -3.33,
+        "value": "19,413백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=META"
+      },
+      {
+        "name": "테슬라 (TSLA)",
+        "sector": "전기차",
+        "desc": "전기차 1위이자 자율주행·로봇(옵티머스)에 투자 중",
+        "cap": "$1.5T",
+        "change": -1.54,
+        "value": "17,117백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=TSLA"
+      },
+      {
+        "name": "인텔 (INTC)",
+        "sector": "반도체",
+        "desc": "미국 대표 반도체 회사. 파운드리 전환 중이며 미 정부가 지원",
+        "cap": "$650B",
+        "change": -3.45,
+        "value": "12,021백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=INTC"
+      },
+      {
+        "name": "AMD (AMD)",
+        "sector": "반도체",
+        "desc": "엔비디아를 추격하는 CPU·AI 가속기 제조사",
+        "cap": "$1.0T",
+        "change": 0.22,
+        "value": "11,119백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMD"
+      },
+      {
+        "name": "애플 (AAPL)",
+        "sector": "빅테크(하드웨어)",
+        "desc": "아이폰·맥을 만드는 회사, 서비스 매출 비중이 커지는 중",
+        "cap": "$5.0T",
+        "change": 1.53,
+        "value": "10,233백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=AAPL"
+      },
+      {
+        "name": "아마존 (AMZN)",
+        "sector": "빅테크(커머스·클라우드)",
+        "desc": "전자상거래 1위이자 클라우드(AWS) 세계 1위",
+        "cap": "$2.7T",
+        "change": 0.12,
+        "value": "8,555백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMZN"
+      },
+      {
+        "name": "스페이스X (SPCX)",
+        "sector": "우주항공(발사체·위성인터넷)",
+        "desc": "일론 머스크의 로켓·스타링크 회사, 2026년 상장",
+        "cap": "$2.0T",
+        "change": 0.44,
+        "value": "8,117백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=SPCX"
+      },
+      {
+        "name": "알파벳(구글) (GOOGL)",
+        "sector": "빅테크(광고·AI)",
+        "desc": "검색·유튜브·안드로이드를 가진 구글의 모회사",
+        "cap": "$4.2T",
+        "change": 0.46,
+        "value": "7,525백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=GOOGL"
+      },
+      {
+        "name": "브로드컴 (AVGO)",
+        "sector": "반도체(AI)",
+        "desc": "네트워크 칩과 맞춤형 AI 칩을 만드는 반도체 대기업",
+        "cap": "$1.7T",
+        "change": 0.7,
+        "value": "5,735백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=AVGO"
+      },
+      {
+        "name": "블룸에너지 (BE)",
+        "sector": "에너지(연료전지)",
+        "desc": "수소·천연가스로 전기를 만드는 연료전지 제조사",
+        "cap": "$85B",
+        "change": 8.27,
+        "value": "4,996백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=BE"
+      },
+      {
+        "name": "AKAM",
+        "sector": "",
+        "desc": "",
+        "cap": "$16B",
+        "change": 3.2,
+        "value": "3,640백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=AKAM"
+      },
+      {
+        "name": "퀄컴 (QCOM)",
+        "sector": "반도체(모바일AP)",
+        "desc": "스마트폰 AP·통신칩을 설계하는 팹리스, 5G 특허료 수익 큰 비중",
+        "cap": "$216B",
+        "change": 3.97,
+        "value": "3,599백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=QCOM"
+      },
+      {
+        "name": "팔란티어 (PLTR)",
+        "sector": "AI소프트웨어",
+        "desc": "정부·기업에 데이터 분석 소프트웨어를 파는 AI 회사",
+        "cap": "$456B",
+        "change": -1.52,
+        "value": "3,377백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=PLTR"
+      },
+      {
+        "name": "오라클 (ORCL)",
+        "sector": "소프트웨어(클라우드)",
+        "desc": "기업용 데이터베이스 1위, 최근 AI 클라우드로 확장 중",
+        "cap": "$415B",
+        "change": -1.75,
+        "value": "3,196백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=ORCL"
+      },
+      {
+        "name": "스트래티지(MSTR) (MSTR)",
+        "sector": "크립토(BTC보유)",
+        "desc": "비트코인을 대량 보유한 소프트웨어 회사(옛 마이크로스트래티지)",
+        "cap": "$63B",
+        "change": -1.86,
+        "value": "2,939백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=MSTR"
+      },
+      {
+        "name": "슈퍼마이크로 (SMCI)",
+        "sector": "AI서버",
+        "desc": "엔비디아 GPU를 넣은 AI 서버를 조립해 파는 회사",
+        "cap": "$28B",
+        "change": 4.22,
+        "value": "2,134백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=SMCI"
+      },
+      {
+        "name": "시스코 (CSCO)",
+        "sector": "네트워크",
+        "desc": "기업용 네트워크 장비 세계 1위 시스코",
+        "cap": "$421B",
+        "change": -0.25,
+        "value": "2,129백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=CSCO"
+      },
+      {
+        "name": "코어위브 (CRWV)",
+        "sector": "AI클라우드(GPU)",
+        "desc": "엔비디아 GPU를 빌려주는 AI 전용 클라우드",
+        "cap": "$48B",
+        "change": -2.82,
+        "value": "2,064백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=CRWV"
+      },
+      {
+        "name": "월마트 (WMT)",
+        "sector": "리테일(필수소비)",
+        "desc": "세계 최대 오프라인 유통업체, 경기 방어주 성격",
+        "cap": "$857B",
+        "change": 0.36,
+        "value": "2,026백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=WMT"
+      },
+      {
+        "name": "아이렌리미티드 (IREN)",
+        "sector": "비트코인채굴→AI데이터센터",
+        "desc": "비트코인 채굴장을 AI 데이터센터로 바꾸고 있는 회사",
+        "cap": "$17B",
+        "change": -4.39,
+        "value": "1,817백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=IREN"
+      },
+      {
+        "name": "넷플릭스 (NFLX)",
+        "sector": "미디어",
+        "desc": "세계 최대 스트리밍 서비스, 광고 요금제로 확장 중",
+        "cap": "$296B",
+        "change": -0.8,
+        "value": "1,651백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=NFLX"
+      },
+      {
+        "name": "뱅크오브아메리카 (BAC)",
+        "sector": "은행",
+        "desc": "미국 2위 상업은행 뱅크오브아메리카",
+        "cap": "$396B",
+        "change": 1.2,
+        "value": "1,608백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=BAC"
+      },
+      {
+        "name": "CVS헬스 (CVS)",
+        "sector": "헬스케어(약국·보험)",
+        "desc": "미국 최대 약국 체인이자 건강보험(애트나)까지 겸하는 헬스케어 기업",
+        "cap": "$114B",
+        "change": 4.8,
+        "value": "1,405백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=CVS"
+      },
+      {
+        "name": "로켓랩 (RKLB)",
+        "sector": "우주·발사체",
+        "desc": "소형 위성을 쏘아 올리는 발사체와 위성 부품을 만드는 회사",
+        "cap": "$47B",
+        "change": 0.46,
+        "value": "1,395백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=RKLB"
+      },
+      {
+        "name": "나이키 (NKE)",
+        "sector": "소비재(스포츠의류)",
+        "desc": "운동화·스포츠의류 세계 1위 브랜드",
+        "cap": "$53B",
+        "change": -0.67,
+        "value": "1,362백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=NKE"
+      },
+      {
+        "name": "NEE",
+        "sector": "",
+        "desc": "",
+        "cap": "$159B",
+        "change": 0.61,
+        "value": "1,250백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=NEE"
+      },
+      {
+        "name": "아이온큐 (IONQ)",
+        "sector": "양자컴퓨터",
+        "desc": "이온을 가둬 계산하는 양자컴퓨터를 팔고 클라우드로 빌려주는 회사",
+        "cap": "$18B",
+        "change": 1.11,
+        "value": "1,246백만USD",
+        "tv": "https://kr.tradingview.com/chart/?symbol=IONQ"
+      }
+    ]
+  },
+  "breakout": {
+    "날짜": "2026-09-28",
+    "국면": {
+      "미국": {
+        "지수": "나스닥",
+        "종가": 27068.72,
+        "sma200": 24642.27,
+        "상승장": true,
+        "이격": 9.8
+      },
+      "한국": {
+        "지수": "코스피",
+        "종가": 6889.74,
+        "sma200": 6267.42,
+        "상승장": true,
+        "이격": 9.9
+      },
+      "원자재": {
+        "지수": "자기 200일선(종목별)",
+        "종가": 0,
+        "sma200": 0,
+        "상승장": true,
+        "이격": 0
+      }
+    },
+    "급락일": [],
+    "급락상세": {
+      "코스피": {
+        "chg": -2.7,
+        "crash": false,
+        "thr": -3.0
+      },
+      "나스닥": {
+        "chg": 0.48,
+        "crash": false,
+        "thr": -2.0
+      }
+    },
+    "매크로이벤트": {},
+    "원자재현황": [
+      {
+        "name": "금",
+        "tk": "GLD",
+        "close": 393.41,
+        "bull": false,
+        "gap": 9.2,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AGLD",
+        "grp": "원자재"
+      },
+      {
+        "name": "은",
+        "tk": "SLV",
+        "close": 58.14,
+        "bull": false,
+        "gap": 10.6,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASLV",
+        "grp": "원자재"
+      },
+      {
+        "name": "원유",
+        "tk": "USO",
+        "close": 148.33,
+        "bull": true,
+        "gap": 10.1,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUSO",
+        "grp": "원자재"
+      },
+      {
+        "name": "원자재종합",
+        "tk": "DBC",
+        "close": 32.62,
+        "bull": true,
+        "gap": 3.6,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADBC",
+        "grp": "원자재"
+      },
+      {
+        "name": "천연가스",
+        "tk": "UNG",
+        "close": 11.13,
+        "bull": false,
+        "gap": 4.9,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AUNG",
+        "grp": "원자재"
+      },
+      {
+        "name": "백금",
+        "tk": "PPLT",
+        "close": 16.09,
+        "bull": false,
+        "gap": 8.4,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3APPLT",
+        "grp": "원자재"
+      },
+      {
+        "name": "구리",
+        "tk": "CPER",
+        "close": 40.61,
+        "bull": true,
+        "gap": 2.2,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ACPER",
+        "grp": "원자재"
+      },
+      {
+        "name": "농산물",
+        "tk": "DBA",
+        "close": 28.54,
+        "bull": true,
+        "gap": 3.4,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADBA",
+        "grp": "원자재"
+      },
+      {
+        "name": "미국채7-10년",
+        "tk": "IEF",
+        "close": 90.0,
+        "bull": false,
+        "gap": 4.6,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AIEF",
+        "grp": "채권"
+      },
+      {
+        "name": "우량회사채",
+        "tk": "LQD",
+        "close": 103.21,
+        "bull": false,
+        "gap": 4.7,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ALQD",
+        "grp": "채권"
+      },
+      {
+        "name": "물가연동채",
+        "tk": "TIP",
+        "close": 104.54,
+        "bull": false,
+        "gap": 3.7,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ATIP",
+        "grp": "채권"
+      },
+      {
+        "name": "S&P500",
+        "tk": "SPY",
+        "close": 771.35,
+        "bull": true,
+        "gap": 1.0,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ASPY",
+        "grp": "지수"
+      },
+      {
+        "name": "나스닥100",
+        "tk": "QQQ",
+        "close": 744.5,
+        "bull": true,
+        "gap": 0.5,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AQQQ",
+        "grp": "지수"
+      },
+      {
+        "name": "다우존스",
+        "tk": "DIA",
+        "close": 517.49,
+        "bull": true,
+        "gap": 5.7,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADIA",
+        "grp": "지수"
+      },
+      {
+        "name": "코스피200",
+        "tk": "KODEX 200",
+        "close": 109500.0,
+        "bull": true,
+        "gap": 17.3,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A069500",
+        "krw": true,
+        "grp": "지수"
+      },
+      {
+        "name": "코스피200(타이거)",
+        "tk": "TIGER 200",
+        "close": 109805.0,
+        "bull": true,
+        "gap": 17.1,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A102110",
+        "krw": true,
+        "grp": "지수"
+      },
+      {
+        "name": "코스닥150",
+        "tk": "KODEX 코스닥150",
+        "close": 14125.0,
+        "bull": true,
+        "gap": 8.3,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A229200",
+        "krw": true,
+        "grp": "지수"
+      }
+    ],
+    "상시추적": [
+      {
+        "name": "SK이터닉스",
+        "market": "한국",
+        "close": 51800.0,
+        "pivot": 87700.0,
+        "gap": 69.3,
+        "exitlow": 48200.0,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A475150",
+        "krw": true
+      },
+      {
+        "name": "씨피시스템",
+        "market": "한국",
+        "close": 4170.0,
+        "pivot": 5400.0,
+        "gap": 29.5,
+        "exitlow": 3790.0,
+        "tv": "https://kr.tradingview.com/chart/?symbol=KRX%3A413630",
+        "krw": true
+      },
+      {
+        "name": "AMZN",
+        "market": "미국",
+        "close": 249.67,
+        "pivot": 287.2,
+        "gap": 15.0,
+        "exitlow": 244.3,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AAMZN",
+        "krw": false
+      },
+      {
+        "name": "DIA",
+        "market": "원자재",
+        "close": 517.49,
+        "pivot": 546.75,
+        "gap": 5.7,
+        "exitlow": 510.42,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3ADIA",
+        "krw": false
+      },
+      {
+        "name": "XLF",
+        "market": "원자재",
+        "close": 54.84,
+        "pivot": 58.6,
+        "gap": 6.9,
+        "exitlow": 54.25,
+        "tv": "https://kr.tradingview.com/chart/?symbol=AMEX%3AXLF",
+        "krw": false
+      },
+      {
+        "name": "SECZ",
+        "market": "미국",
+        "close": 15.96,
+        "pivot": 16.56,
+        "gap": 3.8,
+        "exitlow": 6.14,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ASECZ",
+        "krw": false
+      }
+    ],
+    "데이터지연": [],
+    "규칙": {
+      "entry_days": 55,
+      "exit_days": 20,
+      "stop_n": 2.0,
+      "min_stop_pct": 2.0,
+      "risk_pct": 1.0,
+      "risk_budget": 5.0
+    },
+    "돌파": [],
+    "근접": [
+      {
+        "name": "마이크로소프트(MSFT)",
+        "market": "미국",
+        "close": 516.17,
+        "pivot": 517.78,
+        "gap": 0.3,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AMSFT"
+      },
+      {
+        "name": "아르킷퀀텀(ARQQ)",
+        "market": "미국",
+        "close": 24.6,
+        "pivot": 24.9,
+        "gap": 1.2,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AARQQ"
+      },
+      {
+        "name": "팔란티어(PLTR)",
+        "market": "미국",
+        "close": 189.67,
+        "pivot": 194.68,
+        "gap": 2.6,
+        "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3APLTR"
+      }
+    ],
+    "감시망": {
+      "축": {
+        "SaaS": [
+          {
+            "name": "크라우드스트라이크(CRWD)",
+            "tk": "CRWD",
+            "market": "미국",
+            "desc": "직원 PC와 서버에 깔아 해킹을 잡아내는 보안 프로그램 팰컨을 파는 회사",
+            "close": 252.13,
+            "krw": false,
+            "chg": -2.9,
+            "val": "$1.92B",
+            "cap": "$218.3B",
+            "gap": 4.7,
+            "broke": false,
+            "stoppct": 9.4,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ACRWD"
+          },
+          {
+            "name": "클라우드플레어(NET)",
+            "tk": "NET",
+            "market": "미국",
+            "desc": "웹사이트 속도를 높이고 해킹을 막아주는 인터넷 인프라 회사",
+            "close": 349.02,
+            "krw": false,
+            "chg": -2.73,
+            "val": "$1.11B",
+            "cap": "$106.9B",
+            "gap": 5.3,
+            "broke": false,
+            "stoppct": 10.0,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ANET"
+          },
+          {
+            "name": "팔로알토네트웍스(PANW)",
+            "tk": "PANW",
+            "market": "미국",
+            "desc": "기업 방화벽부터 클라우드·계정 보안까지 다루는 종합 보안회사",
+            "close": 374.74,
+            "krw": false,
+            "chg": -3.89,
+            "val": "$1.83B",
+            "cap": "$296.5B",
+            "gap": 6.4,
+            "broke": false,
+            "stoppct": 9.4,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3APANW"
+          },
+          {
+            "name": "데이터독(DDOG)",
+            "tk": "DDOG",
+            "market": "미국",
+            "desc": "서버·앱이 느려지거나 멈추면 바로 알려주는 감시 도구를 파는 회사",
+            "close": 268.13,
+            "krw": false,
+            "chg": 4.36,
+            "val": "$1.44B",
+            "cap": "$84.0B",
+            "gap": 9.2,
+            "broke": false,
+            "stoppct": 9.5,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ADDOG"
+          },
+          {
+            "name": "서비스나우(NOW)",
+            "tk": "NOW",
+            "market": "미국",
+            "desc": "기업 업무 자동화 소프트웨어(서비스나우)",
+            "close": 135.62,
+            "krw": false,
+            "chg": -1.57,
+            "val": "$1.08B",
+            "cap": "$129.1B",
+            "gap": 10.3,
+            "broke": false,
+            "stoppct": 8.9,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ANOW"
+          },
+          {
+            "name": "지스케일러(ZS)",
+            "tk": "ZS",
+            "market": "미국",
+            "desc": "직원이 어디서 일하든 인터넷 접속을 클라우드에서 검사해 걸러주는 보안 회사",
+            "close": 193.05,
+            "krw": false,
+            "chg": -10.06,
+            "val": "$1.29B",
+            "cap": "$27.3B",
+            "gap": 12.4,
+            "broke": false,
+            "stoppct": 10.2,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AZS"
+          },
+          {
+            "name": "스노우플레이크(SNOW)",
+            "tk": "SNOW",
+            "market": "미국",
+            "desc": "기업 데이터를 클라우드에 모아 분석하게 해주는 데이터 창고 회사",
+            "close": 335.94,
+            "krw": false,
+            "chg": 0.58,
+            "val": "$1.02B",
+            "cap": "$114.5B",
+            "gap": 14.5,
+            "broke": false,
+            "stoppct": 8.9,
+            "lowvol": false,
+            "held": true,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ASNOW"
+          },
+          {
+            "name": "몽고디비(MDB)",
+            "tk": "MDB",
+            "market": "미국",
+            "desc": "앱 개발자가 쓰는 데이터 저장소를 클라우드로 빌려주는 데이터베이스 회사",
+            "close": 410.44,
+            "krw": false,
+            "chg": -2.6,
+            "val": "$567M",
+            "cap": "$32.1B",
+            "gap": 15.3,
+            "broke": false,
+            "stoppct": 10.5,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AMDB"
+          },
+          {
+            "name": "로블록스(RBLX)",
+            "tk": "RBLX",
+            "market": "미국",
+            "desc": "이용자가 직접 게임을 만들어 올리는 온라인 게임 플랫폼, 저연령층 중심",
+            "close": 46.44,
+            "krw": false,
+            "chg": -4.89,
+            "val": "$621M",
+            "cap": "$27.0B",
+            "gap": 25.1,
+            "broke": false,
+            "stoppct": 10.7,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ARBLX"
+          }
+        ],
+        "AI캡엑스": [
+          {
+            "name": "아리스타네트웍스(ANET)",
+            "tk": "ANET",
+            "market": "미국",
+            "desc": "AI 데이터센터용 고성능 네트워크 스위치를 만드는 회사, 엔비디아와 밀접",
+            "close": 206.55,
+            "krw": false,
+            "chg": 0.41,
+            "val": "$904M",
+            "cap": "$238.0B",
+            "gap": 4.0,
+            "broke": false,
+            "stoppct": 7.7,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AANET"
+          },
+          {
+            "name": "이튼(ETN)",
+            "tk": "ETN",
+            "market": "미국",
+            "desc": "차단기·배전반 등 전기를 안전하게 나눠 쓰게 하는 장비를 만드는 회사",
+            "close": 439.98,
+            "krw": false,
+            "chg": -0.0,
+            "val": "$623M",
+            "cap": "$174.3B",
+            "gap": 8.6,
+            "broke": false,
+            "stoppct": 6.6,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AETN"
+          },
+          {
+            "name": "허벨(HUBB)",
+            "tk": "HUBB",
+            "market": "미국",
+            "desc": "전봇대·변전소에 쓰는 전력망 부품과 산업용 전기자재를 만드는 회사",
+            "close": 466.62,
+            "krw": false,
+            "chg": 0.16,
+            "val": "$164M",
+            "cap": "$27.2B",
+            "gap": 13.5,
+            "broke": false,
+            "stoppct": 5.5,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AHUBB"
+          },
+          {
+            "name": "GE버노바(GEV)",
+            "tk": "GEV",
+            "market": "미국",
+            "desc": "가스·풍력 발전용 터빈과 송전망 설비를 만드는 GE 분사 회사",
+            "close": 957.63,
+            "krw": false,
+            "chg": 0.27,
+            "val": "$1.30B",
+            "cap": "$263.8B",
+            "gap": 19.1,
+            "broke": false,
+            "stoppct": 8.3,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AGEV"
+          },
+          {
+            "name": "나비타스반도체(NVTS)",
+            "tk": "NVTS",
+            "market": "미국",
+            "desc": "충전기·AI서버 전원장치에 들어가는 전력반도체를 만드는 회사",
+            "close": 12.2,
+            "krw": false,
+            "chg": 3.04,
+            "val": "$120M",
+            "cap": "$3.6B",
+            "gap": 22.5,
+            "broke": false,
+            "stoppct": 14.5,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ANVTS"
+          },
+          {
+            "name": "파월인더스트리(POWL)",
+            "tk": "POWL",
+            "market": "미국",
+            "desc": "공장·발전소에 전기를 나눠주는 배전반과 전력제어실을 만드는 회사",
+            "close": 189.53,
+            "krw": false,
+            "chg": -1.09,
+            "val": "$109M",
+            "cap": "$7.7B",
+            "gap": 31.0,
+            "broke": false,
+            "stoppct": 10.0,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3APOWL"
+          },
+          {
+            "name": "버티브(VRT)",
+            "tk": "VRT",
+            "market": "미국",
+            "desc": "데이터센터 전력공급·냉각장치 전문, AI서버 열관리 핵심 부품사",
+            "close": 253.28,
+            "krw": false,
+            "chg": 3.25,
+            "val": "$1.05B",
+            "cap": "$104.9B",
+            "gap": 33.8,
+            "broke": false,
+            "stoppct": 10.8,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AVRT"
+          },
+          {
+            "name": "에스피엑스테크놀로지스(SPXC)",
+            "tk": "SPXC",
+            "market": "미국",
+            "desc": "발전소·건물용 냉각탑과 보일러, 매설물 탐지장비를 만드는 회사",
+            "close": 172.79,
+            "krw": false,
+            "chg": 0.18,
+            "val": "$97M",
+            "cap": "$10.8B",
+            "gap": 37.1,
+            "broke": false,
+            "stoppct": 8.3,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ASPXC"
+          },
+          {
+            "name": "파브리넷(FN)",
+            "tk": "FN",
+            "market": "미국",
+            "desc": "엔비디아·시스코 등의 광통신 부품을 대신 만들어주는 위탁생산 회사",
+            "close": 417.39,
+            "krw": false,
+            "chg": 4.78,
+            "val": "$310M",
+            "cap": "$20.1B",
+            "gap": 44.5,
+            "broke": false,
+            "stoppct": 12.1,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AFN"
+          }
+        ],
+        "양자": [
+          {
+            "name": "아르킷퀀텀(ARQQ)",
+            "tk": "ARQQ",
+            "market": "미국",
+            "desc": "양자컴퓨터로도 못 깨는 암호키를 만드는 소프트웨어를 통신사·정부기관에 파는 회사",
+            "close": 24.6,
+            "krw": false,
+            "chg": 6.4,
+            "val": "$9M",
+            "cap": "$399M",
+            "gap": 1.2,
+            "broke": false,
+            "stoppct": 15.7,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AARQQ"
+          },
+          {
+            "name": "아이온큐(IONQ)",
+            "tk": "IONQ",
+            "market": "미국",
+            "desc": "이온을 가둬 계산하는 양자컴퓨터를 팔고 클라우드로 빌려주는 회사",
+            "close": 45.48,
+            "krw": false,
+            "chg": 1.11,
+            "val": "$1.25B",
+            "cap": "$16.6B",
+            "gap": 5.4,
+            "broke": false,
+            "stoppct": 12.5,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AIONQ"
+          },
+          {
+            "name": "퀀텀컴퓨팅(QUBT)",
+            "tk": "QUBT",
+            "market": "미국",
+            "desc": "빛을 다루는 광학 반도체를 위탁 생산하고 광학 계산장비도 파는 회사",
+            "close": 8.96,
+            "krw": false,
+            "chg": -2.18,
+            "val": "$72M",
+            "cap": "$2.1B",
+            "gap": 8.9,
+            "broke": false,
+            "stoppct": 10.1,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AQUBT"
+          },
+          {
+            "name": "리게티컴퓨팅(RGTI)",
+            "tk": "RGTI",
+            "market": "미국",
+            "desc": "초전도 양자칩을 직접 만들어 팔고 클라우드로 계산을 빌려주는 회사",
+            "close": 16.66,
+            "krw": false,
+            "chg": 0.97,
+            "val": "$292M",
+            "cap": "$6.0B",
+            "gap": 16.2,
+            "broke": false,
+            "stoppct": 12.5,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ARGTI"
+          },
+          {
+            "name": "디웨이브퀀텀(QBTS)",
+            "tk": "QBTS",
+            "market": "미국",
+            "desc": "물류·일정 짜기 같은 최적화 계산용 양자컴퓨터를 빌려주고 파는 회사",
+            "close": 17.41,
+            "krw": false,
+            "chg": -0.4,
+            "val": "$252M",
+            "cap": "$7.7B",
+            "gap": 26.4,
+            "broke": false,
+            "stoppct": 13.6,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AQBTS"
+          },
+          {
+            "name": "씰에스큐(LAES)",
+            "tk": "LAES",
+            "market": "미국",
+            "desc": "양자컴퓨터로도 못 깨는 암호를 넣은 보안칩을 사물인터넷 기기에 파는 회사",
+            "close": 2.35,
+            "krw": false,
+            "chg": 1.29,
+            "val": "$13M",
+            "cap": "$573M",
+            "gap": 30.6,
+            "broke": false,
+            "stoppct": 11.2,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ALAES"
+          }
+        ],
+        "결제인프라": [
+          {
+            "name": "인터랙티브 브로커스(IBKR)",
+            "tk": "IBKR",
+            "market": "미국",
+            "desc": "전 세계 170여 개 시장의 주식·선물·옵션을 한 계좌로 거래하는 온라인 증권사",
+            "close": 89.24,
+            "krw": false,
+            "chg": -0.65,
+            "val": "$258M",
+            "cap": "$149.6B",
+            "gap": 10.7,
+            "broke": false,
+            "stoppct": 6.7,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AIBKR"
+          },
+          {
+            "name": "쇼피파이(SHOP)",
+            "tk": "SHOP",
+            "market": "미국",
+            "desc": "캐나다발 이커머스 플랫폼, 온라인 쇼핑몰 구축·결제를 지원하는 아마존 대항마",
+            "close": 142.25,
+            "krw": false,
+            "chg": -2.0,
+            "val": "$852M",
+            "cap": "$196.7B",
+            "gap": 11.7,
+            "broke": false,
+            "stoppct": 9.5,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ASHOP"
+          },
+          {
+            "name": "브로드리지(BR)",
+            "tk": "BR",
+            "market": "미국",
+            "desc": "주주총회 의결권 서류 발송과 증권사 거래 처리 전산을 맡는 회사",
+            "close": 163.77,
+            "krw": false,
+            "chg": 0.68,
+            "val": "$137M",
+            "cap": "$19.0B",
+            "gap": 14.1,
+            "broke": false,
+            "stoppct": 5.6,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ABR"
+          },
+          {
+            "name": "디로컬(DLO)",
+            "tk": "DLO",
+            "market": "미국",
+            "desc": "글로벌 기업이 신흥국에서 현지 결제수단으로 돈을 받고 보내게 해주는 회사",
+            "close": 14.08,
+            "krw": false,
+            "chg": 1.44,
+            "val": "$14M",
+            "cap": "$4.2B",
+            "gap": 14.7,
+            "broke": false,
+            "stoppct": 6.7,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ADLO"
+          },
+          {
+            "name": "ACI월드와이드(ACIW)",
+            "tk": "ACIW",
+            "market": "미국",
+            "desc": "은행·가맹점에 결제 처리 소프트웨어를 팔고 공과금 수납도 대행하는 회사",
+            "close": 49.51,
+            "krw": false,
+            "chg": -0.22,
+            "val": "$29M",
+            "cap": "$5.4B",
+            "gap": 23.4,
+            "broke": false,
+            "stoppct": 5.8,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AACIW"
+          },
+          {
+            "name": "시프트4(FOUR)",
+            "tk": "FOUR",
+            "market": "미국",
+            "desc": "식당·호텔·경기장에 포스 단말기와 카드결제 처리를 함께 파는 회사",
+            "close": 38.45,
+            "krw": false,
+            "chg": 0.76,
+            "val": "$65M",
+            "cap": "$3.3B",
+            "gap": 49.2,
+            "broke": false,
+            "stoppct": 13.7,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AFOUR"
+          }
+        ],
+        "빅테크": [
+          {
+            "name": "마이크로소프트(MSFT)",
+            "tk": "MSFT",
+            "market": "미국",
+            "desc": "윈도우·오피스에 더해 클라우드(애저)와 오픈AI 지분 보유",
+            "close": 516.17,
+            "krw": false,
+            "chg": 3.66,
+            "val": "$19.69B",
+            "cap": "$3.71T",
+            "gap": 0.3,
+            "broke": false,
+            "stoppct": 4.6,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AMSFT"
+          },
+          {
+            "name": "메타(META)",
+            "tk": "META",
+            "market": "미국",
+            "desc": "페이스북·인스타그램을 가진 SNS 회사, AI 인프라에 대규모 투자 중",
+            "close": 751.66,
+            "krw": false,
+            "chg": -3.33,
+            "val": "$19.36B",
+            "cap": "$1.51T",
+            "gap": 3.7,
+            "broke": false,
+            "stoppct": 6.8,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AMETA"
+          },
+          {
+            "name": "알파벳(구글)(GOOGL)",
+            "tk": "GOOGL",
+            "market": "미국",
+            "desc": "검색·유튜브·안드로이드를 가진 구글의 모회사",
+            "close": 343.92,
+            "krw": false,
+            "chg": 0.46,
+            "val": "$7.52B",
+            "cap": "$4.33T",
+            "gap": 11.8,
+            "broke": false,
+            "stoppct": 5.2,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AGOOGL"
+          },
+          {
+            "name": "어도비(ADBE)",
+            "tk": "ADBE",
+            "market": "미국",
+            "desc": "포토샵·프리미어·PDF를 월 구독으로 파는 디자인 소프트웨어 회사",
+            "close": 235.47,
+            "krw": false,
+            "chg": -1.45,
+            "val": "$733M",
+            "cap": "$105.4B",
+            "gap": 25.1,
+            "broke": false,
+            "stoppct": 8.4,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AADBE"
+          }
+        ],
+        "방산": [
+          {
+            "name": "GE에어로스페이스(GE)",
+            "tk": "GE",
+            "market": "미국",
+            "desc": "여객기·군용기 제트엔진을 만들고 정비·부품까지 파는 회사",
+            "close": 327.09,
+            "krw": false,
+            "chg": 2.29,
+            "val": "$1.40B",
+            "cap": "$384.0B",
+            "gap": 18.9,
+            "broke": false,
+            "stoppct": 5.4,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AGE"
+          },
+          {
+            "name": "하우메트(HWM)",
+            "tk": "HWM",
+            "market": "미국",
+            "desc": "제트엔진 터빈 날개와 항공기용 볼트, 트럭 알루미늄 휠을 만드는 회사",
+            "close": 232.48,
+            "krw": false,
+            "chg": 1.35,
+            "val": "$510M",
+            "cap": "$112.4B",
+            "gap": 33.3,
+            "broke": false,
+            "stoppct": 7.0,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AHWM"
+          },
+          {
+            "name": "에어로바이런먼트(AVAV)",
+            "tk": "AVAV",
+            "market": "미국",
+            "desc": "스위치블레이드 자폭드론 등 군용 소형 무인기와 우주·레이저 장비를 만드는 회사",
+            "close": 152.05,
+            "krw": false,
+            "chg": -4.1,
+            "val": "$196M",
+            "cap": "$9.5B",
+            "gap": 36.7,
+            "broke": false,
+            "stoppct": 12.4,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AAVAV"
+          },
+          {
+            "name": "카르만(KRMN)",
+            "tk": "KRMN",
+            "market": "미국",
+            "desc": "로켓·미사일에 들어가는 위성 덮개와 추진 부품을 만드는 부품사",
+            "close": 35.69,
+            "krw": false,
+            "chg": 2.21,
+            "val": "$174M",
+            "cap": "$7.7B",
+            "gap": 78.6,
+            "broke": false,
+            "stoppct": 15.9,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AKRMN"
+          }
+        ],
+        "우주": [
+          {
+            "name": "로켓랩(RKLB)",
+            "tk": "RKLB",
+            "market": "미국",
+            "desc": "소형 위성을 쏘아 올리는 발사체와 위성 부품을 만드는 회사",
+            "close": 73.95,
+            "krw": false,
+            "chg": 0.46,
+            "val": "$1.39B",
+            "cap": "$51.8B",
+            "gap": 17.4,
+            "broke": false,
+            "stoppct": 11.7,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ARKLB"
+          },
+          {
+            "name": "레드와이어(RDW)",
+            "tk": "RDW",
+            "market": "미국",
+            "desc": "위성 부품과 태양전지판, 군용 정찰드론을 만드는 우주·방산 회사",
+            "close": 11.62,
+            "krw": false,
+            "chg": 0.17,
+            "val": "$154M",
+            "cap": "$3.2B",
+            "gap": 22.1,
+            "broke": false,
+            "stoppct": 13.5,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ARDW"
+          },
+          {
+            "name": "AST스페이스모바일(ASTS)",
+            "tk": "ASTS",
+            "market": "미국",
+            "desc": "일반 스마트폰이 위성에 바로 연결되게 하는 통신위성 회사",
+            "close": 61.81,
+            "krw": false,
+            "chg": 1.23,
+            "val": "$398M",
+            "cap": "$27.9B",
+            "gap": 22.2,
+            "broke": false,
+            "stoppct": 14.4,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AASTS"
+          }
+        ],
+        "금융": [
+          {
+            "name": "로빈후드(HOOD)",
+            "tk": "HOOD",
+            "market": "미국",
+            "desc": "수수료 없는 주식·코인 거래앱 로빈후드",
+            "close": 119.4,
+            "krw": false,
+            "chg": -1.18,
+            "val": "$1.66B",
+            "cap": "$83.9B",
+            "gap": 6.1,
+            "broke": false,
+            "stoppct": 10.5,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AHOOD"
+          },
+          {
+            "name": "페이팔(PYPL)",
+            "tk": "PYPL",
+            "market": "미국",
+            "desc": "온라인 간편결제 원조, 벤모도 함께 운영",
+            "close": 55.04,
+            "krw": false,
+            "chg": 4.64,
+            "val": "$1.12B",
+            "cap": "$50.5B",
+            "gap": 14.0,
+            "broke": false,
+            "stoppct": 6.2,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3APYPL"
+          },
+          {
+            "name": "어펌(AFRM)",
+            "tk": "AFRM",
+            "market": "미국",
+            "desc": "온라인 쇼핑 금액을 나눠 내게 해주는 미국 할부결제 회사",
+            "close": 71.52,
+            "krw": false,
+            "chg": -0.07,
+            "val": "$184M",
+            "cap": "$25.2B",
+            "gap": 26.5,
+            "broke": false,
+            "stoppct": 10.1,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AAFRM"
+          }
+        ],
+        "AI응용": [
+          {
+            "name": "팔란티어(PLTR)",
+            "tk": "PLTR",
+            "market": "미국",
+            "desc": "정부·기업에 데이터 분석 소프트웨어를 파는 AI 회사",
+            "close": 189.67,
+            "krw": false,
+            "chg": -1.52,
+            "val": "$3.37B",
+            "cap": "$413.4B",
+            "gap": 2.6,
+            "broke": false,
+            "stoppct": 7.5,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3APLTR"
+          },
+          {
+            "name": "심보틱(SYM)",
+            "tk": "SYM",
+            "market": "미국",
+            "desc": "월마트 같은 대형 물류창고를 로봇으로 자동화해주는 시스템 회사",
+            "close": 43.47,
+            "krw": false,
+            "chg": -1.29,
+            "val": "$40M",
+            "cap": "$24.3B",
+            "gap": 11.0,
+            "broke": false,
+            "stoppct": 8.8,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ASYM"
+          }
+        ],
+        "원자력": [
+          {
+            "name": "오클로(OKLO)",
+            "tk": "OKLO",
+            "market": "미국",
+            "desc": "소형 원자로를 직접 짓고 운영해 데이터센터 등에 전기를 파는 회사",
+            "close": 38.04,
+            "krw": false,
+            "chg": -0.65,
+            "val": "$257M",
+            "cap": "$8.4B",
+            "gap": 33.1,
+            "broke": false,
+            "stoppct": 14.5,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AOKLO"
+          },
+          {
+            "name": "뉴스케일파워(SMR)",
+            "tk": "SMR",
+            "market": "미국",
+            "desc": "공장에서 찍어내는 소형 원자로 모듈을 설계해 발전소 사업자에 공급하는 회사",
+            "close": 8.42,
+            "krw": false,
+            "chg": -0.59,
+            "val": "$246M",
+            "cap": "$4.0B",
+            "gap": 35.0,
+            "broke": false,
+            "stoppct": 16.1,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ASMR"
+          }
+        ],
+        "자원안보": [
+          {
+            "name": "뉴몬트(NEM)",
+            "tk": "NEM",
+            "market": "미국",
+            "desc": "세계 최대 금광 회사, 금값이 오르면 같이 오르는 구조",
+            "close": 121.43,
+            "krw": false,
+            "chg": 0.11,
+            "val": "$427M",
+            "cap": "$119.0B",
+            "gap": 11.4,
+            "broke": false,
+            "stoppct": 7.0,
+            "lowvol": false,
+            "held": true,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ANEM"
+          },
+          {
+            "name": "USA 레어어스(USAR)",
+            "tk": "USAR",
+            "market": "미국",
+            "desc": "텍사스 광산을 개발하며 오클라호마 공장에서 희토류 자석을 만드는 회사",
+            "close": 15.18,
+            "krw": false,
+            "chg": -1.3,
+            "val": "$152M",
+            "cap": "$4.7B",
+            "gap": 35.2,
+            "broke": false,
+            "stoppct": 14.8,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AUSAR"
+          }
+        ],
+        "제약": [
+          {
+            "name": "일라이릴리(LLY)",
+            "tk": "LLY",
+            "market": "미국",
+            "desc": "비만·당뇨약 마운자로·젭바운드와 항암제를 파는 제약사",
+            "close": 1183.46,
+            "krw": false,
+            "chg": 0.13,
+            "val": "$2.28B",
+            "cap": "$1.06T",
+            "gap": 9.2,
+            "broke": false,
+            "stoppct": 5.6,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ALLY"
+          },
+          {
+            "name": "노보노디스크(NVO)",
+            "tk": "NVO",
+            "market": "미국",
+            "desc": "비만치료제 위고비·오젬픽을 만드는 덴마크 제약사",
+            "close": 38.8,
+            "krw": false,
+            "chg": 0.47,
+            "val": "$385M",
+            "cap": "$208.9B",
+            "gap": 34.3,
+            "broke": false,
+            "stoppct": 6.7,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ANVO"
+          }
+        ],
+        "크립토": [
+          {
+            "name": "코인베이스(COIN)",
+            "tk": "COIN",
+            "market": "미국",
+            "desc": "미국 최대 암호화폐 거래소, 비트코인 등 시세에 연동돼 움직임",
+            "close": 195.11,
+            "krw": false,
+            "chg": -2.06,
+            "val": "$1.22B",
+            "cap": "$40.5B",
+            "gap": 6.8,
+            "broke": false,
+            "stoppct": 11.6,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ACOIN"
+          },
+          {
+            "name": "서클(CRCL)",
+            "tk": "CRCL",
+            "market": "미국",
+            "desc": "달러 스테이블코인 USDC를 발행하는 회사, 2026년 상장",
+            "close": 87.24,
+            "krw": false,
+            "chg": -1.98,
+            "val": "$84M",
+            "cap": "$18.2B",
+            "gap": 18.4,
+            "broke": false,
+            "stoppct": 14.3,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ACRCL"
+          }
+        ],
+        "수자원": [
+          {
+            "name": "와츠워터(WTS)",
+            "tk": "WTS",
+            "market": "미국",
+            "desc": "건물 배관·밸브·수처리 장비를 만드는 산업재 회사",
+            "close": 357.79,
+            "krw": false,
+            "chg": 0.96,
+            "val": "$58M",
+            "cap": "$13.1B",
+            "gap": 10.0,
+            "broke": false,
+            "stoppct": 4.6,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AWTS"
+          },
+          {
+            "name": "펜테어(PNR)",
+            "tk": "PNR",
+            "market": "미국",
+            "desc": "가정·상업용 정수 필터와 수영장 펌프 장비를 만드는 회사",
+            "close": 53.66,
+            "krw": false,
+            "chg": 1.19,
+            "val": "$90M",
+            "cap": "$11.0B",
+            "gap": 45.3,
+            "broke": false,
+            "stoppct": 6.5,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3APNR"
+          }
+        ],
+        "로봇자동화": [
+          {
+            "name": "로크웰오토메이션(ROK)",
+            "tk": "ROK",
+            "market": "미국",
+            "desc": "공장 생산라인을 제어하는 장비와 소프트웨어를 파는 자동화 회사",
+            "close": 434.15,
+            "krw": false,
+            "chg": 0.28,
+            "val": "$179M",
+            "cap": "$49.1B",
+            "gap": 12.7,
+            "broke": false,
+            "stoppct": 5.0,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AROK"
+          }
+        ],
+        "청정에너지": [
+          {
+            "name": "퍼스트솔라(FSLR)",
+            "tk": "FSLR",
+            "market": "미국",
+            "desc": "발전소용 박막 태양광 패널을 만드는 미국 패널 제조사",
+            "close": 177.71,
+            "krw": false,
+            "chg": 3.22,
+            "val": "$560M",
+            "cap": "$26.9B",
+            "gap": 51.8,
+            "broke": false,
+            "stoppct": 11.8,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3AFSLR"
+          }
+        ],
+        "계산생물": [
+          {
+            "name": "리커전(RXRX)",
+            "tk": "RXRX",
+            "market": "미국",
+            "desc": "AI와 로봇 실험으로 신약 후보물질을 찾는 신약개발 회사",
+            "close": 3.74,
+            "krw": false,
+            "chg": -3.86,
+            "val": "$39M",
+            "cap": "$1.7B",
+            "gap": 11.2,
+            "broke": false,
+            "stoppct": 12.0,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NASDAQ%3ARXRX"
+          }
+        ],
+        "고령화": [
+          {
+            "name": "웰타워(WELL)",
+            "tk": "WELL",
+            "market": "미국",
+            "desc": "미국·영국·캐나다에서 노인 주거·요양시설을 소유·운영하는 리츠",
+            "close": 231.37,
+            "krw": false,
+            "chg": -0.96,
+            "val": "$534M",
+            "cap": "$170.7B",
+            "gap": 10.3,
+            "broke": false,
+            "stoppct": 4.4,
+            "lowvol": false,
+            "held": false,
+            "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3AWELL"
+          }
+        ]
+      },
+      "종목수": 60,
+      "축수": 18,
+      "보유묶음": [
+        "SaaS",
+        "자원안보"
+      ]
+    }
+  },
+  "positions": [
+    {
+      "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ASNOW",
+      "name": "SNOW(SNOW)",
+      "mkt": "미국",
+      "qty": 1.0,
+      "entry": 455323.0,
+      "cur": 456579.4167181396,
+      "pnl_won": 1256,
+      "pnl_pct": 0.28,
+      "stop": 413963.0,
+      "exitlow": 413019.9578088379,
+      "need_update": false,
+      "krw": true,
+      "tag": "터틀 (검증)",
+      "risk_won": 41360,
+      "risk_pct": 0.92
+    },
+    {
+      "tv": "https://kr.tradingview.com/chart/?symbol=NYSE%3ANEM",
+      "name": "뉴몬트(NEM)",
+      "mkt": "미국",
+      "qty": 4.0,
+      "entry": 168777.0,
+      "cur": 165036.72771476745,
+      "pnl_won": -14961,
+      "pnl_pct": -2.22,
+      "stop": 157688.0,
+      "exitlow": 163093.19999999998,
+      "need_update": true,
+      "krw": true,
+      "tag": "터틀 (검증)",
+      "risk_won": 44356,
+      "risk_pct": 0.99
+    }
+  ],
+  "risk": {
+    "used": 1.91,
+    "limit": 5.0,
+    "free": 3.09
+  },
+  "stopcheck": {
+    "date": "2026-09-28",
+    "time": "22:30",
+    "총": 2,
+    "문제": 0,
+    "rows": [
+      {
+        "symbol": "NEM",
+        "name": "뉴몬트",
+        "qty": 4.0,
+        "market": "US",
+        "problems": [],
+        "stop": 158146.0,
+        "type": "MARKET",
+        "cqty": 4.0,
+        "status": "WATCHING"
+      },
+      {
+        "symbol": "SNOW",
+        "name": "스노우플레이크",
+        "qty": 1.003824,
+        "market": "US",
+        "problems": [],
+        "stop": 414921.0,
+        "type": "MARKET",
+        "cqty": 1.0,
+        "status": "WATCHING"
+      }
+    ],
+    "ghosts": [],
+    "journal_error": null
+  },
+  "trap": []
+}
